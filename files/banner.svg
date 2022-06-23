@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 26.458333 26.458333"
+   version="1.1"
+   id="svg5"
+   inkscape:export-filename="E:\Documentos\GitHub\jorgeoliveirasantos.github.io\files\back.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="banner.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     units="px"
+     width="100px"
+     inkscape:snap-bbox="true"
+     inkscape:bbox-paths="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:object-paths="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-midpoints="true"
+     inkscape:zoom="0.6227302"
+     inkscape:cx="-459.26792"
+     inkscape:cy="73.06535"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient61155">
+      <stop
+         style="stop-color:#111111;stop-opacity:1"
+         offset="0"
+         id="stop61151" />
+      <stop
+         style="stop-color:#333333;stop-opacity:1"
+         offset="1"
+         id="stop61153" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient56633">
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1"
+         offset="0"
+         id="stop56629" />
+      <stop
+         style="stop-color:#ab4700;stop-opacity:1;"
+         offset="0.39790601"
+         id="stop59578" />
+      <stop
+         style="stop-color:#aa4400;stop-opacity:1"
+         offset="0.39790601"
+         id="stop56957" />
+      <stop
+         style="stop-color:#b96700;stop-opacity:1;"
+         offset="0.60124356"
+         id="stop60589" />
+      <stop
+         style="stop-color:#ffff00;stop-opacity:1"
+         offset="1"
+         id="stop56631" />
+    </linearGradient>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2013">
+      <rect
+         style="fill:#222222;fill-opacity:1;stroke-width:2;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect2015"
+         width="26.458334"
+         height="26.458334"
+         x="-3.1789145e-07"
+         y="-3.1789145e-07"
+         inkscape:export-filename="E:\rect846.png"
+         inkscape:export-xdpi="96"
+         inkscape:export-ydpi="96" />
+    </clipPath>
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect11245" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect24255" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect26871" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect26873" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath26133">
+      <path
+         id="path26135"
+         style="fill:#ffe6d5;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         d="M -213.18329,299.51315 H 83.816724 v 78.42012 H -213.18329 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9041">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9043"
+         width="719.18512"
+         height="669.04785"
+         x="-1932.839"
+         y="-1354.2963" />
+    </clipPath>
+    <filter
+       height="1.1431116"
+       width="1.0853842"
+       y="-0.071555786"
+       x="-0.042692166"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter9825">
+      <feGaussianBlur
+         stdDeviation="21.1559 19.9476"
+         result="blur"
+         id="feGaussianBlur9819" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0 "
+         result="colormatrix"
+         id="feColorMatrix9821" />
+      <feComposite
+         in="colormatrix"
+         in2="SourceGraphic"
+         operator="in"
+         id="feComposite9823" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9925">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9927"
+         width="1189.3085"
+         height="669.04779"
+         x="-2167.9006"
+         y="-288.11829" />
+    </clipPath>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient56633"
+       id="linearGradient56635"
+       x1="-160.87172"
+       y1="13.229166"
+       x2="187.33006"
+       y2="13.229166"
+       gradientUnits="userSpaceOnUse" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient61155"
+       id="linearGradient61157"
+       x1="-167.48125"
+       y1="96.070984"
+       x2="-167.48125"
+       y2="-69.612656"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="translate(0,-26.458328)" />
+  </defs>
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       id="g62299"
+       inkscape:export-filename="E:\Documentos\GitHub\jorgeoliveirasantos.github.io\files\g62299.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="opacity:1;fill:url(#linearGradient61157);fill-opacity:1;stroke:none;stroke-width:1.80596;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect2589"
+         width="361.42084"
+         height="165.68364"
+         x="-167.48125"
+         y="-96.070984"
+         transform="scale(1,-1)" />
+      <path
+         style="color:#000000;fill:#fafafa;fill-opacity:1;stroke-width:0.490148;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;paint-order:markers stroke fill"
+         d="m -103.75649,-4.928254 c -0.79986,0.01515 -1.59876,0.06948 -2.39331,0.162744 a 0.82417622,0.82417622 0 0 0 -0.72756,0.8185094 v 8.0146913 a 0.82417622,0.82417622 0 0 0 0.95158,0.81468 c 0.686,-0.1077914 1.37932,-0.1593707 2.07355,-0.1704029 V 34.447321 c -2.79479,-0.03707 -5.52456,-0.853296 -7.87396,-2.370327 a 0.82417622,0.82417622 0 0 0 -1.27132,0.692143 v 8.877238 a 0.82417622,0.82417622 0 0 0 0.52461,0.767772 c 2.78232,1.084253 5.73994,1.651337 8.72598,1.67244 a 0.82417622,0.82417622 0 0 0 0.006,0 c 3.13929,-0.0017 6.249508,-0.606553 9.160601,-1.781575 a 0.82417622,0.82417622 0 0 0 0.515996,-0.763942 V 39.704928 32.47524 6.6830918 -1.5201923 -2.3827383 a 0.82417622,0.82417622 0 0 0 -0.515996,-0.7639423 c -2.911092,-1.1750257 -6.021311,-1.7799204 -9.160601,-1.7815734 a 0.82417622,0.82417622 0 0 0 -0.0258,0.01053 z m 0.022,1.6494632 c 2.74575,0.00225 5.454379,0.541512 8.021389,1.5077807 v 0.2508178 8.2032841 25.7921482 7.229688 1.224414 c -2.568232,0.966725 -5.278139,1.506949 -8.025219,1.508738 -2.60151,-0.01871 -5.16725,-0.522875 -7.61071,-1.408219 v -6.869736 c 2.34344,1.236111 4.93947,1.929879 7.60305,1.944319 a 0.82417622,0.82417622 0 0 0 0.0536,-0.0019 c 0.25049,-0.01476 0.50002,-0.03512 0.74958,-0.06127 a 0.82417622,0.82417622 0 0 0 0.7381,-0.819467 V 3.9365373 a 0.82417622,0.82417622 0 0 0 -0.7381,-0.8194668 c -0.24956,-0.026149 -0.49909,-0.04651 -0.74958,-0.061268 a 0.82417622,0.82417622 0 0 0 -0.0555,-0.00191 c -0.49638,0.00392 -0.98823,0.073037 -1.48193,0.1215798 v -6.3537424 c 0.49807,-0.042398 0.99543,-0.090864 1.49534,-0.1005186 z m 11.956937,1.4771464 a 0.82417622,0.82417622 0 0 0 -1.226328,0.7189482 V 9.0208697 a 0.82417622,0.82417622 0 0 0 0.217312,0.5571609 c 2.507531,2.7288894 3.905873,6.2952584 3.922144,10.0011374 -0.01627,3.705881 -1.414611,7.272242 -3.922144,10.001133 a 0.82417622,0.82417622 0 0 0 -0.217312,0.557161 v 10.103566 a 0.82417622,0.82417622 0 0 0 1.226328,0.718948 c 7.7417,-4.330372 12.540867,-12.510319 12.543778,-21.380808 -0.0029,-8.870488 -4.802082,-17.0504433 -12.543778,-21.3808124 z m -23.927287,0.059354 c -7.72253,4.3196039 -12.51863,12.4710714 -12.54377,21.3195434 a 0.82417622,0.82417622 0 0 0 0,0.0038 c 0.0251,8.848474 4.82125,16.999943 12.54377,21.319546 a 0.82417622,0.82417622 0 0 0 1.22633,-0.718948 V 30.137462 a 0.82417622,0.82417622 0 0 0 -0.21731,-0.557161 c -2.50753,-2.728892 -3.90588,-6.295253 -3.92215,-10.001133 0.0163,-3.705878 1.41462,-7.272248 3.92215,-10.0011374 a 0.82417622,0.82417622 0 0 0 0.21731,-0.5571609 V -1.0233426 a 0.82417622,0.82417622 0 0 0 -1.22633,-0.7189478 z m 24.349466,2.17790511 c 6.4801,4.19153519 10.470534,11.35940829 10.473092,19.14355329 -0.0025,7.784147 -3.992989,14.952011 -10.473092,19.143549 v -8.312419 c 2.634061,-2.995424 4.122941,-6.830407 4.139456,-10.827301 a 0.82417622,0.82417622 0 0 0 0,-0.0077 c -0.01652,-3.996889 -1.505397,-7.83188 -4.139456,-10.8273021 z m -24.771646,0.058397 V 8.7480341 c -2.63405,2.9954219 -4.12293,6.8304149 -4.13945,10.8273049 a 0.82417622,0.82417622 0 0 0 0,0.0077 c 0.0165,3.996893 1.5054,7.831878 4.13945,10.827301 v 8.25402 c -6.4624,-4.179828 -10.44972,-11.320931 -10.47309,-19.083238 v -0.0019 c 0,-6.38e-4 0,-0.0013 0,-0.0019 0.0234,-7.762315 4.01069,-14.9034169 10.47309,-19.08324539 z"
+         id="path4626" />
+      <text
+         xml:space="preserve"
+         style="font-size:26.4265px;line-height:1.25;font-family:Garamond;-inkscape-font-specification:Garamond;fill:#ffaa00;fill-opacity:1;stroke-width:0.660664"
+         x="-157.26555"
+         y="-35.582275"
+         id="text9410"><tspan
+           sodipodi:role="line"
+           id="tspan9408"
+           style="fill:#ffaa00;fill-opacity:1;stroke-width:0.660664"
+           x="-157.26555"
+           y="-35.582275">Seja bem vindo</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:6.29883px;line-height:1.25;font-family:Garamond;-inkscape-font-specification:Garamond;fill:#ffff00;fill-opacity:1;stroke-width:0.157472"
+         x="-47.469078"
+         y="-10.500089"
+         id="text9830"><tspan
+           sodipodi:role="line"
+           style="font-size:8.81944px;fill:#ffff00;fill-opacity:1;stroke-width:0.157472"
+           x="-47.469078"
+           y="-10.500089"
+           id="tspan10086">Me chamo Jorge Souza Oliveira dos Santos,</tspan><tspan
+           sodipodi:role="line"
+           style="fill:#ffff00;fill-opacity:1;stroke-width:0.157472"
+           x="-47.469078"
+           y="-1.5880406"
+           id="tspan46526">sou designer gráfico, cadista e desenvolvedor de aplicações web e desktop.</tspan><tspan
+           sodipodi:role="line"
+           style="fill:#ffff00;fill-opacity:1;stroke-width:0.157472"
+           x="-47.469078"
+           y="6.2854967"
+           id="tspan15297">Aqui você encontrará alguns de meus trabalhos, cursos, livros, bases de conhecimento</tspan><tspan
+           sodipodi:role="line"
+           style="fill:#ffff00;fill-opacity:1;stroke-width:0.157472"
+           x="-47.469078"
+           y="14.159034"
+           id="tspan23593">que criei com tudo o que aprendi para disponibilizar para quem está começando.</tspan></text>
+      <text
+         xml:space="preserve"
+         style="font-size:8.43503px;line-height:1.25;font-family:Garamond;-inkscape-font-specification:Garamond;fill:#ffffff;fill-opacity:1;stroke-width:0.210876"
+         x="-94.235092"
+         y="83.781647"
+         id="text35456"><tspan
+           sodipodi:role="line"
+           style="fill:#ffffff;fill-opacity:1;stroke-width:0.210876"
+           x="-94.235092"
+           y="83.781647"
+           id="tspan35454">jorgeoliveirasantos.github.io                    jorge.sos777@gmail.com</tspan></text>
+      <path
+         id="path48465"
+         style="color:#000000;fill:url(#linearGradient56635);stroke-width:0.93599;stroke-linecap:square;-inkscape-stroke:none;fill-opacity:1"
+         d="m -158.50475,-62.101982 343.96707,1.599734 1.86774,141.052339 0,-142.652073 z m -2.36697,7.108925 0,143.553372 345.8348,0 -344.40522,-1.374019 z"
+         sodipodi:nodetypes="cccccccccc" />
+      <g
+         id="g62230"
+         transform="translate(13.519483)">
+        <text
+           xml:space="preserve"
+           style="font-size:8.43503px;line-height:1.25;font-family:Garamond;-inkscape-font-specification:Garamond;fill:#ffaa00;fill-opacity:1;stroke-width:0.210876"
+           x="-31.983307"
+           y="34.377357"
+           id="text10590"><tspan
+             sodipodi:role="line"
+             style="fill:#ffaa00;fill-opacity:1;stroke-width:0.210876"
+             x="-31.983307"
+             y="34.377357"
+             id="tspan10576">Desenvolvimento na plataforma .NET Core</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#ffaa00;fill-opacity:1;stroke-width:0.210876"
+             x="-31.983307"
+             y="44.921146"
+             id="tspan10578">Desenvolvimento web na plataforma ASP .NET Core</tspan><tspan
+             sodipodi:role="line"
+             style="fill:#ffaa00;fill-opacity:1;stroke-width:0.210876"
+             x="-31.983307"
+             y="55.464931"
+             id="tspan10588">Desenvolvimento em C++</tspan></text>
+        <path
+           id="path61724"
+           style="color:#000000;fill:#ffffff;stroke-width:2.22679;-inkscape-stroke:none"
+           d="m -133.70312,109.24805 -7.43555,7.43164 -2.68945,-2.6875 -4.72461,4.72656 7.41601,7.41211 12.16016,-12.1582 z m 0,40.30859 -7.43555,7.43359 -2.68945,-2.68945 -4.72461,4.72852 7.41601,7.41211 12.16016,-12.16016 z m 0,39.74414 -7.43555,7.43164 -2.68945,-2.68945 -4.72461,4.72851 7.41601,7.41211 12.16016,-12.1582 z"
+           transform="scale(0.26458333)" />
+      </g>
+    </g>
+  </g>
+</svg>

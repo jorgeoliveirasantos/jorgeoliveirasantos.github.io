@@ -1,15 +1,105 @@
-main{
+/*    PÁGINA  =========================================== */
+
+.js-page{
+  background-color: #222;
+  color: #FB0;
+  width: 80%;
+  margin: auto;
+  padding: 50px 0px 50px 0px;
+}
+
+.js-page h1{
+  color: #FB0;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 40pt;
+  text-align: center;
+  border-bottom: 1px solid #FB0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.js-page h2{
+  color: #FB0;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30pt;
+  text-align: center;
+}
+
+.js-page h3{
+  color: #ddd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: left;
+}
+
+.js-page p{
+  color: #ddd;
+}
+
+.js-page li{
+  color: #ddd;
+}
+
+.js-page hr{
+  border: #FB09 1px solid;
+  max-width: 50%;
+  margin: 50px auto 50px auto;
+}
+
+
+
+
+
+
+
+/*    MENU DE NAVEGAÇÃO  =========================================== */
+.js-nav{
+  background-color: #0005;
+  box-shadow: 0px 0px 15px #FB08;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  height: auto;
+}
+
+.js-nav ul{
+  list-style-type: none;
+  margin-top: 0;
+}
+
+.js-nav .right{
+  float: right;
+}
+
+.js-nav .active{
   background-color: black;
+  color: #FB0;
+  border-left: 2px solid #FB0;
+  border-right: 2px solid #FB0;
 }
-h1{
-  color: beige;
+
+.js-nav li{
+  float: left;
 }
-h2{
-  color: beige;
+
+.js-nav a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 15px 15px 15px 15px;
+  text-decoration: none;
+  margin: 0;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: small;
 }
-h3{
-  color: beige;
-}
-p{
-  color: beige;
+
+.js-nav a:hover{
+  background-color: #FB0;
+  color: black;
 }

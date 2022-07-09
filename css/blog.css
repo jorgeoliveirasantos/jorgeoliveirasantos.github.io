@@ -1,0 +1,49 @@
+.js-post{
+  color: #ddd;
+  text-align: justify;
+  font-size: larger;
+  font-family: sans-serif;
+  pointer-events: none;
+}
+.js-post .notas{
+  color: #FA0;
+  text-align: right;
+  font-weight: bold;
+  font-size: medium;
+  font-family: sans-serif;
+  pointer-events: none;
+}
+.js-post img{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+  pointer-events: none;
+  border: #FA0 1px solid;
+}
+
+.js-post hr{
+  border: #FA09 1px solid;
+  margin: 50px auto 50px auto;
+}
+
+.js-post h3{
+  color: #ddd;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 25pt;
+  text-align: left;
+}
+
+
+
+::selection{
+  color: black;
+  background-color: #FA0;
+}
+::-moz-selection{
+  color: black;
+  background-color: #FA0;
+}

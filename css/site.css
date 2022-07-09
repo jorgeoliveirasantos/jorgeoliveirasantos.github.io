@@ -1,15 +1,32 @@
+::selection{
+  color: black;
+  background-color: #FA0;
+}
+::-moz-selection{
+  color: black;
+  background-color: #FA0;
+}
+
 /*    PÁGINA  =========================================== */
 
 body{
   background-image: url("../files/back.png");
-  margin: 0;
-  width: 100%;
 }
+
 .js-page{
   color: #FA0;
   width: 80%;
   margin: auto;
-  padding: 50px 0px 50px 0px;
+  padding: 50px 10px 50px 10px;
+}
+
+.blog{
+  padding-left: 250px;
+}
+.js-post-frame{
+  width: 100%;
+  border: none;
+  margin: auto;
 }
 
 .js-page h1{
@@ -18,7 +35,6 @@ body{
   font-weight: bold;
   font-size: 40pt;
   text-align: center;
-  border-bottom: 1px solid #FA0;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -35,24 +51,59 @@ body{
   color: #ddd;
   font-family: sans-serif;
   font-weight: bold;
-  font-size: 20pt;
+  font-size: 25pt;
   text-align: left;
 }
 
 .js-page p{
   color: #ddd;
+  font-size: larger;
+  text-align: justify;
 }
 
 .js-page li{
   color: #ddd;
+  font-size: larger;
 }
 
 .js-page hr{
   border: #FA09 1px solid;
-  max-width: 50%;
   margin: 50px auto 50px auto;
 }
 
+.js-button{
+  display: inline-block;
+  color: white;
+  background-color: #111;
+  border: #FA0 1px solid;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: small;
+}
+.js-button:hover{
+  color: black;
+  background-color: #FA0;
+}
+
+.js-top-button{
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  display: block;
+  margin: 15px;
+}
+.js-top-button a{
+  padding: 10px;
+  font-size: xx-large;
+  color: #FA0;
+}
+.js-top-button a:hover{
+  background-color: #FA0;
+  color: black;
+}
 
 
 
@@ -62,14 +113,15 @@ body{
 /*    MENU DE NAVEGAÇÃO  =========================================== */
 
 .js-nav{
-  background-color: #0003;
+  background-color: #0000;
   box-shadow: 0px 0px 15px #FA08;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(30px);
   width: 100%;
   display: block;
   top: 0;
   left: 0;
   position: fixed;
+  z-index: 1000;
 }
 
 .js-nav ul{
@@ -93,7 +145,7 @@ body{
 }
 
 .js-nav a{
-  display: inline-block;
+  display: block;
   color: white;
   text-align: center;
   padding: 15px 15px 15px 15px;
@@ -109,18 +161,72 @@ body{
   color: black;
 }
 
+.js-drop-button{
+  display: block;
+}
+
+.js-drop-content{
+  display: none;
+  position: absolute;
+  background-color: #000F;
+  color: #ddd;
+  backdrop-filter: blur(30px);
+  min-width: 200px;
+  box-shadow: 0px 0px 15px #FA08;
+  z-index: 1;
+}
+
+.js-drop-button:hover .js-drop-content{
+  display: block;
+}
 
 
 
+/*    BARRA LATERAL  =========================================== */
+
+.js-side{
+  width: 200px;
+  left: 0;
+  position: absolute;
+  background-color: #111;
+  padding: 15px;
+  padding-top: 45px;
+  z-index: 0;
+}
+.js-side a{
+  display: block;
+  color: #ddd;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0;
+  font-family: sans-serif;
+  text-align: left;
+  font-size: small;
+}
+.js-side p{
+  display: block;
+  color: #FA0;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0;
+  font-family: sans-serif;
+  text-align: left;
+  font-size: large;
+  font-weight: bold;
+}
+.js-side a:hover{
+  background-color: #FA0;
+  color: black;
+}
 
 
 
 
 /*    BANNER  =========================================== */
 
-.js-banner img{
+.js-banner{
   width: 100%;
   top: 0;
-  border-bottom: 5px solid #111;
+  border-bottom: 5px solid #0004;
   pointer-events: none;
 }

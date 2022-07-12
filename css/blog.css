@@ -1,24 +1,57 @@
+/* #region IMPORTS */
+@font-face {
+  font-family: "Hubballi";
+  src: url("Hubballi-Regular.ttf");
+}
+@font-face {
+  font-family: "Tech";
+  src: url("ShareTechMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Baloo";
+  src: url("BalooBhaijaan2-VariableFont_wght.ttf");
+}
+/* #endregion */
+
+
 .js-post{
   color: #ddd;
+  padding: 50px;
+  border-bottom: #FA0 1px solid;
+}
+.js-post p{
   text-align: justify;
-  font-size: larger;
-  font-family: sans-serif;
+  font-size: x-large;
+  font-family: Hubballi;
   pointer-events: none;
 }
+
 .js-post .notas{
   color: #FA0;
+  border: #FA0 1px solid;
   text-align: right;
   font-weight: bold;
-  font-size: medium;
-  font-family: sans-serif;
+  font-size: x-large;
+  font-family: Hubballi;
   pointer-events: none;
+  margin: 10px 0px 10px 180px;
+  padding: 30px;
 }
+
+.js-post .codigo{
+  color: cyan;
+  font-size: large;
+  font-family: Tech;
+  pointer-events: none;
+  margin-left: 60px;
+}
+
 .js-post img{
-  width: 50%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   display: block;
   pointer-events: none;
   border: #FA0 1px solid;
@@ -29,12 +62,37 @@
   margin: 50px auto 50px auto;
 }
 
-.js-post h3{
-  color: #ddd;
-  font-family: sans-serif;
+.js-post h2{
+  color: #FA0;
+  font-family: Baloo;
   font-weight: bold;
   font-size: 25pt;
   text-align: left;
+}
+
+.js-post h3{
+  color: #ddd;
+  font-family: Baloo;
+  font-weight: bold;
+  font-size: 20pt;
+  text-align: left;
+}
+
+.js-button{
+  display: inline-block;
+  color: white;
+  background-color: #111;
+  border: #FA0 1px solid;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  font-family: Hubballi;
+}
+.js-button:hover{
+  color: black;
+  background-color: #FA0;
 }
 
 

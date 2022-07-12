@@ -95,6 +95,24 @@
   background-color: #FA0;
 }
 
+.js-table{
+  margin: auto;
+  color: #ddd;
+  font-size: xx-large;
+  font-family: Hubballi;
+  padding: 15px;
+}
+.js-table th{
+  color: #FA0;
+  padding: 5px 30px 5px 30px;
+  border-bottom: #FA0 1px solid;
+  text-align: left;
+}
+.js-table td{
+  padding: 5px 30px 5px 30px;
+  border-bottom: #333 1px solid;
+}
+
 
 
 ::selection{

@@ -30,11 +30,13 @@ body{
   padding-left: 250px;
 }
 .js-post-frame{
-  background-color: #111;
+  background-color: #222;
   width: 100%;
   border: none;
   margin: auto;
   margin-bottom: 50px;
+  border-bottom: #FA0 1px solid;
+  box-shadow: 0px 0px 15px #FA08;
 }
 
 .js-page h1{
@@ -195,7 +197,8 @@ body{
   width: 200px;
   left: 0;
   position: absolute;
-  background-color: #111;
+  background-color: #222;
+  border: #FA0 1px solid;
   padding: 15px;
   padding-top: 45px;
   z-index: 0;

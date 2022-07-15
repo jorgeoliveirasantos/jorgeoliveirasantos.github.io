@@ -196,12 +196,15 @@ body{
 .js-side{
   width: 200px;
   left: 0;
-  position: absolute;
+  position: fixed;
   background-color: #222;
   border: #FA0 1px solid;
-  padding: 15px;
-  padding-top: 45px;
+  padding: 10px;
+  margin-top: 40px;
   z-index: 0;
+  height: 90%;
+  bottom: 0;
+  overflow-y: auto;
 }
 .js-side a{
   display: block;

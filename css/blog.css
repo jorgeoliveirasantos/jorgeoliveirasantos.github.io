@@ -41,7 +41,6 @@
   color: cyan;
   font-size: large;
   font-family: Tech;
-  pointer-events: none;
   margin-left: 60px;
 }
 
@@ -75,6 +74,14 @@
   font-weight: bold;
   font-size: 20pt;
   text-align: left;
+}
+
+.js-post code{
+  display: block;
+  color: cyan;
+  font-size: large;
+  font-family: Tech;
+  margin-left: 60px;
 }
 
 .js-button{

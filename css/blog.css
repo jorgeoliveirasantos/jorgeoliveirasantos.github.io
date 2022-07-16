@@ -21,7 +21,7 @@
 .js-post p{
   text-align: justify;
   font-size: x-large;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   pointer-events: none;
 }
 
@@ -31,7 +31,7 @@
   text-align: right;
   font-weight: bold;
   font-size: x-large;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   pointer-events: none;
   margin: 10px 0px 10px 180px;
   padding: 30px;
@@ -40,7 +40,7 @@
 .js-post .codigo{
   color: cyan;
   font-size: large;
-  font-family: Tech;
+  font-family: Tech, 'Courier New', Courier, monospace;
   margin-left: 60px;
 }
 
@@ -62,7 +62,7 @@
 
 .js-post h2{
   color: #FA0;
-  font-family: Baloo;
+  font-family: Baloo, Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 25pt;
   text-align: left;
@@ -70,7 +70,7 @@
 
 .js-post h3{
   color: #ddd;
-  font-family: Baloo;
+  font-family: Baloo, Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: 20pt;
   text-align: left;
@@ -80,7 +80,7 @@
   display: block;
   color: cyan;
   font-size: large;
-  font-family: Tech;
+  font-family: Tech, 'Courier New', Courier, monospace;
   margin-left: 60px;
 }
 
@@ -94,7 +94,7 @@
   text-decoration: none;
   font-weight: bold;
   font-size: large;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
 }
 .js-button:hover{
   color: black;
@@ -105,7 +105,7 @@
   margin: auto;
   color: #ddd;
   font-size: xx-large;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   padding: 15px;
 }
 .js-table th{

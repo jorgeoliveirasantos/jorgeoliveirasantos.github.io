@@ -67,7 +67,7 @@ body{
 
 .js-page p{
   font-size: x-large;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   color: #ddd;
   text-align: justify;
 }
@@ -75,7 +75,7 @@ body{
 .js-page li{
   color: #ddd;
   font-size: x-large;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .js-page hr{
@@ -93,7 +93,7 @@ body{
   text-decoration: none;
   font-weight: bold;
   font-size: large;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
 }
 .js-button:hover{
   color: black;
@@ -108,7 +108,7 @@ body{
   margin: 15px;
 }
 .js-top-button a{
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   padding: 10px;
   font-size: xx-large;
   color: #FA0;
@@ -159,7 +159,7 @@ body{
   color: white;
   padding: 10px 15px 10px 15px;
   text-decoration: none;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: medium;
   max-height: 40px;
@@ -211,7 +211,7 @@ body{
   padding: 10px;
   text-decoration: none;
   margin: 0;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   text-align: left;
   font-size: medium;
 }
@@ -221,7 +221,7 @@ body{
   padding: 10px;
   text-decoration: none;
   margin: 0;
-  font-family: Hubballi;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   text-align: left;
   font-size: x-large;
   font-weight: bold;
@@ -268,11 +268,6 @@ body{
 .js-banner > *:nth-child(2) {animation-delay: 8s}
 .js-banner > *:nth-child(3) {animation-delay: 16s}
 .js-banner > *:nth-child(4) {animation-delay: 24s}
-
-.js-banner-img{
-  width: 100%;
-  left: 0;
-}
 
 
 /* #region CONFIGURAÇÕES DO SITE ==================================================== */

@@ -16,35 +16,35 @@
   <p>Web Design</p>
   <a href="#0">Introdução</a>
   <p>HTML</p>
-  <a href="#1">O HTML</a>
-  <a href="#2">Marcas</a>
-  <a href="#3">Estrutura de um documento HTML</a>
-  <a href="#4">Árvore</a>
-  <a href="#5">Onde escrever documentos HTML</a>
-  <a href="#6">Comentários</a>
-  <a href="#7">Escape de Caracteres</a>
-  <a href="#8">Atributos</a>
-  <a href="#9">Formatação</a>
-  <a href="#10">Estilos de caractere</a>
-  <a href="#11">Estilos de parágrafo</a>
-  <a href="#12">Layout de página</a>
-  <a href="#13">Links</a>
-  <a href="#14">Listas</a>
-  <a href="#15">Tabelas</a>
-  <a href="#16">Iframe e Embed</a>
-  <a href="#17">Navegação</a>
-  <a href="#18">Caracteres UNICODE</a>
-  <a href="#19">Formulários</a>
-  <a href="#20">Estilos</a>
-  <a href="#21">Classes e IDS</a>
-  <a href="#22">Scripts</a>
-  <a href="#23">Web Design Responsivo</a>
-  <a href="#24">Gráficos</a>
-  <a href="#25">Multimídia</a>
+  <a onclick="posts('1')">O HTML</a>
+  <a onclick="posts('2')">Marcas</a>
+  <a onclick="posts('3')">Estrutura de um documento HTML</a>
+  <a onclick="posts('4')">Árvore</a>
+  <a onclick="posts('5')">Onde escrever documentos HTML</a>
+  <a onclick="posts('6')">Comentários</a>
+  <a onclick="posts('7')">Escape de Caracteres</a>
+  <a onclick="posts('8')">Atributos</a>
+  <a onclick="posts('9')">Formatação</a>
+  <a onclick="posts('10')">Estilos de caractere</a>
+  <a onclick="posts('11')">Estilos de parágrafo</a>
+  <a onclick="posts('12')">Layout de página</a>
+  <a onclick="posts('13')">Links</a>
+  <a onclick="posts('14')">Listas</a>
+  <a onclick="posts('15')">Tabelas</a>
+  <a onclick="posts('16')">Iframe e Embed</a>
+  <a onclick="posts('17')">Navegação</a>
+  <a onclick="posts('18')">Caracteres UNICODE</a>
+  <a onclick="posts('19')">Formulários</a>
+  <a onclick="posts('20')">Estilos</a>
+  <a onclick="posts('21')">Classes e IDS</a>
+  <a onclick="posts('22')">Scripts</a>
+  <a onclick="posts('23')">Web Design Responsivo</a>
+  <a onclick="posts('24')">Gráficos</a>
+  <a onclick="posts('25')">Multimídia</a>
+  <hr>
   <p>CSS</p>
-  <a href="#0">Introdução</a>
+  <hr>
   <p>Javascript</p>
-  <a href="#0">Introdução</a>
   <hr>
 </div>
 <!-- #endregion -->
@@ -102,8 +102,10 @@
 </body>
 </html>
 <script>
-for (let i = 0; i <= 25; i++) {
-    document.getElementById(i).style.display = "none";
+function posts(elemento){
+  for (let i = 0; i <= 25; i++) {
+      document.getElementById(i).style.display = "none";
+  }
+  document.getElementById(elemento).style.display = "block";
 }
-document.getElementById(element).style.display = "block";
 </script>

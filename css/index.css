@@ -1,0 +1,334 @@
+/* #region IMPORTS */
+@font-face {
+  font-family: "Hubballi";
+  src: url("Hubballi-Regular.ttf");
+}
+@font-face {
+  font-family: "Tech";
+  src: url("ShareTechMono-Regular.ttf");
+}
+@font-face {
+  font-family: "Baloo";
+  src: url("BalooBhaijaan2-VariableFont_wght.ttf");
+}
+/* #endregion */
+
+/* #region VARIÁVEIS */
+
+:root {
+  --cinzaDark: #151015;
+  --cinzaMedio: #252020;
+  --cinzaLeve: #302520;
+  --AMARELO: #FB0;
+}
+
+/* #endregion */
+
+/* #region BANNER  =========================================== */
+
+@keyframes banAutoPlay {
+  0% {
+    opacity: 0%;
+    z-index: 999;
+  }
+  4% {
+    opacity: 100%;
+  }
+  25% {
+    opacity: 100%;
+    z-index: 999;
+  }
+  29% {
+    opacity: 0%;
+    z-index: -1;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+
+.js-banner > * {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: 32s banAutoPlay infinite ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.js-banner > *:nth-child(1) {animation-delay: 0s}
+.js-banner > *:nth-child(2) {animation-delay: 8s}
+.js-banner > *:nth-child(3) {animation-delay: 16s}
+.js-banner > *:nth-child(4) {animation-delay: 24s}
+
+/* #endregion */
+
+/* #region BARRA LATERAL  =========================================== */
+
+.js-side{
+  width: 20%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: var(--cinzaMedio);
+  padding: 50px 10px 10px 10px;
+  z-index: 0;
+  height: 100%;
+  overflow-y: auto;
+  box-sizing: border-box;
+}
+.js-side a{
+  display: block;
+  color: #ddd;
+  padding: 10px;
+  text-decoration: none;
+  margin: 0;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  font-size: medium;
+}
+.js-side p{
+  display: block;
+  color: VAR(--AMARELO);
+  padding: 10px;
+  text-decoration: none;
+  margin: 0;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+  font-size: x-large;
+  font-weight: bold;
+}
+.js-side a:hover{
+  background-color: VAR(--AMARELO);
+  color: black;
+}
+
+/* #endregion PÁGINA ==================================*/
+
+/* #region MENU DE NAVEGAÇÃO  =========================================== */
+
+.js-nav{
+  background-color: #0007;
+  border-bottom: 1px solid var(--cinzaLeve) ;
+  backdrop-filter: blur(100px);
+  width: 100%;
+  display: block;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 1000;
+}
+
+.js-nav ul{
+  list-style-type: none;
+  margin-top: 0;
+}
+
+.js-nav .right{
+  float: right;
+}
+
+.js-nav .active{
+  background-color: black;
+  color: VAR(--AMARELO);
+  border-left: 3px solid VAR(--AMARELO);
+  border-right: 3px solid VAR(--AMARELO);
+}
+
+.js-nav li{
+  float: left;
+}
+
+.js-nav a{
+  display: block;
+  color: white;
+  padding: 10px 15px 10px 15px;
+  text-decoration: none;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  font-size: medium;
+  max-height: 40px;
+}
+
+.js-nav a:hover{
+  background-color: VAR(--AMARELO);
+  color: black;
+}
+
+.js-drop-button{
+  display: block;
+}
+
+.js-drop-content{
+  display: none;
+  position: absolute;
+  background-color: #000D;
+  color: #ddd;
+  min-width: 200px;
+  box-shadow: 0px 0px 15px #FA08;
+  z-index: 1;
+}
+
+.js-drop-button:hover .js-drop-content{
+  display: block;
+}
+
+/* #endregion ==================================*/
+
+/* #region PÁGINA ============================================================= */
+body{
+  background-color: var(--cinzaDark);
+  margin-top: 40px;
+  margin: auto;
+  width: 60%;
+}
+
+.js-post{
+  background-color: var(--cinzaMedio);
+  margin: 15px;
+  margin-bottom: 15px;
+  padding: 30px;
+  border-bottom: #FB0 1px thin;
+  box-sizing: border-box;
+}
+/* #endregion PÁGINA ================================== */
+
+/* #region FORMATAÇÃO ================================== */
+p{
+  font-size: x-large;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
+  color: #ddd;
+  text-align: justify;
+}
+hr{
+  border-width: 1px 0 0 0;
+  border-color: #FB0;
+  margin: 20px auto 20px auto;
+}
+h1{
+  color: var(--AMARELO);
+  font-size: 40pt;
+  font-family: Baloo;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+h2{
+  color: var(--AMARELO);
+  font-family: Baloo;
+  font-weight: bold;
+  font-size: 30pt;
+  text-align: center;
+}
+h3{
+  color: #ddd;
+  font-family: Baloo;
+  font-weight: bold;
+  font-size: 25pt;
+  text-align: left;
+}
+.js-button{
+  display: inline-block;
+  color: white;
+  background-color: var(--cinzaDark);
+  border: var(--AMARELO) 1px solid;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
+}
+.js-button:hover{
+  color: black;
+  background-color: var(--AMARELO);
+}
+.notas{
+  color: var(--AMARELO);
+  border: var(--AMARELO) 1px solid;
+  text-align: right;
+  font-weight: bold;
+  font-size: x-large;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
+  pointer-events: none;
+  margin: 10px 0px 10px 180px;
+  padding: 30px;
+}
+.codigo{
+  color: cyan;
+  font-size: large;
+  font-family: Tech, 'Courier New', Courier, monospace;
+  margin-left: 60px;
+}
+.js-post img{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: block;
+  pointer-events: none;
+  border: var(--AMARELO) 1px solid;
+}
+.js-table{
+  margin: auto;
+  color: #ddd;
+  font-size: xx-large;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
+  padding: 15px;
+}
+.js-table th{
+  color: VAR(--AMARELO);
+  padding: 5px 30px 5px 30px;
+  border-bottom: VAR(--AMARELO) 1px solid;
+  text-align: left;
+}
+.js-table td{
+  padding: 5px 30px 5px 30px;
+  border-bottom: #333 1px solid;
+}
+/* #endregion ================================== */
+
+
+
+
+/* #region CONFIGURAÇÕES DO SITE ==================================================== */
+
+/* Seleção  */
+::selection{
+  color: black;
+  background-color: var(--AMARELO);
+}
+::-moz-selection{
+  color: black;
+  background-color: var(--AMARELO);
+}
+
+/* Espessura da barra de roladem */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Fundo da barra de roladem */
+::-webkit-scrollbar-track {
+  border: #333 1px solid;
+  background: var(--CINZADARK);
+}
+ 
+/* Barra de roladem */
+::-webkit-scrollbar-thumb {
+  background-color: var(--AMARELO); 
+  border-radius: 10px;
+  min-height: 100px;
+}
+
+/* Barra de roladem : Hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ddd; 
+}
+
+/* #endregion CONFIGURAÇÕES DO SITE ==================================*/

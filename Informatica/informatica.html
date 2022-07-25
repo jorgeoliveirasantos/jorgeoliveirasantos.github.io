@@ -3,126 +3,193 @@
 <head>
   <title>Informática</title>
   <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" type="image/x-icon" href="../logo.svg">
   <script src="../javascript/index.js"></script>
+  <script src="informatica.js"></script>
   <meta charset="UTF-8"/>
   <!--SEO-->
   <meta name="author" content="Jorge Souza Oliveira dos Santos"/>
   <meta name="description" content="Informática Básica e Avançada - Curso Completo">
   <meta name="keywords" content="informatica, curso, computador, computacao, windows, microsoft">
 </head>
-<menuBar></menuBar>
+<menu-bar></menu-bar>
 <!-- #region Menu Lateral (Indice de tópicos) -->
 <div class="js-side">
   <p>Informática Básica e Avançada</p>
-  <a href="#top">Introdução</a>
+  <a onclick="navigation('0')">Introdução</a>
   <p>O Computador</p>
-  <a href="#001">O que é um Computador</a>
-  <a href="#002">Software e Hardware</a>
-  <a href="#003">Gabinete e Periféricos</a>
-  <a href="#004">Processador</a>
-  <a href="#005">Placa Mãe</a>
-  <a href="#006">Disco Rígido e Disco Sólido</a>
-  <a href="#007">Memória RAM</a>
+  <a onclick="navigation('1')">O que é um Computador</a>
+  <a onclick="navigation('2')">Software e Hardware</a>
+  <a onclick="navigation('3')">Gabinete e Periféricos</a>
+  <a onclick="navigation('4')">Processador</a>
+  <a onclick="navigation('5')">Placa Mãe</a>
+  <a onclick="navigation('6')">Disco Rígido e Disco Sólido</a>
+  <a onclick="navigation('7')">Memória RAM</a>
   <hr>
   
   <p>Introdução ao Windows</p>
-  <a href="#008">Um pouco de História</a>
-  <a href="#009">O Conceito de Janela</a>
-  <a href="#010">Área de Trabalho</a>
-  <a href="#011">Mouse</a>
-  <a href="#012">Barra de Tarefas e Menu Iniciar</a>
-  <a href="#013">Configurações do Windows</a>
-  <a href="#014">Explorador de Arquivos</a>
-  <a href="#015">Teclado</a>
-  <a href="#016">Unidades de Armazenamento</a>
-  <a href="#017">Acessórios do Windows</a>
-  <a href="#018">Manipulando Textos</a>
+  <a onclick="navigation('8')">Um pouco de História</a>
+  <a onclick="navigation('9')">O Conceito de Janela</a>
+  <a onclick="navigation('10')">Área de Trabalho</a>
+  <a onclick="navigation('11')">Mouse</a>
+  <a onclick="navigation('12')">Barra de Tarefas e Menu Iniciar</a>
+  <a onclick="navigation('13')">Configurações do Windows</a>
+  <a onclick="navigation('14')">Explorador de Arquivos</a>
+  <a onclick="navigation('15')">Teclado</a>
+  <a onclick="navigation('16')">Unidades de Armazenamento</a>
+  <a onclick="navigation('17')">Acessórios do Windows</a>
+  <a onclick="navigation('18')">Manipulando Textos</a>
   <hr>
   
   
   <p>Introdução à Internet</p>
-  <a href="#019">Microsoft Edge</a>
-  <a href="#020">Pesquisa na Web</a>
-  <a href="#021">Download Arquivos</a>
-  <a href="#022">Download de Aplicativos e Programas</a>
-  <a href="#023">Google</a>
-  <a href="#025">Conta Microsoft</a>
-  <a href="#026">Sites Úteis</a>
-  <a href="#027">Cache e Cookies</a>
+  <a onclick="navigation('19')">Microsoft Edge</a>
+  <a onclick="navigation('20')">Pesquisa na Web</a>
+  <a onclick="navigation('21')">Download Arquivos</a>
+  <a onclick="navigation('22')">Download de Aplicativos e Programas</a>
+  <a onclick="navigation('23')">Google</a>
+  <a onclick="navigation('25')">Conta Microsoft</a>
+  <a onclick="navigation('26')">Sites Úteis</a>
+  <a onclick="navigation('27')">Cache e Cookies</a>
   <hr>
   
   
   <p>Introdução ao Office</p>
-  <a href="#028">Microsoft Word</a>
-  <a href="#029">Microsoft PowerPoint</a>
-  <a href="#030">Microsoft Excel</a>
-  <a href="#031">Microsoft Publisher</a>
+  <a onclick="navigation('28')">Microsoft Word</a>
+  <a onclick="navigation('29')">Microsoft PowerPoint</a>
+  <a onclick="navigation('30')">Microsoft Excel</a>
+  <a onclick="navigation('31')">Microsoft Publisher</a>
   <hr>
   
   
   <p>Introdução à Informática Avançada</p>
-  <a href="#032">Esteja protegido</a>
-  <a href="#033">Senhas</a>
-  <a href="#034">Serviços de Nuvem</a>
-  <a href="#035">Instalação e Desinstalação de Aplicativos</a>
-  <a href="#036">Microsoft Defender</a>
-  <a href="#037">Gerenciador de Tarefas</a>
-  <a href="#038">Saúde do Computador</a>
-  <a href="#039">Limpeza de Disco</a>
-  <a href="#040">Verificação de Disco</a>
-  <a href="#041">Verificação de Arquivos</a>
-  <a href="#042">Modo de Segurança</a>
-  <a href="#043">Restauração, Backup e Formatação</a>
+  <a onclick="navigation('32')">Esteja protegido</a>
+  <a onclick="navigation('33')">Senhas</a>
+  <a onclick="navigation('34')">Serviços de Nuvem</a>
+  <a onclick="navigation('35')">Instalação e Desinstalação de Aplicativos</a>
+  <a onclick="navigation('36')">Microsoft Defender</a>
+  <a onclick="navigation('37')">Gerenciador de Tarefas</a>
+  <a onclick="navigation('38')">Saúde do Computador</a>
+  <a onclick="navigation('39')">Limpeza de Disco</a>
+  <a onclick="navigation('40')">Verificação de Disco</a>
+  <a onclick="navigation('41')">Verificação de Arquivos</a>
+  <a onclick="navigation('42')">Modo de Segurança</a>
+  <a onclick="navigation('43')">Restauração, Backup e Formatação</a>
   <hr>
   
   
   <p>O Sistema Operacional</p>
-  <a href="#044">A Pasta Raiz</a>
-  <a href="#045">Log de Eventos</a>
-  <a href="#046">Serviços</a>
-  <a href="#047">Drivers e Dispositivos</a>
-  <a href="#048">Agendador de Tarefas</a>
-  <a href="#049">Gerenciamento de Disco</a>
-  <a href="#050">Windows PowerShell</a>
-  <a href="#051">Rede e Compartilhamento</a>
+  <a onclick="navigation('44')">A Pasta Raiz</a>
+  <a onclick="navigation('45')">Log de Eventos</a>
+  <a onclick="navigation('46')">Serviços</a>
+  <a onclick="navigation('47')">Drivers e Dispositivos</a>
+  <a onclick="navigation('48')">Agendador de Tarefas</a>
+  <a onclick="navigation('49')">Gerenciamento de Disco</a>
+  <a onclick="navigation('50')">Windows PowerShell</a>
+  <a onclick="navigation('51')">Rede e Compartilhamento</a>
   <hr>
   
   
   <p>Próximos Passos</p>
-  <a href="#052">Próximos passos depois da Informática Básica</a>
-  <a href="#053">Programação</a>
-  <a href="#054">Design Gráfico</a>
-  <a href="#055">Software Livre</a>
+  <a onclick="navigation('52')">Próximos passos depois da Informática Básica</a>
+  <a onclick="navigation('53')">Programação</a>
+  <a onclick="navigation('54')">Design Gráfico</a>
+  <a onclick="navigation('55')">Software Livre</a>
+  
 </div>
 <!-- #endregion -->
 
-<body>
-<div class="js-post">
-  <h2>Introdução</h2>
-  <img src="big_cover_front.png" style="float: left; margin: 10px; width: 300px;"/>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Esta página é uma compilação de títulos retirados em ordem do Curso de Informática Básica e Avançada. 
-  Este material pode ser adquirido impresso no site da Amazon ou por meio de seu instrutor, também pode ser adquirido em formato digital (e-book) tanto no formato Kindle na página do produto na Amazon ou diretamente neste site. Este é o material oficial do Curso de Informática Básica e Avançada.</p>
-  
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  A venda desta apostila por qualquer outro meio que não seja pelo site citado ou diretamente pelo autor do curso está desautorizada.</p>
-  
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Todas as marcas citadas neste livro estão protegidas por seus próprios direitos autorais. A utilização das mesmas serve unicamente para fim didático.</p>
-  
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  O Autor, não possui qualquer ligação com nenhuma marca citada e não promove o marketing das mesmas.</p>
-  
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  Desenvolver uma apostila não é uma tarefa fácil, requer bastante conhecimento sobre o assunto e algum tempo de prática. Com a experiência isso se torna mais fácil. Mas desenvolver uma metodologia de ensino é bem diferente, a gente só aprende isso com experiência em sala de aula. Isso você não encontra no Youtube. Esse é o diferencial dos cursos disponibilizados por mim, uma metodologia de ensino que mescla experiência de sala de aula, experiência em escrita de livros (pois o autor é também escritor), e experiência no cuidado com os alunos. Tudo para garantir que ao término do curso não tenha apenas ocorrido um processo mecânico, mas para que o aluno possa começar do zero e sair dominando o assunto para se inserir no mercado de trabalho.</p>
-  
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    Estou constantemente desenvolvendo novos materiais e novos cursos, além de atualizar os materiais já produzidos, para acompanhar as alterações constantes nos produtos digitais. Portanto sugiro que esteja sempre atento em meu site para verificar se há algo novo que você goste,
-    <a style="color: white;" href="https://jorgeoliveirasantos.github.io/sobre.html">saiba mais.</a>
-  </p>
-
-  <a class="js-button" href="https://clubedeautores.com.br/livro/curso-de-informatica-basica-e-avancada" target="_blank">Adquirir o livro impresso ou digital</a>
+<div class="js-page" id="mainView" onload="reloadPage()">
+<div style="height: fit-content; margin: 25px;">
+  <button id="btnAnterior" onclick="navigation(--atual)" class="js-button" style="float: left; display: none;">Anterior</button>
+  <button id="btnProxima" onclick="navigation(++atual)" class="js-button" style="float: right;">Próxima</button>
 </div>
-</body>
+
+<iframe id="0" class="js-post-frame" src="000/intro.html"  width="100%"  scrolling="no" height="1420" style="display: block;"></iframe>
+<iframe id="1" class="js-post-frame" src="001/o_que_e.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="2" class="js-post-frame" src="002/hardware_e_software.html"  width="100%"  scrolling="no" height="950"></iframe>
+<iframe id="3" class="js-post-frame" src="003/gabinete.html"  width="100%"  scrolling="no" height="950"></iframe>
+<iframe id="4" class="js-post-frame" src="004/processador.html"  width="100%"  scrolling="no" height="950"></iframe>
+<iframe id="5" class="js-post-frame" src="005/placa.html"  width="100%"  scrolling="no" height="950"></iframe>
+<iframe id="6" class="js-post-frame" src="006/disco.html"  width="100%"  scrolling="no" height="1450"></iframe>
+<iframe id="7" class="js-post-frame" src="007/memoria.html"  width="100%"  scrolling="no" height="980"></iframe>
+<iframe id="8" class="js-post-frame" src="008/historia.html"  width="100%"  scrolling="no" height="850"></iframe>
+<iframe id="9" class="js-post-frame" src="009/janela.html"  width="100%"  scrolling="no" height="3150"></iframe>
+<iframe id="10" class="js-post-frame" src="010/desktop.html"  width="100%"  scrolling="no" height="2750"></iframe>
+<iframe id="11" class="js-post-frame" src="011/mouse.html"  width="100%"  scrolling="no" height="2450"></iframe>
+<iframe id="12" class="js-post-frame" src="012/tarefas.html"  width="100%"  scrolling="no" height="2250"></iframe>
+<iframe id="13" class="js-post-frame" src="013/configuracoes.html"  width="100%"  scrolling="no" height="7350"></iframe>
+<iframe id="14" class="js-post-frame" src="014/explorer.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="15" class="js-post-frame" src="015/teclado.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="16" class="js-post-frame" src="016/armazenamento.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="17" class="js-post-frame" src="017/acessorios.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="18" class="js-post-frame" src="018/textos.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="19" class="js-post-frame" src="019/edge.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="20" class="js-post-frame" src="020/pesquisa.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="21" class="js-post-frame" src="021/download.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="22" class="js-post-frame" src="022/download2.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="23" class="js-post-frame" src="023/google.html"  width="100%"  scrolling="no" height="1050"></iframe>
+
+<!-- REPETIDO: -->
+<iframe id="24" class="js-post-frame" src="023/google.html"  width="100%"  scrolling="no" height="1050"></iframe>
+
+<iframe id="25" class="js-post-frame" src="025/microsoft.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="26" class="js-post-frame" src="026/sites.html"  width="100%"  scrolling="no" height="1050"></iframe>
+<iframe id="27" class="js-post-frame" src="027/cookies.html"  width="100%"  scrolling="no" height="1050"></iframe>
+
+<div id="28" class="js-post-frame">
+<iframe src="028/office.html"  width="100%"  scrolling="no" height="2700"></iframe>
+<iframe src="028/word.html"  width="100%"  scrolling="no" height="3850"></iframe>
+<iframe src="028/exercicio1.html"  width="100%"  scrolling="no" height="8750"></iframe>
+<iframe src="028/exercicio2.html"  width="100%"  scrolling="no" height="1830"></iframe>
+<style>
+  .js-post-frame iframe{border: none;}
+</style>
+</div>
+
+<iframe id="29" class="js-post-frame" src="029/powerpoint.html"  width="100%"  scrolling="no" height="12000"></iframe>
+
+<div id="30" class="js-post-frame">
+  <iframe src="030/excel.html"  width="100%"  scrolling="no" height="10850"></iframe>
+  <iframe src="030/exercicio.html"  width="100%"  scrolling="no" height="2600"></iframe>
+  <iframe src="030/excel2.html"  width="100%"  scrolling="no" height="9850"></iframe>
+  <iframe src="030/exercicio2.html"  width="100%"  scrolling="no" height="11250"></iframe>
+<style>
+  .js-post-frame iframe{border: none;}
+</style>
+</div>
+
+
+
+<iframe id="31" class="js-post-frame" src="031/publisher.html"  width="100%"  scrolling="no" height="12250"></iframe>
+<iframe id="32" class="js-post-frame" src="032/esteja.html"  width="100%"  scrolling="no" height="3650"></iframe>
+<iframe id="33" class="js-post-frame" src="033/senhas.html"  width="100%"  scrolling="no" height="3050"></iframe>
+<iframe id="34" class="js-post-frame" src="034/nuvem.html"  width="100%"  scrolling="no" height="950"></iframe>
+<iframe id="35" class="js-post-frame" src="035/instalacao.html"  width="100%"  scrolling="no" height="2350"></iframe>
+<iframe id="36" class="js-post-frame" src="036/msdefender.html"  width="100%"  scrolling="no" height="3300"></iframe>
+<iframe id="37" class="js-post-frame" src="037/gerenciador.html"  width="100%"  scrolling="no" height="2100"></iframe>
+<iframe id="38" class="js-post-frame" src="038/saude.html"  width="100%"  scrolling="no" height="1250"></iframe>
+<iframe id="39" class="js-post-frame" src="039/limpeza.html"  width="100%"  scrolling="no" height="600"></iframe>
+<iframe id="40" class="js-post-frame" src="040/verificacao.html"  width="100%"  scrolling="no" height="1250"></iframe>
+<iframe id="41" class="js-post-frame" src="041/arquivos.html"  width="100%"  scrolling="no" height="1100"></iframe>
+<iframe id="42" class="js-post-frame" src="042/modo.html"  width="100%"  scrolling="no" height="1550"></iframe>
+<iframe id="43" class="js-post-frame" src="043/restauracao.html"  width="100%"  scrolling="no" height="5100"></iframe>
+<iframe id="44" class="js-post-frame" src="044/raiz.html"  width="100%"  scrolling="no" height="1750"></iframe>
+<iframe id="45" class="js-post-frame" src="045/log.html"  width="100%"  scrolling="no" height="1100"></iframe>
+<iframe id="46" class="js-post-frame" src="046/servicos.html"  width="100%"  scrolling="no" height="1450"></iframe>
+<iframe id="47" class="js-post-frame" src="047/drivers.html"  width="100%"  scrolling="no" height="1550"></iframe>
+<iframe id="48" class="js-post-frame" src="048/agendador.html"  width="100%"  scrolling="no" height="1500"></iframe>
+<iframe id="49" class="js-post-frame" src="049/gerenciamento.html"  width="100%"  scrolling="no" height="1400"></iframe>
+<iframe id="50" class="js-post-frame" src="050/powershell.html"  width="100%"  scrolling="no" height="3700"></iframe>
+<iframe id="51" class="js-post-frame" src="051/rede.html"  width="100%"  scrolling="no" height="3850"></iframe>
+<iframe id="52" class="js-post-frame" src="052/proximo.html"  width="100%"  scrolling="no" height="1400"></iframe>
+<iframe id="53" class="js-post-frame" src="053/programacao.html"  width="100%"  scrolling="no" height="2750"></iframe>
+<iframe id="54" class="js-post-frame" src="054/design.html"  width="100%"  scrolling="no" height="4550"></iframe>
+<iframe id="55" class="js-post-frame" src="055/open.html"  width="100%"  scrolling="no" height="1300"></iframe>
+
+</div>
+
 </html>
 
+<footer-bar></footer-bar>
+<btn-up></btn-up>

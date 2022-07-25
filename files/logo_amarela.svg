@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="100mm"
+   height="100mm"
+   viewBox="0 0 100 100"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="logo_amarela.svg"
+   inkscape:export-filename="C:\Users\jorge\bitmap.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#4c4c4c"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.96078431"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="mm"
+     showgrid="false"
+     width="100mm"
+     inkscape:zoom="0.89067215"
+     inkscape:cx="191.98984"
+     inkscape:cy="200.41044"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect11245" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect24255" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect26871" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect26873" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath26133">
+      <path
+         id="path26135"
+         style="fill:#ffe6d5;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         d="M -213.18329,299.51315 H 83.816724 v 78.42012 H -213.18329 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9041">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9043"
+         width="719.18512"
+         height="669.04785"
+         x="-1932.839"
+         y="-1354.2963" />
+    </clipPath>
+    <filter
+       height="1.1431116"
+       width="1.0853842"
+       y="-0.071555786"
+       x="-0.042692166"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter9825">
+      <feGaussianBlur
+         stdDeviation="21.1559 19.9476"
+         result="blur"
+         id="feGaussianBlur9819" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0 "
+         result="colormatrix"
+         id="feColorMatrix9821" />
+      <feComposite
+         in="colormatrix"
+         in2="SourceGraphic"
+         operator="in"
+         id="feComposite9823" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9925">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9927"
+         width="1189.3085"
+         height="669.04779"
+         x="-2167.9006"
+         y="-288.11829" />
+    </clipPath>
+    <rect
+       x="1328.6983"
+       y="406.21759"
+       width="675.21786"
+       height="336.92964"
+       id="rect11245-3" />
+    <rect
+       x="1328.6983"
+       y="406.21759"
+       width="675.21786"
+       height="336.92964"
+       id="rect24255-4" />
+    <rect
+       x="1328.6983"
+       y="406.21759"
+       width="675.21786"
+       height="336.92964"
+       id="rect26871-2" />
+    <rect
+       x="1328.6983"
+       y="406.21759"
+       width="675.21786"
+       height="336.92964"
+       id="rect26873-3" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath26133-2">
+      <path
+         id="path26135-3"
+         style="fill:#ffe6d5;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         d="M -213.18329,299.51315 H 83.816724 v 78.42012 H -213.18329 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9041-0">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9043-2"
+         width="719.18512"
+         height="669.04785"
+         x="-1932.839"
+         y="-1354.2963" />
+    </clipPath>
+    <filter
+       height="1.1431116"
+       width="1.0853843"
+       y="-0.071555783"
+       x="-0.042692167"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter9825-9">
+      <feGaussianBlur
+         stdDeviation="21.1559 19.9476"
+         result="blur"
+         id="feGaussianBlur9819-9" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0 "
+         result="colormatrix"
+         id="feColorMatrix9821-3" />
+      <feComposite
+         in="colormatrix"
+         in2="SourceGraphic"
+         operator="in"
+         id="feComposite9823-0" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9925-5">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9927-6"
+         width="1189.3085"
+         height="669.04779"
+         x="-2167.9006"
+         y="-288.11829" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5212">
+      <rect
+         style="fill:#800000;fill-opacity:0.873585;stroke:none;stroke-width:2.565;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         id="rect5214"
+         width="73.076828"
+         height="72.77977"
+         x="581.6441"
+         y="92.088692" />
+    </clipPath>
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect11245-7" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect24255-43" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect26871-28" />
+    <rect
+       x="1328.6982"
+       y="406.21759"
+       width="675.21783"
+       height="336.92963"
+       id="rect26873-4" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath26133-8">
+      <path
+         id="path26135-9"
+         style="fill:#ffe6d5;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         d="M -213.18329,299.51315 H 83.816724 v 78.42012 H -213.18329 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9041-1">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9043-4"
+         width="719.18512"
+         height="669.04785"
+         x="-1932.839"
+         y="-1354.2963" />
+    </clipPath>
+    <filter
+       height="1.1431116"
+       width="1.0853842"
+       y="-0.071555786"
+       x="-0.042692166"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Blur"
+       id="filter9825-7">
+      <feGaussianBlur
+         stdDeviation="21.1559 19.9476"
+         result="blur"
+         id="feGaussianBlur9819-3" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0 "
+         result="colormatrix"
+         id="feColorMatrix9821-8" />
+      <feComposite
+         in="colormatrix"
+         in2="SourceGraphic"
+         operator="in"
+         id="feComposite9823-5" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9925-4">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9927-7"
+         width="1189.3085"
+         height="669.04779"
+         x="-2167.9006"
+         y="-288.11829" />
+    </clipPath>
+    <rect
+       x="1328.6983"
+       y="406.21759"
+       width="675.21786"
+       height="336.92964"
+       id="rect11245-3-2" />
+    <rect
+       x="1328.6983"
+       y="406.21759"
+       width="675.21786"
+       height="336.92964"
+       id="rect24255-4-8" />
+    <rect
+       x="1328.6983"
+       y="406.21759"
+       width="675.21786"
+       height="336.92964"
+       id="rect26871-2-8" />
+    <rect
+       x="1328.6983"
+       y="406.21759"
+       width="675.21786"
+       height="336.92964"
+       id="rect26873-3-4" />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath26133-2-0">
+      <path
+         id="path26135-3-0"
+         style="fill:#ffe6d5;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         d="M -213.18329,299.51315 H 83.816724 v 78.42012 H -213.18329 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9041-0-3">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9043-2-9"
+         width="719.18512"
+         height="669.04785"
+         x="-1932.839"
+         y="-1354.2963" />
+    </clipPath>
+    <filter
+       height="1.1431116"
+       width="1.0853843"
+       y="-0.071555783"
+       x="-0.042692167"
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter9825-9-7">
+      <feGaussianBlur
+         stdDeviation="21.1559 19.9476"
+         result="blur"
+         id="feGaussianBlur9819-9-9" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0 "
+         result="colormatrix"
+         id="feColorMatrix9821-3-6" />
+      <feComposite
+         in="colormatrix"
+         in2="SourceGraphic"
+         operator="in"
+         id="feComposite9823-0-3" />
+    </filter>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath9925-5-5">
+      <rect
+         style="opacity:0.311947;fill:#008080;fill-opacity:1;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill"
+         id="rect9927-6-3"
+         width="1189.3085"
+         height="669.04779"
+         x="-2167.9006"
+         y="-288.11829" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5212-9">
+      <rect
+         style="fill:#800000;fill-opacity:0.873585;stroke:none;stroke-width:2.565;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke fill markers"
+         id="rect5214-2"
+         width="73.076828"
+         height="72.77977"
+         x="581.6441"
+         y="92.088692" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Camada 2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       id="path4626"
+       style="color:#000000;fill:#ffbb00;fill-opacity:1;stroke-width:3.77953;stroke-linecap:round;stroke-linejoin:round;-inkscape-stroke:none;paint-order:markers stroke fill"
+       d="M 188.85742 0 C 182.68976 0.11677546 176.53101 0.53673481 170.4043 1.2558594 A 6.3552116 6.3552116 0 0 0 164.79297 7.5664062 L 164.79297 69.367188 A 6.3552116 6.3552116 0 0 0 172.13086 75.650391 C 177.42064 74.819212 182.76588 74.421006 188.11914 74.335938 L 188.11914 303.625 C 166.56847 303.33918 145.52052 297.04546 127.4043 285.34766 A 6.3552116 6.3552116 0 0 0 117.60156 290.68359 L 117.60156 359.13672 A 6.3552116 6.3552116 0 0 0 121.64648 365.05664 C 143.10088 373.4173 165.90631 377.79041 188.93164 377.95312 A 6.3552116 6.3552116 0 0 0 188.97656 377.95312 C 213.18359 377.94028 237.16588 373.27542 259.61328 364.21484 A 6.3552116 6.3552116 0 0 0 263.5918 358.32422 L 263.5918 344.16602 L 263.5918 288.41797 L 263.5918 89.535156 L 263.5918 26.279297 L 263.5918 19.628906 A 6.3552116 6.3552116 0 0 0 259.61328 13.738281 C 237.16589 4.6776728 213.18359 0.012749594 188.97656 0 A 6.3552116 6.3552116 0 0 0 188.77734 0.08203125 L 188.85742 0 z M 189.02734 12.71875 C 210.1998 12.736211 231.08668 16.894821 250.88086 24.345703 L 250.88086 26.279297 L 250.88086 89.535156 L 250.88086 288.41797 L 250.88086 344.16602 L 250.88086 353.60742 C 231.07726 361.06183 210.18076 365.22644 188.99805 365.24023 C 168.93789 365.09595 149.15396 361.20969 130.3125 354.38281 L 130.3125 301.41016 C 148.3827 310.9418 168.40067 316.291 188.93945 316.40234 A 6.3552116 6.3552116 0 0 0 189.35352 316.38867 C 191.28507 316.27487 193.20844 316.11765 195.13281 315.91602 A 6.3552116 6.3552116 0 0 0 200.82422 309.5957 L 200.82422 68.355469 A 6.3552116 6.3552116 0 0 0 195.13281 62.037109 C 193.20844 61.835472 191.28507 61.678255 189.35352 61.564453 A 6.3552116 6.3552116 0 0 0 188.92383 61.550781 C 185.09624 61.581017 181.30491 62.113968 177.49805 62.488281 L 177.49805 13.494141 C 181.33868 13.167227 185.17254 12.793197 189.02734 12.71875 z M 277.58984 23.324219 A 6.3552115 6.3552115 0 0 0 271.77148 29.652344 L 271.77148 107.56055 A 6.3552115 6.3552115 0 0 0 273.44727 111.85742 C 292.7828 132.89984 303.56594 160.40059 303.69141 188.97656 C 303.56596 217.55256 292.78282 245.05326 273.44727 266.0957 A 6.3552115 6.3552115 0 0 0 271.77148 270.39062 L 271.77148 348.29883 A 6.3552115 6.3552115 0 0 0 281.22852 353.84375 C 340.92464 320.45231 377.9307 257.37679 377.95312 188.97656 C 377.93067 120.57638 340.92461 57.500797 281.22852 24.109375 A 6.3552115 6.3552115 0 0 0 277.58984 23.324219 z M 100.36328 23.78125 A 6.3552115 6.3552115 0 0 0 96.724609 24.566406 C 37.176268 57.874816 0.1938709 120.73051 0 188.96094 A 6.3552115 6.3552115 0 0 0 0 188.99023 C 0.19388077 257.2207 37.176277 320.07831 96.724609 353.38672 A 6.3552115 6.3552115 0 0 0 106.18164 347.8418 L 106.18164 270.39062 A 6.3552115 6.3552115 0 0 0 104.50586 266.0957 C 85.17031 245.05326 74.387165 217.55256 74.261719 188.97656 C 74.387199 160.40059 85.170329 132.89984 104.50586 111.85742 A 6.3552115 6.3552115 0 0 0 106.18164 107.56055 L 106.18164 30.111328 A 6.3552115 6.3552115 0 0 0 100.36328 23.78125 z M 284.48242 41.361328 C 334.45039 73.6822 365.22051 128.95314 365.24023 188.97656 C 365.22054 249.00001 334.45041 304.27091 284.48242 336.5918 L 284.48242 272.49414 C 304.79363 249.39647 316.275 219.82585 316.40234 189.00586 A 6.3552115 6.3552115 0 0 0 316.40234 189.00391 A 6.3552115 6.3552115 0 0 0 316.40234 189.00195 A 6.3552115 6.3552115 0 0 0 316.40234 189 A 6.3552115 6.3552115 0 0 0 316.40234 188.99805 A 6.3552115 6.3552115 0 0 0 316.40234 188.99609 A 6.3552115 6.3552115 0 0 0 316.40234 188.99414 A 6.3552115 6.3552115 0 0 0 316.40234 188.99219 A 6.3552115 6.3552115 0 0 0 316.40234 188.99023 A 6.3552115 6.3552115 0 0 0 316.40234 188.98828 A 6.3552115 6.3552115 0 0 0 316.40234 188.98633 A 6.3552115 6.3552115 0 0 0 316.40234 188.98438 A 6.3552115 6.3552115 0 0 0 316.40234 188.98242 A 6.3552115 6.3552115 0 0 0 316.40234 188.98047 A 6.3552115 6.3552115 0 0 0 316.40234 188.97852 A 6.3552115 6.3552115 0 0 0 316.40234 188.97656 A 6.3552115 6.3552115 0 0 0 316.40234 188.97461 A 6.3552115 6.3552115 0 0 0 316.40234 188.97266 A 6.3552115 6.3552115 0 0 0 316.40234 188.9707 A 6.3552115 6.3552115 0 0 0 316.40234 188.96875 A 6.3552115 6.3552115 0 0 0 316.40234 188.9668 A 6.3552115 6.3552115 0 0 0 316.40234 188.96484 A 6.3552115 6.3552115 0 0 0 316.40234 188.96289 A 6.3552115 6.3552115 0 0 0 316.40234 188.96094 A 6.3552115 6.3552115 0 0 0 316.40234 188.95898 A 6.3552115 6.3552115 0 0 0 316.40234 188.95703 A 6.3552115 6.3552115 0 0 0 316.40234 188.95508 A 6.3552115 6.3552115 0 0 0 316.40234 188.95312 A 6.3552115 6.3552115 0 0 0 316.40234 188.95117 A 6.3552115 6.3552115 0 0 0 316.40234 188.94922 A 6.3552115 6.3552115 0 0 0 316.40234 188.94727 C 316.27497 158.12732 304.79362 128.55468 284.48242 105.45703 L 284.48242 41.361328 z M 93.46875 41.810547 L 93.46875 105.45703 C 73.157561 128.55468 61.678148 158.12731 61.550781 188.94727 A 6.3552115 6.3552115 0 0 0 61.550781 189.00586 C 61.678114 219.82585 73.157542 249.39647 93.46875 272.49414 L 93.46875 336.14258 C 43.637212 303.91198 12.891064 248.84528 12.710938 188.99023 L 12.710938 188.97656 C 12.710923 188.97165 12.710949 188.96585 12.710938 188.96094 C 12.891052 129.10586 43.637204 74.041146 93.46875 41.810547 z "
+       transform="scale(0.26458333)" />
+    <g
+       id="layer2-9"
+       inkscape:label="Camada 2" />
+  </g>
+</svg>

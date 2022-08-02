@@ -1,21 +1,21 @@
-let atual = 0;
-function navigation(num){
-  atual = num;
-  sessionStorage.setItem("atual", atual);
+let postAtual = 0;
+function navigation(post) {
+  localStorage.setItem("atual", post);
+  postAtual = post;
 
-  for (let i = 0; i <= 55; i++) {
+  for (let i = 0; i <= 7; i++) {
     document.getElementById(i).style.display = 'none';
   }
-  let elemento = document.getElementById(num);
+  let elemento = document.getElementById(postAtual);
   elemento.style.display = 'block';
   document.getElementById('mainView').Child = elemento;
-  if (atual > 0) {
+  if (postAtual > 0) {
     document.getElementById('btnAnterior').style.display = 'block';
   }
   else{
     document.getElementById('btnAnterior').style.display = 'none';
   }
-  if (atual >= 55) {
+  if (postAtual >= 7) {
     document.getElementById('btnProxima').style.display = 'none';
   }
   else{
@@ -24,11 +24,6 @@ function navigation(num){
 }
 
 function reloadPage(){
-  let item = sessionStorage.getItem("atual");
-  if (item != null){
-    atual = Number(item);
-  }else{
-    atual = 0;
-  }
-  navigation(atual);
+  const item = localStorage.getItem("atual");
+  navigation(item);
 }

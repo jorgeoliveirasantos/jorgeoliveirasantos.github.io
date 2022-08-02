@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Programação</title>
+  <title>Web Design</title>
   <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" type="image/x-icon" href="../logo.svg">
   <script src="../javascript/index.js"></script>
   <script src="webdesign.js"></script>
   <meta charset="UTF-8"/>
@@ -15,7 +16,7 @@
 <menu-bar></menu-bar>
 
 <!-- #region Menu Lateral (Indice de tópicos) -->
-<!-- #region Menu Lateral (Indice de tópicos) -->
+
 <div class="js-side">
   <p>Informática Básica e Avançada</p>
   <a onclick="navigation('0')">Introdução</a>
@@ -27,6 +28,23 @@
 </div>
 <!-- #endregion -->
 
+
+<div class="js-page" id="mainView" onload="reloadPage()">
+  <div style="height: fit-content; margin: 25px;">
+    <button id="btnAnterior" onclick="navigation(--postAtual)" class="js-button" style="float: left; display: none;">Anterior</button>
+    <button id="btnProxima" onclick="navigation(++postAtual)" class="js-button" style="float: right;">Próxima</button>
+  </div>
+
+  <iframe id="0" class="js-post-frame" src="000/intro.html"  width="100%"  scrolling="no" height="1050"style="display: block;"></iframe>
+  <iframe id="1" class="js-post-frame" src="001/ohtml.html"  width="100%"  scrolling="no" height="1050"></iframe>
+  <iframe id="2" class="js-post-frame" src="002/marcas.html"  width="100%"  scrolling="no" height="1050"></iframe>
+  <iframe id="3" class="js-post-frame" src="003/estrutura.html"  width="100%"  scrolling="no" height="1050"></iframe>
+  <iframe id="4" class="js-post-frame" src="004/004.html"  width="100%"  scrolling="no" height="1050"></iframe>
+  <iframe id="5" class="js-post-frame" src="005/005.html"  width="100%"  scrolling="no" height="1050"></iframe>
+  <iframe id="6" class="js-post-frame" src="006/006.html"  width="100%"  scrolling="no" height="1050"></iframe>
+  <iframe id="7" class="js-post-frame" src="007/007.html"  width="100%"  scrolling="no" height="1050"></iframe>
+
+</div>
 
 </html>
 <footer-bar></footer-bar>

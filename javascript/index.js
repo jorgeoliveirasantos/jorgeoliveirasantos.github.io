@@ -44,7 +44,7 @@ class BtnUp extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
 <a href="#" title="Voltar para o topo">
-  <svg class="btnUp" width="50" height="50" viewBox="0 0 50 50"><path style="stroke:none" d="M 25 0 C 11.1875 0 2.3684758e-15 11.1875 0 25 C 0 38.812501 11.1875 50 25 50 C 38.812502 50 50 38.812501 50 25 C 50 11.1875 38.812502 -4.7369516e-15 25 0 z M 25 13.005859 L 36.994141 25 L 27.998047 25 L 27.998047 36.994141 L 22.001953 36.994141 L 22.001953 25 L 13.005859 25 L 25 13.005859 z "/></svg>
+  <svg class="btnUp" width="50" height="50" viewBox="0 0 50 50"><path style="stroke:none" d="M 25 0 C 11.1875 0 -2.3684758e-15 11.1875 0 25 L 0 50 L 25 50 L 50 50 L 50 25 C 50 11.1875 38.812502 -4.7369516e-15 25 0 z M 25 13.005859 L 36.994141 25 L 27.998047 25 L 27.998047 36.994141 L 22.001953 36.994141 L 22.001953 25 L 13.005859 25 L 25 13.005859 z "/></svg>
 </a>
     `;
   }
@@ -112,3 +112,32 @@ class Footer extends HTMLElement {
 }
 customElements.define('footer-bar', Footer);
 
+
+  window.onload = snippets();
+  function snippets() {
+    let x = document.getElementById('snippet').innerHTML;
+    let y = "";
+
+    let tagAbertura = "<span style='color: grey;'>&lt;</span>";
+    let tagFechamento = "<span style='color: grey;'>&gt;</span>";
+    
+    for (const i of x) {
+      if (i == '<') { y += tagAbertura; }
+      else if (i == '>') { y += tagFechamento; }
+      else { y += i; }
+    }
+
+    let htmlTags = ['']
+
+    let tagsHtml = ['a', 'abbr', 'adress', 'aside', 'article', 'audio', 'b', 'body', 'br', 'button', 'canvas', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'meta', 'meter', 'nav', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 's', 'script', 'section', 'select', 'small', 'source', 'strong', 'style', 'sub', 'sup', 'svg', 'summary', 'table', 'tbody', 'td', 'template', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'u', 'ul', 'var', 'video', 'wbr'];
+    for (const i of tagsHtml) {
+      y = y.replace(`${tagAbertura}${i}${tagFechamento}`, `${tagAbertura}<span style="color: royalblue">${i}</span>${tagFechamento}`);
+      y = y.replace(`${tagAbertura}/${i}${tagFechamento}`, `${tagAbertura}<span style="color: royalblue">/${i}</span>${tagFechamento}`);
+    }
+
+    document.getElementById('snippet').style.backgroundColor = "black";
+    document.getElementById('snippet').style.border = "#ddd 1px solid";
+    document.getElementById('snippet').style.color = "lightskyblue";
+    document.getElementById('snippet').style.padding = "20px";
+    document.getElementById('snippet').innerHTML = y;
+}

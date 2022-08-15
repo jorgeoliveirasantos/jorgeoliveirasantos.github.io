@@ -13,19 +13,29 @@
   <meta name="keywords" content="informatica, curso, computador, computacao, programação, desenvolvimento, web, design">
 </head>
 
+
 <nav class="js-nav">
   <ul>
-    <li><a href="index.html">Início</a></li>
-    <li><a href="Informatica/informatica.html">Informática</a></li>
+    <li><a href="https://www.jorgesouza.com.br/">Início</a></li>
     <li class="js-drop-button">
-      <a>Programação <i class="seta"></i></a>
+      <a>Aprendizado <i class="seta"></i></a>
       <div class="js-drop-content">
-        <a href="Web Design/webdesign.html">Web Design</a>
+        <a href="informatica/intro.html">Informática</a>
+        <a href="Web Design/webdesign.html">Design Gráfico</a>
         <hr>
-        <a>em construção...</a>
+        <pre><small>Desenvolvimento Web:</small></pre>
+        <a>1. Web Design</a>
+        <a>2. Javascript</a>
+        <a>3. Aplicações Web e APIs</a>
+        <hr>
+        <pre><small>Programação:</small></pre>
+        <a>1. Desktop</a>
+        <a>2. Móvel</a>
+        <a>3. Gráficos e Multimídia</a>
+        <a>4. Jogos</a>
       </div>
     </li>
-    <li class="right"><a href="Sobre/sobre.html">Sobre</a></li>
+    <li><a>Apostilas</a></li>
   </ul>
   <style>
     .seta {
@@ -38,59 +48,107 @@
       margin: auto 5px auto 5px;
     }
   </style>
+
 </nav>
-<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................<br>.......................
+  <div class="imgSlider">
+    <a href="#" class="banner"><img id="img4" src="files/capa4.webp" alt=""></a>
+    <a href="#" class="banner"><img id="img3" src="files/capa3.webp" alt=""></a>
+    <a href="#" class="banner"><img id="img2" src="files/capa2.webp" alt=""></a>
+    <a href="#" class="banner"><img id="img1" src="files/capa1.webp" alt=""></a>
+  </div>
+
+<style>
+  @keyframes bannerAnimation {
+    0%, 28%, 100% {
+      opacity: 0%;
+      display: none;
+      z-index: -1;
+    }
+    3%, 25% {
+      opacity: 100%;
+      display: block;
+      z-index: 1;
+    }
+  }
+  #img1 {
+    animation-name: bannerAnimation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+  }
+  #img2 {
+    animation-name: bannerAnimation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-delay: 10s;
+  }
+  #img3 {
+    animation-name: bannerAnimation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-delay: 20s;
+  }
+  #img4 {
+    animation-name: bannerAnimation;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-delay: 30s;
+  }
+  .imgSlider {
+    background-color: black;
+    height: fit-content;
+    display: grid;
+    top: 0;
+    width: 100%;
+    grid-template-rows: 1fr;
+  }
+  .banner img {width: 100%;}
+  .banner {
+    top: 0;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 1;
+    background-color: #222;
+  }
+</style>
 
 
-<button class="js-button" onclick="document.getElementById('modal').style.display = 'block'">Abrir</button>
+  <div>
+  <div style="padding: 25px 10% 25px 10%;">
+    <h3>Formação</h3>
+    <ul>
+      <li>Ensino Médio Completo</li>
+      <li>Inglês Básico</li>
+      <li>Espanhol Básico</li>
+    </ul>
+    <h3>Habilidades</h3>
+    <ul>
+      <li>Instrutor de Cursos Técnicos</li>
+      <li>Design Gráfico em Comunicação Visual</li>
+      <li>Modelagem 3D</li>
+      <li>Desenvolvimento Desktop em .NET Core e Electron</li>
+      <li>Desenvolvimento Web em ASP .NET Core e Node JS</li>
+      <li>Desenvolvimento Móvel em React Native</li>
+      <li>Desenvolvimento em C/C++</li>
+    </ul>
+  </div>
 
-<div id="modal">
-  <div id="modal-content">
-    <span id="close" onclick="(document.getElementById('modal').style.display = 'none')">&times;</span>
-    <p>Some text in the Modal..</p>
+  <div style="background-color: #333; color: white; padding: 25px 10% 25px 10%;">
+    <h3>Carreira</h3>
+    <p>
+      Em 2007, com 18 anos, enquanto cursava o terceiro ano do ensino médio, e após concluir um curso de Design Gráfico na NIT Cursos, ingressei, por indicação do professor do curso, numa vaga de Designer Gráfico estagiário na Dignart Publicidade Visual, onde permaneci até 2009, trabalhando também como adesivador e na plotagem de projetos de AutoCAD, enquanto fazia o curso de AutoCAD, também na NIT Cursos, para me aperfeiçoar no trabalho de plotagem.
+    </p>
+    <p>
+      Em 2009, decidido a trabalhar como projetista, encontrei uma vaga, também de estagiário, dessa vez cadista, no escritório Zamuner Arquitetura, a passagem foi curta, pois ao final daquele mesmo ano, o arquiteto fechou o escritório para retornar para o Paraná, mas antes, me indicou para trabalhar na cidade vizinha no escritório de decoração que lhe auxiliava no projetos. Em 2010 me mudei para Barreiras, e fui trabalhar no escritório da Light and Design Interiores, como projetista, apesar da difícil adaptação à cidade por causa do transporte, trabalhei na Light and Design até o início de 2011, quando retornei para Luis Eduardo Magalhães, e fui chamado pela NIT Cursos para ministrar o Curso de AutoCAD, o qual fui co-autor desenvolvendo também o material didático e a metodologia de ensino. Devido ao trabalho em horário comercial como cadista na Radoll Arquitetura, ministrei as aulas de AutoCAD no período noturno e aos sábados, isso do começo de 2011 ao final de 2016. Até 2018 trabalhei ainda como cadista em escritórios de arquitetura, e duas vezes por contrato temporário em agências de Comunicação Visual. Além de ministrar aulas de AutoCAD também na Microlins.
+    </p>
+    <p>
+      A partir de 2018 comecei a trabalhar como freelancer e iniciei minha formação em Programação já acumulando atualmente sete certificados e alguns projetos concluídos com êxito. Atualmente me dedico exclusivamente ao desenvolvimento em Javascript, C e .NET, nos setores web, desktop, gráfico e móvel.
+    </p>
   </div>
 </div>
 
-<style>
-  #modal {
-    display: none;
-    position: fixed;
-    z-index: 8000;
-    padding-top: 100px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: #0000;
-    backdrop-filter: blur(10px);
-  }
-  #modal * {
-    color: #222;
-  }
-  #modal-content {
-    background-color: #ddd;
-    margin: auto;
-    border: 2px solid #FB0;
-    width: 70%;
-    padding: 25px;
-  }
-  #close {
-    color: darkred;
-    float: right;
-    font-size: 35px;
-    font-weight: bolder;
-    cursor: pointer;
-  }
-  #close:hover {
-    color: black;
-  }
-  
-</style>
 
-<div>
-  <br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................<br>.......................................
-</div>
+
 
 
 </html>

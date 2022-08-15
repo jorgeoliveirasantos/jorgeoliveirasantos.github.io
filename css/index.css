@@ -76,8 +76,8 @@
 /* #region MENU DE NAVEGAÇÃO  =========================================== */
 
 .js-nav{
-  background-color: #0002;
-  backdrop-filter: blur(50px);
+  background-color: #000A;
+  backdrop-filter: blur(10px);
   box-shadow: 5px 0px 15px #FB08;
   width: 100%;
   display: block;
@@ -136,6 +136,7 @@
   min-width: 200px;
   box-shadow: 0px 0px 15px #FA08;
   z-index: 1;
+  padding: 10px;
 }
 
 .js-drop-button:hover .js-drop-content{
@@ -147,6 +148,7 @@
 /* #region PÁGINA ============================================================= */
 body{
   background-color: var(--pretoDark);
+  margin: 0;
 }
 .js-page{
   margin-top: 50px;
@@ -156,7 +158,6 @@ body{
 }
 .js-post{
   background-color: var(--pretoMedio);
-  margin: 15px;
   padding: 30px;
   box-sizing: border-box;
 }
@@ -165,8 +166,8 @@ body{
   display: none;
 }
 .js-footer{
-  background-color: #0002;
-  backdrop-filter: blur(40px);
+  background-color: #0007;
+  backdrop-filter: blur(10px);
   width: 100%;
   border: 1px solid;
   border-image: var(--gradiente45);
@@ -223,6 +224,7 @@ p{
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   color: var(--cinzaLeve);
   text-align: justify;
+  text-indent: 60px;
 }
 hr{
   border-width: 1px 0 0 0;
@@ -349,13 +351,12 @@ a{
 
 /* Fundo da barra de roladem */
 ::-webkit-scrollbar-track {
-  border: #333 1px solid;
   background: transparent;
 }
  
 /* Barra de roladem */
 ::-webkit-scrollbar-thumb {
-  background-color: #FFF3;
+  background-color: #FFF5;
   border-radius: 10px;
   min-height: 100px;
 }

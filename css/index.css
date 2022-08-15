@@ -31,7 +31,7 @@
 
 /* #region BARRA LATERAL  =========================================== */
 
-.js-side{
+.js-side-left{
   width: 20%;
   left: 0;
   top: 0;
@@ -45,7 +45,7 @@
   overflow-y: auto;
   box-sizing: border-box;
 }
-.js-side a{
+.js-side-left a{
   display: block;
   color: var(--cinzaLeve);
   padding: 10px;
@@ -55,7 +55,7 @@
   text-align: left;
   font-size: medium;
 }
-.js-side p{
+.js-side-left p{
   display: block;
   color: var(--AMARELO);
   padding: 10px;
@@ -66,7 +66,7 @@
   font-size: x-large;
   font-weight: bold;
 }
-.js-side a:hover{
+.js-side-left a:hover{
   background-color: var(--AMARELO);
   color: black;
 }
@@ -80,7 +80,10 @@
   backdrop-filter: blur(10px);
   box-shadow: 5px 0px 15px #FB08;
   width: 100%;
-  display: block;
+  display: grid;
+  grid-template-columns: auto auto auto 1fr;
+  align-items: center;
+  flex-direction: column;
   top: 0;
   left: 0;
   position: fixed;
@@ -89,7 +92,8 @@
 
 .js-nav ul{
   list-style-type: none;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .js-nav .right{
@@ -111,7 +115,7 @@
 .js-nav a{
   display: block;
   color: white;
-  padding: 10px 15px 10px 15px;
+  padding: 15px 20px 15px 20px;
   text-decoration: none;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
@@ -145,6 +149,62 @@
 
 /* #endregion ==================================*/
 
+/* #region RODAPÉ */
+.js-footer{
+  background-color: #0007;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  border: 1px solid;
+  border-image: var(--gradiente45);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  box-sizing: border-box;
+  bottom: 0;
+}
+.js-footer par{
+  display: block;
+  color: var(--cinzaLeve);
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 10px;
+}
+.js-footer par:hover{
+  color: var(--AMARELO);
+  cursor: pointer;
+}
+.js-footer tit{
+  display: block;
+  color: var(--cinzaMedio);
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.js-footer div{
+  padding: 25px;
+  vertical-align: top;
+  flex-basis: 300px;
+  flex-grow: 100%;
+}
+/* #endregion */
+
+/* #region BTN-UP */
+.btnUp {
+  width: 30px;
+  height: 30px;
+  fill: #DDD3;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+}
+.btnUp:hover {
+  width: 40px;
+  height: 40px;
+  fill: #FB0;
+  margin: 5px;
+}
+/* #endregion */
+
 /* #region PÁGINA ============================================================= */
 body{
   background-color: var(--pretoDark);
@@ -165,61 +225,10 @@ body{
   border: none;
   display: none;
 }
-.js-footer{
-  background-color: #0007;
-  backdrop-filter: blur(10px);
-  width: 100%;
-  border: 1px solid;
-  border-image: var(--gradiente45);
-  padding: 30px;
-  box-sizing: border-box;
-  bottom: 0;
-}
-.js-footer table{
-  margin: auto;
-  width: fit-content;
-  padding: 15px;
-}
-.js-footer par{
-  display: block;
-  color: var(--cinzaLeve);
-  font-size: small;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-top: 10px;
-}
-.js-footer par:hover{
-  color: var(--AMARELO);
-  cursor: pointer;
-}
-.js-footer tit{
-  display: block;
-  color: var(--cinzaMedio);
-  font-size: large;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-.js-footer td{
-  padding: 5px 50px 5px 50px;
-  vertical-align: top;
-}
-.btnUp {
-  width: 30px;
-  height: 30px;
-  fill: #DDD3;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 10px;
-}
-.btnUp:hover {
-  width: 40px;
-  height: 40px;
-  fill: #FB0;
-  margin: 5px;
-}
 /* #endregion PÁGINA ================================== */
 
 /* #region FORMATAÇÃO ================================== */
-p{
+.js-post p{
   font-size: x-large;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   color: var(--cinzaLeve);
@@ -231,7 +240,7 @@ hr{
   border-image: var(--gradiente45);
   margin: 5px;
 }
-h1{
+.js-post h1{
   color: var(--AMARELO);
   font-size: 40pt;
   font-family: Baloo;
@@ -240,14 +249,14 @@ h1{
   padding-top: 50px;
   padding-bottom: 50px;
 }
-h2{
+.js-post h2{
   color: var(--AMARELO);
   font-family: Baloo;
   font-weight: bold;
   font-size: 30pt;
   text-align: center;
 }
-h3{
+.js-post h3{
   color: var(--cinzaLeve);
   font-family: Baloo;
   font-weight: bold;
@@ -368,5 +377,37 @@ a{
 
 /* #endregion CONFIGURAÇÕES DO SITE ==================================*/
 
-
+/* #region  DISPOSITIVOS MÓVEIS */
+@media (max-width: 600px) {
+  .js-nav {
+    flex-direction: row;
+    position: relative;
+    top: 0;
+  }
+  .img-slider { display: none; }
+  .img-slider a { display: none;}
+  .js-nav li {
+    min-width: 150px;
+    width: 100%;
+  }
+  .js-nav ul {
+    width: 100%;
+    margin: 0;
+  }
+  .js-drop-content{
+    width: 100%;
+    padding: 10px;
+  }
+  .js-footer {
+    padding: 10px;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .js-footer div {
+    padding: 0px 15px 0px 15px;
+  }
+  .js-page { width: 100%;}
+  .js-side-left { display: none;}
+}
+/* #endregion */
 

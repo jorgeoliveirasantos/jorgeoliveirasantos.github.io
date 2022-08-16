@@ -131,7 +131,10 @@
 .js-drop-button{
   display: block;
 }
-
+@keyframes drpMotiom {
+  from { opacity: 0%; }
+  to { opacity: 100%; }
+}
 .js-drop-content{
   display: none;
   position: absolute;
@@ -141,9 +144,11 @@
   box-shadow: 0px 0px 15px #FA08;
   z-index: 1;
   padding: 10px;
+  animation-name: drpMotiom;
+  animation-duration: 1s;
 }
 
-.js-drop-button:hover .js-drop-content{
+.js-drop-button:focus .js-drop-content{
   display: block;
 }
 
@@ -189,19 +194,35 @@
 
 /* #region BTN-UP */
 .btnUp {
-  width: 30px;
-  height: 30px;
-  fill: #DDD3;
+  width: 40px;
+  height: 40px;
+  fill: #DDD7;
   position: fixed;
   bottom: 0;
   right: 0;
   margin: 10px;
 }
+@keyframes btnUpMotiom {
+  from {
+    width: 40px;
+    height: 40;
+    margin: 10px;
+    fill: white;
+  }
+  to {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    fill: #FB0;
+  }
+}
 .btnUp:hover {
-  width: 40px;
-  height: 40px;
-  fill: #FB0;
-  margin: 5px;
+  animation-name: btnUpMotiom;
+  animation-duration: 500ms;
+  animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  cursor: pointer;
 }
 /* #endregion */
 
@@ -242,7 +263,7 @@ hr{
 }
 .js-post h1{
   color: var(--AMARELO);
-  font-size: 40pt;
+  font-size: 5rem;
   font-family: Baloo;
   font-weight: bold;
   text-align: center;
@@ -253,14 +274,13 @@ hr{
   color: var(--AMARELO);
   font-family: Baloo;
   font-weight: bold;
-  font-size: 30pt;
-  text-align: center;
+  font-size: 3rem;
 }
 .js-post h3{
   color: var(--cinzaLeve);
   font-family: Baloo;
   font-weight: bold;
-  font-size: 25pt;
+  font-size: 2rem;
   text-align: left;
 }
 .js-button{
@@ -283,11 +303,10 @@ hr{
   background-color: var(--AMARELO);
 }
 .notas{
-  color: var(--AMARELO);
   border: 1px solid;
   border-image: var(--gradiente45);
   text-align: right;
-  font-weight: bold;
+  font-style: italic;
   font-size: x-large;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   pointer-events: none;
@@ -407,7 +426,11 @@ a{
     padding: 0px 15px 0px 15px;
   }
   .js-page { width: 100%;}
-  .js-side-left { display: none;}
+  .js-side-left {
+    display: none;
+    position: absolute;
+    float: left;
+  }
 }
 /* #endregion */
 

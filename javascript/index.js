@@ -4,41 +4,41 @@ class Menu extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-    <div class="js-nav">
-    <ul>
-      <li tabindex="1"><a href="https://www.jorgesouza.com.br/">Início</a></li>
-      <li class="js-drop-button" tabindex="2">
-        <a>Aprendizado <i class="seta"></i></a>
-        <div class="js-drop-content">
-          <a href="https://www.jorgesouza.com.br/informatica/intro">Informática</a>
-          <a href="#">Design Gráfico</a>
-          <hr>
-          <pre><small>Desenvolvimento Web:</small></pre>
-          <a>1. Web Design</a>
-          <a>2. Javascript</a>
-          <a>3. Aplicações Web e APIs</a>
-          <hr>
-          <pre><small>Programação:</small></pre>
-          <a>1. Desktop</a>
-          <a>2. Móvel</a>
-          <a>3. Gráficos e Multimídia</a>
-          <a>4. Jogos</a>
-        </div>
-      </li>
-      <li tabindex="3"><a>Apostilas</a></li>
-    </ul>
-    <style>
-      .seta {
-        border: solid #ddd;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 2px;
-        transform: rotate(45deg);
-        -webkit-transform: rotate(45deg);
-        margin: auto 5px auto 5px;
-      }
-    </style>
-  </div>
+<div class="js-nav">
+  <ul>
+    <li tabindex="1"><a href="https://www.jorgesouza.com.br/">Início</a></li>
+    <li class="js-drop-button" tabindex="2">
+      <a>Aprendizado <i class="seta"></i></a>
+      <div class="js-drop-content">
+        <a href="https://www.jorgesouza.com.br/informatica/intro">Informática</a>
+        <a href="#">Design Gráfico</a>
+        <hr>
+        <pre><small>Desenvolvimento Web:</small></pre>
+        <a>1. Web Design</a>
+        <a>2. Javascript</a>
+        <a>3. Aplicações Web e APIs</a>
+        <hr>
+        <pre><small>Programação:</small></pre>
+        <a>1. Desktop</a>
+        <a>2. Móvel</a>
+        <a>3. Gráficos e Multimídia</a>
+        <a>4. Jogos</a>
+      </div>
+    </li>
+    <li tabindex="3"><a>Apostilas</a></li>
+  </ul>
+  <style>
+    .seta {
+      border: solid #ddd;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 2px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      margin: auto 5px auto 5px;
+    }
+  </style>
+</div>
     `;
   }
 }

@@ -71,7 +71,109 @@
   color: black;
 }
 
+
+
+
+
+.js-index-toggle {
+  display: none;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: black;
+  border-block: #333 1px solid;
+  color: white;
+  z-index: 1000;
+}
+.js-index-icon:hover {
+  background-color: #FB0;
+  cursor: pointer;
+}
+.js-index-icon:hover div, .js-index-icon:active div {
+  background-color: black !important;
+  cursor: pointer;
+}
+.js-index-icon {
+  padding: 5px;
+  width: fit-content;
+}
+
+@media (max-width: 600px) {
+  .js-side-left {
+    display: none;
+    width: 100%;
+    top: 150px;
+    top: 0;
+    position: fixed;
+  }
+  .js-index-toggle {
+    display: block;
+  }
+
+}
+
+
 /* #endregion PÁGINA ==================================*/
+
+/* #region IMAGE SLIDER */
+
+@keyframes bannerAnimation {
+  0%, 28%, 100% {
+    opacity: 0%;
+    display: none;
+    z-index: -1;
+  }
+  3%, 25% {
+    opacity: 100%;
+    display: block;
+    z-index: 1;
+  }
+}
+#img1 {
+  animation-name: bannerAnimation;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-delay: 0s;
+}
+#img2 {
+  animation-name: bannerAnimation;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-delay: 10s;
+}
+#img3 {
+  animation-name: bannerAnimation;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-delay: 20s;
+}
+#img4 {
+  animation-name: bannerAnimation;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-delay: 30s;
+}
+.img-slider {
+  background-color: black;
+  height: fit-content;
+  display: grid;
+  top: 0;
+  width: 100%;
+  grid-template-rows: 1fr;
+}
+.banner img {
+  width: 100%;
+  pointer-events: none;
+}
+.banner {
+  top: 0;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 1;
+  background-color: #222;
+}
+
+/* #endregion */
 
 /* #region MENU DE NAVEGAÇÃO  =========================================== */
 
@@ -148,7 +250,7 @@
   animation-duration: 1s;
 }
 
-.js-drop-button:focus .js-drop-content{
+.js-drop-button:focus-within .js-drop-content{
   display: block;
 }
 
@@ -263,7 +365,7 @@ hr{
 }
 .js-post h1{
   color: var(--AMARELO);
-  font-size: 5rem;
+  font-size: 3rem;
   font-family: Baloo;
   font-weight: bold;
   text-align: center;
@@ -274,13 +376,13 @@ hr{
   color: var(--AMARELO);
   font-family: Baloo;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .js-post h3{
   color: var(--cinzaLeve);
   font-family: Baloo;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: left;
 }
 .js-button{
@@ -352,7 +454,8 @@ li{
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   color: var(--cinzaLeve);
   text-align: justify;
-  list-style: "\261B";
+  list-style: "\261B  ";
+  padding-left: 30px;
 }
 a{
   cursor: pointer;
@@ -402,6 +505,7 @@ a{
     flex-direction: row;
     position: relative;
     top: 0;
+    box-shadow: none;
   }
   .img-slider { display: none; }
   .img-slider a { display: none;}
@@ -426,11 +530,6 @@ a{
     padding: 0px 15px 0px 15px;
   }
   .js-page { width: 100%;}
-  .js-side-left {
-    display: none;
-    position: absolute;
-    float: left;
-  }
 }
 /* #endregion */
 

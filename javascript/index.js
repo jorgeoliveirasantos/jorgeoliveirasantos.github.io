@@ -110,3 +110,42 @@ class Footer extends HTMLElement {
   }
 }
 customElements.define('footer-bar', Footer);
+
+
+
+
+class Toggle extends HTMLElement {
+  constructor() {
+    super();
+  }
+  connectedCallback() {
+
+    this.innerHTML = `
+    <div class="js-index-toggle">
+    <div class="js-index-icon" onclick="showSide()">
+        <div style="width: 30px; height: 5px; margin: 5px; background-color: white;"></div>
+        <div style="width: 30px; height: 5px; margin: 5px; background-color: white;"></div>
+        <div style="width: 30px; height: 5px; margin: 5px; background-color: white;"></div>
+    </div>
+</div>
+`;
+  }
+}
+customElements.define('js-toggle-bar', Toggle);
+
+let sideVisible = false;
+function showSide() {
+    if (sideVisible) {
+        let sideBar = document.querySelector('.js-side-left');
+        sideBar.style.display = 'none';
+        sideVisible = false;
+        document.body.style.overflow = 'auto';
+    }else{
+        let sideBar = document.querySelector('.js-side-left');
+        sideBar.style.display = 'block';
+        sideVisible = true;
+        window.scroll(0, 150);
+        document.body.style.overflow = 'hidden';
+      }
+    }
+

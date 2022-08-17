@@ -16,9 +16,12 @@
 /* #region VARIÁVEIS */
 
 :root {
+  --cyan: var(--cyan);
+  --black: black;
+  --white: white;
   --pretoDark: #151015;
   --pretoMedio: #252020;
-  --pretoLeve: #302520;
+  --pretoLeve: #403525;
   --AMARELO: #FB0;
   --cinzaMedio: rgb(160, 133, 97);
   --cinzaLeve: #DDD;
@@ -68,29 +71,25 @@
 }
 .js-side-left a:hover{
   background-color: var(--AMARELO);
-  color: black;
+  color: var(--black);
 }
-
-
-
-
 
 .js-index-toggle {
   display: none;
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: black;
-  border-block: #333 1px solid;
-  color: white;
-  z-index: 1000;
+  background-color: var(--black);
+  border-block: var(--pretoLeve) 1px solid;
+  color: var(--white);
+  z-index: 1;
 }
 .js-index-icon:hover {
-  background-color: #FB0;
+  background-color: var(--AMARELO);
   cursor: pointer;
 }
 .js-index-icon:hover div, .js-index-icon:active div {
-  background-color: black !important;
+  background-color: var(--black) !important;
   cursor: pointer;
 }
 .js-index-icon {
@@ -102,16 +101,17 @@
   .js-side-left {
     display: none;
     width: 100%;
-    top: 150px;
-    top: 0;
-    position: fixed;
+    margin: auto;
+    left: 0;
+    position: relative;
+    border: var(--pretoLeve) 1px solid;
   }
+
   .js-index-toggle {
     display: block;
   }
 
 }
-
 
 /* #endregion PÁGINA ==================================*/
 
@@ -154,7 +154,7 @@
   animation-delay: 30s;
 }
 .img-slider {
-  background-color: black;
+  background-color: var(--black);
   height: fit-content;
   display: grid;
   top: 0;
@@ -170,7 +170,7 @@
   grid-row: 1;
   grid-column-start: 1;
   grid-column-end: 1;
-  background-color: #222;
+  background-color: var(--pretoDark);
 }
 
 /* #endregion */
@@ -178,9 +178,8 @@
 /* #region MENU DE NAVEGAÇÃO  =========================================== */
 
 .js-nav{
-  background-color: #000A;
-  backdrop-filter: blur(10px);
-  box-shadow: 5px 0px 15px #FB08;
+  background-color: var(--pretoDark);
+  border-bottom: var(--pretoLeve) 1px solid;
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto 1fr;
@@ -203,7 +202,7 @@
 }
 
 .js-nav .active{
-  background-color: black;
+  background-color: var(--black);
   color: VAR(--AMARELO);
   border-left: 3px solid VAR(--AMARELO);
   border-right: 3px solid VAR(--AMARELO);
@@ -216,7 +215,7 @@
 
 .js-nav a{
   display: block;
-  color: white;
+  color: var(--white);
   padding: 15px 20px 15px 20px;
   text-decoration: none;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
@@ -227,7 +226,7 @@
 
 .js-nav a:hover{
   background-color: VAR(--AMARELO);
-  color: black;
+  color: var(--black);
 }
 
 .js-drop-button{
@@ -240,11 +239,11 @@
 .js-drop-content{
   display: none;
   position: absolute;
-  background-color: #000D;
+  background-color: var(--pretoDark);
   color: var(--cinzaMedio);
   min-width: 200px;
-  box-shadow: 0px 0px 15px #FA08;
-  z-index: 1;
+  box-shadow: 0px 0px 10px var(--AMARELO);
+  z-index: 999;
   padding: 10px;
   animation-name: drpMotiom;
   animation-duration: 1s;
@@ -258,7 +257,7 @@
 
 /* #region RODAPÉ */
 .js-footer{
-  background-color: #0007;
+  background-color: var(--pretoDark);
   backdrop-filter: blur(10px);
   width: 100%;
   border: 1px solid;
@@ -298,7 +297,7 @@
 .btnUp {
   width: 40px;
   height: 40px;
-  fill: #DDD7;
+  fill: var(--cinzaMedio);
   position: fixed;
   bottom: 0;
   right: 0;
@@ -309,13 +308,13 @@
     width: 40px;
     height: 40;
     margin: 10px;
-    fill: white;
+    fill: var(--white);
   }
   to {
     width: 50px;
     height: 50px;
     margin: 5px;
-    fill: #FB0;
+    fill: var(--AMARELO);
   }
 }
 .btnUp:hover {
@@ -343,6 +342,7 @@ body{
   background-color: var(--pretoMedio);
   padding: 30px;
   box-sizing: border-box;
+  border: var(--pretoLeve) 1px solid;
 }
 .js-post-frame{
   border: none;
@@ -387,7 +387,7 @@ hr{
 }
 .js-button{
   display: inline-block;
-  color: white;
+  color: var(--white);
   background-color: var(--pretoDark);
   border: 1px solid;
   border-image: var(--gradiente45);
@@ -401,7 +401,7 @@ hr{
   cursor: pointer;
 }
 .js-button:hover{
-  color: black;
+  color: var(--black);
   background-color: var(--AMARELO);
 }
 .notas{
@@ -416,10 +416,21 @@ hr{
   padding: 30px;
 }
 .codigo, code{
-  color: cyan;
+  color: cyan !important;
+  background-color: black;
+  padding: 0px 10px 0px 10px;
+  border: var(--cinzaMedio) 1px solid;
   font-size: large;
   font-family: Tech, 'Courier New', Courier, monospace;
-  margin-left: 60px;
+}
+code{
+  display: block;
+  color: cyan !important;
+  background-color: black;
+  padding: 20px;
+  border: var(--cinzaMedio) 1px solid;
+  font-size: large;
+  font-family: Tech, 'Courier New', Courier, monospace;
 }
 .js-post img{
   width: 100%;
@@ -447,7 +458,7 @@ hr{
 }
 .js-table td{
   padding: 5px 30px 5px 30px;
-  border-bottom: #333 1px solid;
+  border-bottom: var(--pretoLeve) 1px solid;
 }
 li{
   font-size: x-large;
@@ -466,11 +477,11 @@ a{
 
 /* Seleção  */
 ::selection{
-  color: black;
+  color: var(--black);
   background-color: var(--AMARELO);
 }
 ::-moz-selection{
-  color: black;
+  color: var(--black);
   background-color: var(--AMARELO);
 }
 
@@ -487,7 +498,7 @@ a{
  
 /* Barra de roladem */
 ::-webkit-scrollbar-thumb {
-  background-color: #FFF5;
+  background-color: var(--cinzaMedio);
   border-radius: 10px;
   min-height: 100px;
 }
@@ -518,8 +529,11 @@ a{
     margin: 0;
   }
   .js-drop-content{
-    width: 100%;
     padding: 10px;
+    width: 100%;
+    left: 0;
+    box-shadow: none;
+    background-color: var(--black);
   }
   .js-footer {
     padding: 10px;

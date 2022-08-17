@@ -139,13 +139,11 @@ function showSide() {
         let sideBar = document.querySelector('.js-side-left');
         sideBar.style.display = 'none';
         sideVisible = false;
-        document.body.style.overflow = 'auto';
     }else{
         let sideBar = document.querySelector('.js-side-left');
         sideBar.style.display = 'block';
         sideVisible = true;
         window.scroll(0, 150);
-        document.body.style.overflow = 'hidden';
       }
     }
 

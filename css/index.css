@@ -302,10 +302,8 @@
   height: 40px;
   fill: var(--cinzaMedio);
   position: fixed;
-  bottom: 0;
-  right: 0;
-  margin: 10px;
-  box-sizing: border-box;
+  bottom: 10px;
+  right: 10px;
 }
 @keyframes btnUpMotiom {
   from {

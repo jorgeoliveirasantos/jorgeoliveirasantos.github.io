@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="contacts.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.22042572"
+     inkscape:cx="1279.3425"
+     inkscape:cy="610.18288"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     units="px" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       d="m 66.145833,23.524717 c -21.1827,0 -38.359,17.176308 -38.359,38.358998 0,17.773 12.1044,32.6904 28.5136,37.03775 l 9.8454,9.845485 9.8455,-9.845485 c 16.4091,-4.34735 28.513497,-19.26475 28.513497,-37.03775 0,-21.1827 -17.176297,-38.358998 -38.358997,-38.358998 z m 0,8.52423 c 7.0751,0 12.7864,5.711228 12.7864,12.786328 0,7.07511 -5.7113,12.78633 -12.7864,12.78633 -7.0751,0 -12.7863,-5.71122 -12.7863,-12.78633 0,-7.0751 5.7112,-12.786328 12.7863,-12.786328 z m 0,60.948188 c -10.6552,0 -20.0745,-5.4555 -25.5726,-13.724 0.1278,-8.4816 17.0484,-13.1273 25.5726,-13.1273 8.4816,0 25.4448,4.6457 25.5727,13.1273 -5.4981,8.2685 -14.9174,13.724 -25.5727,13.724 z"
+       id="path13538"
+       style="fill:#000000;stroke-width:4.26211"
+       inkscape:export-filename="E:\Área de Trabalho\contact.webp"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+  </g>
+</svg>

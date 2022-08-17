@@ -102,7 +102,7 @@ class Footer extends HTMLElement {
     </div>
     <div style="min-width: 90%;">
       <hr style="width: 90%; margin: 25px auto 25px auto">
-      <img src="files/logo_amarela.svg" style="pointer-events: none; border: none; background-color: transparent; width: 40px; display: block; margin: auto; align-self: center;"/>
+      <img src="/files/logo_amarela.svg" style="pointer-events: none; border: none; background-color: transparent; width: 40px; display: block; margin: auto; align-self: center;"/>
       <tit id="copy" style="align-self: center; text-align: center; padding: 20px; display: block;">Copyright © 2022 - Jorge Souza Oliveira dos Santos</tit>
     </div>
   </div>

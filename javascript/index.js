@@ -6,11 +6,11 @@ class Menu extends HTMLElement {
     this.innerHTML = `
 <div class="js-nav">
   <ul>
-    <li tabindex="1"><a href="https://www.jorgesouza.com.br/">Início</a></li>
+    <li tabindex="1"><a href="/index.html">Início</a></li>
     <li class="js-drop-button" tabindex="2">
       <a>Aprendizado <i class="seta"></i></a>
       <div class="js-drop-content">
-        <a href="https://www.jorgesouza.com.br/informatica/intro">Informática</a>
+        <a href="/informatica/intro.html">Informática</a>
         <a href="#">Design Gráfico</a>
         <hr>
         <pre><small>Desenvolvimento Web:</small></pre>

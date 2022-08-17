@@ -305,7 +305,6 @@
   bottom: -10;
   right: -10;
   margin: 10px;
-  box-sizing: border-box;
 }
 @keyframes btnUpMotiom {
   from {

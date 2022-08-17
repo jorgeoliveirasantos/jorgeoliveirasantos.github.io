@@ -268,6 +268,9 @@
   box-sizing: border-box;
   bottom: 0;
 }
+.js-footer a{
+  text-decoration: none;
+}
 .js-footer par{
   display: block;
   color: var(--cinzaLeve);
@@ -356,7 +359,7 @@ body{
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   color: var(--cinzaLeve);
   text-align: justify;
-  text-indent: 60px;
+  text-indent: 2em;
 }
 hr{
   border-width: 1px 0 0 0;
@@ -412,11 +415,12 @@ hr{
   font-size: x-large;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   pointer-events: none;
-  margin: 10px 0px 10px 180px;
+  margin-block: 10px;
+  margin-left: 3em;
   padding: 30px;
 }
-.codigo, code{
-  color: cyan !important;
+.codigo{
+  color: cyan;
   background-color: black;
   padding: 0px 10px 0px 10px;
   border: var(--cinzaMedio) 1px solid;
@@ -425,12 +429,14 @@ hr{
 }
 code{
   display: block;
-  color: cyan !important;
+  color: cyan;
   background-color: black;
   padding: 20px;
+  margin-block: 10px;
   border: var(--cinzaMedio) 1px solid;
   font-size: large;
   font-family: Tech, 'Courier New', Courier, monospace;
+  text-align: left;
 }
 .js-post img{
   width: 100%;

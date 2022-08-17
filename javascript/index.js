@@ -71,39 +71,39 @@ class Footer extends HTMLElement {
     <div class="js-footer">
     <div style="min-width: 300px;">
       <tit>Aprendizado On-Line</tit>
-      <par onclick="window.location = 'https://www.jorgesouza.com.br/informatica/intro'">Informática Básica e Avançada</par>
-      <par onclick="window.location = '#'">Design Gráfico</par>
-      <par onclick="window.location = '#'">Web Design (HTML e CSS)</par>
-      <par onclick="window.location = '#'">Javascript (Front-End e Back-End)</par>
-      <par onclick="window.location = '#'">Programação de Gráficos e Multimídia</par>
-      <par onclick="window.location = '#'">Programação para PC Desktop</par>
-      <par onclick="window.location = '#'">Desenvolvimento de Apps Móveis</par>
-      <par onclick="window.location = '#'">Desenvolvimento de Jogos</par>
+      <a href=""><par>Informática Básica e Avançada</par></a>
+      <a href=""><par>Design Gráfico</par></a>
+      <a href=""><par>Web Design (HTML e CSS)</par></a>
+      <a href=""><par>Javascript (Front-End e Back-End)</par></a>
+      <a href=""><par>Programação de Gráficos e Multimídia</par></a>
+      <a href=""><par>Programação para PC Desktop</par></a>
+      <a href=""><par>Desenvolvimento de Apps Móveis</par></a>
+      <a href=""><par>Desenvolvimento de Jogos</par></a>
     </div>
     <div style="min-width: 300px;">
       <tit>Manuais e Apostilas</tit>
-      <par onclick="window.location = '#'">Informática Básica e Avançada</par>
-      <par onclick="window.location = '#'">Design Gráfico</par>
-      <par onclick="window.location = '#'">Web Design (HTML e CSS)</par>
-      <par onclick="window.location = '#'">Javascript (Front-End e Back-End)</par>
-      <par onclick="window.location = '#'">Programação de Gráficos e Multimídia</par>
-      <par onclick="window.location = '#'">Programação para PC Desktop</par>
-      <par onclick="window.location = '#'">Desenvolvimento de Apps Móveis</par>
-      <par onclick="window.location = '#'">Desenvolvimento de Jogos</par>
+      <a href=""><par>Informática Básica e Avançada</par></a>
+      <a href=""><par>Design Gráfico</par></a>
+      <a href=""><par>Web Design (HTML e CSS)</par></a>
+      <a href=""><par>Javascript (Front-End e Back-End)</par></a>
+      <a href=""><par>Programação de Gráficos e Multimídia</par></a>
+      <a href=""><par>Programação para PC Desktop</par></a>
+      <a href=""><par>Desenvolvimento de Apps Móveis</par></a>
+      <a href=""><par>Desenvolvimento de Jogos</par></a>
     </div>
     <div style="min-width: 300px;">
       <tit>Contato</tit>
-      <par onclick="window.open('mailto:jorge.sos777@gmail.com')">Gmail</par>
-      <par onclick="window.open('https://wa.me/5577991161892')">Whatsapp</par>
-      <par onclick="window.open('https://join.skype.com/invite/uMbQf0utKfUz')">Skype</par>
-      <par onclick="window.open('https://www.facebook.com/artesgraficaseprojetos')">Facebook</par>
-      <par onclick="window.open('https://www.instagram.com/jorgeoliveiraonline/')">Instagram</par>
-      <par onclick="window.open('https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5')">Workana (Freelancer)</par>
+      <a target="_blank" href="mailto:jorge.sos777@outlook.com"><par>Gmail</par></a>
+      <a target="_blank" href="https://wa.me/5577991161892"><par>Whatsapp</par></a>
+      <a target="_blank" href="https://join.skype.com/invite/uMbQf0utKfUz"><par>Skype</par></a>
+      <a target="_blank" href="https://www.facebook.com/artesgraficaseprojetos"><par>Facebook</par></a>
+      <a target="_blank" href="https://www.instagram.com/jorgeoliveiraonline/"><par>Instagram</par></a>
+      <a target="_blank" href="https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5"><par>Workana (freelancer)</par></a>
     </div>
     <div style="min-width: 90%;">
       <hr style="width: 90%; margin: 25px auto 25px auto">
-      <img src="../files/logo_amarela.svg" style="pointer-events: none; border: none; background-color: transparent; width: 40px; display: block; margin: auto; align-self: center;"/>
-      <tit style="align-self: center; text-align: center; padding: 20px; display: block;">Copyright © 2022 - Jorge Souza Oliveira dos Santos</tit>
+      <img src="files/logo_amarela.svg" style="pointer-events: none; border: none; background-color: transparent; width: 40px; display: block; margin: auto; align-self: center;"/>
+      <tit id="copy" style="align-self: center; text-align: center; padding: 20px; display: block;">Copyright © 2022 - Jorge Souza Oliveira dos Santos</tit>
     </div>
   </div>
     `;

@@ -181,6 +181,8 @@
   background-color: var(--pretoDark);
   border-bottom: var(--pretoLeve) 1px solid;
   width: 100%;
+  box-sizing: border-box;
+  margin: 0;
   display: grid;
   grid-template-columns: auto auto auto 1fr;
   align-items: center;
@@ -266,6 +268,7 @@
   flex-wrap: wrap;
   justify-content: stretch;
   box-sizing: border-box;
+  margin: 0;
   bottom: 0;
 }
 .js-footer a{
@@ -522,8 +525,6 @@ a{
     position: relative;
     top: 0;
     box-shadow: none;
-    box-sizing: border-box;
-    width: 100%;
   }
   .img-slider { display: none; }
   .img-slider a { display: none;}

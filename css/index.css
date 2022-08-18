@@ -550,5 +550,10 @@ a{
   }
   .js-page { width: 100%;}
 }
+body {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
 /* #endregion */
 

@@ -522,6 +522,8 @@ a{
     position: relative;
     top: 0;
     box-shadow: none;
+    box-sizing: border-box;
+    width: 100%;
   }
   .img-slider { display: none; }
   .img-slider a { display: none;}

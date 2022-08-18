@@ -37,6 +37,7 @@ class SideLeft extends HTMLElement {
       <a href="/informatica/sitesuteis.html">Sites Úteis</a>
       <a href="/informatica/cachecookies.html">Cache e Cookies</a>
       <p>Introdução ao Office</p>
+      <a href="/informatica/msoffie.html">Microsoft Office</a>
       <a href="/informatica/msword.html">Microsoft Word</a>
       <a href="/informatica/mspowerpoint.html">Microsoft PowerPoint</a>
       <a href="/informatica/msexcel.html">Microsoft Excel</a>

@@ -1,1 +1,50 @@
-verarquivos
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Informática - Jorge Souza</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../javascript/index.js"></script>
+  <script src="info.js"></script>
+  <link rel="icon" type="image/x-icon" href="../logo.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--SEO-->
+  <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+  <meta name="description" content="O que é um computador">
+  <meta name="keywords"
+    content="informática, computador, pc, desktop, tecnologia, digital, alfabetizacao digital, introducao a informatica">
+</head>
+
+
+<menu-bar></menu-bar>
+<js-toggle-bar></js-toggle-bar>
+<side-bar-left></side-bar-left>
+
+
+<div class="js-page">
+
+  <div class="js-post">
+    <a href="/informatica/verdisco.html" class="js-button">Anterior</a>
+    <a href="/informatica/seguranca.html" class="js-button" style="float: right;">Próximo</a>
+
+<!-- #region    ============    POST    ===================   -->
+
+<h1>Verificação de Arquivos</h1>
+<p>	A Verificação de Arquivos serve para localizar arquivos do sistema ausentes ou corrompidos, que interferem no funcionamento do computador. No Windows 10, temos duas etapas para efetuar essas correções, a primeira é a restauração da imagem do sistema e a segunda é a verificação dos arquivos.
+
+    <p>1. Clique em Iniciar e digite <span class="codigo">CMD</span>.
+    <p>2. Clique com o botão direito sobre o Prompt de Comando e selecione executar como administrador.
+    <p>3. Digite: <span class="codigo">DISM.exe /On-line /Cleanup-image /Restorehealth</span>
+<p class="notas">A Ferramenta DISM (Gerenciamento e Manutenção de Imagens de Implantação)  utiliza o Windows Update para recuperar on-line os arquivos danificados.</p>
+<p>	Assim que terminar, se necessário abra o CMD como administrador novamente e digite: <span class="codigo">sfc /scannow</span>. A ferramenta SFC.exe substituirá os arquivos corrompidos do sistema por uma cópia em cache armazenada no diretório do Windows.
+<p class="notas">A verificação de arquivos e restauração da imagem do Windows deve ser feita quando o computador apresentar comportamento anormal como problemas para abrir programas e erros de DLL e de arquivos do sistema faltantes.</p>
+
+<!-- #endregion -->
+
+
+  </div>
+</div>
+<footer-bar></footer-bar>
+<btn-up></btn-up>
+

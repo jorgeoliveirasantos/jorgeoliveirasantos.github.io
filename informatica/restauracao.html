@@ -1,1 +1,104 @@
-restauracao
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Informática - Jorge Souza</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../javascript/index.js"></script>
+  <script src="info.js"></script>
+  <link rel="icon" type="image/x-icon" href="../logo.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!--SEO-->
+  <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+  <meta name="description" content="O que é um computador">
+  <meta name="keywords"
+    content="informática, computador, pc, desktop, tecnologia, digital, alfabetizacao digital, introducao a informatica">
+</head>
+
+
+<menu-bar></menu-bar>
+<js-toggle-bar></js-toggle-bar>
+<side-bar-left></side-bar-left>
+
+
+<div class="js-page">
+
+  <div class="js-post">
+    <a href="/informatica/seguranca.html" class="js-button">Anterior</a>
+    <a href="/informatica/raiz.html" class="js-button" style="float: right;">Próximo</a>
+
+<!-- #region    ============    POST    ===================   -->
+
+<h1>Restauração, Backup e Formatação</h1>
+<p>	Em muitos casos apenas uma reinstalação completa do Windows pode solucionar um problema, por isso é essencial o usuário conhecer o processo de backup, formatação e instalação do sistema operacional.
+<p>	Esse processo pode ser usado até mesmo para atualizar a versão do sistema ou migrar de um computador para o outro.
+<h2>Imagem do Windows</h2>
+<p>	A instalação do Windows requer uma imagem do sistema operacional, é esta imagem que instalará todo o novo sistema quando o anterior for excluído.
+<p>	Durante a instalação o que rodará no computador é a imagem, isso possibilita que o sistema operacional anterior possa ser desinstalado ainda com o computador ligado.
+
+<p class="notas">Antes de iniciar um processo como este verifique se seu computador suporta o sistema que você quer instalar.</p>
+<p>	Você pode baixar uma imagem do Windows diretamente no site da Microsoft:</p>
+<a class="js-button" href="https://www.microsoft.com/pt-br/software-download/windows10" target="_blank">https://www.microsoft.com/pt-br/software-download/windows10</a>
+
+<h2>Mídia de Instalação</h2>
+<p>	No site da Microsoft você tem a opção de baixar uma ferramenta que criará sua mídia de instalação, lembre-se que durante o processo de instalação, todo o sistema operacional será removido, por isso você precisará de uma mídia externa onde esta imagem será instalada. Caso não tenha essa possibilidade você ainda tem a opção de baixar a imagem e salvá-la numa segunda partição do disco que não seja a que comporta o sistema operacional.
+<p>	Este processo pode ser simplificado deixando tudo por conta do próprio sistema operacional utilizando ferramentas de reinstalação existentes no próprio Windows.
+<h2>Instalação do Windows</h2>
+<p>	Durante a instalação do sistema operacional você terá três opções:
+<p>Manter arquivos configurações e programas: 
+<p>	Essa opção apenas restaurará a imagem do sistema operacional existente no computador.
+<p>Manter apenas arquivos: 
+<p>	Essa opção restaurará o sistema operacional por completo excluindo os programas instalados.
+<p>Não manter nada: 
+<p>	Essa opção excluirá tudo no disco ou partição em que o Windows está instalado, incluindo os arquivos pessoais e reinstalará o sistema operacional. Nada acontece com partições secundárias do disco.
+
+<h2>Backup</h2>
+<p>	Quando precisamos reinstalar completamente o sistema sem manter nada, é necessário fazer backup dos arquivos, pois os mesmos serão excluídos durante o processo de formatação. O backup consiste em copiar os arquivos existentes (ou somente os necessários), para outro local que não seja afetado pela formatação, pode ser para outro computador na rede, para um serviço de nuvem, para uma mídia externa como um pendrive, SSD ou HD, ou até mesmo numa segunda partição que não seja afetada pela formatação.
+
+<p>Backup em armazenamento externo: 
+<p>	Você pode copiar seus arquivos para um HD ou SSD externa, pen-drive ou outro dispositivo de armazenamento externo, a cópia pode ser feita manualmente pelo Explorador de Arquivos, ou configurada para ser feita com frequência pelo sistema operacional por meio das opções de backup.
+
+<p>Em nuvem: 
+<p>	Caso você possua uma assinatura de armazenamento de arquivos em nuvem com capacidade de guardar todos os seus arquivos, você pode fazer o upload deles caso o programa de sincronização já não o tenha feito. Nesse caso, após a formatação será preciso instalar os drivers de rede e conectar o computador à internet para recuperá-los.
+<p>Numa segunda partição do disco: 
+<p>	É possível ainda criar uma segunda partição de disco e mover seus arquivos para ela. Nesse caso, é necessário atenção na hora da instalação do Windows para escolher a partição em que o Windows está instalado, e não a que contém seus arquivos, para não os perder. É ideal que ao particionar deixe as duas partições com tamanhos diferentes para que possa identificá-las no momento da formatação. Para particionar o disco clique no menu iniciar e digite “Criar e Formatar Partições do Disco Rígido”.
+<p class="notas">Todo cuidado é pouco na hora de formatar uma partição para não perder os arquivos pessoais armazenados no computador.</p>
+<h2>Utilizando as opções de backup para salvar os arquivos pessoais do computador</h2>
+<p>	O Windows conta com uma opção de backup automático em mídia externa que pode ser definido nas configurações do Windows em: Configurações → Atualização e Segurança → Backup.
+<p>	Note que você pode efetuar este mesmo processo para agendar backups frequentes que serão feitos em intervalos entre a cada 10 minutos e diariamente. Você pode utilizar essa opção para efetuar um backup em mídia externa antes de formatar o PC.
+<p>	Para tal, siga o processo abaixo:
+<p>1. Abras o aplicativo Configurações.
+<p>2. Clique em Atualização e Segurança.
+<p>3. Clique em Backup.
+<p>4. Clique em Adicionar unidade.
+<p>5. Escolha a unidade em que deseja fazer o backup (a mídia externa deve estar conectada ao computador).
+<p>6. Assim que a opção de backup for ativada, clique em Mais opções.
+<p>7. Em: Fazer backup destas pastas, clique em Adicione uma pasta, e adicione as pastas que você deseja salvar.
+<p>8. Na lista de pastas adicionadas, se houver alguma que você não deseja efetuar backup, basta clicar sobre ela e selecionar Remover.
+<p>9. Clique em Fazer backup agora.
+
+<p class="notas">Para cancelar backups agendados, siga até esta página, role até o final, e escolha “Parar de usar esta unidade”.</p>
+<p class="notas">Para restaurar um backup feito anteriormente, siga até esta página, role até o final, e escolha “Restaurar arquivos de um backup atual”.</p>
+<h2>Utilizando as opções de recuperação para formatar o computador</h2>
+<p>	Para utilizar as opções de recuperação do Windows para executar a formatação, primeiro efetue um backup de seus arquivos, em seguida siga estas etapas:
+<p>1. Abras o aplicativo Configurações.
+<p>2. Clique em Atualização e Segurança.
+<p>3. Clique em Recuperação.
+<p>4. Clique em Começar agora.
+<p>5. Escolha Manter meus arquivos, caso deseja apenas remover os aplicativos, configurações e programas.
+<p>6. Escolha Remover tudo, caso prefira uma reinstalação limpa e completa.
+<p>7. Clique em Avançar.
+<p>8. Clique em Restaurar.
+<p class="notas">Se o motivo da formatação for a remoção de um vírus que estava causando a anormalidade no computador, o ideal é não manter nada. Assim que a formatação for feita, se for copiar arquivos de um backup, uma verificação com o antivírus deve ser feita neles.</p>
+
+
+
+<!-- #endregion -->
+
+
+  </div>
+</div>
+<footer-bar></footer-bar>
+<btn-up></btn-up>
+

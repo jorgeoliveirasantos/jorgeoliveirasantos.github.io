@@ -98,6 +98,7 @@ class Footer extends HTMLElement {
       <a target="_blank" href="https://join.skype.com/invite/uMbQf0utKfUz"><par>Skype</par></a>
       <a target="_blank" href="https://www.facebook.com/artesgraficaseprojetos"><par>Facebook</par></a>
       <a target="_blank" href="https://www.instagram.com/jorgeoliveiraonline/"><par>Instagram</par></a>
+      <a target="_blank" href="https://clubedeautores.com.br/livros/autores/jorge-souza-oliveira-dos-santos"><par>Clube de Autores (Apostilas)</par></a>
       <a target="_blank" href="https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5"><par>Workana (freelancer)</par></a>
     </div>
     <div style="min-width: 90%;">

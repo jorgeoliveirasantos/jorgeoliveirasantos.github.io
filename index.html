@@ -28,6 +28,98 @@
   <a href="#" class="banner"><img id="img1" src="files/capa1.webp" alt=""></a>
 </div>
 
+<div class="js-post">
+  <h1>Seja muito bem-vindo!</h1>
+  <p>Seja para contratar um projeto, adquirir uma apostila do seu setor, ou aprender, este é seu lugar.</p>
+</div>
+
+<!--#region CURSOS -->
+<div class="container">
+  <div class="child">
+    <img src="/files/dev.svg" alt="">
+    <div class="overlay">
+      <a href="/" target="_blank">
+        <p style="font-size: x-large; font-weight: bold;">Desenvolvimento</p>
+        <p>Desenvolvimento de aplicações web, móvel e desktop.</p>
+      </a>
+    </div>
+  </div>
+  <div class="child">
+    <img src="/files/books.svg" alt="">
+    <div class="overlay">
+      <a href="#" target="_blank">
+        <p style="font-size: x-large; font-weight: bold;">Manuais e Apostilas</p>
+        <p>Apostilas do setor tecnológico com metodologia para sala de aula.</p>
+      </a>
+    </div>
+  </div>
+  <div class="child">
+    <img src="/files/learn.svg" alt="">
+    <div class="overlay">
+      <a href="#" target="_blank">
+        <p style="font-size: x-large; font-weight: bold;">Aprendizado</p>
+        <p>Aprendizado on-line e gratuito a sua disposição a qualquer momento.</p>
+      </a>
+    </div>
+  </div>
+  <div class="child">
+    <img src="/files/contacts.svg" alt="">
+    <div class="overlay">
+      <a href="#" target="_blank">
+        <p style="font-size: x-large; font-weight: bold;">Contato</p>
+        <p>Entre em contato por um canal de sua preferência.</p>
+      </a>
+    </div>
+  </div>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: #000A;
+    transition: 500ms ease-in-out;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    opacity: 0;
+  }
+  .overlay a{
+    text-decoration: none;
+    color: white;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0 25px 0;
+    max-width: 100%;
+  }
+  .child {
+    position: relative;
+    background-image: linear-gradient(yellow, #A50);
+    max-width: 23%;
+    min-width: 230px;
+    margin: auto;
+  }
+  .child img {
+    display: block;
+    width: 100%;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, yellow, #A50)1;
+  }
+  .child:hover .overlay {opacity: 1;}
+  @media (max-width: 800px) {
+    .child { max-width: 100%; margin: 20px;}
+    .container { flex-direction: row; }
+  }
+</style>
+<!--#endregion -->
+
+
 <div>
   <div class="js-post"
     style="background-image: linear-gradient(#333, black); margin: 25px 5% 25px 5%;
@@ -85,6 +177,11 @@
   </div>
 </div>
 
+<div class="js-post">
+  <p style="text-indent: 0;">
+    Então Jesus tornou a falar-lhes, dizendo: Eu sou a luz do mundo; quem me segue de modo algum andará em trevas, mas terá a luz da vida..<br>
+    João 8:12
+</div>
 
 </html>
 

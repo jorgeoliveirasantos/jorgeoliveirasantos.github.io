@@ -28,27 +28,27 @@
 <!--#region CURSOS -->
 <div class="container">
   <div class="child">
-    <img src="/files/web.webp" alt="">
+    <img src="files/web.webp" alt="">
     <div class="overlay">
-      <a href="#" style="text-decoration: none;">
+      <a href="#">
         <p style="font-size: x-large; font-weight: bold;">Web Design</p>
         <p>Aprenda Web, HTML, CSS e Web Design Responsivo</p>
       </a>
     </div>
   </div>
   <div class="child">
-    <img src="/files/design.webp" alt="">
+    <img src="files/design.webp" alt="">
     <div class="overlay">
-      <a href="#" style="text-decoration: none;">
+      <a href="#">
         <p style="font-size: x-large; font-weight: bold;">Design Gráfico</p>
         <p>Aprenda os conceitos fundamentais de design gráfico</p>
       </a>
     </div>
   </div>
   <div class="child">
-    <img src="/files/info.webp" alt="">
+    <img src="files/info.webp" alt="">
     <div class="overlay">
-      <a href="/informatica/intro.html" style="text-decoration: none;">
+      <a href="/informatica/intro.html">
         <p style="font-size: x-large; font-weight: bold;">Informática</p>
         <p>Aprenda informática básica e avançada e muito mais</p>
       </a>
@@ -56,20 +56,25 @@
   </div>
 </div>
 <style>
-  * {box-sizing: border-box;}
+  * {
+    box-sizing: border-box;
+  }
   .overlay {
     position: absolute;
     bottom: 0;
     background-color: #000;
     background-color: #000A;
     transition: 500ms ease-in-out;
-    color: yellow;
     font-family: sans-serif;
     text-align: center;
     padding: 20px;
     margin: auto;
     width: 100%;
     opacity: 0;
+  }
+  .overlay a{
+    text-decoration: none;
+    color: yellow;
   }
   .container {
     display: flex;

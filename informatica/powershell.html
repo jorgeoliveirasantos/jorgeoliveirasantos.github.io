@@ -1,1 +1,123 @@
-powershell
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Informática - Jorge Souza</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../javascript/index.js"></script>
+    <script src="info.js"></script>
+    <link rel="icon" type="image/x-icon" href="../logo.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO-->
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="O que é um computador">
+    <meta name="keywords"
+        content="informática, computador, pc, desktop, tecnologia, digital, alfabetizacao digital, introducao a informatica">
+</head>
+
+
+<menu-bar></menu-bar>
+<js-toggle-bar></js-toggle-bar>
+<side-bar-left></side-bar-left>
+
+
+<div class="js-page">
+
+    <div class="js-post">
+        <a href="/informatica/diskmgmt.html" class="js-button">Anterior</a>
+        <a href="/informatica/rede.html" class="js-button" style="float: right;">Próximo</a>
+
+        <!-- #region    ============    POST    ===================   -->
+
+<h1>Windows PowerShell</h1>
+<p> As primeiras versões do Windows já contavam com o Prompt de Comandos, pelo qual, utilizando comandos Bash
+    podemos executar uma infinidade de tarefas, como gerenciar arquivos e pastas, obter informações, gerenciar o
+    computador, configurar a rede, entre muitos outros recursos. A partir do Windows 7 estreou o Windows
+    PowerShell, uma ferramenta ainda mais poderosa que roda no .NET Framework e que utiliza uma linguagem de
+    script que aceita objetos baseada em C#, com influência de várias outras linguagens de programação.</p>
+
+<img src="powershell.png" alt="">
+
+<p> O PowerShell é utilizado para automatizar e gerenciar sistemas, compilar soluções, gerenciar recursos de
+    nuvem entre outras tarefas. Foi inicialmente desenvolvido para Windows, tendo se tornado multiplataforma e
+    de código aberto em 2016.</p>
+<p> Veremos nesta sessão introdutória alguns cmdlets básicos e úteis do Powershell que te ajudarão em tarefas
+    comuns.</p>
+
+<h2>Gerenciando o estado do computador</h2>
+<p>Bloquear a tela:</p>
+<code>rundll32.exe user32.dll,LockWorkStation</code>
+<p>Fazer logoff:</p>
+<code>shutdown.exe -l</code>
+<p>Reiniciar:</p>
+<code> shutdown.exe -r</code>
+<p>Reiniciar:</p>
+<code> Restart-Computer</code>
+<p>Desligar:</p>
+<code> shutdown.exe -s</code>
+<p>Desligar:</p>
+<code> Stop-Computer</code>
+<p>Forçar o fechamento de aplicativos para reiniciar ou desligar:</p>
+<code>Restart-Computer -Force</code>
+<p>Forçar o fechamento de aplicativos para reiniciar ou desligar:</p>
+<code>Stop-Computer -Force</code>
+
+<h2>Trabalhar com arquivos e pastas</h2>
+<p>Abrir arquivos:</p>
+<code>Start-Process “C:\Exemplo.txt”</code>
+<p>Copiar arquivos:</p>
+<code>Copy-Item -Path C:\boot.ini -Destination C:\boot.bak</code>
+<p>Criar pastas:</p>
+<code>New-Item -Path 'C:\temp\New Folder' -ItemType Directory</code>
+<p>Criar arquivos:</p>
+<code>New-Item -Path 'C:\temp\New Folder\file.txt' -ItemType File</code>
+
+<h2>Trabalhar com processos</h2>
+<p>Listar os processos em execução:</p>
+<code>Get-Process</code>
+<p>Parar um processo usando o nome da imagem (Parar o Gerenciador de Tarefas):</p>
+<code>Stop-Process -Name Taskmgr</code>
+<p>Parar um processo pelo Identificador PID:</p>
+<code>Stop-Process -Id 2332</code>
+<p>Listar os aplicativos padrão instalados no computador:</p>
+<code>Get-AppxPackage | Select Name, PackageFullName</code>
+<p>Desinstalar um aplicativo padrão (Desinstalar o aplicativo de alarmes):</p>
+<code>Get-AppxPackage *Microsoft.WindowsAlarms* | Remove-AppxPackage</code>
+<p>Desinstalar um aplicativo padrão (Desinstalar a calculadora):</p>
+<code>Get-AppxPackage *Microsoft.WindowsCalculator* | Remove-AppxPackage</code>
+
+<h2>Iniciando processos pelo PowerShell</h2>
+<p>Iniciando outra instância do PowerShell:</p>
+<code>Start-Process PowerShell</code>
+<p>Iniciando o Prompt de Comandos:</p>
+<code>Start-Process Cmd</code>
+<p>Iniciando a Calculadora:</p>
+<code>Start-Process Calc</code>
+<p>Iniciando o Bloco de Notas:</p>
+<code>Start-Process Notepad</code>
+<p>Abrindo uma janela do Explorer:</p>
+<code>Start-Process Explorer</code>
+<p>Iniciando o Wordpad:</p>
+<code>Start-Process Write</code>
+<p>Iniciando o Paint:</p>
+<code>Start-Process Mspaint</code>
+
+<p class="notas">Pode não fazer sentido abrir o Powershell para excutar essas tarefas básicas, e não faz, mas em
+    programação o Powershell é uma ferramenta extremamente útil, mesmo quem não for programador pode utilizá-lo para
+    criar scripts que executam diversas tarefas complexas automaticamente, que feitas manulamente levariam tempo.
+</p>
+<p class="notas">Esta é uma sessão introdutória e não visa ensinar a utilizar o powershell apenas te dar uma
+    introdução, com a ajuda de seu instrutor você deve executar um exercício básico para entender o
+    funcionamento dessa ferramenta.</p>
+
+<p>Você pode aprender a utilizá-lo neste link:</p>
+<a class="js-button" href="https://docs.microsoft.com/pt-br/powershell/scripting/overview?view=powershell-7.2" target="_blank">Microsoft Docs - Powershell</a> 
+
+<!-- #endregion -->
+
+
+    </div>
+</div>
+<footer-bar></footer-bar>
+<btn-up></btn-up>

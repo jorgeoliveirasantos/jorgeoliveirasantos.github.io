@@ -1,51 +1,37 @@
+//#region Menu
 class Menu extends HTMLElement {
   constructor() {
     super();
   }
   connectedCallback() {
     this.innerHTML = `
-<div class="js-nav">
-  <ul>
-    <li tabindex="1"><a href="/index.html">Início</a></li>
-    <li class="js-drop-button" tabindex="2">
-      <a>Aprendizado <i class="seta"></i></a>
-      <div class="js-drop-content">
-        <a href="/informatica/intro.html">Informática</a>
-        <a href="#">Design Gráfico</a>
-        <hr>
-        <pre><small>Desenvolvimento Web:</small></pre>
-        <a>1. Web Design</a>
-        <a>2. Javascript</a>
-        <a>3. Aplicações Web e APIs</a>
-        <hr>
-        <pre><small>Programação:</small></pre>
-        <a>1. Desktop</a>
-        <a>2. Móvel</a>
-        <a>3. Gráficos e Multimídia</a>
-        <a>4. Jogos</a>
-      </div>
-    </li>
-    <li tabindex="3"><a>Apostilas</a></li>
-  </ul>
-  <style>
-    .seta {
-      border: solid #ddd;
-      border-width: 0 3px 3px 0;
-      display: inline-block;
-      padding: 2px;
-      transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      margin: auto 5px auto 5px;
-    }
-  </style>
-</div>
+  <div class="js-nav">
+    <ul>
+      <li tabindex="1"><a href="/index.html">Início</a></li>
+      <li tabindex="2"><a href="/aprendizado.html">Aprendizado</a></li>
+      <li tabindex="3"><a href="/apostilas.html">Apostilas</a></li>
+    </ul>
+    <style>
+      .seta {
+        border: solid #ddd;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        margin: auto 5px auto 5px;
+      }
+    </style>
+  </div>
     `;
   }
 }
 customElements.define('menu-bar', Menu);
 
 
+//#endregion
 
+//#region BTN-UP
 class BtnUp extends HTMLElement {
   constructor() {
     super();
@@ -59,9 +45,9 @@ class BtnUp extends HTMLElement {
   }
 }
 customElements.define('btn-up', BtnUp);
+//#endregion
 
-
-
+//#region Footer
 class Footer extends HTMLElement {
   constructor() {
     super();
@@ -71,25 +57,16 @@ class Footer extends HTMLElement {
     <div class="js-footer">
     <div style="min-width: 300px;">
       <tit>Aprendizado On-Line</tit>
-      <a href=""><par>Informática Básica e Avançada</par></a>
-      <a href=""><par>Design Gráfico</par></a>
-      <a href=""><par>Web Design (HTML e CSS)</par></a>
-      <a href=""><par>Javascript (Front-End e Back-End)</par></a>
-      <a href=""><par>Programação de Gráficos e Multimídia</par></a>
-      <a href=""><par>Programação para PC Desktop</par></a>
-      <a href=""><par>Desenvolvimento de Apps Móveis</par></a>
-      <a href=""><par>Desenvolvimento de Jogos</par></a>
+      <a href="/informatica/intro.html"><par>Informática Básica e Avançada</par></a>
     </div>
     <div style="min-width: 300px;">
       <tit>Manuais e Apostilas</tit>
-      <a href=""><par>Informática Básica e Avançada</par></a>
-      <a href=""><par>Design Gráfico</par></a>
-      <a href=""><par>Web Design (HTML e CSS)</par></a>
-      <a href=""><par>Javascript (Front-End e Back-End)</par></a>
-      <a href=""><par>Programação de Gráficos e Multimídia</par></a>
-      <a href=""><par>Programação para PC Desktop</par></a>
-      <a href=""><par>Desenvolvimento de Apps Móveis</par></a>
-      <a href=""><par>Desenvolvimento de Jogos</par></a>
+      <a href="https://clubedeautores.com.br/livro/curso-de-informatica-basica-e-avancada"
+        target="_blank"><par>Informática Básica e Avançada</par></a>
+      <a href="https://clubedeautores.com.br/livro/curso-completo-de-design-grafico"
+        target="_blank"><par>Design Gráfico</par></a>
+      <a href="https://clubedeautores.com.br/livro/curso-de-web-design-2"
+        target="_blank"><par>Web Design (HTML e CSS)</par></a>
     </div>
     <div style="min-width: 300px;">
       <tit>Contato</tit>
@@ -111,10 +88,9 @@ class Footer extends HTMLElement {
   }
 }
 customElements.define('footer-bar', Footer);
+//#endregion
 
-
-
-
+//#region Toggle Sidebar
 class Toggle extends HTMLElement {
   constructor() {
     super();
@@ -136,15 +112,16 @@ customElements.define('js-toggle-bar', Toggle);
 
 let sideVisible = false;
 function showSide() {
-    if (sideVisible) {
-        let sideBar = document.querySelector('.js-side-left');
-        sideBar.style.display = 'none';
-        sideVisible = false;
-    }else{
-        let sideBar = document.querySelector('.js-side-left');
-        sideBar.style.display = 'block';
-        sideVisible = true;
-        window.scroll(0, 150);
-      }
-    }
+  if (sideVisible) {
+    let sideBar = document.querySelector('.js-side-left');
+    sideBar.style.display = 'none';
+    sideVisible = false;
+  } else {
+    let sideBar = document.querySelector('.js-side-left');
+    sideBar.style.display = 'block';
+    sideVisible = true;
+    window.scroll(0, 150);
+  }
+}
+//#endregion
 

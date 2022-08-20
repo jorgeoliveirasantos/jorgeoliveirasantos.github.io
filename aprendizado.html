@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+  <title>Jorge Souza</title>
+  <link rel="stylesheet" href="/css/index.css">
+  <script src="/javascript/index.js"></script>
+  <link rel="icon" type="image/x-icon" href="/logo.svg">
+  <meta charset="UTF-8"/>
+  <meta name="viewport"  content="width=device-width, initial-scale=1">
+  <!--SEO-->
+  <meta name="author" content="Jorge Souza Oliveira dos Santos"/>
+  <meta name="description" content="Jorge Souza Oliveira dos Santos">
+  <meta name="keywords"
+    content="informatica, curso, computador, computacao, programação, tecnologia, info, 
+    desenvolvimento, web, design, web design, design grafico, tech, 
+    visual studio, visual studio code, vs code, c#, javascript, dotnet,
+    node js, dev express, html, css">
+</head>
+
+<menu-bar></menu-bar>
+
+<div class="js-post">
+  <h1>Aprendizado on-line</h1>
+  <p>Confira aqui a lista atualizada do conteúdo on-line dos cursos.</p>
+</div>
+
+<!--#region CURSOS -->
+<div class="container">
+  <div class="child">
+    <img src="files/web.webp" alt="">
+    <div class="overlay">
+      <a href="#">
+        <p style="font-size: x-large; font-weight: bold;">Web Design</p>
+        <p>Aprenda Web, HTML, CSS e Web Design Responsivo</p>
+      </a>
+    </div>
+  </div>
+  <div class="child">
+    <img src="files/design.webp" alt="">
+    <div class="overlay">
+      <a href="#">
+        <p style="font-size: x-large; font-weight: bold;">Design Gráfico</p>
+        <p>Aprenda os conceitos fundamentais de design gráfico</p>
+      </a>
+    </div>
+  </div>
+  <div class="child">
+    <img src="files/info.webp" alt="">
+    <div class="overlay">
+      <a href="/informatica/intro.html">
+        <p style="font-size: x-large; font-weight: bold;">Informática</p>
+        <p>Aprenda informática básica e avançada e muito mais</p>
+      </a>
+    </div>
+  </div>
+</div>
+<style>
+  * {box-sizing: border-box;}
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    background-color: #000;
+    background-color: #000A;
+    transition: 500ms ease-in-out;
+    color: yellow;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    width: 100%;
+    opacity: 0;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 25px 0 25px 0;
+    max-width: 100%;
+  }
+  .child {
+    position: relative;
+    max-width: 30%;
+    min-width: 230px;
+    margin: 20px;
+    margin: auto;
+  }
+  .child img {
+    display: block;
+    width: 100%;
+    border: 1px solid;
+    border-image: linear-gradient(45deg, yellow, #A50)1;
+  }
+  .child:hover .overlay {opacity: 1;}
+  @media (max-width: 800px) {
+    .child { max-width: 100%; margin: 20px;}
+    .container { flex-direction: row; }
+  }
+</style>
+<!--#endregion -->
+
+<div class="js-post">
+  <h2>Apostilas</h2>
+  <p>Se preferir adquirir uma apostila impressa clique no link abaixo:</p>
+  <a class="js-button" href="/apostilas.html">Apostilas</a>
+</div>
+
+</html>
+
+<footer-bar></footer-bar>
+<btn-up></btn-up>

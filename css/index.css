@@ -213,6 +213,7 @@
 .js-nav li{
   float: left;
   list-style: none;
+  list-style-position: inside;
 }
 
 .js-nav a{
@@ -251,7 +252,7 @@
   animation-duration: 1s;
 }
 
-.js-drop-button:focus-within .js-drop-content{
+.js-drop-button:hover .js-drop-content{
   display: block;
 }
 
@@ -303,10 +304,11 @@
 .btnUp {
   width: 40px;
   height: 40px;
+  margin: 10px;
   fill: var(--cinzaMedio);
   position: fixed;
-  bottom: 10px;
-  right: 10px;
+  bottom: 0;
+  right: 0;
 }
 @keyframes btnUpMotiom {
   from {
@@ -326,7 +328,7 @@
   animation-name: btnUpMotiom;
   animation-duration: 500ms;
   animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  animation-iteration-count: infinite;
+  animation-iteration-count: 6;
   animation-direction: alternate;
   cursor: pointer;
 }

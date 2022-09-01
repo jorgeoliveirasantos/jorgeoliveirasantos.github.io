@@ -230,6 +230,7 @@
 .js-nav a:hover{
   background-color: VAR(--AMARELO);
   color: var(--black);
+  transition-duration: 700ms;
 }
 
 .js-drop-button{

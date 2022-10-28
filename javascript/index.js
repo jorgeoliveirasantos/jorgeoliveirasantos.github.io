@@ -7,9 +7,9 @@ class Menu extends HTMLElement {
     this.innerHTML = `
   <div class="js-nav">
     <ul>
-      <li tabindex="1"><a href="/index.html">Início</a></li>
-      <li tabindex="2"><a href="/aprendizado.html">Aprendizado</a></li>
-      <li tabindex="3"><a href="/apostilas.html">Apostilas</a></li>
+      <li tabindex="1"><a href="./index.html">Início</a></li>
+      <li tabindex="2"><a href="./aprendizado.html">Aprendizado</a></li>
+      <li tabindex="3"><a href="./apostilas.html">Apostilas</a></li>
     </ul>
     <style>
       .seta {
@@ -57,7 +57,7 @@ class Footer extends HTMLElement {
     <div class="js-footer">
     <div style="min-width: 300px;">
       <tit>Aprendizado On-Line</tit>
-      <a href="/informatica/intro.html"><par>Informática Básica e Avançada</par></a>
+      <a href="./informatica/intro.html"><par>Informática Básica e Avançada</par></a>
     </div>
     <div style="min-width: 300px;">
       <tit>Manuais e Apostilas</tit>

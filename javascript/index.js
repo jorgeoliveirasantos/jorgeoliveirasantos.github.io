@@ -58,6 +58,7 @@ class Footer extends HTMLElement {
     <div style="min-width: 300px;">
       <tit>Aprendizado On-Line</tit>
       <a href="/informatica/intro.html"><par>Informática Básica e Avançada</par></a>
+      <a href="/design/intro.html"><par>Design Gráfico</par></a>
     </div>
     <div style="min-width: 300px;">
       <tit>Manuais e Apostilas</tit>
@@ -81,7 +82,7 @@ class Footer extends HTMLElement {
     <div style="min-width: 90%;">
       <hr style="width: 90%; margin: 25px auto 25px auto">
       <img src="/files/logo_amarela.svg" style="pointer-events: none; border: none; background-color: transparent; width: 40px; display: block; margin: auto; align-self: center;"/>
-      <tit id="copy" style="align-self: center; text-align: center; padding: 20px; display: block;">Copyright © 2022 - Jorge Souza Oliveira dos Santos</tit>
+      <tit id="copy" style="align-self: center; text-align: center; padding: 20px; display: block;">Copyright © ${new Date().getFullYear()} - Jorge Souza Oliveira dos Santos</tit>
     </div>
   </div>
     `;

@@ -2,78 +2,17 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="500"
-   height="500"
-   viewBox="0 0 132.29166 132.29167"
+   width="26.458336mm"
+   height="15.875021mm"
+   viewBox="0 0 26.458336 15.875021"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="dev.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview7"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="0.88170288"
-     inkscape:cx="364.06822"
-     inkscape:cy="275.03596"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     units="px"
-     inkscape:showpageshadow="2"
-     inkscape:deskcolor="#d1d1d1" />
-  <defs
-     id="defs2">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient482"
-       id="linearGradient484"
-       x1="62.717178"
-       y1="132.29167"
-       x2="62.717178"
-       y2="-1.174986e-16"
-       gradientUnits="userSpaceOnUse" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient482">
-      <stop
-         style="stop-color:#ff0000;stop-opacity:1"
-         offset="0"
-         id="stop478" />
-      <stop
-         style="stop-color:#2b0000;stop-opacity:1"
-         offset="1"
-         id="stop480" />
-    </linearGradient>
-  </defs>
-  <g
-     inkscape:label="Camada 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="fill:url(#linearGradient484);fill-opacity:1;stroke-width:1.5;stroke-linecap:round;paint-order:stroke fill markers"
-       id="rect312"
-       width="132.29167"
-       height="132.29167"
-       x="0"
-       y="0" />
-    <path
-       d="m 52.607618,90.097884 -23.95206,-23.952051 23.95206,-23.95205 -7.28965,-7.28984 -31.24189,31.24189 31.24189,31.24189 z m 27.07643,0 23.952062,-23.952051 -23.952062,-23.95205 7.28965,-7.28984 31.241892,31.24189 -31.241892,31.24189 z"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2" /><g
+     id="layer1"
+     transform="translate(-73.927374,-28.79058)"><path
+       d="m 83.716943,42.813497 -6.085411,-6.085409 6.085411,-6.085407 -1.852054,-1.852102 -7.937511,7.937509 7.937511,7.937511 z m 6.879207,0 6.08541,-6.085409 -6.08541,-6.085407 1.852054,-1.852102 7.937506,7.937509 -7.937506,7.937511 z"
        id="path12864"
-       style="fill:#ffffff;stroke-width:5.20698" />
-  </g>
-</svg>
+       style="fill:#FF2233;fill-opacity:1;stroke-width:1.32291" /></g></svg>

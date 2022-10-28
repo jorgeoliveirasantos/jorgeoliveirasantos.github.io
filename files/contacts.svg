@@ -2,82 +2,17 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="500"
-   height="500"
-   viewBox="0 0 132.29166 132.29167"
+   width="23.812485mm"
+   height="26.458332mm"
+   viewBox="0 0 23.812485 26.458332"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
-   sodipodi:docname="contacts.svg"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xml:space="preserve"
    xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg">
-  <sodipodi:namedview
-     id="namedview7"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:document-units="mm"
-     showgrid="false"
-     inkscape:zoom="0.62345808"
-     inkscape:cx="405.80114"
-     inkscape:cy="244.60345"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
-     inkscape:current-layer="layer1"
-     units="px"
-     inkscape:showpageshadow="2"
-     inkscape:deskcolor="#d1d1d1" />
-  <defs
-     id="defs2">
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient482"
-       id="linearGradient484"
-       x1="62.717178"
-       y1="132.29167"
-       x2="62.717178"
-       y2="-1.174986e-16"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(6.6861979e-6)" />
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient482">
-      <stop
-         style="stop-color:#00ff66;stop-opacity:1"
-         offset="0"
-         id="stop478" />
-      <stop
-         style="stop-color:#002b11;stop-opacity:1"
-         offset="1"
-         id="stop480" />
-    </linearGradient>
-  </defs>
-  <g
-     inkscape:label="Camada 1"
-     inkscape:groupmode="layer"
-     id="layer1">
-    <rect
-       style="fill:url(#linearGradient484);fill-opacity:1;stroke-width:1.5;stroke-linecap:round;paint-order:stroke fill markers"
-       id="rect312"
-       width="132.29167"
-       height="132.29167"
-       x="1.0172526e-05"
-       y="0" />
-    <path
-       d="m 66.145833,23.524717 c -21.1827,0 -38.359,17.176308 -38.359,38.358998 0,17.773 12.1044,32.6904 28.5136,37.03775 l 9.8454,9.845485 9.8455,-9.845485 c 16.4091,-4.34735 28.513497,-19.26475 28.513497,-37.03775 0,-21.1827 -17.176297,-38.358998 -38.358997,-38.358998 z m 0,8.52423 c 7.0751,0 12.7864,5.711228 12.7864,12.786328 0,7.07511 -5.7113,12.78633 -12.7864,12.78633 -7.0751,0 -12.7863,-5.71122 -12.7863,-12.78633 0,-7.0751 5.7112,-12.786328 12.7863,-12.786328 z m 0,60.948188 c -10.6552,0 -20.0745,-5.4555 -25.5726,-13.724 0.1278,-8.4816 17.0484,-13.1273 25.5726,-13.1273 8.4816,0 25.4448,4.6457 25.5727,13.1273 -5.4981,8.2685 -14.9174,13.724 -25.5727,13.724 z"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+     id="defs2" /><g
+     id="layer1"
+     transform="translate(-145.33201,-25.25858)"><path
+       d="m 157.23825,25.25858 c -6.5749,0 -11.90625,5.331353 -11.90625,11.906247 0,5.516562 3.75708,10.146773 8.85033,11.496146 l 3.05592,3.05594 3.05594,-3.05594 c 5.09322,-1.349373 8.8503,-5.979584 8.8503,-11.496146 0,-6.574897 -5.33135,-11.906247 -11.90624,-11.906247 z m 0,2.645835 c 2.19604,0 3.96877,1.772708 3.96877,3.968748 0,2.196044 -1.77273,3.968749 -3.96877,3.968749 -2.19604,0 -3.96874,-1.772705 -3.96874,-3.968749 0,-2.19604 1.7727,-3.968748 3.96874,-3.968748 z m 0,18.917705 c -3.30727,0 -6.23093,-1.693333 -7.93748,-4.259791 0.0397,-2.632604 5.29165,-4.074582 7.93748,-4.074582 2.6326,0 7.89781,1.441978 7.93751,4.074582 -1.70656,2.566458 -4.63022,4.259791 -7.93751,4.259791 z"
        id="path13538"
-       style="fill:#ffffff;stroke-width:4.26211"
-       inkscape:export-filename="E:\Área de Trabalho\contact.webp"
-       inkscape:export-xdpi="96"
-       inkscape:export-ydpi="96" />
-  </g>
-</svg>
+       style="fill:#33FF55;fill-opacity:1;stroke-width:1.32292" /></g></svg>

@@ -4,9 +4,12 @@
 <head>
 
   <title>Jorge Souza</title>
-  <link rel="stylesheet" href="./css/index.css"> <!--remover / inicial para desenvolvimento -->
-  <script src="./javascript/index.js"></script> <!--remover / inicial para desenvolvimento -->
-  <link rel="icon" type="image/x-icon" href="./logo.svg"> <!--remover / inicial para desenvolvimento -->
+  <link rel="stylesheet" href="./css/index.css">
+  <!--remover / inicial para desenvolvimento -->
+  <script src="./javascript/index.js"></script>
+  <!--remover / inicial para desenvolvimento -->
+  <link rel="icon" type="image/x-icon" href="./logo.svg">
+  <!--remover / inicial para desenvolvimento -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--SEO-->
@@ -22,10 +25,10 @@
 
 
 <div class="img-slider">
-  <a href="#" class="banner"><img id="img4" src="./files/capa4.webp" alt=""></a> <!--remover / inicial para desenvolvimento -->
-  <a href="#" class="banner"><img id="img3" src="./files/capa3.webp" alt=""></a> <!--remover / inicial para desenvolvimento -->
-  <a href="#" class="banner"><img id="img2" src="./files/capa2.webp" alt=""></a> <!--remover / inicial para desenvolvimento -->
-  <a href="#" class="banner"><img id="img1" src="./files/capa1.webp" alt=""></a> <!--remover / inicial para desenvolvimento -->
+  <a href="#" class="banner"><img id="img4" src="./files/capa4.webp" alt=""></a>
+  <a href="#" class="banner"><img id="img3" src="./files/capa3.webp" alt=""></a>
+  <a href="#" class="banner"><img id="img2" src="./files/capa2.webp" alt=""></a>
+  <a href="#" class="banner"><img id="img1" src="./files/capa1.webp" alt=""></a>
 </div>
 
 <div class="js-post">
@@ -35,96 +38,66 @@
 
 <!--#region CURSOS -->
 <div class="container">
-  <div class="child">
-    <img src="./files/dev.svg" alt=""> <!--remover / inicial para desenvolvimento -->
-    <div class="overlay">
-      <a href="./aprendizado.html"> <!--remover / inicial para desenvolvimento -->
-        <p style="font-size: x-large; font-weight: bold;">Desenvolvimento</p>
-        <p>Desenvolvimento de aplicações web, móvel e desktop.</p>
-      </a>
-    </div>
-  </div>
-  <div class="child">
-    <img src="./files/books.svg" alt=""> <!--remover / inicial para desenvolvimento -->
-    <div class="overlay">
-      <a href="./apostilas.html"> <!--remover / inicial para desenvolvimento -->
-        <p style="font-size: x-large; font-weight: bold;">Manuais e Apostilas</p>
-        <p>Apostilas do setor tecnológico com metodologia para sala de aula.</p>
-      </a>
-    </div>
-  </div>
-  <div class="child">
-    <img src="./files/learn.svg" alt=""> <!--remover / inicial para desenvolvimento -->
-    <div class="overlay">
-      <a href="./aprendizado.html"> <!--remover / inicial para desenvolvimento -->
-        <p style="font-size: x-large; font-weight: bold;">Aprendizado</p>
-        <p>Aprendizado on-line e gratuito a sua disposição a qualquer momento.</p>
-      </a>
-    </div>
-  </div>
-  <div class="child">
-    <img src="./files/contacts.svg" alt=""> <!--remover / inicial para desenvolvimento -->
-    <div class="overlay">
-      <a href="./aprendizado.html"> <!--remover / inicial para desenvolvimento -->
-        <p style="font-size: x-large; font-weight: bold;">Contato</p>
-        <p>Entre em contato por um canal de sua preferência.</p>
-      </a>
-    </div>
-  </div>
+  <a class="child" href="#">
+    <img src="./files/dev.svg" alt="">
+    <p>Desenvolvimento de aplicações web, móvel e desktop.</p>
+  </a>
+  <a class="child" href="./apostilas.html">
+    <img src="./files/books.svg" alt="">
+    <p>Apostilas do setor tecnológico com metodologia para sala de aula.</p>
+  </a>
+  <a class="child" href="./aprendizado.html">
+    <img src="./files/learn.svg" alt="">
+    <p>Aprendizado on-line e gratuito a sua disposição a qualquer momento.</p>
+  </a>
+  <a class="child" href="#">
+    <img src="./files/contacts.svg" alt="">
+    <p>Entre em contato por um canal de sua preferência.</p>
+  </a>
 </div>
 <style>
   * {
     box-sizing: border-box;
   }
-  .overlay {
-    position: absolute;
-    bottom: 0;
-    background-color: #000A;
-    transition: 500ms ease-in-out;
-    font-family: sans-serif;
-    text-align: center;
-    padding: 20px;
-    margin: auto;
-    width: 100%;
-    opacity: 0;
-  }
-  .overlay a{
-    text-decoration: none;
-    color: white;
-  }
+
   .container {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 25px 0 25px 0;
+    display: table-row;
     max-width: 100%;
   }
+
   .child {
-    position: relative;
-    fill: white;
-    background-image: linear-gradient(yellow, #A50);
-    max-width: 23%;
-    min-width: 230px;
-    margin: auto;
+    text-decoration: none;
+    font-family: sans-serif;
+    display: table-cell;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    vertical-align: middle;
+    opacity: 0.5;
   }
-  .child img {
-    display: block;
-    width: 100%;
-    border: 1px solid;
-    border-image: linear-gradient(45deg, yellow, #A50)1;
+
+  .child:hover {
+    opacity: 1;
+    transition-duration: 200ms;
   }
-  .child:hover .overlay {opacity: 1;}
-  @media (max-width: 800px) {
-    .child { max-width: 100%; margin: 20px;}
-    .container { flex-direction: row; }
+
+  @media (max-width: 600px) {
+    .container {
+      max-width: 70%;
+      display: table;
+      margin: 15px auto 15px auto;
+    }
+    .child {
+      display: table-row;
+    }
   }
 </style>
 <!--#endregion -->
 
 
 <div>
-  <div class="js-post"
-    style="background-image: linear-gradient(#333, black); margin: 25px 5% 25px 5%;
-    border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
+  <div class="js-post" style="background-color: var(--pretoMedio); color: white; margin: 25px 5% 25px 5%;
+  border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
     <div style="display: inline-block; vertical-align: top;">
       <h3>Formação</h3>
       <ul>
@@ -147,8 +120,7 @@
     </div>
   </div>
 
-  <div class="js-post"
-    style="background-image: linear-gradient(#333, black); color: white; margin: 25px 5% 25px 5%;
+  <div class="js-post" style="background-color: var(--pretoMedio); color: white; margin: 25px 5% 25px 5%;
     border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
     <h3>Carreira</h3>
     <p>
@@ -180,7 +152,8 @@
 
 <div class="js-post">
   <p style="text-indent: 0;">
-    Então Jesus tornou a falar-lhes, dizendo: Eu sou a luz do mundo; quem me segue de modo algum andará em trevas, mas terá a luz da vida..<br>
+    Então Jesus tornou a falar-lhes, dizendo: Eu sou a luz do mundo; quem me segue de modo algum andará em trevas, mas
+    terá a luz da vida..<br>
     João 8:12
 </div>
 

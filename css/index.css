@@ -3,14 +3,17 @@
   font-family: "Hubballi";
   src: url("Hubballi-Regular.ttf");
 }
+
 @font-face {
   font-family: "Tech";
   src: url("ShareTechMono-Regular.ttf");
 }
+
 @font-face {
   font-family: "Baloo";
   src: url("BalooBhaijaan2-VariableFont_wght.ttf");
 }
+
 /* #endregion */
 
 /* #region VARIÁVEIS */
@@ -34,7 +37,7 @@
 
 /* #region BARRA LATERAL  =========================================== */
 
-.js-side-left{
+.js-side-left {
   width: 20%;
   left: 0;
   top: 0;
@@ -48,7 +51,8 @@
   overflow-y: auto;
   box-sizing: border-box;
 }
-.js-side-left a{
+
+.js-side-left a {
   display: block;
   color: var(--cinzaLeve);
   padding: 10px;
@@ -58,7 +62,8 @@
   text-align: left;
   font-size: medium;
 }
-.js-side-left p{
+
+.js-side-left p {
   display: block;
   color: var(--AMARELO);
   padding: 10px;
@@ -69,7 +74,8 @@
   font-size: x-large;
   font-weight: bold;
 }
-.js-side-left a:hover{
+
+.js-side-left a:hover {
   background-color: var(--AMARELO);
   color: var(--black);
   transition-duration: 500ms;
@@ -85,15 +91,19 @@
   color: var(--white);
   z-index: 1;
 }
+
 .js-index-icon:hover {
   background-color: var(--AMARELO);
   cursor: pointer;
 }
-.js-index-icon:hover div, .js-index-icon:active div {
+
+.js-index-icon:hover div,
+.js-index-icon:active div {
   background-color: var(--black) !important;
   cursor: pointer;
   transition-duration: 500ms;
 }
+
 .js-index-icon {
   padding: 5px;
   width: fit-content;
@@ -120,41 +130,51 @@
 /* #region IMAGE SLIDER */
 
 @keyframes bannerAnimation {
-  0%, 28%, 100% {
+
+  0%,
+  28%,
+  100% {
     opacity: 0%;
     display: none;
     z-index: -1;
   }
-  3%, 25% {
+
+  3%,
+  25% {
     opacity: 100%;
     display: block;
     z-index: 1;
   }
 }
+
 #img1 {
   animation-name: bannerAnimation;
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-delay: 0s;
 }
+
 #img2 {
   animation-name: bannerAnimation;
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-delay: 10s;
 }
+
 #img3 {
   animation-name: bannerAnimation;
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-delay: 20s;
 }
+
 #img4 {
   animation-name: bannerAnimation;
   animation-duration: 40s;
   animation-iteration-count: infinite;
   animation-delay: 30s;
 }
+
 .img-slider {
   background-color: var(--black);
   height: fit-content;
@@ -163,10 +183,12 @@
   width: 100%;
   grid-template-rows: 1fr;
 }
+
 .banner img {
   width: 100%;
   pointer-events: none;
 }
+
 .banner {
   top: 0;
   grid-row: 1;
@@ -179,7 +201,7 @@
 
 /* #region MENU DE NAVEGAÇÃO  =========================================== */
 
-.js-nav{
+.js-nav {
   background-color: var(--pretoDark);
   border-bottom: var(--pretoLeve) 1px solid;
   width: 100%;
@@ -195,30 +217,30 @@
   z-index: 1000;
 }
 
-.js-nav ul{
+.js-nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.js-nav .right{
+.js-nav .right {
   float: right;
 }
 
-.js-nav .active{
+.js-nav .active {
   background-color: var(--black);
   color: VAR(--AMARELO);
   border-left: 3px solid VAR(--AMARELO);
   border-right: 3px solid VAR(--AMARELO);
 }
 
-.js-nav li{
+.js-nav li {
   float: left;
   list-style: none;
   list-style-position: inside;
 }
 
-.js-nav a{
+.js-nav a {
   display: block;
   color: var(--white);
   padding: 15px 20px 15px 20px;
@@ -229,20 +251,27 @@
   max-height: 40px;
 }
 
-.js-nav a:hover{
+.js-nav a:hover {
   background-color: VAR(--AMARELO);
   color: var(--black);
   transition-duration: 700ms;
 }
 
-.js-drop-button{
+.js-drop-button {
   display: block;
 }
+
 @keyframes drpMotiom {
-  from { opacity: 0%; }
-  to { opacity: 100%; }
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
 }
-.js-drop-content{
+
+.js-drop-content {
   display: none;
   position: absolute;
   background-color: var(--pretoDark);
@@ -255,14 +284,14 @@
   animation-duration: 1s;
 }
 
-.js-drop-button:hover .js-drop-content{
+.js-drop-button:hover .js-drop-content {
   display: block;
 }
 
 /* #endregion ==================================*/
 
 /* #region RODAPÉ */
-.js-footer{
+.js-footer {
   padding: 20px;
   background-color: var(--pretoDark);
   backdrop-filter: blur(10px);
@@ -276,31 +305,37 @@
   margin: 0;
   bottom: 0;
 }
-.js-footer a{
+
+.js-footer a {
   text-decoration: none;
 }
-.js-footer par{
+
+.js-footer par {
   display: block;
   color: var(--cinzaLeve);
   font-size: small;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   padding-top: 10px;
 }
-.js-footer par:hover{
+
+.js-footer par:hover {
   color: var(--AMARELO);
   cursor: pointer;
 }
-.js-footer tit{
+
+.js-footer tit {
   display: block;
   color: var(--cinzaMedio);
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-.js-footer div{
+
+.js-footer div {
   vertical-align: top;
   flex-basis: 300px;
   flex-grow: 100%;
 }
+
 /* #endregion */
 
 /* #region BTN-UP */
@@ -322,46 +357,53 @@
   margin: 5px;
   cursor: pointer;
 }
+
 /* #endregion */
 
 /* #region PÁGINA ============================================================= */
-body{
+body {
   background-color: var(--pretoDark);
   margin: 0;
 }
-.js-page{
+
+.js-page {
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
 }
-.js-post{
+
+.js-post {
   background-color: var(--pretoMedio);
   padding: 30px;
   margin: 0;
   box-sizing: border-box;
   border: var(--pretoLeve) 1px solid;
 }
-.js-post-frame{
+
+.js-post-frame {
   border: none;
   display: none;
 }
+
 /* #endregion PÁGINA ================================== */
 
 /* #region FORMATAÇÃO ================================== */
-.js-post p{
+.js-post p {
   font-size: x-large;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   color: var(--cinzaLeve);
   text-align: justify;
   text-indent: 2em;
 }
-hr{
+
+hr {
   border-width: 1px 0 0 0;
   border-image: var(--gradiente45);
   margin: 5px;
 }
-.js-post h1{
+
+.js-post h1 {
   color: var(--AMARELO);
   font-size: 3rem;
   font-family: Baloo;
@@ -370,20 +412,23 @@ hr{
   padding-top: 50px;
   padding-bottom: 50px;
 }
-.js-post h2{
+
+.js-post h2 {
   color: var(--AMARELO);
   font-family: Baloo;
   font-weight: bold;
   font-size: 2rem;
 }
-.js-post h3{
+
+.js-post h3 {
   color: var(--cinzaLeve);
   font-family: Baloo;
   font-weight: bold;
   font-size: 1.5rem;
   text-align: left;
 }
-.js-button{
+
+.js-button {
   display: inline-block;
   color: var(--white);
   background-color: var(--pretoDark);
@@ -399,11 +444,13 @@ hr{
   cursor: pointer;
   transition-duration: 600ms;
 }
-.js-button:hover{
+
+.js-button:hover {
   color: var(--black);
   background-color: var(--AMARELO);
 }
-.notas{
+
+.notas {
   border: 1px solid;
   border-image: var(--gradiente45);
   text-align: right;
@@ -415,7 +462,8 @@ hr{
   margin-left: 3em;
   padding: 30px;
 }
-.codigo{
+
+.codigo {
   color: cyan;
   background-color: black;
   padding: 0px 10px 0px 10px;
@@ -423,7 +471,8 @@ hr{
   font-size: large;
   font-family: Tech, 'Courier New', Courier, monospace;
 }
-code{
+
+code {
   display: block;
   color: cyan;
   background-color: black;
@@ -434,7 +483,8 @@ code{
   font-family: Tech, 'Courier New', Courier, monospace;
   text-align: left;
 }
-.js-post img{
+
+.js-post img {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
@@ -445,24 +495,28 @@ code{
   border: 1px solid;
   border-image: var(--gradiente45);
 }
-.js-table{
+
+.js-table {
   margin: auto;
   color: var(--cinzaLeve);
   font-size: x-large;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   padding: 15px;
 }
-.js-table th{
+
+.js-table th {
   color: VAR(--AMARELO);
   padding: 5px 30px 5px 30px;
   border-bottom: 1px solid var(--AMARELO);
   text-align: left;
 }
-.js-table td{
+
+.js-table td {
   padding: 5px 30px 5px 30px;
   border-bottom: var(--pretoLeve) 1px solid;
 }
-li{
+
+li {
   font-size: x-large;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   color: var(--cinzaLeve);
@@ -470,19 +524,32 @@ li{
   list-style: "\261B  ";
   padding-left: 30px;
 }
-a{
+
+a {
   cursor: pointer;
 }
+
 /* #endregion ================================== */
 
 /* #region CONFIGURAÇÕES DO SITE ==================================================== */
 
 /* Seleção  */
-::selection{
+::selection {
   color: var(--black);
   background-color: var(--AMARELO);
 }
-::-moz-selection{
+
+:root p,
+:root h1,
+:root h2,
+:root h3,
+:root li,
+:root a {
+  -moz-user-select: none;
+  user-select: none;
+}
+
+::-moz-selection {
   color: var(--black);
   background-color: var(--AMARELO);
 }
@@ -497,7 +564,7 @@ a{
 ::-webkit-scrollbar-track {
   background: transparent;
 }
- 
+
 /* Barra de roladem */
 ::-webkit-scrollbar-thumb {
   background-color: var(--cinzaMedio);
@@ -520,39 +587,52 @@ a{
     top: 0;
     box-shadow: none;
   }
-  .img-slider { display: none; }
-  .img-slider a { display: none;}
+
+  .img-slider {
+    display: none;
+  }
+
+  .img-slider a {
+    display: none;
+  }
+
   .js-nav li {
     min-width: 150px;
     width: 100%;
   }
+
   .js-nav ul {
     width: 100%;
     margin: 0;
   }
-  .js-drop-content{
+
+  .js-drop-content {
     padding: 10px;
     width: 100%;
     left: 0;
     box-shadow: none;
     background-color: var(--black);
   }
+
   .js-footer {
     flex-direction: column;
     justify-content: stretch;
   }
+
   .js-footer div {
     padding: 0px 15px 0px 15px;
   }
+
   .js-page {
     width: 100%;
     margin: 0;
   }
 }
+
 body {
   width: 100%;
   box-sizing: border-box;
   margin: 0;
 }
-/* #endregion */
 
+/* #endregion */

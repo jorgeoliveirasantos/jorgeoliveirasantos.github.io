@@ -5,12 +5,12 @@ class Menu extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-  <div class="js-nav">
-    <ul>
-      <li tabindex="1"><a href="/index.html">Início</a></li>
-      <li tabindex="2"><a href="/aprendizado.html">Aprendizado</a></li>
-      <li tabindex="3"><a href="/apostilas.html">Apostilas</a></li>
-    </ul>
+    <div class="js-nav">
+    <a href="/index.html" tabindex="1">Início</a>
+    <a href="/desenvolvimento.html" tabindex="2">Desenvolvimento</a>
+    <a href="/aprendizado.html" tabindex="2">Aprendizado</a>
+    <a href="/apostilas.html" tabindex="3">Apostilas</a>
+    <span style="width: 1fr;"></span>
     <style>
       .seta {
         border: solid #ddd;

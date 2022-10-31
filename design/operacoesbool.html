@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -23,14 +22,174 @@
 
 <div class="js-page">
     <div class="js-post">
-        <a href="." class="js-button">Anterior</a>
-        <a href="." class="js-button" style="float: right;">Próximo</a>
+        <a href="./arranjandoobj.html" class="js-button">Anterior</a>
+        <a href="./curvasefor.html" class="js-button" style="float: right;">Próximo</a>
 
 
         <h1>
+            Operações booleanas
         </h1>
 
         <p>
+            Apesar de ter um nome complicado (simplificado em alguns softwares), consiste simplesmente em subtração,
+            intersecção e união de objetos. Observe a ilustração abaixo:
+        </p>
+        <img src="./operacoesbool.png" alt="">
+        <p>
+            <b>Subtração:</b> É mantida apenas a parte do objeto de baixo que não estava sobreposta pelo objeto de cima.
+        </p>
+        <p>
+            <b>Intersecção:</b> É mantida apenas a sobreposição dos objetos.
+        </p>
+        <p>
+            <b>União:</b> Um novo caminho é criado a partir dos dois objetos.
+        </p>
+        <p>
+            Em ambos os casos o resultado da operação é apenas um novo objeto. Qualquer forma primitiva é convertida em
+            caminho. Alguns softwares podem permitir configurar para que o objeto a ser removido seja mantido, ou como
+            no
+            caso do CorelDraw, o objeto sempre é mantido, alguns softwares podem ainda possibilitar outros tipos de
+            operações booleanas.
+        </p>
+        <p>
+            Verifique a lista de teclas de atalho no início deste capítulo para conferir os atalhos para as operações
+            booleanas do Inkscape.
+        </p>
+        <p class="notas">
+            O termo “operação booleana” é adequadamente utilizado e vem da álgebra booleana. Alguns softwares podem
+            utilizar
+            sua própria nomenclatura para essas ferramentas.
+        </p>
+        <p>
+            Em nosso próximo tutorial rápido desenharemos uma lua utilizando as operações de intersecção e subtração, e
+            aprenderemos também a trabalhar com o spray de objetos para desenhar as estrelas no céu. Observe o desenho
+            abaixo:
+        </p>
+        <img src="./operacoesbool2.png" alt="">
+        <h3>
+            Desenhando o fundo
+        </h3>
+        <p>
+            1. Clique na ferramenta retângulo e arraste na tela para desenhar.
+        </p>
+        <p>
+            2. Defina a largura como 300 e a altura como 150.
+        </p>
+        <p>
+            3. Escolha uma cor azul-escuro.
+        </p>
+        <p>
+            4. Se necessário retire a cor do contorno clicando com o botão direito na primeira opção da Paleta de Cores
+            e
+            selecione <i>Aplicar ao contorno</i>.
+        </p>
+        <p class="notas">
+            Você pode navegar pela paleta de cores utilizando a barra de rolagem que se encontra logo abaixo dela.
+            Ou pelas setas para cima e para baixo ao lado da paleta, dependendo da versão utilizada.
+        </p>
+        <h3>
+            Desenhando a lua
+        </h3>
+        <p>
+            1. Clique na ferramenta elipse.
+        </p>
+        <p>
+            2. Com a tecla control pressionada, clique e arraste para desenhar o círculo.
+        </p>
+        <p>
+            3. Pressione S para pegar a ferramenta seleção.
+        </p>
+        <p>
+            4. Defina a largura e a altura como 80.
+        </p>
+        <p>
+            5. Selecione uma cor parecida com a da imagem acima.
+        </p>
+        <p>
+            6. Com o círculo selecionado, pressione <span class="codigo">Ctrl+D</span> para duplicá-lo.
+        </p>
+        <p>
+            7. Não é necessário, mas se quiser se certificar de que o círculo foi duplicado arraste a cópia para fora
+            depois
+            desfaça. Esta cópia manteremos no local.
+        </p>
+        <p>
+            8. Faça uma segunda cópia e arraste para o lado mantendo a tecla control pressionada, posicione de forma que
+            as
+            metades dos círculos se sobreponham.
+        </p>
+        <p>
+            9. Agora duplique também o círculo que você arrastou.
+        </p>
+        <p>
+            10. A essa altura devemos ter dois pares de círculos, em cada par os objetos estão exatamente um sobre o
+            outro.
+        </p>
+        <p>
+            11. Selecione um círculo da direita e um da esquerda e pressione <span class="codigo">Ctrl+*</span> para
+            criar uma intersecção.
+        </p>
+        <p>
+            12. Selecione um círculo da direita e um da esquerda e pressione <span class="codigo">Ctrl+-</span> para
+            subtrair.
+        </p>
+        <p>
+            13. Agora devemos ter dois objetos diferentes formando a lua e a sombra da terra, selecione-os para
+            verificar.
+        </p>
+        <p>
+            14. Aplique uma cor diferente para a sombra da terra.
+        </p>
+        <p>
+            15. Certifique-se de que está como na imagem.
+        </p>
+        <p>
+            16. Selecione os dois objetos e pressione <span class="codigo">Ctrl+G</span> para agrupá-los, em seguida
+            posicione no retângulo do fundo.
+        </p>
+        <h3>
+            Desenhando as estrelas
+        </h3>
+        <p>
+            1. Clique na ferramenta polígono.
+        </p>
+        <p>
+            2. Na barra de propriedades marque como Estrela e defina a quantidade de lados como 5.
+        </p>
+        <p>
+            3. Desenhe uma pequena estrela sobre o retângulo e escolha uma cor azul.
+        </p>
+        <p>
+            4. Com a estrela selecionada com a ferramenta seleção, clique na ferramenta Spray na Barra de Ferramentas,
+            defina a largura como 50 e a quantidade como 3.
+        </p>
+        <p>
+            5. Marque a opção Pulverizar objetos como um único caminho, isso facilitará selecionar todas as estrelas
+            depois,
+            caso seja necessário.
+        </p>
+        <p>
+            6. Em seguida clique e arraste sobre o retângulo para desenhar outras estrelas.
+        </p>
+        <p>
+        </p>
+        <p class="notas">
+            Salve seu arquivo.
+        </p>
+        <p>
+            Está finalizado nosso tutorial, selecione e exporte o desenho para sua pasta com o nome Céu Estrelado.png.
+            Se tiver dificuldades com esse tutorial solicite o auxílio de seu instrutor.
+        </p>
+        <img src="./exercicio.png" alt="">
+        <p>
+            Neste exercício temos dois desenhos bem simples para você praticar mais subtração e intersecção de objetos.
+            Darei apenas duas dicas para facilitar seu trabalho: no desenho do sorvete, a casquinha pode ser feita com
+            um polígono com 3 lados, e no desenho da carinha os olhos estão centralizados exatamente no meio do círculo,
+            o restante é tudo feito a partir de subtrações.
+        </p>
+        <img src="./operacoesbool3.png" alt="">
+        <p>
+            Ao finalizar o trabalho salve o arquivo e exporte cada desenho como .png para sua pasta.
         </p>
 
     </div>

@@ -11,7 +11,7 @@
 
 @font-face {
   font-family: "Baloo";
-  src: url("BalooBhaijaan2-VariableFont_wght.ttf");
+  src: url("BalooBhaijaan2-variableFont_wght.ttf");
 }
 
 /* #endregion */
@@ -89,6 +89,7 @@
   background-color: var(--black);
   border-block: var(--pretoLeve) 1px solid;
   color: var(--white);
+  transition-duration: 700ms;
   z-index: 1;
 }
 
@@ -202,90 +203,41 @@
 /* #region MENU DE NAVEGAÇÃO  =========================================== */
 
 .js-nav {
+  position: sticky;
+  display: block;
   background-color: var(--pretoDark);
   border-bottom: var(--pretoLeve) 1px solid;
   width: 100%;
   box-sizing: border-box;
   margin: 0;
-  display: grid;
-  grid-template-columns: auto auto auto 1fr;
-  align-items: center;
-  flex-direction: column;
   top: 0;
   left: 0;
-  position: fixed;
-  z-index: 1000;
-}
-
-.js-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.js-nav .right {
-  float: right;
-}
-
-.js-nav .active {
-  background-color: var(--black);
-  color: VAR(--AMARELO);
-  border-left: 3px solid VAR(--AMARELO);
-  border-right: 3px solid VAR(--AMARELO);
-}
-
-.js-nav li {
-  float: left;
-  list-style: none;
-  list-style-position: inside;
+  z-index: 10000000;
 }
 
 .js-nav a {
-  display: block;
+  display: table-cell;
+  width: fit-content;
   color: var(--white);
   padding: 15px 20px 15px 20px;
   text-decoration: none;
   font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;
   font-size: medium;
-  max-height: 40px;
-}
-
-.js-nav a:hover {
-  background-color: VAR(--AMARELO);
-  color: var(--black);
+  text-align: center;
   transition-duration: 700ms;
 }
 
-.js-drop-button {
-  display: block;
+.js-nav a:hover {
+  background-color: var(--AMARELO);
+  color: var(--black);
 }
 
-@keyframes drpMotiom {
-  from {
-    opacity: 0%;
-  }
-
-  to {
-    opacity: 100%;
-  }
-}
-
-.js-drop-content {
-  display: none;
-  position: absolute;
-  background-color: var(--pretoDark);
-  color: var(--cinzaMedio);
-  min-width: 200px;
-  box-shadow: 0px 0px 10px var(--AMARELO);
-  z-index: 999;
-  padding: 10px;
-  animation-name: drpMotiom;
-  animation-duration: 1s;
-}
-
-.js-drop-button:hover .js-drop-content {
-  display: block;
+.js-nav .active {
+  background-color: var(--black);
+  color: var(--AMARELO);
+  border-left: 3px solid var(--AMARELO);
+  border-right: 3px solid var(--AMARELO);
 }
 
 /* #endregion ==================================*/
@@ -367,7 +319,6 @@ body {
 }
 
 .js-page {
-  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
   width: 60%;
@@ -505,7 +456,7 @@ code {
 }
 
 .js-table th {
-  color: VAR(--AMARELO);
+  color: var(--AMARELO);
   padding: 5px 30px 5px 30px;
   border-bottom: 1px solid var(--AMARELO);
   text-align: left;
@@ -582,10 +533,14 @@ a {
 /* #region  DISPOSITIVOS MÓVEIS */
 @media (max-width: 600px) {
   .js-nav {
-    flex-direction: row;
     position: relative;
     top: 0;
-    box-shadow: none;
+  }
+
+  .js-nav a {
+    display: block;
+    width: 100%;
+    margin: 0;
   }
 
   .img-slider {
@@ -594,24 +549,6 @@ a {
 
   .img-slider a {
     display: none;
-  }
-
-  .js-nav li {
-    min-width: 150px;
-    width: 100%;
-  }
-
-  .js-nav ul {
-    width: 100%;
-    margin: 0;
-  }
-
-  .js-drop-content {
-    padding: 10px;
-    width: 100%;
-    left: 0;
-    box-shadow: none;
-    background-color: var(--black);
   }
 
   .js-footer {
@@ -626,6 +563,12 @@ a {
   .js-page {
     width: 100%;
     margin: 0;
+    box-sizing: border-box;
+  }
+  .btnUp {
+    right: 50px;
+    bottom: 0;
+    position: fixed;
   }
 }
 

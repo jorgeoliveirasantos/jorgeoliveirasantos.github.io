@@ -1,17 +1,17 @@
 /* #region IMPORTS */
 @font-face {
   font-family: "Hubballi";
-  src: url("Hubballi-Regular.ttf");
+  src: url("Hubballi.ttf");
 }
 
 @font-face {
   font-family: "Tech";
-  src: url("ShareTechMono-Regular.ttf");
+  src: url("Tech.ttf");
 }
 
 @font-face {
   font-family: "Baloo";
-  src: url("BalooBhaijaan2-variableFont_wght.ttf");
+  src: url("Baloo.ttf");
 }
 
 /* #endregion */

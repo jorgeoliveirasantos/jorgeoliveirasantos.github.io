@@ -21,7 +21,7 @@ class SideLeft extends HTMLElement {
     <a href="./vetores.html">Vetores</a>
     <a href="./desenhoamao.html">Desenho a Mão Livre</a>
     <a href="./desenhoassit.html">Desenho Assistido por Computador</a>
-    <a href="./metodosvetor.html">Métodos de Vetor</a>
+    <a href="./metodosvetor.html">Primitivas</a>
     <a href="./comoocomputa.html">Como o computador cria vetores?</a>
     <a href="./coordenadascar.html">Coordenadas Cartesianas</a>
     <a href="./inkscape.html">Inkscape</a>
@@ -133,6 +133,9 @@ class SideLeft extends HTMLElement {
 
     <p>O Autor</p>
     <a href="./oautor.html">O Autor</a>
+
+    <p>Sessão de Downloads</p>
+    <a href="./downloads.html">Downloads</a>
 </div>
     `;
   }

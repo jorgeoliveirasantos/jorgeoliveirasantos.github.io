@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  
+
   <title>Contato | Jorge Souza</title>
   <link rel="stylesheet" href="./css/index.css">
   <script src="./javascript/index.js"></script>
   <link rel="icon" type="image/x-icon" href="./logo.svg">
-  <meta charset="UTF-8"/>
-  <meta name="viewport"  content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!--SEO-->
-  <meta name="author" content="Jorge Souza Oliveira dos Santos"/>
+  <meta name="author" content="Jorge Souza Oliveira dos Santos" />
   <meta name="description" content="Jorge Souza Oliveira dos Santos">
-  <meta name="keywords"
-    content="informatica, curso, computador, computacao, programação, tecnologia, info, 
+  <meta name="keywords" content="informatica, curso, computador, computacao, programação, tecnologia, info, 
     desenvolvimento, web, design, web design, design grafico, tech, 
     visual studio, visual studio code, vs code, c#, javascript, dotnet,
     node js, dev express, html, css">
@@ -22,8 +22,99 @@
 
 <div class="js-post">
   <h1>Contato</h1>
-  <p>Entre em contato.</p>
+  <p>Entre em contato pelo meio de sua preferência ou conheça minhas mídias sociais.</p>
+
 </div>
+<!--#region CURSOS -->
+<div class="container">
+  <a class="child" href="mailto:jorge.sos777@outlook.com" target="_blank">
+    <img src="./files/gmail.png" alt="">
+    <p>Gmail</p>
+  </a>
+  <a class="child" href="https://wa.me/5577991161892" target="_blank">
+    <img src="./files/whatsapp.png" alt="">
+    <p>Whatsapp</p>
+  </a>
+  <a class="child" href="https://www.facebook.com/artesgraficaseprojetos" target="_blank">
+    <img src="./files/facebook.png" alt="">
+    <p>Facebook</p>
+  </a>
+  <a class="child" href="https://www.youtube.com/@jorgeoliveiraonline" target="_blank">
+    <img src="./files/Youtube.png" alt="">
+    <p>Youtube</p>
+  </a>
+  <a class="child" href="https://www.instagram.com/jorgeoliveiraonline/" target="_blank">
+    <img src="./files/instagram.png" alt="">
+    <p>Instagram</p>
+  </a>
+  <a class="child" href="https://clubedeautores.com.br/livros/autores/jorge-souza-oliveira-dos-santos" target="_blank">
+    <img src="./files/clube.png" alt="">
+    <p>Clube de Autores</p>
+  </a>
+  <a class="child" href="https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5" target="_blank">
+    <img src="./files/Workana.png" alt="">
+    <p>Workana</p>
+  </a>
+</div>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    background-color: var(--pretoMedio);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    padding: 30px 15% 30px 15%;
+    text-align: center;
+    align-content: center;
+  }
+  
+  .child {
+    text-decoration: none;
+    font-family: sans-serif;
+    display: table-cell;
+    color: white;
+    vertical-align: middle;
+    opacity: 0.5;
+    transition-duration: 750ms;
+    filter: grayscale(1);
+  }
+  
+  .child * {
+    text-align: center;
+    width: 100px;
+    display: block;
+    margin: 15px auto 15px auto;
+  }
+  
+  .child p {
+    text-indent: 0;
+  }
+  
+  .child:hover {
+    opacity: 1;
+    transition-duration: 200ms;
+    filter: grayscale(0);
+  }
+
+  @media (max-width: 600px) {
+    .container {
+      display: table;
+      width: 100%;
+    }
+
+    .child {
+      display: table-row;
+      filter: grayscale(0);
+      opacity: 1;
+      width: 100%;
+    }
+  }
+</style>
+<!--#endregion -->
 
 </html>
 

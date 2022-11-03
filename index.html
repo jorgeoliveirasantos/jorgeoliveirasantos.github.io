@@ -21,9 +21,7 @@
     node js, dev express, html, css">
 </head>
 
-  <menu-bar></menu-bar>
-
-
+<menu-bar></menu-bar>
 
 <div class="img-slider">
   <a href="#" class="banner"><img id="img4" src="./files/capa4.webp" alt=""></a>
@@ -62,8 +60,9 @@
   }
 
   .container {
-    display: table-row;
-    max-width: 100%;
+    max-width: 70%;
+    display: table;
+    margin: auto;
   }
 
   .child {
@@ -73,30 +72,31 @@
     color: white;
     vertical-align: middle;
     opacity: 0.5;
+    filter: grayscale(1);
     transition-duration: 500ms;
+    padding: 30px;
   }
 
   .child * {
     text-align: center;
-    width: 60%;
+    width: 100%;
     display: block;
-    margin: 15px auto 15px auto;
+    margin: 15px;
   }
 
   .child:hover {
+    filter: grayscale(0);
     opacity: 1;
     transition-duration: 200ms;
   }
 
   @media (max-width: 600px) {
-    .container {
-      max-width: 70%;
-      display: table;
-      margin: 15px auto 15px auto;
-    }
-
     .child {
-      display: table-row;
+      filter: grayscale(0);
+      opacity: 1;
+      display: block;
+      margin: auto;
+      width: 70%;
     }
   }
 </style>
@@ -166,6 +166,5 @@
 </div>
 
 </html>
-
 <footer-bar></footer-bar>
 <btn-up></btn-up>

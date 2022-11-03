@@ -55,34 +55,57 @@ class Footer extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <div class="js-footer">
-    <div style="min-width: 300px;">
-      <tit>Aprendizado On-Line</tit>
-      <a href="/informatica/intro.html"><par>Informática Básica e Avançada</par></a>
-      <a href="/design/intro.html"><par>Design Gráfico</par></a>
+    <div style="grid-area: col1;">
+      <h3>Aprendizado On-Line</h3>
+      <a href="/informatica/intro.html">
+        <p>Informática Básica e Avançada</p>
+      </a>
+      <a href="/design/intro.html">
+        <p>Design Gráfico</p>
+      </a>
     </div>
-    <div style="min-width: 300px;">
-      <tit>Manuais e Apostilas</tit>
-      <a href="https://clubedeautores.com.br/livro/curso-de-informatica-basica-e-avancada"
-        target="_blank"><par>Informática Básica e Avançada</par></a>
-      <a href="https://clubedeautores.com.br/livro/curso-completo-de-design-grafico"
-        target="_blank"><par>Design Gráfico</par></a>
-      <a href="https://clubedeautores.com.br/livro/curso-de-web-design-2"
-        target="_blank"><par>Web Design (HTML e CSS)</par></a>
+    <div style="grid-area: col2;">
+      <h3>Manuais e Apostilas</h3>
+      <a href="https://clubedeautores.com.br/livro/curso-de-informatica-basica-e-avancada" target="_blank">
+        <p>Informática Básica e Avançada</p>
+      </a>
+      <a href="https://clubedeautores.com.br/livro/curso-completo-de-design-grafico" target="_blank">
+        <p>Design Gráfico</p>
+      </a>
+      <a href="https://clubedeautores.com.br/livro/curso-de-web-design-2" target="_blank">
+        <p>Web Design (HTML e CSS)</p>
+      </a>
     </div>
-    <div style="min-width: 300px;">
-      <tit>Contato</tit>
-      <a target="_blank" href="mailto:jorge.sos777@outlook.com"><par>Gmail</par></a>
-      <a target="_blank" href="https://wa.me/5577991161892"><par>Whatsapp</par></a>
-      <a target="_blank" href="https://join.skype.com/invite/uMbQf0utKfUz"><par>Skype</par></a>
-      <a target="_blank" href="https://www.facebook.com/artesgraficaseprojetos"><par>Facebook</par></a>
-      <a target="_blank" href="https://www.instagram.com/jorgeoliveiraonline/"><par>Instagram</par></a>
-      <a target="_blank" href="https://clubedeautores.com.br/livros/autores/jorge-souza-oliveira-dos-santos"><par>Clube de Autores (Apostilas)</par></a>
-      <a target="_blank" href="https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5"><par>Workana (freelancer)</par></a>
+    <div style="grid-area: col3;">
+      <h3>Contato</h3>
+      <a target="_blank" href="mailto:jorge.sos777@outlook.com">
+        <p>Gmail</p>
+      </a>
+      <a target="_blank" href="https://wa.me/5577991161892">
+        <p>Whatsapp</p>
+      </a>
+      <a target="_blank" href="https://join.skype.com/invite/uMbQf0utKfUz">
+        <p>Skype</p>
+      </a>
+      <a target="_blank" href="https://www.facebook.com/artesgraficaseprojetos">
+        <p>Facebook</p>
+      </a>
+      <a target="_blank" href="https://www.instagram.com/jorgeoliveiraonline/">
+        <p>Instagram</p>
+      </a>
+      <a target="_blank" href="https://clubedeautores.com.br/livros/autores/jorge-souza-oliveira-dos-santos">
+        <p>Clube de Autores (Apostilas)</p>
+      </a>
+      <a target="_blank" href="https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5">
+        <p>Workana (freelancer)</p>
+      </a>
     </div>
-    <div style="min-width: 90%;">
+    <div style="grid-area: logo;">
       <hr style="width: 90%; margin: 25px auto 25px auto">
-      <img src="/files/logo_amarela.svg" style="pointer-events: none; border: none; background-color: transparent; width: 40px; display: block; margin: auto; align-self: center;"/>
-      <tit id="copy" style="align-self: center; text-align: center; padding: 20px; display: block;">Copyright © ${new Date().getFullYear()} - Jorge Souza Oliveira dos Santos</tit>
+      <img src="/files/logo_amarela.svg"
+        style="pointer-events: none; border: none; background-color: transparent; width: 40px; display: block; margin: auto; align-self: center;" />
+      <h3 id="copy" style="align-self: center; text-align: center; padding: 20px; display: block;">Copyright © ${new
+        Date().getFullYear()} - Jorge Souza Oliveira dos Santos</h3>
     </div>
   </div>
     `;

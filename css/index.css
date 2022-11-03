@@ -244,25 +244,32 @@
 
 /* #region RODAPÉ */
 .js-footer {
+  display: grid;
+  grid-template-areas: "col1 col2 col3" "logo logo logo";
   padding: 20px;
   background-color: var(--pretoDark);
   backdrop-filter: blur(10px);
   width: 100%;
   border: 1px solid;
   border-image: var(--gradiente45);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
   box-sizing: border-box;
   margin: 0;
   bottom: 0;
+}
+
+.js-footer div {
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+  min-width: 300px;
+  margin: 0 auto 0 auto;
 }
 
 .js-footer a {
   text-decoration: none;
 }
 
-.js-footer par {
+.js-footer p {
   display: block;
   color: var(--cinzaLeve);
   font-size: small;
@@ -270,22 +277,22 @@
   padding-top: 10px;
 }
 
-.js-footer par:hover {
+.js-footer p:hover {
   color: var(--AMARELO);
   cursor: pointer;
 }
 
-.js-footer tit {
+.js-footer h3 {
   display: block;
   color: var(--cinzaMedio);
   font-size: large;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.js-footer div {
-  vertical-align: top;
-  flex-basis: 300px;
-  flex-grow: 100%;
+@media (max-width: 600px) {
+  .js-footer {
+    grid-template-areas: "col1" "col2" "col3" "logo";
+  }
 }
 
 /* #endregion */
@@ -443,6 +450,7 @@ code {
   margin-bottom: 50px;
   display: block;
   pointer-events: none;
+  user-select: none;
   border: 1px solid;
   border-image: var(--gradiente45);
 }
@@ -565,6 +573,7 @@ a {
     margin: 0;
     box-sizing: border-box;
   }
+
   .btnUp {
     right: 50px;
     bottom: 0;

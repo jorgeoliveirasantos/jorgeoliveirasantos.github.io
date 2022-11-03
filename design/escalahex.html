@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -23,15 +22,68 @@
 
 <div class="js-page">
     <div class="js-post">
-        <a href="." class="js-button">Anterior</a>
-        <a href="." class="js-button" style="float: right;">Próximo</a>
+        <a href="./rgbhsl.html" class="js-button">Anterior</a>
+        <a href="./coresque.html" class="js-button" style="float: right;">Próximo</a>
 
 
         <h1>
+            Escala Hexadecimal RGB
         </h1>
 
         <p>
+            Em alguns softwares de Design Gráfico assim como no Web Design e Design de Interfaces, podemos ainda definir
+            cores num sistema RGB usando escala Hexadecimal, geralmente representada por um valor que se inicia com uma
+            cerquilha (#).
         </p>
+        <p>
+            A escala Hexadecimal é uma escala de unidades com dezesseis dígitos, diferente da qual estamos acostumados,
+            a decimal que possui dez dígitos e vai de 0 a 9. A escala hexadecimal vai de 0 a F assim:
+            0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f. Dessa forma podemos definir os valores de R, G e B com dois valores
+            hexadecimais, assim:
+        </p>
+        <p>
+            #ff.00.00 = Vermelho (Red:255, Green:0, Blue:0)
+        </p>
+        <p>
+            #ff.ff.ff = Branco total (Red:255, Green:255, Blue:255)
+        </p>
+        <p>
+            #00.00.00 = Preto total (Red:0, Green:0, Blue:0)
+        </p>
+        <p>
+            Caso o software com que você trabalhe aceite controlar o canal Alpha por escala decimal, basta acrescentar o
+            valor de Alfa ao final ou ao início (após a cerquilha) também com dois dígitos, a posição do valor do alfa
+            variará de software a software.
+        </p>
+        <p>
+            Vejamos alguns exemplos:
+        </p>
+        <p>
+            #FFFFFF: Branco.
+        </p>
+        <p>
+            #000000: Preto.
+        </p>
+        <p>
+            #FFF: Branco.
+        </p>
+        <p>
+            #000: Preto.
+        </p>
+        <p>
+            #FF0000: Vermelho.
+        </p>
+        <p>
+            #F00: Vermelho.
+        </p>
+        <p>
+            #FF000077: Vermelho com 50% de transparência.
+        </p>
+        <p>
+            #F07: Vermelho com 50% de transparência.
+        </p>
+        <p>Experimente:</p>
+        <input type="color" style="width: 50%; height: 50px; display: block; margin: 15px auto 15px auto; cursor: pointer; background-color: #FB0; padding: 0;">
 
     </div>
 </div>

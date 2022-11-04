@@ -280,6 +280,8 @@
 .js-footer p:hover {
   color: var(--AMARELO);
   cursor: pointer;
+  text-shadow: 0 0 20px #FB0D;
+  transition-duration: 200ms;
 }
 
 .js-footer h3 {

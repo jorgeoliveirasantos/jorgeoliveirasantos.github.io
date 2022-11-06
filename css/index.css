@@ -31,6 +31,7 @@
   --gradiente45: linear-gradient(45deg, rgb(255, 255, 119), rgb(170, 82, 0))1;
   --gradiente0: linear-gradient(0deg, rgb(255, 255, 119), rgb(170, 123, 0))1;
   --gradiente90: linear-gradient(90deg, rgb(255, 255, 119), rgb(170, 123, 0))1;
+  cursor: url("./js-pointer.cur") 0 0, auto;
 }
 
 /* #endregion */

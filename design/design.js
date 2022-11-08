@@ -79,6 +79,7 @@ class SideLeft extends HTMLElement {
     <a href="./estilospar.html">Estilos de Parágrafo</a>
 
     <p>Microsoft Publisher</p>
+    <a href="./publisher.html">MS Publisher</a>
     <a href="./caixastex.html">Caixas de Texto</a>
     <a href="./formas.html">Formas</a>
     <a href="./guias.html">Guias</a>
@@ -97,6 +98,7 @@ class SideLeft extends HTMLElement {
     <a href="./fundamentosbit.html">Bitmaps</a>
 
     <p>Tratamento e Manipulação de Imagens</p>
+    <a href="./tratamentoimg.html">Tratamento e Manipulação de Imagens</a>
     <a href="./gimp.html">GIMP</a>
     <a href="./selecao.html">Seleção</a>
     <a href="./retoque.html">Retoque e correção</a>
@@ -107,6 +109,7 @@ class SideLeft extends HTMLElement {
     <a href="./animacao.html">Animação Digital</a>
 
     <p>Adobe Photoshop</p>
+    <a href="./photoshop.html">Photoshop</a>
     <a href="./montagem.html">Montagem de fotos</a>
 
     <p>Princípios do Design Gráfico</p>
@@ -130,9 +133,6 @@ class SideLeft extends HTMLElement {
 
     <p>Considerações sobre Softwares</p>
     <a href="./consideracoes.html">Considerações sobre Softwares</a>
-
-    <p>O Autor</p>
-    <a href="./oautor.html">O Autor</a>
 
     <p>Sessão de Downloads</p>
     <a href="./downloads.html">Downloads</a>

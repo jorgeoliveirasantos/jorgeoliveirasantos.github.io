@@ -25,6 +25,73 @@
 
 <div class="js-page">
     <div class="js-post">
+        <h1>Curso Completo de Design Gráfico</h1>
+        <p>
+            O conteúdo deste curso on-line é transcrito da apostila que você pode conferir abaixo:
+        </p>
+    </div>
+    <div class="child js-post">
+        <img src="../files/designCapa.webp" alt="">
+        <div>
+            <h3>Design Gráfico</h3>
+            <hr>
+            <b>
+                <p>Aprenda os conceitos fundamentais de design gráfico.
+            </b><br>
+            Nº de páginas: 222.<br>
+            Dimensões: 14.8 x 21cm<br>
+            Acabamento: Brochura com orelha.<br>
+            Edição: (1) (2022).<br>
+            Interior: Colorido.<br>
+            </p>
+            <h2>
+                R$: 139,15
+                <a class="js-button" href="https://clubedeautores.com.br/livro/curso-completo-de-design-grafico"
+                    style="float: right;" target="_blank">Confira</a>
+            </h2>
+        </div>
+    </div>
+    <style>
+        .child {
+            background-color: var(--pretoMedio);
+            display: grid;
+            grid-template-columns: 0.5fr 1.5fr;
+            user-select: none;
+            vertical-align: middle;
+        }
+
+        .child div {
+            margin: 15px;
+            width: 100%;
+        }
+
+        .child img {
+            margin: 15px;
+            pointer-events: none;
+            border: 1px solid;
+            border-image: linear-gradient(45deg, yellow, #A50)1;
+            width: 200px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        @media (max-width: 600px) {
+            .child {
+                max-width: 100%;
+                margin: 15px 0 15px 0;
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .child img {
+                margin: auto;
+            }
+        }
+    </style>
+    <div class="js-post">
         <a class="js-button" style="display: none;">Anterior</a>
         <a href="./praquem.html" class="js-button" style="float: right;">Próximo</a>
 

@@ -75,6 +75,9 @@ class Footer extends HTMLElement {
       <a href="https://clubedeautores.com.br/livro/curso-de-web-design-2" target="_blank">
         <p>Web Design (HTML e CSS)</p>
       </a>
+      <a href="https://clubedeautores.com.br/livro/curso-de-javascript" target="_blank">
+        <p>Javascript</p>
+      </a>
     </div>
     <div style="grid-area: col3;">
       <h3>Contato</h3>

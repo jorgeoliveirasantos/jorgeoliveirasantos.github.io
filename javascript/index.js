@@ -7,9 +7,9 @@ class Menu extends HTMLElement {
     this.innerHTML = `
     <div class="js-nav">
     <a href="/index.html" tabindex="1">Início</a>
-    <a href="/desenvolvimento.html" tabindex="2">Desenvolvimento</a>
     <a href="/aprendizado.html" tabindex="2">Aprendizado</a>
     <a href="/apostilas.html" tabindex="3">Apostilas</a>
+    <a href="/contato.html" tabindex="2">Sobre</a>
     <span style="width: 1fr;"></span>
     <style>
       .seta {
@@ -17,8 +17,8 @@ class Menu extends HTMLElement {
         border-width: 0 3px 3px 0;
         display: inline-block;
         padding: 2px;
-        transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
         margin: auto 5px auto 5px;
       }
     </style>

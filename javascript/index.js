@@ -38,7 +38,7 @@ class BtnUp extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
-<div onclick="window.scroll(0,0)" title="Voltar para o topo">
+<div onclick="window.scrollTo( { top: 0, left: 0, behavior: 'smooth' } )" title="Voltar para o topo">
   <svg class="btnUp" width="50" height="50" viewBox="0 0 50 50"><path style="stroke:none" d="M 25 0 C 11.1875 0 -2.3684758e-15 11.1875 0 25 L 0 50 L 25 50 L 50 50 L 50 25 C 50 11.1875 38.812502 -4.7369516e-15 25 0 z M 25 13.005859 L 36.994141 25 L 27.998047 25 L 27.998047 36.994141 L 22.001953 36.994141 L 22.001953 25 L 13.005859 25 L 25 13.005859 z "/></svg>
 </div>
     `;

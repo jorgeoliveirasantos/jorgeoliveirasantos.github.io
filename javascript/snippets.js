@@ -1,30 +1,33 @@
 function snippets(tam) {
-  for (let index = 1; index <= tam; index++) { 
-  let x = document.getElementById(`snippet${index}`).innerHTML;
-  let y = "";
+  for (let index = 1; index <= tam; index++) {
+    let x = document.getElementById(`snippet${index}`);
+    let y = "";
 
-  let tagAbertura = "<span style='color: grey;'>&lt;</span>";
-  let tagFechamento = "<span style='color: grey;'>&gt;</span>";
-  
-  for (const i of x) {
-    if (i == '<') { y += tagAbertura; }
-    else if (i == '>') { y += tagFechamento; }
-    else { y += i; }
+    let tagAbertura = "<span style='color: grey;'>&lt;</span><span style='color: var(--AMARELO);'>";
+    let tagFechamento = "</span><span style='color: grey;'>&gt;</span>";
+
+    for (const i of x.innerHTML) {
+      if (i == '<') { y += tagAbertura; }
+      else if (i == '>') { y += tagFechamento; }
+      else { y += i; }
+    }
+    y = y.replace("&lt;!DOCTYPE html&gt;", "&lt;<span style='color: var(--AMARELO);'>!DOCTYPE html</span>&gt;")
+    .replace("&lt;html&gt", "&lt;<span style='color: var(--AMARELO);'>html</span>&gt")
+    .replace("&lt;body&gt", "&lt;<span style='color: var(--AMARELO);'>body</span>&gt")
+    .replace("&lt;style&gt", "&lt;<span style='color: var(--AMARELO);'>style</span>&gt")
+    .replace("&lt;script&gt", "&lt;<span style='color: var(--AMARELO);'>script</span>&gt")
+    .replace("&lt;/html&gt", "&lt;<span style='color: var(--AMARELO);'>/html</span>&gt")
+    .replace("&lt;/body&gt", "&lt;<span style='color: var(--AMARELO);'>/body</span>&gt")
+    .replace("&lt;/style&gt", "&lt;<span style='color: var(--AMARELO);'>/style</span>&gt")
+    .replace("&lt;/script&gt", "&lt;<span style='color: var(--AMARELO);'>/script</span>&gt");
+
+    x.style.backgroundColor = "black";
+    x.style.fontSize = "large";
+    x.style.border = "var(--cinzaMedio) 1px solid";
+    x.style.color = "lightskyblue";
+    x.style.padding = "10px";
+    x.style.margin = "10px";
+    x.style.overflowX = "auto";
+    document.getElementById(`snippet${index}`).innerHTML = y;
   }
-
-  let htmlTags = ['']
-
-  let tagsHtml = ['a', 'abbr', 'adress', 'aside', 'article', 'audio', 'b', 'body', 'br', 'button', 'canvas', 'code', 'col', 'colgroup', 'data', 'datalist', 'dd', 'del', 'details', 'dl', 'dt', 'em', 'embed', 'fieldset', 'figcaption', 'figure', 'footer', 'form', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'head', 'header', 'hr', 'html', 'i', 'iframe', 'img', 'input', 'ins', 'label', 'legend', 'li', 'link', 'main', 'map', 'mark', 'meta', 'meter', 'nav', 'optgroup', 'option', 'output', 'p', 'param', 'picture', 'pre', 's', 'script', 'section', 'select', 'small', 'source', 'strong', 'style', 'sub', 'sup', 'svg', 'summary', 'table', 'tbody', 'td', 'template', 'textarea', 'tfoot', 'th', 'thead', 'time', 'title', 'tr', 'u', 'ul', 'var', 'video', 'wbr', 'tag', 'tag1', 'tag2', 'tag3', 'tag4', 'tag5', 'tag6', 'elementoPersonalizado', 'tagPersonalizada', 'meuElemento', 'minhaTag'];
-  for (const i of tagsHtml) {
-    y = y.replace(`${tagAbertura}${i}${tagFechamento}`, `${tagAbertura}<span style="color: royalblue">${i}</span>${tagFechamento}`);
-    y = y.replace(`${tagAbertura}/${i}${tagFechamento}`, `${tagAbertura}<span style="color: royalblue">/${i}</span>${tagFechamento}`);
-  }
-
-  document.getElementById(`snippet${index}`).style.backgroundColor = "black";
-  document.getElementById(`snippet${index}`).style.border = "#ddd 1px solid";
-  document.getElementById(`snippet${index}`).style.color = "lightskyblue";
-  document.getElementById(`snippet${index}`).style.padding = "10px";
-  document.getElementById(`snippet${index}`).style.margin = "10px";
-  document.getElementById(`snippet${index}`).innerHTML = y;
-}
 }

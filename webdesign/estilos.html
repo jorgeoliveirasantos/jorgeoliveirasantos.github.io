@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Web Design | Jorge Souza</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../javascript/index.js"></script>
+    <script src="webdesign.js"></script>
+    <link rel="icon" type="image/x-icon" href="../logo.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO-->
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Curso de Web Design">
+    <meta name="keywords"
+        content="web design, desenvolvimento web, programação, html, css, javascript, tecnologias web">
+</head>
+
+<menu-bar></menu-bar>
+<js-toggle-bar></js-toggle-bar>
+<side-bar-left></side-bar-left>
+
+
+<div class="js-page">
+
+    <div class="js-post">
+        <a href="./margemborda.html" class="js-button">Anterior</a>
+        <a href="." class="js-button" style="float: right;">Próximo</a>
+
+        <h1>
+            Estilos
+        </h1>
+        <p>
+            O CSS, Cascading Style Sheets, ou Folhas de Estilo em Cascata é o que define a aparência de elementos HTML,
+            transições, animações e efeitos. Pode atuar em conjunto com o Javascritp, sozinho e até mesmo ser manipulado
+            pelo Javascritp.
+        </p>
+        <p class="notas">
+            Esta sessão é apenas uma introdução ao CSS teremos um capítulo inteiro cobrindo a maioria dos conceitos
+            deste assunto, e mais um capítulo sobre Web Design Responsivo onde o uso de CSS será intenso.
+        </p>
+
+        <h3>
+            Onde usar
+        </h3>
+        <p>
+            Existem três formas de estilizar um documento utilizando CSS in-line (em linha), interno e externo. O CSS
+            in-line é o que já vínhamos utilizando, e é definido assim:
+        </p>
+        <pre id="snippet1">
+<p style="color: black; background-color: gray;">Oi!</p>
+</pre>
+
+        <p>
+            O atributo style define um estilo CSS em linha.
+        </p>
+        <p>
+            A segunda maneira de se utilizar folhas de estilo é interna no próprio arquivo, para tanto, devemos escrever
+            nossos estilos dentro de uma tag <span class="codigo">&lt;style&gt;</span>, assim:
+        </p>
+        <pre id="snippet2">
+<p>
+  Meu parágrafo
+</p>
+&lt;style&gt;
+  p{
+    color: white; background-color: brown;
+  }
+&lt;/style&gt;
+</pre>
+
+
+        <p>
+            Neste exemplo estamos alterando a cor do texto e do fundo de todos os parágrafos que utilizam a tag
+        <p> no documento. Esta maneira de definir estilos é muito prática e nos ajuda a alterar a aparência de vários
+            elementos ao mesmo tempo. No entanto, adicionar muito código CSS em arquivos que já são grandes não é uma
+            boa ideia, nessa situação podemos utilizar um arquivo .css externo, definindo seu caminho com um elemento
+            <span class="codigo">&lt;link&gt;</span>.
+        </p>
+        <p>
+            Considere o seguinte arquivo HTML:
+        </p>
+        <p>
+            index.html:
+        </p>
+        <pre id="snippet3">
+&lt;!DOCTYPE html>
+&lt;html>
+  <link rel="stylesheet" href="index.css">
+
+  &lt;body>
+    <h1>Título</h1>
+    <p>Parágrafo</p>
+  &lt;/body>
+&lt;/html>
+</pre>
+
+
+        <p>
+            Neste documento temos a tag <span class="codigo">&lt;link&gt;</span>, utilizada para inserir referências a
+            arquivos externos, com o atributo <span class="codigo">href</span>, onde passamos o caminho do arquivo CSS
+            que queremos utilizar, o atributo <span class="codigo">rel</span> é responsável por indicar ao navegador o
+            tipo de arquivo que estamos importando. Logo abaixo temos um título e um parágrafo, que vamos estilizar com
+            o código do nosso segundo arquivo, que deve estar na mesma pasta e se chamar index.css:
+        </p>
+        <p>
+            index.css
+        </p>
+        <pre id="snippet4">
+p{
+  color: white;
+  background-color: brown;
+  padding: 20px;
+} 
+table{
+  border: green 1px solid;
+}
+th{
+  border: green 1px solid;
+}
+td{
+  border: green 1px solid;
+}
+*{
+  background-color: #222;
+  color: aliceblue;
+  font-size: xx-large;
+  font-weight: bolder;
+}
+</pre>
+        <p> No exemplo acima, estamos alterando o estilo de todos os parágrafos, definindo uma borda externa às tabelas,
+            e bordas aos elementos de título e de célula das mesmas, e logo em seguida utilizamos um caractere curinga *
+            para alterar a cor de texto, de fundo e a fonte de todos os elementos do documento.</p>
+
+        <h3>
+            Id e Classe
+        </h3>
+        <p>
+            Quando desejamos aplicar um estilo personalizado a apenas um elemento e não a todos os elementos de uma tag
+            específica, podemos utilizar classes e ids por meio de atributos:
+        </p>
+        <pre id="snippet5">
+<p id="p1">Parágrafo com id</p>
+<p class="p2">Parágrafo com classe</p>
+</pre>
+
+        <p>
+            O seletor CSS para classes e para ids são diferentes, selecionamos um objeto por sua classe utilizando o
+            ponto, e pela id utilizando a cerquila:
+        </p>
+        <pre id="snippet6">
+#p1{
+  color: white; background-color: brown;
+}
+.p2{
+  color: black; background-color: yellow;
+}
+</pre>
+
+        <p>
+            Neste exemplo, o primeiro estilo é aplicado ao parágrafo com a id p1, e o segundo ao parágrafo com a classe
+            p2. Um mesmo elemento pode possuir ambos identificadores:
+        </p>
+        <pre id="snippet7">
+<p id="exemploId" class="exemploClass">Meu parágrafo</p>
+
+&lt;style>
+    #exemploId {
+      color: black;
+    }
+    .exemploClass {
+      background-color: yellow;
+    }
+&lt;/style>
+</pre>
+        <p> Agora a cor do texto é aplicada através da id e a cor de fundo através da classe.</p>
+
+        <h3>
+        </h3>
+        <p>
+        </p>
+        <pre id="snippet">
+</pre>
+
+        <h3>
+        </h3>
+        <p>
+        </p>
+        <pre id="snippet">
+</pre>
+
+        <h3>
+        </h3>
+        <p>
+        </p>
+        <pre id="snippet">
+</pre>
+
+
+
+
+
+    </div>
+</div>
+
+<script src="../javascript/snippets.js"></script>
+<script>
+    snippets(Infinity);
+</script>
+
+</html>
+
+<footer-bar></footer-bar>
+<btn-up></btn-up>

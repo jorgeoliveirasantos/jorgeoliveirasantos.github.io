@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Web Design | Jorge Souza</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../javascript/index.js"></script>
+    <script src="webdesign.js"></script>
+    <link rel="icon" type="image/x-icon" href="../logo.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO-->
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Curso de Web Design">
+    <meta name="keywords"
+        content="web design, desenvolvimento web, programação, html, css, javascript, tecnologias web">
+</head>
+
+<menu-bar></menu-bar>
+<js-toggle-bar></js-toggle-bar>
+<side-bar-left></side-bar-left>
+
+
+<div class="js-page">
+
+    <div class="js-post">
+        <a href="./formatacao.html" class="js-button">Anterior</a>
+        <a href="./cores.html" class="js-button" style="float: right;">Próximo</a>
+
+        <h1>
+            Fontes
+        </h1>
+        <p>
+            A manipulação de fontes em páginas web possui uma grande quantidade de propriedades que podem ser
+            configuradas pelo atributo style, todos elas serão estudadas a fundo no capítulo sobre CSS, mas por hora
+            veremos o básico necessário para definir estilos de caractere:
+        </p>
+
+        <h3>
+            Font-size
+        </h3>
+        <p>
+            A propriedade font-size é utilizada para definir o tamanho da fonte, que pode ser predefinido como: medium,
+            large, larger, xx-large, small, smaller, xx-small, ou definido pelo usuário, por exemplo: 11pt.
+        </p>
+<pre id="snippet1">
+<p style="font-size: larger;">Este texto está em tamanho grande</p>
+<p style="font-size: 12pt;">Este texto está em tamanho 12pt</p>
+</pre>
+        <h3>
+            Font-weight
+        </h3>
+        <p>
+            A propriedade font-weight define o "peso" da font, ou seja, a espessura das hastes da letra, que pode ser predefinida como: lighter, normal, bold, bolder, ou definida pelo usuário entre 100 e 900, sendo 100 conhecido como fio de cabelo, ou hair, que é a letra mais fina, e 900 a letra com peso maior, o bolder.
+        </p>
+<pre id="snippet2">
+<p style="font-weight:500;">Este texto tem um peso 500</p>
+<p style="font-weight: bold;">Este texto está em negrito</p>
+</pre>
+        <h3>
+            Font-family
+        </h3>
+        <p>
+            A propriedade font-family é utilizada para alterar a fonte do texto, por meio desta propriedade é possível ainda definir duas ou mais fontes caso alguma não seja suportada pelo navegador:
+        </p>
+<pre id="snippet3">
+<p style="font-family: Arial;">Este texto está em Arial</p>
+<p style="font-family: serif;">Este texto está numa fonte serifada</p>
+<p style="font-family: sans-serif;">Este texto está numa fonte sem serifa</p>
+</pre>
+
+    </div>
+</div>
+
+<script src="../javascript/snippets.js"></script>
+<script>
+    snippets(Infinity);
+</script>
+
+</html>
+
+<footer-bar></footer-bar>
+<btn-up></btn-up>

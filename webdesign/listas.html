@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Web Design | Jorge Souza</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../javascript/index.js"></script>
+    <script src="webdesign.js"></script>
+    <link rel="icon" type="image/x-icon" href="../logo.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO-->
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Curso de Web Design">
+    <meta name="keywords"
+        content="web design, desenvolvimento web, programação, html, css, javascript, tecnologias web">
+</head>
+
+<menu-bar></menu-bar>
+<js-toggle-bar></js-toggle-bar>
+<side-bar-left></side-bar-left>
+
+
+<div class="js-page">
+
+    <div class="js-post">
+        <a href="./elementoshtml.html" class="js-button">Anterior</a>
+        <a href="./links.html" class="js-button" style="float: right;">Próximo</a>
+
+        <h1>
+            Listas
+        </h1>
+        <p>
+            Podemos trabalhar com listas em HTML de inúmeras maneiras, no entanto precisamos ter uma noção básica sobre estilos, no momento apropriado voltaremos ao estudo de listas e sua formatação com CSS. Por agora veremos como criar listas e aplicar uma formatação básica para você ir se acostumando.
+        </p>
+        <p>
+            Temos dois tipos de listas, ordenadas <span class="codigo">ol</span> e não-ordenadas <span class="codigo">ul</span>, listas não-ordenadas são listas com marcadores e listas ordenadas são listas numeradas. Cada tipo de lista é definida com sua tag própria, mas os itens da lista são inseridos em elementos filho, com a tag <span class="codigo">li</span> que é o item da lista (list-item), assim:
+        </p>
+
+
+<p>
+    Inserindo uma lista não ordenada:
+</p>
+<pre id="snippet1">
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+</pre>
+
+<p>
+    Inserindo uma lista ordenada:
+</p>
+<pre id="snippet2">
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ol>
+</pre>
+
+<p>
+    Os exemplos acima produzem duas listas semelhantes a estas:
+</p>
+<img src="./listas.jpg" alt="">
+
+<p>
+    Basicamente a diferença entre as tags <span class="codigo">ul</span> e <span class="codigo">ol</span> está no estilo predefinido, porque por meio de propriedades podemos aplicar numeração a uma lista definida com <span class="codigo">ul</span> e aplicar marcadores a uma lista definida com <span class="codigo">ol</span>.
+</p>
+<h3>
+    Propriedades da lista
+</h3>
+<p>
+    As propriedades aplicáveis ao elemento principal são as mesmas que a outros elementos HTML, portanto, apenas verificaremos uma lista formatada com algumas opções:
+</p>
+<pre id="snippet3">
+<ul style="background-color: darkslategray;
+    padding: 10px;
+    border: yellowgreen 2px solid;
+    margin: 10px;
+    width: 300px;
+    list-style-position: inside;">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+</pre>
+
+<p>Acima temos uma lista não ordenada onde aplicamos cor de fundo, margem, padding, borda, e definimos uma largura de 300px. O resultado é semelhante a este:</p>
+<img src="./listas2.jpg" alt="">
+
+<p>
+    Neste exemplo, os marcadores estão dentro da caixa da borda, este não é o padrão, esta propriedade foi definida no código anterior na seguinte linha:
+</p>
+<pre id="snippet4">
+    list-style-position: inside;
+</pre>
+
+<p>	Você certamente não desejaria que os marcadores da lista ficassem fora da caixa da borda, sem essa propriedade aplicada, a borda seria definida próxima ao texto.</p>
+
+<h3>
+    Lista horizontal
+</h3>
+<p>
+    Por padrão os itens de uma lista têm sua propriedade <span class="codigo">display</span> definida como <span class="codigo">list-item</span>, o que faz com que sejam exibidos um abaixo do outro, podemos alterar este valor para <span class="codigo">inline-block</span>, de forma que sejam exibidos lado a lado:
+</p>
+<pre id="snippet5">
+<ul style="background-color: darkslategray; border: yellowgreen 2px solid;">
+    <li style="display:inline-block;
+        background-color: darkmagenta;
+        padding: 10px;">
+        Item
+    </li>
+    <li style="display:inline-block;
+        background-color: darkred;
+        padding: 10px;">
+        Item
+    </li>
+    <li style="display:inline-block;
+        background-color: darkblue;
+        padding: 10px;">
+        Item
+    </li>
+</ul>
+</pre>
+
+<p>O exemplo de lista acima é semelhante a este:</p>
+<img src="./listas3.jpg" alt="">
+
+<h3>
+    Propriedades do marcador
+</h3>
+<p>
+    Você pode ter notado que no exemplo anterior, a lista não possui marcadores e nem numeração, o que é comum em listas horizontais. Os marcadores são definidos na propriedade <span class="codigo">list-style</span>. Vejamos alguns exemplos:
+</p>
+<pre id="snippet6">
+<ul>
+    <li style="list-style: none;">Sem marcador</li>
+    <li style="list-style: circle;">Disco oco</li>
+    <li style="list-style: disc;">Disco preenchido</li>
+    <li style="list-style: square;">Quadrado</li>
+</ul>
+</pre>
+
+<p>
+    Não é preciso definir este atributo para todos os itens da lista caso o marcador seja o mesmo para todos, nesse caso, podemos definir na tag <span class="codigo">ul</span> em vez de definir nas tags <span class="codigo">li</span>:
+</p>
+<pre id="snippet7">
+<ul style="list-style: none;">
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+</ul>
+</pre>
+
+<p>
+    O exemplo de lista acima não possui marcadores, podemos definir a posição do marcador na mesma propriedade:
+</p>
+<pre id="snippet8">
+<ul style="list-style: square inside; border: red 1px solid;">
+    <li>Item</li>
+    <li>Item</li>
+    <li>Item</li>
+</ul>
+</pre>
+<p>O exemplo acima produz uma lista semelhante a esta:</p>
+<img src="./listas4.jpg" alt="">
+
+<h3>
+    Listas Aninhadas
+</h3>
+<p>
+    Listas podem conter dentro de si sub-listas, um exemplo simples é este:
+</p>
+<pre id="snippet9">
+<ul style="list-style: square inside; border: red 1px solid;">
+    <li>Eletrônicos</li>
+    <ul>
+        <li>Smartphone</li>
+        <li>TV</li>
+        <li>Tablet</li>
+    </ul>
+    <li>Eletrodomésticos</li>
+    <ul>
+        <li>Geladeira</li>
+        <li>Fogão</li>
+        <li>Lavadora</li>
+    </ul>
+</ul>
+</pre>
+<p>O exemplo de lista acima deve ser semelhante a este:</p>
+<img src="./listas5.jpg" alt="">
+
+
+<h3>
+    Listas de Elementos
+</h3>
+<p>
+    As tags <span class="codigo">li</span> não precisam obrigatoriamente conter texto puro, mas qualquer elemento HTML, inclusive parágrafos com a tag <span class="codigo">&lt;p&gt;</span>, no exemplo abaixo criamos uma lista com botões:
+</p>
+<pre id="snippet10">
+<ul>
+    <li><button>Botão 1</button></li>
+    <li><button>Botão 1</button></li>
+    <li><button>Botão 1</button></li>
+</ul>
+</pre>
+
+    </div>
+</div>
+
+<script src="../javascript/snippets.js"></script>
+<script>
+    snippets(Infinity);
+</script>
+
+</html>
+
+<footer-bar></footer-bar>
+<btn-up></btn-up>

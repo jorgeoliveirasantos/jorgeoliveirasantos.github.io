@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Web Design | Jorge Souza</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../javascript/index.js"></script>
+    <script src="webdesign.js"></script>
+    <link rel="icon" type="image/x-icon" href="../logo.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO-->
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Curso de Web Design">
+    <meta name="keywords"
+        content="web design, desenvolvimento web, programação, html, css, javascript, tecnologias web">
+</head>
+
+<menu-bar></menu-bar>
+<js-toggle-bar></js-toggle-bar>
+<side-bar-left></side-bar-left>
+
+
+<div class="js-page">
+
+    <div class="js-post">
+        <a href="./listas.html" class="js-button">Anterior</a>
+        <a href="./tabelas.html" class="js-button" style="float: right;">Próximo</a>
+
+        <h1>
+            Links
+        </h1>
+        <p>
+            A navegação em documentos HTML pode ser feita de várias maneiras:
+        </p>
+        <p>
+            1. Por meio de uma âncora <span class="codigo">&lt;a&gt;</span>.
+        </p>
+        <p>
+            2. Por meio do evento de clique de um botão <span class="codigo">&lt;button&gt;</span>.
+        </p>
+        <p>
+            3. Por meio do evento de clique de qualquer elemento HTML.
+        </p>
+        <p>
+            Ressaltando que a navegação não precisa obrigatoriamente levar o usuário para outra página, mas pode ser usada para baixar um arquivo ou levar o usuário para outra posição na mesma página. Links podem ainda ser utilizados para inserir referências de arquivos externos dentro de um documento HTML.
+        </p>
+<h3>
+    Âncora
+</h3>
+<p>
+    Para criar um link de navegação para outro arquivo HTML, utilizamos a tag <span class="codigo">&lt;a&gt;</span>, e definimos o caminho no atributo <span class="codigo">&lt;href&gt;</span>, da seguinte maneira:
+</p>
+<pre id="snippet1">
+    <a href="meuDocumento2.html"><p>Clique-me!</p></a>
+</pre>
+<p>
+	O texto “Clique-me!” será exibido como um link na página e ao ser clicado, encaminhará o usuário para o arquivo “meuDocumento2.html”.
+</p>
+<p>
+    Para que a nova página seja exibida numa nova guia, definimos um “target blank”, assim:
+</p>
+<pre id="snippet2">
+<a href="meuDocumento2.html" target="_blank">
+    <p>Clique-me!</p>
+</a>
+</pre>
+<p>
+    O arquivo deve estar na mesma pasta que o arquivo onde o link foi criado. Veremos muito mais sobre navegação num capítulo específico.
+</p>
+
+<h3>
+    Botão
+</h3>
+<p>
+    A navegação por meio de botões é feita com o evento de clique, que deve receber uma instrução Javascript, assim:
+</p>
+<pre id="snippet3">
+    <button onclick="window.location = 'meuDocumento2.html'">
+        Clique-me!
+    </button>
+</pre>
+<p>
+    Para que o link seja aberto numa nova guia, basta alterarmos a instrução para <span class="codigo">window.open()</span>:
+</p>
+<pre id="snippet4">
+    <button onclick="window.open('meuDocumento2.html')">
+        Clique-me!
+    </button>
+</pre>
+
+<h3>
+    Evento de clique em elementos
+</h3>
+<p>
+    O mesmo que fizemos com o botão pode ser feito com qualquer elemento HTML:
+</p>
+<pre id="snippet5">
+    <h3 onclick="window.open('meuDocumento2.html')">
+        Clique-me!
+    </h3>
+</pre>
+<p>
+    No entanto, mesmo que a navegação ocorra ao clicarmos, o comportamento não é de um link, pois ao passarmos o mouse por cima, nada acontece, isso porque é preciso definir estilos CSS. Veremos tudo isso mais adiante. 
+</p>
+
+<h3>
+    Âncora de página
+</h3>
+<p>
+    Uma âncora de página visa levar o usuário para determinada posição dentro da mesma página baseado na id de um elemento:
+</p>
+<pre id="snippet6">
+    <a href="#meuParagrafo">Descer!</a>
+    <div style="height: 2500px;"></div>
+    <p id="meuParagrafo">Chegou!</p>     
+</pre>
+
+<p>
+    Neste exemplo, uma <span class="codigo">div</span> com uma altura grande coloca o parágrafo no final da página e fora da tela, usando o atributo <span class="codigo">href</span> com uma # na frente do valor, encaminhamos o usuário para o elemento com a id especificada.
+</p>
+<p>
+    Este mesmo processo pode ser feito para encaminhar o usuário para qualquer parte de outro arquivo HTML:
+</p>
+<pre id="snippet7">
+    <a href="documento2.html#algumElemento">Clique-me!</a>      
+</pre>
+
+<p>
+    Este exemplo encaminha o usuário para outro documento HTML especificando a posição na rolagem da página onde se encontra o elemento com a id "algumElemento".
+</p>
+<p>
+    Mas pode ser qualquer página da web:
+</p>
+<pre id="snippet8">
+    <a href="https://developer.mozilla.org/en-US/docs/Learn#contact_us">
+        Clique-me!
+    </a>
+</pre>
+<p>
+    Esta é uma url válida e encaminha o usuário para a página do MDN (Mozilla Developers Network), em uma posição específica de acordo com a id de um elemento.
+</p>
+
+<h3>
+    Caminhos e arquivos
+</h3>
+<p>
+    Ao referenciar caminhos de arquivos em links HTML temos várias opções, como, por exemplo, arquivos na web:
+</p>
+<pre id="snippet9">
+    <link href="https://minhapagina.com/minhaimagem.png">
+</pre>
+<p>
+    O mesmo vale para redirecionar o usuário para uma página HTML:
+</p>
+<pre id="snippet10">
+    <a href="https://minhapagina.com/minhapagina.html">
+        Navegar
+    </a>
+</pre>
+<p>
+    Para referenciar arquivos dentro da pasta do seu próprio site, você pode utilizar Caminhos Relativos, assim:
+</p>
+<pre id="snippet11">
+    <link href="minhaimagem.png">
+</pre>
+<p>
+    O exemplo acima acessará a imagem caso ela se encontre na mesma pasta em que a página está. Caso ela esteja uma pasta acima, podemos fazer assim:
+</p>
+<pre id="snippet12">
+    <link href="../minhaimagem.png">
+</pre>
+<p>
+    No exemplo acima, a imagem está numa pasta um nível acima que a página de onde ela é chamada, para dois níveis acima fazemos o seguinte:
+</p>
+<pre id="snippet13">
+    <link href="../../minhaimagem.png">
+</pre>
+<p>
+    Podemos ainda acessar pastas em outros níveis:
+</p>
+<pre id="snippet14">
+    <link href="../minhapasta/minhaimagem.png">
+</pre>
+<p>
+    Neste exemplo, a pasta "minhapasta" está um nível acima que o arquivo onde o link é chamado, e a imagem “minhaimagem.png” está dentro dela.
+</p>
+<p>
+    Uma alternativa mais simples é utilizar Caminhos Absolutos:
+</p>
+<pre id="snippet15">
+    <link href="/minhaimagem.png">
+</pre>
+<p>
+    Neste exemplo a imagem está na pasta raiz do site. A / no início referencia a pasta raiz, e depois dela podemos referenciar qualquer caminho dentro da raiz, por exemplo:
+</p>
+<pre id="snippet16">
+    <link href="/minhapasta/subpasta/minhaimagem.png">
+</pre>
+<p>
+    Neste exemplo, "minhapasta" está na raiz do site.
+</p>
+
+    </div>
+</div>
+
+<script src="../javascript/snippets.js"></script>
+<script>
+    snippets(Infinity);
+</script>
+
+</html>
+
+<footer-bar></footer-bar>
+<btn-up></btn-up>

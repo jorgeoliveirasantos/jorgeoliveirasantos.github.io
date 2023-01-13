@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Web Design | Jorge Souza</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../javascript/index.js"></script>
+    <script src="webdesign.js"></script>
+    <link rel="icon" type="image/x-icon" href="../logo.svg">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--SEO-->
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Curso de Web Design">
+    <meta name="keywords"
+        content="web design, desenvolvimento web, programação, html, css, javascript, tecnologias web">
+</head>
+
+<menu-bar></menu-bar>
+<js-toggle-bar></js-toggle-bar>
+<side-bar-left></side-bar-left>
+
+
+<div class="js-page">
+
+    <div class="js-post">
+        <a href="./estilos.html" class="js-button">Anterior</a>
+        <a href="./idsclasses.html" class="js-button" style="float: right;">Próximo</a>
+
+        <h1>
+            Atributos Globais
+        </h1>
+        <p>
+            Os atributos servem para definir propriedades e comportamentos de elementos HTML, entre eles está o atributo
+            style que já utilizamos, mas existem vários outros, alguns atributos são específicos de um elemento HTML,
+            outros são atributos globais que podem ser aplicados a uma grande variedade de elementos, a partir de agora
+            veremos os principais.
+        </p>
+
+        <h3>
+            title
+        </h3>
+        <p>
+            O atributo <span class="codigo">title</span>, muito utilizado, define o título que é exibido num tooltip próximo ao ponteiro do mouse:
+        </p>
+<pre id="snippet1">
+    <p title="Meu texto!">Um texto qualquer...</p>
+</pre>
+
+        <h3>
+            hidden
+        </h3>
+        <p>
+            O atributo <span class="codigo">hidden</span> é utilizado para ocultar o elemento HTML quando este não deve mais ser exibido na página, ele não precisa receber um valor e basta ser especificado:
+        </p>
+<pre id="snippet2">
+    <p hidden>Um texto qualquer...</p>
+    <p hidden="true">Um texto qualquer...</p>
+</pre>
+
+        <h3>
+            draggable
+        </h3>
+        <p>
+            O atributo <span class="codigo">draggable</span> é utilizado para transformar um elemento em “arrastável” definindo-o como <span class="codigo">true</span>, sendo <span class="codigo">false</span> o valor padrão:
+        </p>
+<pre id="snippet3">
+    <p draggable="true">Isto é arrastável...</p>
+    <p draggable="false">...isto não é!</p>
+</pre>
+
+
+        <h3>
+            lang
+        </h3>
+        <p>
+            O atributo <span class="codigo">lang</span> define o idioma de parte do texto de forma que o browser possa reconhecer em que linguagem está aquele texto fornecendo ferramentas de tradução:
+        </p>
+<pre id="snippet4">
+    <p lang="en-US">This is in english...</p>
+    <p lang="es">...En español...</p>
+    <p lang="pt-BR">...Em português do Brasil!</p>
+</pre>
+        <p>
+            O idioma deve ser definido com um código ISO de idioma válido, se tiver dúvida confira em:
+        </p>
+        <a href="https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes" class="js-button" target="_blank">
+            https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+        </a>
+
+
+        <h3>
+            style
+        </h3>
+        <p>
+            O atributo <span class="codigo">style</span> é utilizado para definir estilos CSS de elementos:
+        </p>
+<pre id="snippet5">
+    <p style="color: green;">Este texto é verde</p>
+</pre>
+
+    
+    
+    </div>
+</div>
+
+<script src="../javascript/snippets.js"></script>
+<script>
+    snippets(Infinity);
+</script>
+
+</html>
+
+<footer-bar></footer-bar>
+<btn-up></btn-up>

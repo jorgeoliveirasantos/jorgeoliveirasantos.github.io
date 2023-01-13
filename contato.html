@@ -19,12 +19,12 @@
 </head>
 
 <menu-bar></menu-bar>
-
+<div class="js-page">
 <div class="js-post">
   <h1>Contato</h1>
   <p>Entre em contato pelo meio de sua preferência ou conheça minhas mídias sociais.</p>
-
 </div>
+
 <!--#region CURSOS -->
 <div class="container">
   <a class="child" href="mailto:jorge.sos777@outlook.com" target="_blank">
@@ -56,6 +56,7 @@
     <p>Workana</p>
   </a>
 </div>
+</div>
 <style>
   * {
     box-sizing: border-box;
@@ -65,11 +66,9 @@
     background-color: var(--pretoMedio);
     color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, 100px);
+    gap: auto;
     padding: 30px 15% 30px 15%;
-    text-align: center;
-    align-content: center;
   }
   
   .child {
@@ -79,13 +78,13 @@
     color: white;
     vertical-align: middle;
     opacity: 0.5;
-    transition-duration: 750ms;
+    transition-duration: 500ms;
     filter: grayscale(1);
   }
   
   .child * {
     text-align: center;
-    width: 100px;
+    width: 70px;
     display: block;
     margin: 15px auto 15px auto;
   }
@@ -96,7 +95,6 @@
   
   .child:hover {
     opacity: 1;
-    transition-duration: 200ms;
     filter: grayscale(0);
   }
 

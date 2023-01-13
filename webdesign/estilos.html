@@ -25,7 +25,7 @@
 
     <div class="js-post">
         <a href="./margemborda.html" class="js-button">Anterior</a>
-        <a href="." class="js-button" style="float: right;">Próximo</a>
+        <a href="./attglobais.html" class="js-button" style="float: right;">Próximo</a>
 
         <h1>
             Estilos
@@ -44,7 +44,7 @@
             Onde usar
         </h3>
         <p>
-            Existem três formas de estilizar um documento utilizando CSS in-line (em linha), interno e externo. O CSS
+            Existem três formas de estilizar um documento utilizando CSS: in-line (em linha), interno e externo. O CSS
             in-line é o que já vínhamos utilizando, e é definido assim:
         </p>
         <pre id="snippet1">
@@ -60,38 +60,41 @@
         </p>
         <pre id="snippet2">
 <p>
-  Meu parágrafo
+  Meu parágrafo
 </p>
 &lt;style&gt;
-  p{
-    color: white; background-color: brown;
-  }
+  p{
+    color: white; background-color: brown;
+  }
 &lt;/style&gt;
 </pre>
 
 
         <p>
             Neste exemplo estamos alterando a cor do texto e do fundo de todos os parágrafos que utilizam a tag
-        <p> no documento. Esta maneira de definir estilos é muito prática e nos ajuda a alterar a aparência de vários
-            elementos ao mesmo tempo. No entanto, adicionar muito código CSS em arquivos que já são grandes não é uma
+            <span class="codigo">&lt;p&gt;</span> no documento. Esta maneira de definir estilos é muito prática e nos
+            ajuda a alterar a aparência de vários elementos ao mesmo tempo.
+        </p>
+        <p>
+            No entanto, adicionar muito código CSS em arquivos que já são grandes não é uma
             boa ideia, nessa situação podemos utilizar um arquivo .css externo, definindo seu caminho com um elemento
             <span class="codigo">&lt;link&gt;</span>.
         </p>
         <p>
             Considere o seguinte arquivo HTML:
         </p>
-        <p>
+        <p style="margin-bottom: -5px; text-indent: 10px; font-style: italic;">
             index.html:
         </p>
         <pre id="snippet3">
 &lt;!DOCTYPE html>
 &lt;html>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">
 
-  &lt;body>
-    <h1>Título</h1>
-    <p>Parágrafo</p>
-  &lt;/body>
+  &lt;body>
+    <h1>Título</h1>
+    <p>Parágrafo</p>
+  &lt;/body>
 &lt;/html>
 </pre>
 
@@ -103,29 +106,29 @@
             tipo de arquivo que estamos importando. Logo abaixo temos um título e um parágrafo, que vamos estilizar com
             o código do nosso segundo arquivo, que deve estar na mesma pasta e se chamar index.css:
         </p>
-        <p>
-            index.css
+        <p style="margin-bottom: -5px; text-indent: 10px; font-style: italic;">
+            index.css:
         </p>
         <pre id="snippet4">
 p{
-  color: white;
-  background-color: brown;
-  padding: 20px;
+  color: white;
+  background-color: brown;
+  padding: 20px;
 } 
 table{
-  border: green 1px solid;
+  border: green 1px solid;
 }
 th{
-  border: green 1px solid;
+  border: green 1px solid;
 }
 td{
-  border: green 1px solid;
+  border: green 1px solid;
 }
 *{
-  background-color: #222;
-  color: aliceblue;
-  font-size: xx-large;
-  font-weight: bolder;
+  background-color: #222;
+  color: aliceblue;
+  font-size: xx-large;
+  font-weight: bolder;
 }
 </pre>
         <p> No exemplo acima, estamos alterando o estilo de todos os parágrafos, definindo uma borda externa às tabelas,
@@ -146,57 +149,291 @@ td{
 
         <p>
             O seletor CSS para classes e para ids são diferentes, selecionamos um objeto por sua classe utilizando o
-            ponto, e pela id utilizando a cerquila:
+            ponto, e pela id utilizando a cerquilha:
         </p>
         <pre id="snippet6">
 #p1{
-  color: white; background-color: brown;
+  color: white; background-color: brown;
 }
 .p2{
-  color: black; background-color: yellow;
+  color: black; background-color: yellow;
 }
 </pre>
 
         <p>
-            Neste exemplo, o primeiro estilo é aplicado ao parágrafo com a id p1, e o segundo ao parágrafo com a classe
-            p2. Um mesmo elemento pode possuir ambos identificadores:
+            Neste exemplo, o primeiro estilo é aplicado ao parágrafo com a id "p1", e o segundo ao parágrafo com a
+            classe
+            "p2". Um mesmo elemento pode possuir ambos identificadores:
         </p>
         <pre id="snippet7">
 <p id="exemploId" class="exemploClass">Meu parágrafo</p>
 
 &lt;style>
     #exemploId {
-      color: black;
+      color: black;
     }
     .exemploClass {
-      background-color: yellow;
+      background-color: yellow;
     }
 &lt;/style>
 </pre>
         <p> Agora a cor do texto é aplicada através da id e a cor de fundo através da classe.</p>
 
         <h3>
+            Dimensões, cores e bordas
         </h3>
         <p>
+            Para simplificar, vínhamos falando cor de texto e de fundo, no entanto a propriedade color é aplicada não
+            somente ao texto, mas a todo o elemento exceto fundo (background), margem e borda.
         </p>
-        <pre id="snippet">
+        <p>
+            Podemos utilizar CSS para estilizar elementos HTML com uma infinidade de propriedades. Observe o seguinte
+            HTML:
+        </p>
+        <pre id="snippet8">
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    <link rel="stylesheet" href="index.css">
+  &lt;/head>
+ 
+  &lt;body>
+    <button id="btn1">Botão1</button>
+    <button id="btn2">Botão2</button>
+    <button id="btn3">Botão3</button>
+    <button id="btn4">Botão4</button>
+    <button id="btn5">Botão5</button>
+  &lt;/body>
+&lt;/html>
 </pre>
+
+
+        <p>
+            Criamos cinco botões e definimos uma id para cada um, também importamos um arquivo CSS. No CSS,
+            alteraremos as propriedades de forma diferente para cada botão.
+        </p>
+        <p>
+            No primeiro botão alteramos largura (width), altura (height), e aplicamos uma borda superior (top) e
+            inferior (bottom), estilo “solid”:
+        </p>
+        <pre id="snippet9">
+#btn1{
+    color: yellow;
+    width: 120px;
+    height: 50px;
+    border-top: white 3px solid;
+    border-bottom: white 3px solid;
+}
+</pre>
+
+        <p>
+            No segundo botão, aplicamos a mesma altura mas uma largura menor (50px) e uma borda geral estilo “groove”,
+            também definimos o raio da borda com 50% da altura para que o botão fique com lados arredondados:
+        </p>
+        <pre id="snippet10">
+#btn2{
+    color: yellow;
+    width: 75px;
+    height: 50px;
+    border: white 2px groove;
+    border-radius: 25px;
+}
+</pre>
+        <p>
+            No terceiro botão aplicamos uma borda estilo “double”, e removemos a borda superior com a propriedade
+            “hidden” (oculto):
+        </p>
+        <pre id="snippet11">
+#btn3{
+    color: yellow;
+    background-color: darkred;
+    width: 75px;
+    height: 50px;
+    border: white 3px double;
+    border-top: hidden;
+}
+</pre>
+
+
+        <p>
+            No quarto botão aplicamos uma borda estilo “dashed”, que significa tracejada:
+        </p>
+        <pre id="snippet12">
+#btn4{
+    color: yellow;
+    background-color: darkred;
+    width: 75px;
+    height: 50px;
+    border: white 2px dashed;
+}
+</pre>
+
+        <p>
+            No quinto botão aplicamos uma borda “dotted”, pontilhada, e definimos as mesmas dimensões do primeiro botão:
+        </p>
+        <pre id="snippet13">
+#btn5{
+    color: yellow;
+    background-color: darkred;
+    width: 120px;
+    height: 50px;
+    border: white 2px dotted;
+}
+</pre>
+
+
+        <p>
+            Note que não definimos cor de fundo nos dois primeiros botões. Veja o resultado e compare com o CSS criado:
+        </p>
+        <img src="./estilos.jpg" alt="">
+        <p>
+            Você encontra uma lista completa com o nome das cores em:
+        </p>
+        <a href="https://www.w3schools.com/colors/colors_names.asp" class="js-button"
+            target="_blank">https://www.w3schools.com/colors/colors_names.asp</a>
+
 
         <h3>
+            Margem e padding
         </h3>
+        </pre>
         <p>
+            A margem se refere ao espaço em branco por fora da borda do elemento, esse espaço não é afetado pela cor do background e serve para manter uma distância entre os elementos. Já o padding se refere ao espaço em branco entre o elemento e a borda. Vamos estilizar um parágrafo e ver como isso funciona:
         </p>
-        <pre id="snippet">
+<pre id="snippet14">
+&lt;html&gt;
+    <a id="p1">Padding</a>
+    <a id="p2">Padding left</a>
+    <a id="p3">Padding top</a>
+&lt;/html&gt;
+&lt;style&gt;
+    #p1{
+        color: yellow;
+        margin: 10px;
+        padding: 20px;
+        border: yellow 5px solid;
+        width: 300px;
+    }
+    #p2{
+        color: yellow;
+        margin: 10px;
+        padding-left: 50px;
+        border: yellow 5px solid;
+        width: 300px;
+    }
+    #p3{
+        color: yellow;
+        margin: 10px;
+        padding-top: 50px;
+        border: yellow 5px solid;
+        width: 300px;
+    }
+&lt;/style&gt;
 </pre>
 
-        <h3>
-        </h3>
-        <p>
-        </p>
-        <pre id="snippet">
+<p>
+    Veja o resultado:
+</p>
+<img src="./estilos2.jpg" alt="">
+
+
+<p>
+    Assim como a borda, o padding e a margem também podem ser definidos em todos os lados, ou em lados individuais:
+</p>
+<p>
+    <span class="codigo">padding</span>: Padding em todos os lados.
+</p>
+<p>
+    <span class="codigo">padding-top</span>: Padding superior.
+</p>
+<p>
+    <span class="codigo">padding-left</span>: Padding esquerdo.
+</p>
+<p>
+    <span class="codigo">padding-right</span>: Padding direito.
+</p>
+<p>
+    <span class="codigo">padding-bottom</span>: Padding inferior.
+</p>
+<p>
+    No entanto, o padding pode definir cada lado individualmente numa única linha assim:
+</p>
+<pre id="snippet15">
+    padding: 20px 0px 5px 10px;
+</pre>
+<p>
+    Sendo que os valores são passados assim: TOP, RIGTH, LEFT, BOTTOM. Ou seja, em sentido horário começando do topo. O mesmo vale para a margem.
+</p>
+
+<h3>
+    Display
+</h3>
+<p>
+    A propriedade display é uma das mais importantes no CSS, elementos costumam ter um display padrão, que pode ser em linha ou em bloco, elementos em bloco são exibidos sempre abaixo de outros elementos, enquanto elementos em linha são exibidos um ao lado do outro sempre que houver espaço.
+</p>
+<p>
+    Definimos uma propriedade como inline quando desejamos que elementos ocupem a mesma linha e como block quando desejamos que cada um ocupe sua própria linha.
+</p>
+<p class="notas">
+    Obs.: Definir um elemento como inline não o fará ser exibido em linha com outro elemento cujo display é block, somente com outro elemento cujo valor de display também seja inline.
+</p>
+<p>
+    Observe este exemplo:
+</p>
+<pre id="snippet16">
+&lt;html&gt;
+    <a>Exibição</a>
+    <a>em</a>
+    <a>linha</a>
+&lt;/html&gt;
+&lt;style&gt;
+    a {
+        !destaque-code:display: inline;destaque-code!
+        color: yellow;
+        margin: 10px 0px 10px 0px;
+        padding: 20px;
+        border: yellow 5px solid;
+        width: 300px;
+    }
+&lt;/style&gt;
 </pre>
 
-
+<h3>
+    Hover
+</h3>
+<p>
+    Podemos utilizar pseudo-classe para alterar comportamentos de elementos HTML, a mais utilizada é o hover, que define as propriedades que o objeto deve ter quando o ponteiro do mouse passa ou para sobre ele. Uma pseudo-classe é chamada após o seletor CSS utilizando dois pontos assim:
+</p>
+<pre id="snippet17">
+    a:hover { }
+    p:hover { }
+    table:hover { }
+</pre>
+<p>
+    As propriedades num seletor de pseudo-classe não precisam repetir outras propriedades já definidas pois elas serão herdadas, mas apenas aquelas que devem ser alteradas ou acrescentadas quando o ponteiro do mouse atingir o elemento, vejamos:
+</p>
+<pre id="snippet18">
+&lt;html&gt;
+    <a>Botão personalizado</a>
+&lt;/html&gt;
+&lt;style&gt;
+    a {
+        padding: 20px;
+        background-color: red;
+        color: white;
+    }
+    a:hover {
+        background-color: yellow;
+        color: black;
+    }
+&lt;/style&gt;
+</pre>
+<p>
+	Dessa forma o objeto será animado de forma que toda vez que o botão atingi-lo, a cor do texto e de fundo serão alteradas.
+</p>
+<p class="notas">
+    Dica: utilizando o Visual Studio Code ou outro editor avançado, uma ferramenta chamada IntelliSense lhe dará todas as opções de atributos, propriedades e valores, disponíveis, te ajudando inclusive a aprender!
+</p>
 
 
 

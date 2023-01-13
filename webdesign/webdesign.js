@@ -19,7 +19,7 @@ class SideLeft extends HTMLElement {
     <a href="./cores.html">Cores</a>
     <a href="./margemborda.html">Margem e borda</a>
     <a href="./estilos.html">Estilos</a>
-    <a href=".">Atributos Globais</a>
+    <a href="./attglobais.html">Atributos Globais</a>
     <a href=".">Ids e classes</a>
     
     <p>Elementos HTML</p>

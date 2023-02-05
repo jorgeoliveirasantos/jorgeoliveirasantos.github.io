@@ -26,7 +26,8 @@
 <div class="img-slider">
   <a href="./aprendizado.html" id="img4" class="banner"><img src="./files/capa4.webp" alt="Aprendizado On-Line"></a>
   <a href="./apostilas.html" id="img3" class="banner"><img src="./files/capa3.webp" alt="Apostilas e Manuais"></a>
-  <a href="./desenvolvimento.html" id="img2" class="banner"><img src="./files/capa2.webp" alt="Desenvolvimento Web e de Software"></a>
+  <a href="./desenvolvimento.html" id="img2" class="banner"><img src="./files/capa2.webp"
+      alt="Desenvolvimento Web e de Software"></a>
   <a class="banner"><img id="img1" src="./files/capa1.webp" alt="Banner inicial"></a>
 </div>
 
@@ -101,11 +102,9 @@
   }
 </style>
 <!--#endregion -->
-
-
-<div>
-  <div class="js-post" style="background-color: var(--pretoMedio); color: white; margin: 25px 5% 25px 5%;
-  border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
+<div class="js-page">
+  <div class="js-post"
+    style="background-color: var(--pretoMedio); border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
     <div style="display: inline-block; vertical-align: top;">
       <h3>Formação</h3>
       <ul>
@@ -127,9 +126,9 @@
       </ul>
     </div>
   </div>
-
-  <div class="js-post" style="background-color: var(--pretoMedio); color: white; margin: 25px 5% 25px 5%;
-    border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
+  <br>
+  <div class="js-post"
+    style="background-color: var(--pretoMedio); border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
     <h3>Carreira</h3>
     <p>
       Em 2007, com 18 anos, enquanto cursava o terceiro ano do ensino médio, e após concluir um curso de Design Gráfico
@@ -156,13 +155,27 @@
       desenvolvimento web em Javascript e Node JS, e programação de computadores na plataforma .NET.
     </p>
   </div>
-</div>
-
-<div class="js-post">
-  <p style="text-indent: 0; font-style: italic; text-align: center;">
-    Então Jesus tornou a falar-lhes, dizendo: Eu sou a luz do mundo; quem me segue de modo algum andará em trevas, mas
-    terá a luz da vida.<br>
-    João 8:12
+  <br>
+  <div class="js-post">
+    <p style="text-indent: 0; font-style: italic; text-align: center;">
+      Então Jesus tornou a falar-lhes, dizendo: Eu sou a luz do mundo; quem me segue de modo algum andará em trevas, mas
+      terá a luz da vida.<br>
+      João 8:12
+  </div>
+  <br>
+  <div class="js-post" style="width: 100%; display: grid; grid-template-rows: auto 1fr;" id="ads">
+    <span style="display: grid; grid-template-columns: auto 1fr auto;">
+      <p>Publicidade</p>
+      <p></p>
+      <p onclick="document.getElementById('ads').style.display = 'none'" style="cursor: pointer;">Fechar</p>
+    </span>
+    <div style="width: 100%;">
+      <h1>Bla?</h1>
+      <p>blablabla blablabla blablabla blablabla blablabla blablabla </p>
+      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018638705666056"
+        crossorigin="anonymous"></script>
+    </div>
+  </div>
 </div>
 
 </html>

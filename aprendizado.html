@@ -23,8 +23,113 @@
 <div class="js-page">
   <br>
   <div class="js-post">
-    <h3>Aguarde...</h3>
-    <p>Você será redirecionado para o centro de aprendizado em breve.</p>
+    <modal></modal>
+    <script>
+      function Aguarde(txt) {
+        document.getElementsByTagName("modal")[0].innerHTML = `
+            <div class="modal-conteiner">
+                <div class="modal-conteudo" id="modal-conteudo">
+                    <div class="modal-conteudo-titulo" style="padding: 15px;">Aguarde...</div>
+                    <div class="modal-conteudo-img">
+                        <img src="/files/Loading.gif" alt="">
+                    </div>
+                    <div class="modal-conteudo-msg">
+                        <p>${txt}</p>
+                    </div>
+                    <div style="width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                        <span></span>
+                        <button class="js-button" onclick="Modal.FecharModal()">Fechar</button>
+                    </div>
+                </div>
+            </div>
+        `;
+        func = () => callback();
+        document.getElementById("modal-conteudo").style.display = "block";
+    }
+    Aguarde("Você será redirecionado para o centro de aprendizado em breve.");
+    </script>
+    <style>
+      /* #region MODAL*/
+      @keyframes modal-conteudo {
+          0% {
+              transform: scale(0.5) rotate(30deg) translateY(-500px);
+          }
+      
+          100% {
+              transform: scale(1);
+          }
+      }
+      
+      modal .modal-conteiner {
+          background-color: #ADF2;
+          backdrop-filter: blur(2px);
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          z-index: 999;
+          text-align: center;
+          font-size: 1.2rem;
+          user-select: none;
+      }
+      
+      modal .modal-conteudo {
+          display: none;
+          background-color: black;
+          width: fit-content;
+          max-width: 80vw;
+          margin: auto;
+          margin-top: 10%;
+          padding: 15px;
+          border: 1px solid;
+          border-image: var(--gradiente45);
+          animation-name: modal-conteudo;
+          animation-duration: 500ms;
+          animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+          animation-iteration-count: 1;
+      }
+      
+      modal .modal-conteudo-titulo {
+          margin: 0;
+          line-height: 0.5pt;
+          font-size: 1.5rem;
+          border-bottom: var(--pretoLeve) 1px solid;
+      }
+      
+      @keyframes modal-img {
+          from {
+              opacity: 1;
+          }
+      
+          to {
+              opacity: 0.6;
+          }
+      }
+      
+      modal .modal-conteudo-img img {
+          padding: 15px;
+          display: block;
+          max-height: 150px;
+          max-width: 200px;
+          margin: auto;
+          pointer-events: none;
+          animation-name: modal-img;
+          animation-duration: 2s;
+          animation-iteration-count: infinite;
+          animation-direction: alternate;
+          animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+      }
+      
+      modal #modal-btn-fechar:hover {
+          color: crimson;
+          transition: all 500ms;
+          cursor: pointer;
+      }
+      
+      /* #endregion */
+      
+    </style>
   </div>
   <br>
 </div>
@@ -34,6 +139,5 @@
 </script>
 
 </html>
-
 <footer-bar></footer-bar>
 <btn-up></btn-up>

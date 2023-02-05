@@ -44,7 +44,9 @@
             </div>
         `;
         func = () => callback();
-        document.getElementById("modal-conteudo").style.display = "block";
+        setTimeout(() => {
+            document.getElementById("modal-conteudo").style.display = "block";
+        }, 3000);
     }
     Aguarde("Você será redirecionado para o centro de aprendizado em breve.");
     </script>

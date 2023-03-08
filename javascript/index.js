@@ -8,6 +8,7 @@ class Menu extends HTMLElement {
     <div class="js-nav">
     <a href="/index.html" tabindex="1">Início</a>
     <a href="/aprendizado.html" tabindex="2">Aprendizado</a>
+    <a href="/downloads.html" tabindex="2">Downloads</a>
     <a href="/apostilas.html" tabindex="3">Apostilas</a>
     <a href="/contato.html" tabindex="2">Sobre</a>
     <span style="width: 1fr;"></span>

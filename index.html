@@ -23,86 +23,149 @@
 
 <menu-bar></menu-bar>
 
-<div class="img-slider">
-  <a href="./aprendizado.html" id="img4" class="banner"><img src="./files/capa4.webp" alt="Aprendizado On-Line"></a>
-  <a href="./apostilas.html" id="img3" class="banner"><img src="./files/capa3.webp" alt="Apostilas e Manuais"></a>
-  <a href="./desenvolvimento.html" id="img2" class="banner"><img src="./files/capa2.webp"
-      alt="Desenvolvimento Web e de Software"></a>
-  <a class="banner"><img id="img1" src="./files/capa1.webp" alt="Banner inicial"></a>
+<div class="img-slider present">
+  <span class="esq-btn rolar-btn" onclick="voltar()">
+    <p>&#9664;</p>
+  </span>
+  <div class="cont" id="cont0" href="#">
+    <img src="files/capa.webp">
+  </div>
+  <a class="cont" id="cont1" style="display: none;" href="cursos.html#informatica">
+    <img src="files/info.webp">
+  </a>
+  <a class="cont" id="cont2" style="display: none;" href="cursos.html#designgrafico">
+    <img src="files/design.webp">
+  </a>
+  <a class="cont" id="cont3" style="display: none;" href="cursos.html#webdesign">
+    <img src="files/webdesign.webp">
+  </a>
+  <a class="cont" id="cont4" style="display: none;" href="cursos.html#javascript">
+    <img src="files/javascript.webp">
+  </a>
+  <a class="cont" id="cont5" style="display: none;" href="cursos.html#webapp">
+    <img src="files/webapp.webp">
+  </a>
+  <a class="cont" id="cont6" style="display: none;" href="cursos.html#cpp">
+    <img src="files/cpp.webp">
+  </a>
+  <span class="dir-btn rolar-btn" onclick="avancar()">
+    <p>&#9658;</p>
+  </span>
 </div>
 
-<div class="js-post">
-  <h1>Seja muito bem-vindo!</h1>
-  <p>Seja para contratar um projeto, adquirir uma apostila do seu setor, ou aprender, este é seu lugar.</p>
-</div>
-
-<!--#region CURSOS -->
-<div class="container">
-  <a class="child" href="./desenvolvimento.html">
-    <img src="./files/dev.svg" alt="">
-    <p>Desenvolvimento de aplicações web, móvel e desktop.</p>
-  </a>
-  <a class="child" href="./apostilas.html">
-    <img src="./files/books.svg" alt="">
-    <p>Apostilas do setor tecnológico com metodologia para sala de aula.</p>
-  </a>
-  <a class="child" href="./aprendizado.html">
-    <img src="./files/learn.svg" alt="">
-    <p>Aprendizado on-line e gratuito à sua disposição a qualquer momento.</p>
-  </a>
-  <a class="child" href="./contato.html">
-    <img src="./files/contacts.svg" alt="">
-    <p>Entre em contato por um canal de sua preferência.</p>
-  </a>
-</div>
+<script>
+  let index = 0;
+  cont = 6;
+  let cursos = {
+    "Início": "#",
+    "Informática": "",
+    "Design Gráfico": "",
+    "Web Design": "",
+    "Javascript": "",
+    "Desenvolvimento Web": "",
+    "C++": ""
+  };
+  function avancar() {
+    if (index < cont) {
+      document.getElementById(`cont${index}`).style.display = 'none';
+      document.getElementById(`cont${index + 1}`).style.display = 'block';
+      ++index;
+    } else {
+      document.getElementById(`cont${cont}`).style.display = 'none';
+      document.getElementById(`cont0`).style.display = 'block';
+      index = 0;
+    }
+  }
+  function voltar() {
+    if (index > 0) {
+      document.getElementById(`cont${index}`).style.display = 'none';
+      document.getElementById(`cont${index - 1}`).style.display = 'block';
+      --index;
+    } else {
+      document.getElementById(`cont0`).style.display = 'none';
+      document.getElementById(`cont${cont}`).style.display = 'block';
+      index = cont;
+    }
+  }
+</script>
 <style>
-  * {
+  .present .esq-btn {
+    left: 0;
     box-sizing: border-box;
   }
 
-  .container {
-    max-width: 70%;
-    display: table;
-    margin: auto;
+  .present .dir-btn {
+    right: 0;
+    box-sizing: border-box;
   }
 
-  .child {
-    text-decoration: none;
-    font-family: sans-serif;
-    display: table-cell;
+  .present .rolar-btn {
+    position: absolute;
+    display: grid;
+    cursor: pointer;
+    height: 100%;
+    box-sizing: border-box;
+    place-items: center;
+    z-index: 1;
+  }
+
+  .rolar-btn p {
+    color: crimson;
+    padding: 30px 10px 30px 10px;
+    background-color: #7775;
+    font-size: 30px;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .present .rolar-btn p:hover {
+    background-color: black;
     color: white;
-    vertical-align: middle;
-    opacity: 0.5;
-    filter: grayscale(1);
-    transition-duration: 500ms;
-    padding: 30px;
   }
 
-  .child * {
-    text-align: center;
-    width: 100%;
-    display: block;
-    margin: 15px;
-  }
+  @keyframes cont-transicao {
+    from {
+      scale: 0;
+    }
 
-  .child:hover {
-    filter: grayscale(0);
-    opacity: 1;
-    transition-duration: 200ms;
-  }
-
-  @media (max-width: 600px) {
-    .child {
-      filter: grayscale(0);
-      opacity: 1;
-      display: block;
-      margin: auto;
-      width: 70%;
+    to {
+      scale: 1;
     }
   }
+
+  .present .cont {
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    place-items: center;
+    animation: cont-transicao 1s;
+  }
+
+  .present .cont img {
+    width: 100%;
+    box-sizing: border-box;
+    pointer-events: none;
+    user-select: none;
+    z-index: 0;
+  }
 </style>
-<!--#endregion -->
+
+
+
+
 <div class="js-page">
+  <br>
+  <div class="js-post">
+    <h1>Seja muito bem-vindo!</h1>
+    <p>Seja para contratar um projeto, adquirir uma apostila do seu setor, ou aprender, este é seu lugar.</p>
+  </div>
+  <br>
+  <div class="js-post">
+    <h1>Seja muito bem-vindo!</h1>
+    <p>Seja para contratar um projeto, adquirir uma apostila do seu setor, ou aprender, este é seu lugar.</p>
+  </div>
+  <br>
   <div class="js-post"
     style="background-color: var(--pretoMedio); border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
     <div style="display: inline-block; vertical-align: top;">
@@ -116,13 +179,10 @@
     <div style="display: inline-block; vertical-align: top; margin-right: 25px;">
       <h3>Habilidades</h3>
       <ul>
-        <li>Instrutor de Cursos Técnicos</li>
-        <li>Design Gráfico em Comunicação Visual</li>
-        <li>Modelagem 3D</li>
-        <li>Desenvolvimento Desktop em .NET Core</li>
-        <li>Desenvolvimento Desktop em Electron JS</li>
-        <li>Desenvolvimento Web em ASP .NET Core</li>
-        <li>Desenvolvimento Web em Node JS</li>
+        <li>Instrutor de cursos técnico/profissionalizantes</li>
+        <li>Design Gráfico</li>
+        <li>Modelagem 3D e CAD (para Arquitetura e Interiores)</li>
+        <li>Desenvolvimento de software</li>
       </ul>
     </div>
   </div>
@@ -131,28 +191,26 @@
     style="background-color: var(--pretoMedio); border: 1px solid; border-image: linear-gradient(#FB0, #730)1;">
     <h3>Carreira</h3>
     <p>
-      Em 2007, com 18 anos, enquanto cursava o terceiro ano do ensino médio, e após concluir um curso de Design Gráfico
+      Aos 18 anos, enquanto cursava o terceiro ano do ensino médio, e após concluir um curso de Design Gráfico
       na NIT Cursos, ingressei, por indicação do professor do curso, numa vaga de Designer Gráfico estagiário na Dignart
-      Publicidade Visual, onde permaneci até 2009, trabalhando também como adesivador e na plotagem de projetos de
+      Publicidade Visual, trabalhando também como adesivador e na plotagem de projetos de
       AutoCAD, enquanto fazia o curso de AutoCAD, também na NIT Cursos, para me aperfeiçoar no trabalho de plotagem.
     </p>
     <p>
-      Em 2009, decidido a trabalhar como projetista, encontrei uma vaga, também de estagiário, dessa vez cadista, no
-      escritório Zamuner Arquitetura, a passagem foi curta, pois ao final daquele mesmo ano, o arquiteto fechou o
+      Dois anos depois, decidido a trabalhar como projetista, encontrei uma vaga, também de estagiário, dessa vez
+      cadista, no escritório Zamuner Arquitetura, a passagem foi curta, pois ao final daquele mesmo ano, o arquiteto
+      fechou o
       escritório para retornar para o Paraná, mas antes, me indicou para trabalhar na cidade vizinha no escritório de
-      decoração que lhe auxiliava no projetos. Em 2010 me mudei para Barreiras, e fui trabalhar no escritório da Light
+      decoração que lhe auxiliava no projetos. Mudei para Barreiras, e fui trabalhar no escritório da Light
       and Design Interiores, como projetista, apesar da difícil adaptação à cidade por causa do transporte, trabalhei na
-      Light and Design até o início de 2011, quando retornei para Luis Eduardo Magalhães, e fui chamado pela NIT Cursos
+      Light and Design por um ano, quando retornei para Luis Eduardo Magalhães, e fui chamado pela NIT Cursos
       para ministrar o Curso de AutoCAD, o qual fui co-autor desenvolvendo também o material didático e a metodologia de
       ensino. Devido ao trabalho em horário comercial como cadista na Radoll Arquitetura, ministrei as aulas de AutoCAD
-      no período noturno e aos sábados, isso do começo de 2011 ao final de 2016. Até 2018 trabalhei ainda como cadista
-      em escritórios de arquitetura, e duas vezes por contrato temporário em agências de Comunicação Visual. Além de
-      ministrar aulas de AutoCAD também na Microlins.
+      no período noturno e aos sábados. Trabalhei ainda em outros escritórios de arquitetura e ministrei aulas de
+      AutoCAD também na Microlins.
     </p>
     <p>
-      A partir de 2018 comecei a trabalhar como freelancer e iniciei minha formação em Programação já acumulando
-      atualmente oito certificados e alguns projetos concluídos com êxito. Atualmente me dedico exclusivamente ao
-      desenvolvimento web em Javascript e Node JS, e programação de computadores na plataforma .NET.
+      Atualmente trabalho exclusivamente como freelancer e ministro aulas particulares de cursos profissionalizantes.
     </p>
   </div>
   <br>
@@ -163,11 +221,12 @@
       João 8:12
   </div>
   <br>
-  <div class="js-post" style="width: 100%; display: grid; grid-template-rows: auto 1fr;" id="ads">
+  <div class="js-post" style="width: 100%; display: none; grid-template-rows: auto 1fr;" id="ads">
     <span style="display: grid; grid-template-columns: auto 1fr auto; color: white; font-family: sans-serif;">
       <span>Publicidade</span>
       <span></span>
-      <span onclick="document.getElementById('ads').style.display = 'none'" style="cursor: pointer; color: #F30;">Fechar</span>
+      <span onclick="document.getElementById('ads').style.display = 'none'"
+        style="cursor: pointer; color: #F30;">Fechar</span>
     </span>
     <div style="width: 100%;">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7018638705666056"

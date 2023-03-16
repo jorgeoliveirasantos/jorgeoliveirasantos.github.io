@@ -9,7 +9,7 @@ class Menu extends HTMLElement {
     <a href="/index.html" tabindex="1">Início</a>
     <a href="/cursos.html" tabindex="3">Cursos</a>
     <a href="/downloads.html" tabindex="2">Downloads</a>
-    <a href="/contato.html" tabindex="2">Sobre</a>
+    <a href="/contato.html" tabindex="2">Contato</a>
     <span style="width: 1fr;"></span>
     <style>
       .seta {

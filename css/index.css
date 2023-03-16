@@ -545,12 +545,13 @@ a {
 @media (max-width: 600px) {
   .js-nav {
     position: relative;
+    display: grid;
+    place-items: center;
     top: 0;
   }
 
   .js-nav a {
     display: block;
-    width: 100%;
     margin: 0;
   }
 

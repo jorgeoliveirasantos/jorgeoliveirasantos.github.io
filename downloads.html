@@ -18,166 +18,27 @@
 </head>
 
 <menu-bar></menu-bar>
-
-<div class="menu-moderno-lkju" style="margin: auto; width: fit-content;">
-    <h1 style="width: fit-content; margin: auto; padding: 15px;">Cursos</h1>
-    <span><a href="https://drive.google.com/drive/folders/1BdqsqsVZpEdk01gpMA608pbDoqemAUzD" target="_blank">Curso de Informática Básica e Avançada</a></span>
-    <span><a href="https://drive.google.com/drive/folders/1T14FNxgtS6zDU5he6A74MhUIRTLAlP5i?usp=sharing" target="_blank">Curso Completo de Design Gráfico</a></span>
-    <span><a href="https://drive.google.com/drive/folders/1eCiMVTwoZE93wsB57dURkXkHCAl_MENE?usp=sharing" target="_blank">Curso de Web Design</a></span>
-    <span><a href="https://drive.google.com/drive/folders/14wSufoQj0-dIW7taS6adiV9qBDmh59ea?usp=sharing" target="_blank">Curso de Javascript</a></span>
-    <span><a href="https://drive.google.com/drive/folders/1sjTUvdPB5gxgCQBoah9yeXAggevSDOgl?usp=sharing" target="_blank">Curso de Desenvolvimento de Aplicações Web</a></span>
-    <span><a href="https://drive.google.com/drive/folders/1999UtlyN2TKgaSW8xA2e0zxbB_75aTs-?usp=sharing" target="_blank">Curso Completo de C++</a></span>
-</div>
-<style>
-    body {
-        background-image: url('/files/back.jpg');
-        background-position-x: center;
-        background-size: cover;
-    }
-    .menu-moderno-lkju span {
-        display: block;
-        text-align: center;
-        padding: 30px;
-        font-size: 1.3rem;
-        margin-bottom: 15px;
-        background-color: #0005;
-        border-radius: 50px;
-        cursor: pointer;
-        box-shadow: 0 0 10px var(--AMARELO);
-        backdrop-filter: blur(10px);
-        border: transparent 2px solid;
-    }
-    .menu-moderno-lkju span a {
-        color: var(--AMARELO);
-        text-decoration: none;
-    }
-    .menu-moderno-lkju span:hover {
-        box-shadow: 0 0 30px var(--cinzaLeve);
-        color: var(--cinzaLeve);
-        border: var(--AMARELO) 2px solid;
-        backdrop-filter: none;
-    }
-    .menu-moderno-lkju {
-        margin: auto;
-        width: fit-content;
-        padding: 15px;
-        font-family: Tech;
-    }
-</style>
-
-<!-- #region  REDIRECIONAR PARA O CENTRO DE APRENDIZAGEM  -->
 <div class="js-page">
-    <modal id="modal"></modal>
-    <script>
-        function Aguarde(txt) {
-            document.getElementById("modal").innerHTML = `
-            <div class="modal-conteiner">
-                <div class="modal-conteudo" id="modal-conteudo">
-                    <div class="modal-conteudo-titulo" style="padding: 15px;">Aguarde...</div>
-                    <div class="modal-conteudo-img">
-                        <img src="./files/Loading.gif" alt="">
-                    </div>
-                    <div class="modal-conteudo-msg">
-                        <p>${txt}</p>
-                    </div>
-                    <div style="width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        `;
-        }
-        //Aguarde("Você está sendo redirecionado para o <span style='color:#fb0'>Centro de Aprendizagem.</span>");
-        setTimeout(() => {
-            //window.location.replace("https://aprendizado-jorgesouza.azurewebsites.net/");
-        }, 999);
-    </script>
-    <style>
-        /* #region MODAL*/
-        @keyframes modal-conteudo {
-            0% {
-                transform: scale(0.5) rotate(30deg) translateY(-500px);
-            }
-
-            100% {
-                transform: scale(1);
-            }
-        }
-
-        modal .modal-conteiner {
-            background-color: var(--pretoMedio);
-            color: azure;
-            font-family: Baloo;
-            backdrop-filter: blur(2px);
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            font-size: 1.2rem;
-            user-select: none;
-        }
-
-        modal .modal-conteudo {
-            display: block;
-            background-color: black;
-            width: fit-content;
-            max-width: 80vw;
-            margin: auto;
-            margin-top: 10%;
-            padding: 15px;
-            border: 1px solid;
-            border-image: var(--gradiente45);
-            animation-name: modal-conteudo;
-            animation-duration: 500ms;
-            animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
-            animation-iteration-count: 1;
-        }
-
-        modal .modal-conteudo-titulo {
-            margin: 0;
-            line-height: 0.5pt;
-            font-size: 1.5rem;
-            border-bottom: var(--pretoLeve) 1px solid;
-        }
-
-        @keyframes modal-img {
-            from {
-                opacity: 1;
-            }
-
-            to {
-                opacity: 0.6;
-            }
-        }
-
-        modal .modal-conteudo-img img {
-            padding: 15px;
-            display: block;
-            max-height: 150px;
-            max-width: 200px;
-            margin: auto;
-            pointer-events: none;
-            animation-name: modal-img;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-            animation-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
-        }
-
-        modal #modal-btn-fechar:hover {
-            color: crimson;
-            transition: all 500ms;
-            cursor: pointer;
-        }
-
-        /* #endregion */
-    </style>
+    <br>
+    <div class="js-post" style="display: grid; place-items: justify; gap: 15px">
+        <h1 style="width: fit-content; margin: auto; padding: 15px;">Downloads dos Cursos</h1>
+        <a class="js-button" href="https://drive.google.com/drive/folders/1BdqsqsVZpEdk01gpMA608pbDoqemAUzD" target="_blank">Curso
+                de Informática Básica e Avançada</a>
+        <a class="js-button" href="https://drive.google.com/drive/folders/1T14FNxgtS6zDU5he6A74MhUIRTLAlP5i?usp=sharing"
+                target="_blank">Curso Completo de Design Gráfico</a>
+        <a class="js-button" href="https://drive.google.com/drive/folders/1eCiMVTwoZE93wsB57dURkXkHCAl_MENE?usp=sharing"
+                target="_blank">Curso de Web Design</a>
+        <a class="js-button" href="https://drive.google.com/drive/folders/14wSufoQj0-dIW7taS6adiV9qBDmh59ea?usp=sharing"
+                target="_blank">Curso de Javascript</a>
+        <a class="js-button" href="https://drive.google.com/drive/folders/1sjTUvdPB5gxgCQBoah9yeXAggevSDOgl?usp=sharing"
+                target="_blank">Curso de Desenvolvimento de Aplicações Web</a>
+        <a class="js-button" href="https://drive.google.com/drive/folders/1999UtlyN2TKgaSW8xA2e0zxbB_75aTs-?usp=sharing"
+                target="_blank">Curso Completo de C++</a>
+    </div>
     <br>
 </div>
-<!--#endregion-->
 
 </html>
+
+<footer-bar></footer-bar>
 <btn-up></btn-up>

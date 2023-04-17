@@ -5,25 +5,40 @@ class Menu extends HTMLElement {
   }
   connectedCallback() {
     this.innerHTML = `
+  <div class="js-nav-conteiner">
     <div class="js-nav">
-    <a href="/index.html" tabindex="1">Início</a>
-    <a href="/cursos.html" tabindex="3">Cursos</a>
-    <a href="/downloads.html" tabindex="2">Downloads</a>
-    <a href="/contato.html" tabindex="2">Contato</a>
-    <span style="width: 1fr;"></span>
-    <style>
-      .seta {
-        border: solid #ddd;
-        border-width: 0 3px 3px 0;
-        display: inline-block;
-        padding: 2px;
-        -webkit-transform: rotate(45deg);
-        transform: rotate(45deg);
-        margin: auto 5px auto 5px;
-      }
-    </style>
-  </div>
-    `;
+        <a href="/index.html" tabindex="1" title="Início">
+            <img src="/files/home.svg" alt="">
+            <small>
+                Início
+            </small>
+        </a>
+        <a href="/blog/1.html" tabindex="2" title="Blog">
+            <img src="/files/blog.svg" alt="">
+            <small>
+                Blog
+            </small>
+        </a>
+        <a href="/cursos.html" tabindex="3" title="Cursos">
+            <img src="/files/learn.svg" alt="">
+            <small>
+                Cursos
+            </small>
+        </a>
+        <a href="/downloads.html" tabindex="4" title="Downloads">
+            <img src="/files/download.svg" alt="">
+            <small>
+                Downloads
+            </small>
+        </a>
+        <a href="/contato.html" tabindex="5" title="Contato">
+            <img src="/files/contacts.svg" alt="">
+            <small>
+                Contato
+            </small>
+        </a>
+    </div>
+  </div>`;
   }
 }
 customElements.define('menu-bar', Menu);
@@ -56,12 +71,24 @@ class Footer extends HTMLElement {
     this.innerHTML = `
     <div class="js-footer">
     <div style="grid-area: col1;">
-      <h3>Aprendizado On-Line</h3>
-      <a href="/informatica/intro.html">
+      <h3>Cursos</h3>
+      <a href="/cursos.html#informatica">
         <p>Informática Básica e Avançada</p>
       </a>
-      <a href="/design/intro.html">
+      <a href="/cursos.html#designgrafico">
         <p>Design Gráfico</p>
+      </a>
+      <a href="/cursos.html#webdesign">
+        <p>Web Design</p>
+      </a>
+      <a href="/cursos.html#javascript">
+        <p>Javascript</p>
+      </a>
+      <a href="/cursos.html#webapp">
+        <p>Aplicações Web</p>
+      </a>
+      <a href="/cursos.html#cpp">
+        <p>C++</p>
       </a>
     </div>
     <div style="grid-area: col2;">
@@ -87,8 +114,8 @@ class Footer extends HTMLElement {
       <a target="_blank" href="https://wa.me/5577991161892">
         <p>Whatsapp</p>
       </a>
-      <a target="_blank" href="https://join.skype.com/invite/uMbQf0utKfUz">
-        <p>Skype</p>
+      <a target="_blank" href="https://www.youtube.com/@jorgeoliveiraonline">
+        <p>Youtube</p>
       </a>
       <a target="_blank" href="https://www.facebook.com/artesgraficaseprojetos">
         <p>Facebook</p>
@@ -151,4 +178,3 @@ function showSide() {
   }
 }
 //#endregion
-

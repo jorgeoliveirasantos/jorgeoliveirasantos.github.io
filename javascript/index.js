@@ -13,7 +13,7 @@ class Menu extends HTMLElement {
                 Início
             </small>
         </a>
-        <a href="/blog/1.html" tabindex="2" title="Blog">
+        <a href="/blog/3.html" tabindex="2" title="Blog">
             <img src="/files/blog.svg" alt="">
             <small>
                 Blog

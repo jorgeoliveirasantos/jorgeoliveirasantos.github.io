@@ -252,6 +252,7 @@
   border-image: var(--gradiente45);
   box-sizing: border-box;
   margin: 0;
+  margin-top: 20px;
   bottom: 0;
 }
 
@@ -337,7 +338,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   border: var(--pretoLeve) 1px solid;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .js-video {

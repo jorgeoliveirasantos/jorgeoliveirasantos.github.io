@@ -87,9 +87,6 @@ class Footer extends HTMLElement {
       <a href="/cursos.html#webapp">
         <p>Aplicações Web</p>
       </a>
-      <a href="/cursos.html#cpp">
-        <p>C++</p>
-      </a>
     </div>
     <div style="grid-area: col2;">
       <h3>Manuais e Apostilas</h3>
@@ -104,6 +101,9 @@ class Footer extends HTMLElement {
       </a>
       <a href="https://clubedeautores.com.br/livro/curso-de-javascript" target="_blank">
         <p>Javascript</p>
+      </a>
+      <a href="https://clubedeautores.com.br/livro/desenvolvimento-de-aplicacoes-web" target="_blank">
+        <p>Aplicações Web</p>
       </a>
     </div>
     <div style="grid-area: col3;">

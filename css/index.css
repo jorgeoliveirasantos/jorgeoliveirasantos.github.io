@@ -37,10 +37,17 @@
 /* #endregion */
 
 /* #region BARRA LATERAL  =========================================== */
-
 .js-side-left {
-  width: 20%;
   left: 0;
+}
+
+.js-side-right {
+  right: 0;
+}
+
+.js-side-left,
+.js-side-right {
+  width: 20%;
   top: 0;
   margin-top: 40px;
   bottom: 0;
@@ -53,30 +60,37 @@
   box-sizing: border-box;
 }
 
-.js-side-left a {
+.js-side-left img,
+.js-side-right img {
+  width: 100%;
+}
+.js-side-left a,
+.js-side-right a {
   display: block;
   color: var(--cinzaLeve);
   padding: 10px;
   text-decoration: none;
   margin: 0;
-  font-family: Share, Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   text-align: left;
   font-size: medium;
 }
 
-.js-side-left p {
+.js-side-left p,
+.js-side-right p {
   display: block;
   color: var(--AMARELO);
   padding: 10px;
   text-decoration: none;
   margin: 0;
-  font-family: Bellefair, Calibri, 'Trebuchet MS', sans-serif;
+  font-family: Hubballi, Calibri, 'Trebuchet MS', sans-serif;
   text-align: left;
   font-size: x-large;
   font-weight: bold;
 }
 
-.js-side-left a:hover {
+.js-side-left a:hover,
+.js-side-right a:hover {
   background-color: var(--AMARELO);
   color: var(--black);
   transition-duration: 500ms;
@@ -338,7 +352,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   border: var(--pretoLeve) 1px solid;
-  margin-top: 20px;
+  margin: 15px;
 }
 
 .js-video {

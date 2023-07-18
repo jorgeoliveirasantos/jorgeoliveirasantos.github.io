@@ -3,9 +3,17 @@ let canvas, contexto;
 let vidas = 3;
 let pontos = 0;
 let heroi = {};
-let then = Date.now();
 heroi['velocidade'] = 150;
 let monstro = {};
+// Imagens:
+let fundo = new Image();
+fundo.src = "gamebackground.jpg";
+let spriteHeroi = new Image();
+spriteHeroi.src = "hero.png";
+let spriteMonstro = new Image();
+spriteMonstro.src = "monster.png";
+
+let then = Date.now();
 
 // Adicionar o ouvinte de eventos das teclas direcionais:
 let teclas = {};
@@ -76,24 +84,14 @@ function Update() {
   //
   then = now;
   // Renderizar:
+
   // Imagem de fundo:
-  let fundo = new Image();
-  fundo.src = "gamebackground.jpg";
-  fundo.onload = () => {
-    contexto.drawImage(fundo, 0, 0);
-  };
+  contexto.drawImage(fundo, 0, 0);
   // Sprite do herói:
-  let spriteHeroi = new Image();
-  spriteHeroi.src = "hero.png";
-  spriteHeroi.onload = () => {
-    contexto.drawImage(spriteHeroi, heroi['x'], heroi['y']);
-  };  
+  contexto.drawImage(spriteHeroi, heroi['x'], heroi['y']);
   // Sprite do monstro:
-  let spriteMonstro = new Image();
-  spriteMonstro.src = "monster.png";
-  spriteMonstro.onload = () => {
-    contexto.drawImage(spriteMonstro, monstro['x'], monstro['y']);
-  };
+  contexto.drawImage(spriteMonstro, monstro['x'], monstro['y']);
+
   window.requestAnimationFrame(Update);
 }
 

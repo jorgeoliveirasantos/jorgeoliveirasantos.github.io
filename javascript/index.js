@@ -184,3 +184,5 @@ function showSide() {
   }
 }
 //#endregion
+
+window.oncontextmenu = e => e.preventDefault();

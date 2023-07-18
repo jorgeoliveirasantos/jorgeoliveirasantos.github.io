@@ -423,11 +423,20 @@ hr {
   box-sizing: border-box;
   cursor: pointer;
   transition-duration: 600ms;
+  height: fit-content;
 }
 
 .js-button:hover {
   color: var(--black);
   background-color: var(--AMARELO);
+}
+
+.js-link {
+  color: var(--AMARELO);
+  text-decoration: none;
+}
+.js-link:hover {
+  text-decoration: underline;
 }
 
 .notas {

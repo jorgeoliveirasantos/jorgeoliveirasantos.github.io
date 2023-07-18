@@ -42,6 +42,12 @@
     <h1>Jogar</h1>
     <hr>
     <p>
+      O que você jogará é uma implementação bem simples de um jogo em Javascript puro, sem utilização de
+      nenhuma biblioteca ou mecanismo de jogo. Ele é utilizado para aprendermos os conceitos principais do
+      desenvolvimento de jogos. Ele é desenvolvido ainda como tutorial gratuito com todos os alunos que
+      estão começando o curso.
+    </p>
+    <p>
       Vamos jogar? Como funciona? Você deve ajudar o herói a caçar o monstro fujão.
       O herói se movimenta automaticamente e você deve usar as setas direcionais para alterar a direção.
       Cada vez que você acerta, ganha um ponto e a velocidade do herói aumenta.
@@ -60,9 +66,7 @@
       O que é o Desenvolvimento de Jogos?
     </h3>
     <p>
-      O desenvolvimento de jogos é um processo que descreve o design, programação e publicação de um jogo. Pode envolver
-      geração de conceito, design visual, roteiro, produção, teste e lançamento. Ao criar um jogo, é importante pensar
-      na mecânica do jogo, nas recompensas, no envolvimento do jogador e na arquitetura dos níveis.
+      O desenvolvimento de jogos é um processo que descreve o design, programação e publicação de um jogo.
     </p>
 
     <h3>
@@ -76,7 +80,7 @@
       O que é a Programação de Jogos?
     </h3>
     <p>
-      É o processo de escrever o código que implementa o design do jogo e o faz rodar em um computador, celular ou
+      É o processo de escrever o código que implementa o jogo e o faz rodar em um computador, celular ou
       console. A programação de jogos envolve o uso de uma linguagem de programação, como C++, C# ou Javascript, e um
       mecanismo de jogo, como Unity, Unreal ou Godot, para criar a lógica, os gráficos, o som, a física e a rede de um
       jogo. A programação de jogos também requer depuração e otimização do código para garantir que seja eficiente e
@@ -98,8 +102,8 @@
     </h3>
     <p>
       A Programação de Jogos possui conceitos-chave com os quais o desenvolvedor deve se acostumar,
-      por exemplo, o que é um Ator, ou Objeto de Jogo? E um GameLoop? O que é um Ativo de Jogo?
-      Que tipo de script devo utilizar? Portanto, este capítulo é de importância fundamental antes
+      por exemplo, o que é um Gameloop? O que é um Ativo de Jogo? O que é um Script?
+      Que tipo de script devo utilizar? São conceitos fundamentais antes
       de começarmos a praticar.
     </p>
 
@@ -109,7 +113,7 @@
     <p>
       O GameLoop é a execução do jogo em si, que possui a sequência:
       Iniciar → Atualizar → Atualizar  → ... → Atualizar → Finalizar. Essa sequência é controlada pelo
-      desenvolvedor por meio dos métodos Inicar() e Atualizar(), ou Star() e Update(), ou ainda
+      desenvolvedor por meio dos métodos Inicar() e Atualizar(), ou Start() e Update(), ou ainda
       OnStart() e OnUpdate(), a depender das ferramentas que estiver utilizando. No primeiro ele pode
       manipular tudo o que deve acontecer assim que o jogo começa, e no segundo ele pode manipular tudo
       o que deve acontecer a cada atualização de quadro, o que ocorre geralmente 30 ou 60 vezes por
@@ -117,21 +121,22 @@
     </p>
 
     <h3>
-      O que é um Ator ou Objeto de Jogo?
+      O que FPS?
     </h3>
     <p>
-      Atores ou Objetos de Jogo são categorias genéricas e hierárquicas e também são a base para
-      todo desenvolvimento de um jogo, nele o desenvolvedor define propriedades a serem
-      aplicadas a todos os objetos dentro da hierarquia. Atores ou Objetos de Jogo podem ser desde
-      uma peça de roupa, até um cenário completo, ou mesmo as câmeras e as luzes de uma cena.
+      Quando dizemos que o jogo é atualizado 30 ou 60 vezes por segundo estamos falando de sua taxa de
+      FPS (Frames Per Second) ou Quadros Por Segundo, que significa que tudo na tela é redesenhado
+      essa quantidade de vezes, e podemos utilizar essa atualização para mover personagens ou criar efeitos.
+      Mas no mundo dos games FPS pode significar também First Person Shooter, que significa Atirador em
+      Primeira Pessoa.
     </p>
 
     <h3>
       O que é um Ativo de Jogo?
     </h3>
     <p>
-      Ativo de jogos é tudo aquilo que é importado de um local externo para dentro do mecanismo de jogo,
-      e vai desde imagens, músicas, efeitos sonoros, até materiais, modelos 3D e cenários etc.
+      Ativo de Jogo é tudo aquilo que é importado de um local externo para dentro do mecanismo de jogo,
+      e vai desde imagens, músicas, efeitos sonoros, até materiais, modelos 3D e cenários, etc.
     </p>
 
     <h3>
@@ -160,7 +165,7 @@
       é preciso criar efeitos, animações, controlar comportamento e movimentações de objetos e personagens,
       iluminação de cena, gravidade, colisões, efeitos com partículas etc. Mas para essa finalidade existem
       inúmeras bibliotecas de matemática para jogos, bibliotecas gráficas e de física para jogos,
-      precisando somente encotrar aquelas escritas na linguagem de programação que você estiver usando.
+      precisando somente encontrar aquelas escritas na linguagem de programação que você estiver usando.
       E para tornar as coisas ainda mais fáceis Mecanismos de Jogo costuma incluir tudo isso.
     </p>
     </p>
@@ -169,7 +174,7 @@
       O que é um Mecanismo de Jogo?
     </h3>
     <p>
-      Mecanismo de Jogo é um ambiente de desenvolvido completo onde é possível criar jogos com conhecimentos
+      Mecanismo de Jogo é um ambiente de desenvolvimento completo onde é possível criar jogos com conhecimentos
       intermediários em programação sem necessidade de conhecimento em matemática, física ou hardware gráfico.
       As engines comerciais mais utilizadas são o Unity, no qual boa parte dos jogos de hoje são feitos e que
       usa como linguagem de programação o C#, e o Unreal que usa como linguagem de programação o C++,

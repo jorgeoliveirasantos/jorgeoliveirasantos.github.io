@@ -13,7 +13,7 @@ spriteHeroi.src = "hero.png";
 let spriteMonstro = new Image();
 spriteMonstro.src = "monster.png";
 
-let then = Date.now();
+let inicio = Date.now();
 
 // Adicionar o ouvinte de eventos das teclas direcionais:
 let teclas = {};
@@ -22,7 +22,14 @@ addEventListener('keydown', e => {
   delete teclas['ArrowLeft'];
   delete teclas['ArrowUp'];
   delete teclas['ArrowDown'];
-  teclas[e.key] = null;
+  teclas[e.key] = 0;
+});
+
+// Obter o canvas e o contexto quando a janela terminar de ser carregada no navegador:
+addEventListener('load', () => {
+  canvas = document.getElementById("meuCanvas");
+  contexto = canvas.getContext("2d");
+  Start();
 });
 
 // Funções de movimentação:
@@ -36,12 +43,22 @@ function Start() {
   // Reseta as configurações e inicia o jogo:
   Reiniciar().then(() => Update());
 }
+async function Reiniciar() {
+  heroi['x'] = canvas.width / 2;
+  heroi['y'] = canvas.height / 2;
+  heroi['velocidade'] += 10;
+  monstro['x'] = Math.round(32 + (Math.random() * (canvas.width - 64)));
+  monstro['y'] = Math.round(32 + (Math.random() * (canvas.height - 64)));
+  document.getElementById('pontos').innerHTML = pontos;
+  document.getElementById('vidas').innerHTML = vidas;
+}
+
 // Chamada a cada loop:
 function Update() {
-  let now = Date.now();
-  let delta = now - then;
-  //
-  // Update:
+  // Obter a diferença de tempo entre o loop e o início do jogo:
+  let agora = Date.now();
+  let delta = agora - inicio;
+  // Direcionar o herói:
   if ('ArrowRight' in teclas) {
     direta(delta / 1000);
   }
@@ -54,7 +71,7 @@ function Update() {
   if ('ArrowDown' in teclas) {
     baixo(delta / 1000);
   }
-  // Se o herói capturar o monstro:
+  // Reiniciar se o herói capturar o monstro:
   if (heroi['x'] <= (monstro['x'] + 32)
     && monstro['x'] <= (heroi['x'] + 32)
     && heroi['y'] <= (monstro['y'] + 32)
@@ -62,7 +79,7 @@ function Update() {
     pontos++;
     Reiniciar();
   }
-  // Se o herói sair da tela:
+  // Reiniciar se o herói sair da tela:
   if (heroi['x'] < 0 ||
     heroi['y'] < 0 ||
     heroi['x'] > 512 ||
@@ -80,35 +97,12 @@ function Update() {
     }
     Reiniciar();
   }
-  // Render
-  //
-  then = now;
-  // Renderizar:
 
-  // Imagem de fundo:
+  // Renderizar o jogo:
+  inicio = agora;
   contexto.drawImage(fundo, 0, 0);
-  // Sprite do herói:
   contexto.drawImage(spriteHeroi, heroi['x'], heroi['y']);
-  // Sprite do monstro:
   contexto.drawImage(spriteMonstro, monstro['x'], monstro['y']);
-
+  // Adicionar a atualização à renderização do navegador:
   window.requestAnimationFrame(Update);
 }
-
-async function Reiniciar() {
-  heroi['x'] = canvas.width / 2;
-  heroi['y'] = canvas.height / 2;
-  heroi['velocidade'] += 10;
-  monstro['x'] = Math.round(32 + (Math.random() * (canvas.width - 64)));
-  monstro['y'] = Math.round(32 + (Math.random() * (canvas.height - 64)));
-  document.getElementById('pontos').innerHTML = pontos;
-  document.getElementById('vidas').innerHTML = vidas;
-}
-
-
-// Obter o canvas e o contexto quando a janela terminar de ser carregada no navegador:
-addEventListener('load', () => {
-  canvas = document.getElementById("meuCanvas");
-  contexto = canvas.getContext("2d");
-  Start();
-});

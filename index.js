@@ -12,15 +12,9 @@ const Renderer = {
             document.getElementById("js-page").innerHTML = MainPage;
             Renderer.SwitchMenu(document.getElementById("menu-home"));
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            document.getElementById("js-video-present2").playbackRate = 0.5;
-        });
-
-        //#region Funções
-        addEventListener("load", e => {
             document.getElementById("js-video-present1").playbackRate = 0.5;
             document.getElementById("js-video-present2").playbackRate = 0.5;
         });
-        //#endregion 
         //
     },
     Blog: () => {
@@ -162,31 +156,7 @@ const Renderer = {
     Learn: () => {
         Renderer.ClearPage().then(() => {
             let post, btns, img, h1, p, a;
-
-            btns = document.createElement("div");
-            btns.classList = "js-post banner";
-            btns.id = "btns";
-            h1 = document.createElement("h1");
-            h1.innerHTML = "Inteligência Artificial e Aprendizagem de Máquina";
-            btns.appendChild(h1);
             //
-            img = document.createElement("img");
-            img.src = "./files/ia.jpg";
-            img.style.maxWidth = "300px";
-            btns.appendChild(img);
-            //
-            p = document.createElement("p");
-            p.innerHTML = "Inteligência Artificial (IA) é o ramo da tecnologia que trabalha com algoritmos que dão a capacidade a sistemas computacionais de realizar atividades semelhantes às humanas como planejamento, criatividade e aprendizado. Já Aprendizagem de Máquina é um dos setores de IA que compreende algoritmos capazes identificar padrões e efetuar previsões e tomadas de decisão. Neste curso aprenderemos os conceitos fundamentais de Inteligência Artificial e Aprendizagem de Máquina e conheceremos as ferramentas e bibliotecas mais modernas para esse fim, tudo tendo como base o Javascript, a linguagem de programação mais utilizada no mundo. Com essa combinação poderosa, aprenderemos a usar IA em aplicações backend como servidores e programas, e em aplicações web como sites, além de utilizar modelos de IA prontos e treinados para as nossas necessidades";
-            btns.appendChild(p);
-            //
-            a = document.createElement("a");
-            a.setAttribute("href", "https://www.amazon.com.br/dp/B0CGHJ169Q");
-            a.setAttribute("target", "_blank");
-            a.classList = "js-button";
-            a.innerHTML = "Obtenha a apostila";
-            btns.appendChild(a);
-            document.getElementById("js-page").appendChild(btns);
-
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
@@ -206,6 +176,132 @@ const Renderer = {
             //
             a = document.createElement("a");
             a.setAttribute("href", "https://www.amazon.com.br/dp/B0CGHJ169Q");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button";
+            a.innerHTML = "Obtenha a apostila";
+            post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+            //
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.id = "post";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Desenvolvimento de Aplicações Web";
+            post.appendChild(h1);
+            //
+            img = document.createElement("img");
+            img.src = "./files/appweb.jpg";
+            img.style.maxWidth = "300px";
+            post.appendChild(img);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "O Desenvolvimento de Aplicações Web é a terceira etapa no Desenvolvimento Web, onde você é capaz de criar páginas que salvam dados de usuários e informações de maneira persistente utilizando a tecnologia do NodeJS. É aqui que você aprenderá a criar servidores, manipular bases de dados, usar criptografia, estabelecer comunicações e implantar aplicações em diferentes locais, em seu próprio servidor, em nuvem, num aplicativo móvel, num programa desktop entre outros.";
+            post.appendChild(p);
+            //
+            a = document.createElement("a");
+            a.removeAttribute("href");
+            a.classList = "js-button";
+            a.style.opacity = "0.5";
+            a.innerHTML = "Em breve";
+            post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+            //
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.id = "post";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Curso Completo de Javascript";
+            post.appendChild(h1);
+            //
+            img = document.createElement("img");
+            img.src = "./files/javascriptCapa.jpg";
+            img.style.maxWidth = "300px";
+            post.appendChild(img);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "O Javascript é uma linguagem de programação, diferente do HTML e do CSS, neste curso você iniciará sua carreira como programador com a linguagem mais utilizada em todo o mundo! Com o Javascript você aprenderá como fazer seu site se comunicar com outras aplicações, incluirá lógica e dinamicidade à sua página e ainda aprenderá do que o Javascript é capaz, de desenvolvimento de jogos a servidores.";
+            post.appendChild(p);
+            //
+            a = document.createElement("a");
+            a.removeAttribute("href");
+            a.classList = "js-button";
+            a.style.opacity = "0.5";
+            a.innerHTML = "Em breve";
+            post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+            //
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.id = "post";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Curso de Web Design";
+            post.appendChild(h1);
+            //
+            img = document.createElement("img");
+            img.src = "./files/webdesign.jpg";
+            img.style.maxWidth = "300px";
+            post.appendChild(img);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "O Web Design é o setor voltado para a criação de páginas Web Estáticas destinadas a exibir conteúdo, como sites, blogs entre outras, é um amplo setor e muito requisitado no mercado. Neste curso você aprenderá como criar sites e páginas web diversas utilizando as tecnologias mais modernas com HTML, CSS e Javascript.";
+            post.appendChild(p);
+            //
+            a = document.createElement("a");
+            a.removeAttribute("href");
+            a.classList = "js-button";
+            a.style.opacity = "0.5";
+            a.innerHTML = "Em breve";
+            post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+            //
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.id = "post";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Curso Completo de Design Gráfico";
+            post.appendChild(h1);
+            //
+            img = document.createElement("img");
+            img.src = "./files/design.jpg";
+            img.style.maxWidth = "300px";
+            post.appendChild(img);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "O Design Gráfico é a arte da comunicação visual de ideias utilizada em diversos setores, da publicidade ao cinema. O casamento da tecnologia com a criatividade gera resultados incríveis, permitindo transmitir conceitos e ideias de forma objetiva, elegante e atraente. Liberte sua imaginação e ponha em prática suas ideias com um curso de design gráfico voltado para quem deseja se tornar um profissional, desenhar por hobby, ou desenvolver seus próprios projetos com o auxílio de ferramentas pagas e gratuitas como Office, Corel Draw, Photoshop, Illustrator, GIMP, Inkscape e muito mais. Crie, essa é a hora.";
+            post.appendChild(p);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B0CGJS1LMX");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button";
+            a.innerHTML = "Obtenha a apostila";
+            post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+            //
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.style.marginTop = "50px";
+            post.id = "post";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Curso de Informática Básica e Avançada";
+            post.appendChild(h1);
+            //
+            img = document.createElement("img");
+            img.src = "./files/info.jpg";
+            img.style.maxWidth = "300px";
+            post.appendChild(img);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "Aprenda os conceitos iniciais de informática como navegar na internet, editar textos, criar elementos gráficos, configurar o computador e muito mais. Inicie ainda os conhecimentos de informática avançada como download e instalação de programas, antivírus, restauração, backup e formatação, segurança digital entre outros. Um curso voltado para quem está começando e para quem quer se aprofundar e decidir sua carreira profissional no setor de informática.";
+            post.appendChild(p);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B09V99W1FL");
             a.setAttribute("target", "_blank");
             a.classList = "js-button";
             a.innerHTML = "Obtenha a apostila";

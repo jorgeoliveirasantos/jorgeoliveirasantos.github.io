@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Criar um site do zero com HTML CSS e Javascript",
+        "description": "Neste post aprenderemos a criar um site de portfólio do zero com HTML, CSS e Javascript puros.",
+        "video": "https://www.youtube.com/embed/buCnm4YiSzs",
+        "obs": "Se quiser você pode baixar o projeto finalizado no botão abaixo:",
+        "link": [ "Arquivos do curso", "https://drive.google.com/file/d/15ZxLq2H8KXQnu7Kr3aG4Q8LIWlueJ0Qk/view?usp=sharing" ]
+    },
+    {
+        "title": "Enviar e-mail com Nodejs",
+        "description": "Neste post aprenderemos a enviar e-mails a partir de um servidor NodeJS/Express utilizando a conta do Gmail.",
+        "video": "https://www.youtube.com/embed/Wwr1qTfJHbQ",
+        "obs": "Se quiser você pode baixar o projeto finalizado no botão abaixo:",
+        "link": [ "Arquivos do curso", "https://drive.google.com/file/d/1yBDQnxPZ-kEYoK7fp3epQEh5T8772NKZ/view?usp=sharing" ]
+    },
+    {
+        "title": "Alterar resolução de imagens com Javascript Puro",
+        "description": "Neste tutorial aprenderemos como utilizar Javascript Puro para alterar a resolução e redimensionar uma imagem, aprenderemos ainda como fazer upload da imagem original, e download da imagem alterada.",
+        "video": "https://www.youtube.com/embed/_U70Y6S9-hs",
+        "obs": "Se quiser você pode baixar o projeto finalizado no botão abaixo:",
+        "link": [ "Arquivos do curso", "https://drive.google.com/file/d/1108-v9BYffxDAHZQWg8KshfknHw9radF/view?usp=sharing" ]
+    }
+]

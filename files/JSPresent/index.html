@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apresentação de Slides</title>
+    <style>
+        /* Estilos para o slideshow */
+        .js-slideshow-present {
+            position: relative;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+        }
+        .js-slideshow-present-slide {
+            display: block;
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: auto;
+            transition: opacity 0.5s ease-in-out;
+            z-index: 997;
+        }
+        .js-slideshow-present-controls {
+            text-align: center;
+            margin-top: 10px;
+            z-index: 998;
+        }
+        .control-button {
+            cursor: pointer;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="js-slideshow-present">
+        <div class="js-slideshow-present-controls">
+            <button class="control-button" onclick="prevSlide()">❮</button>
+            <button class="control-button" onclick="nextSlide()">❯</button>
+            <button class="control-button" onclick="toggleAutoPlay()">Play/Pause</button>
+        </div>
+        <video class="js-slideshow-present-slide h" id="apresentaçãoH" src="./H.mp4"></video>
+        <video class="js-slideshow-present-slide v" id="apresentaçãoV" src="./H.mp4"></video>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        let slides = document.querySelectorAll('.slide');
+        let autoPlayInterval;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.style.opacity = i === index ? 1 : 0;
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        function toggleAutoPlay() {
+            if (autoPlayInterval) {
+                clearInterval(autoPlayInterval);
+                autoPlayInterval = null;
+            } else {
+                autoPlayInterval = setInterval(nextSlide, 3000); // Troca a cada 3 segundos
+            }
+        }
+
+        // Inicia a apresentação automaticamente
+        toggleAutoPlay();
+    </script>
+</body>
+</html>

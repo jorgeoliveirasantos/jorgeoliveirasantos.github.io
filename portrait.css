@@ -1,0 +1,40 @@
+.js-page {
+    width: calc(100vw - 8px);
+    box-sizing: border-box;
+    padding: 7px;
+    gap: 7px;
+}
+
+.right-bar {
+    display: none;
+}
+
+.left-bar {
+    display: none;
+}
+
+.js-footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+}
+
+.js-footer .credit-container {
+    grid-column: 1;
+}
+
+.js-video-present-container#js-video-present-V {
+    display: block;
+}
+
+.js-video-present-container#js-video-present-H {
+    display: none;
+}
+
+.js-post.banner#icons {
+    display: grid !important;
+    place-items: center !important;
+    gap: 15px !important;
+    text-align: center !important;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+}

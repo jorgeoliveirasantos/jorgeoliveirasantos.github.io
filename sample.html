@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- #region META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Jorge Souza Oliveira dos Santos">
+    <meta name="keywords" content="informatica, curso, computador, computacao, programação, tecnologia, info, 
+        desenvolvimento, web, design, web design, design grafico, tech, 
+        visual studio, visual studio code, vs code, c#, javascript, dotnet,
+        node js, dev express, html, css">
+    <!-- #endregion -->
+
+    <link rel="shortcut icon" href="./files/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./portrait.css">
+    <script src="./index.js"></script>
+
+    <title>Jorge Souza</title>
+</head>
+
+<body>
+    <!-- #region -->
+    <!-- #endregion -->
+
+    <!-- #region MENU -->
+    <div class="landscape-menu-container">
+        <span></span>
+        <div id="menu-home" class="menu-item active" onclick="Renderer.Home(this)">
+            <img src="./files/home.svg" alt="">
+            <span>Início</span>
+        </div>
+        <div id="menu-blog" class="menu-item" onclick="Renderer.Blog(this)">
+            <img src="./files/blog.svg" alt="">
+            <span>Blog</span>
+        </div>
+        <div id="menu-learn" class="menu-item" onclick="Renderer.Learn(this)">
+            <img src="./files/learn.svg" alt="">
+            <span>Cursos</span>
+        </div>
+        <div id="menu-contacts" class="menu-item" onclick="Renderer.Contacts(this)">
+            <img src="./files/contacts.svg" alt="">
+            <span>Contato</span>
+        </div>
+        <span></span>
+    </div>
+    <!-- #endregion -->
+
+    <!-- #region PAGE -->
+    <div class="left-bar"></div>
+    <div class="js-page" id="js-page">
+
+        <!-- #region RODAPÉ -->
+        <div class="js-footer" id="js-footer">
+            <div class="footer-conteiner">
+                <span class="footer-title">Cursos</span>
+                <a class="footer-item" href="#">Informática Básica e Avançada</a>
+                <a class="footer-item" href="#">Design Gráfico</a>
+                <a class="footer-item" href="#">Web Design (HTML e CSS)</a>
+                <a class="footer-item" href="#">Javascript</a>
+                <a class="footer-item" href="#">Aplicações Web</a>
+                <a class="footer-item" href="#">Inteligência Artificial</a>
+            </div>
+            <div class="footer-conteiner">
+                <span class="footer-title">Apostilas</span>
+                <a class="footer-item" href="#" target="_blank">Informática Básica e Avançada</a>
+                <a class="footer-item" href="#" target="_blank">Design Gráfico</a>
+                <a class="footer-item" href="#" target="_blank">Web Design (HTML e CSS)</a>
+                <a class="footer-item" href="#" target="_blank">Javascript</a>
+                <a class="footer-item" href="#" target="_blank">Aplicações Web</a>
+                <a class="footer-item" href="#" target="_blank">Inteligência Artificial</a>
+            </div>
+            <div class="footer-conteiner">
+                <span class="footer-title">Contato</span>
+                <a class="footer-item" href="mailto:jorge.sos777@outlook.com" target="_blank">Gmail</a>
+                <a class="footer-item" href="https://wa.me/5577991161892" target="_blank">Whatsapp</a>
+                <a class="footer-item" href="https://www.youtube.com/@jorgeoliveiraonline" target="_blank">Youtube</a>
+                <a class="footer-item" href="https://www.instagram.com/jorgeoliveiraonline/"
+                    target="_blank">Instagram</a>
+                <a class="footer-item" href="https://www.amazon.com.br/stores/author/B0CM13195T"
+                    target="_blank">Amazon</a>
+            </div>
+            <div class="credit-container">
+                <hr class="js-divider">
+                <img src="./files/logo_amarela.svg" alt="">
+                <span class="footer-title" id="credit" style="text-align: center;"></span>
+                <script>
+                    document.getElementById("credit").innerHTML = `Copyright © ${new Date().getFullYear()} | Jorge Souza Oliveira dos Santos`;
+                </script>
+                <span class="footer-item" style="text-align: center; font-size: 0.8em">Desenvolvido por: "Mim mesmo
+                    😎"</span>
+            </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region POSTs -->
+        <div class="js-post" id="btns">
+            <style>
+                .js-post#btns {
+                    display: grid;
+                    grid-template-columns: auto 1fr auto;
+                }
+
+                .js-button.disabled {
+                    opacity: 0.3;
+                    cursor: inherit;
+                }
+
+                .js-button.disabled:hover {
+                    color: inherit;
+                    background-color: inherit;
+                }
+            </style>
+            <a class="js-button  disabled" id="blog-back">Anterior</a>
+            <span></span>
+            <a class="js-button" id="blog-next">Próximo</a>
+        </div>
+        <div class="js-post" style="margin-top: 50px;">
+            <h1>Criar um site do zero com HTML CSS e Javascript</h1>
+            <p>Neste post aprenderemos a criar um site de portfólio do zero com HTML, CSS e Javascript puros.</p>
+            <div class="js-video">
+                <iframe src="https://www.youtube.com/embed/buCnm4YiSzs"
+                    title="Alterar resolução de imagens com Javascript Puro" frameborder="0"
+                    allow="accelerometer; encrypted-media; picture-in-picture;" allowfullscreen loading="lazy">
+                </iframe>
+            </div>
+            <p>Se quiser você pode baixar o projeto finalizado no botão abaixo:</p>
+            <a class="js-button" target="_blank"
+                href="https://drive.google.com/file/d/15ZxLq2H8KXQnu7Kr3aG4Q8LIWlueJ0Qk/view?usp=sharing">Arquivos do
+                curso</a>
+        </div>
+        <!-- #endregion -->
+    </div>
+    <div class="right-bar"></div>
+    <!-- #endregion -->
+
+    <!-- #region TOP-BUTTON -->
+    <div id="top-button" title="Voltar para o topo"
+        onclick="window.scrollTo( { top: 0, left: 0, behavior: 'smooth' } )">
+        <svg fill="#ffbb00" width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80"
+            xmlns="http://www.w3.org/2000/svg" stroke="#ffbb00" stroke-width="0.00024000000000000003"
+            transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2zm7-14 5 5h-4v5h-2v-5H7l5-5z">
+                </path>
+            </g>
+        </svg>
+    </div>
+    <!-- #endregion -->
+
+</body>
+
+</html>

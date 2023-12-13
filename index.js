@@ -1,0 +1,380 @@
+const urlId = new URLSearchParams(window.location.search).get('id');
+let portrait = true;
+let MainPage;
+let Blog = [{ "title": null, "description": null, "video": null, "obs": null, "link": [null, null] }];
+let CurrentPost = 0;
+
+window.onload = () => LOOP.Start().then(LOOP.Update);
+
+const Renderer = {
+    Home: () => {
+        Renderer.ClearPage().then(() => {
+            document.getElementById("js-page").innerHTML = MainPage;
+            Renderer.SwitchMenu(document.getElementById("menu-home"));
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            document.getElementById("js-video-present2").playbackRate = 0.5;
+        });
+
+        //#region Funções
+        addEventListener("load", e => {
+            document.getElementById("js-video-present1").playbackRate = 0.5;
+            document.getElementById("js-video-present2").playbackRate = 0.5;
+        });
+        //#endregion 
+        //
+    },
+    Blog: () => {
+        Renderer.ClearPage().then(() => {
+            let post, btns, a;
+
+            btns = document.createElement("div");
+            btns.classList = "js-post";
+            btns.id = "btns";
+            let btnsStyle = document.createElement("style");
+            btnsStyle.innerHTML = `
+                .js-post#btns {
+                    display: grid;
+                    grid-template-columns: auto 1fr auto;
+                }
+
+                .js-button.disabled {
+                    opacity: 0.3;
+                    cursor: inherit;
+                }
+
+                .js-button.disabled:hover {
+                    color: inherit;
+                    background-color: inherit;
+                }
+            `;
+            btns.appendChild(btnsStyle);
+
+            a = document.createElement("a");
+            a.removeAttribute("href");
+            a.classList = "js-button  disabled";
+            a.id = "blog-back";
+            a.innerHTML = "Anterior";
+            //a.addEventListener("click", back);
+            btns.appendChild(a);
+            btns.appendChild(document.createElement("span"));
+
+            a = document.createElement("a");
+            a.removeAttribute("href");
+            a.classList = "js-button";
+            a.id = "blog-next";
+            a.innerHTML = "Próximo";
+            a.addEventListener("click", next);
+            btns.appendChild(a);
+            document.getElementById("js-page").appendChild(btns);
+
+            // 1. Busca o arquivo blog.json:
+            fetch("blog.json").then(response => {
+                if (!response.ok) {
+                    throw new Error(`Erro ao buscar o arquivo: ${response.status} ${response.statusText}`);
+                }
+                return response.json();
+            }).then(posts => {
+                Blog = posts;
+                // 2. Adiciona o primeiro post à página:
+                newPost(Blog[0]["title"], Blog[0]["description"], Blog[0]["video"], Blog[0]["obs"], Blog[0]["link"]);
+            }).catch(error => {
+                console.error('Erro ao buscar o arquivo:', error);
+            });
+
+            //
+            // Código dos botões para avançar, voltar e verificar se é o último ou primeiro post
+            //
+
+            // Função para adicionar posts à página:
+            function newPost(title, description, video, obs, link) {
+                post = document.createElement("div");
+                post.classList = "js-post banner";
+                post.id = "blog-post";
+                post.style.marginTop = "50px";
+                post.innerHTML = `
+                    <h1>${title}</h1>
+                    <p>${description}</p>
+                    <div class="js-video">
+                        <iframe src="${video}" title="${title}" frameborder="0" allow="accelerometer; encrypted-media; picture-in-picture;" allowfullscreen loading="lazy"></iframe>
+                    </div>
+                    <p>${obs}</p>
+                    <a class="js-button" target="_blank" href="${link[1]}">${link[0]}</a>
+                `
+                document.getElementById("js-page").appendChild(post);
+            };
+            function next() {
+                // Se é o primeiro post:
+                // Habilitar o botão de voltar (propriedade e evento)
+                if (CurrentPost == 0) {
+                    document.getElementById("blog-back").classList.remove("disabled");
+                    document.getElementById("blog-back").addEventListener("click", back);
+                }
+                // Se é o penúltimo post:
+                // Desabilitar o botão de avançar (propriedade e evento)
+                if (CurrentPost == Blog.length - 2) {
+                    document.getElementById("blog-next").classList.add("disabled");
+                    document.getElementById("blog-next").removeEventListener("click", next);
+                }
+                // Avançar o post
+                ++CurrentPost;
+                document.getElementById("js-page").removeChild(document.getElementById("blog-post"));
+                newPost(
+                    Blog[CurrentPost]["title"],
+                    Blog[CurrentPost]["description"],
+                    Blog[CurrentPost]["video"],
+                    Blog[CurrentPost]["obs"],
+                    Blog[CurrentPost]["link"]
+                );
+            }
+            function back() {
+                // Se é o segundo post:
+                // Desabilitar o botão de voltar (propriedade e evento)
+                if (CurrentPost == 1) {
+                    document.getElementById("blog-back").classList.add("disabled");
+                    document.getElementById("blog-back").removeEventListener("click", back);
+                }
+
+                // Se é o último post:
+                // Habilitar o botão de avançar (propriedade e evento)
+                if (CurrentPost == Blog.length - 1) {
+                    document.getElementById("blog-next").classList.remove("disabled");
+                    document.getElementById("blog-next").addEventListener("click", next);
+                }
+
+                --CurrentPost;
+                document.getElementById("js-page").removeChild(document.getElementById("blog-post"));
+                newPost(
+                    Blog[CurrentPost]["title"],
+                    Blog[CurrentPost]["description"],
+                    Blog[CurrentPost]["video"],
+                    Blog[CurrentPost]["obs"],
+                    Blog[CurrentPost]["link"]
+                );
+            }
+            //
+            // AJUSTES FINAIS
+            //
+            Renderer.SwitchMenu(document.getElementById("menu-blog"));
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            { a = null; post = null; btns = null; }
+        });
+    },
+    Learn: () => {
+        Renderer.ClearPage().then(() => {
+            let post, btns, img, h1, p, a;
+
+            btns = document.createElement("div");
+            btns.classList = "js-post banner";
+            btns.id = "btns";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Inteligência Artificial e Aprendizagem de Máquina";
+            btns.appendChild(h1);
+            //
+            img = document.createElement("img");
+            img.src = "./files/ia.jpg";
+            img.style.maxWidth = "300px";
+            btns.appendChild(img);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "Inteligência Artificial (IA) é o ramo da tecnologia que trabalha com algoritmos que dão a capacidade a sistemas computacionais de realizar atividades semelhantes às humanas como planejamento, criatividade e aprendizado. Já Aprendizagem de Máquina é um dos setores de IA que compreende algoritmos capazes identificar padrões e efetuar previsões e tomadas de decisão. Neste curso aprenderemos os conceitos fundamentais de Inteligência Artificial e Aprendizagem de Máquina e conheceremos as ferramentas e bibliotecas mais modernas para esse fim, tudo tendo como base o Javascript, a linguagem de programação mais utilizada no mundo. Com essa combinação poderosa, aprenderemos a usar IA em aplicações backend como servidores e programas, e em aplicações web como sites, além de utilizar modelos de IA prontos e treinados para as nossas necessidades";
+            btns.appendChild(p);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B0CGHJ169Q");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button";
+            a.innerHTML = "Obtenha a apostila";
+            btns.appendChild(a);
+            document.getElementById("js-page").appendChild(btns);
+
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.id = "post";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Inteligência Artificial e Aprendizagem de Máquina";
+            post.appendChild(h1);
+            //
+            img = document.createElement("img");
+            img.src = "./files/ia.jpg";
+            img.style.maxWidth = "300px";
+            post.appendChild(img);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "Inteligência Artificial (IA) é o ramo da tecnologia que trabalha com algoritmos que dão a capacidade a sistemas computacionais de realizar atividades semelhantes às humanas como planejamento, criatividade e aprendizado. Já Aprendizagem de Máquina é um dos setores de IA que compreende algoritmos capazes identificar padrões e efetuar previsões e tomadas de decisão. Neste curso aprenderemos os conceitos fundamentais de Inteligência Artificial e Aprendizagem de Máquina e conheceremos as ferramentas e bibliotecas mais modernas para esse fim, tudo tendo como base o Javascript, a linguagem de programação mais utilizada no mundo. Com essa combinação poderosa, aprenderemos a usar IA em aplicações backend como servidores e programas, e em aplicações web como sites, além de utilizar modelos de IA prontos e treinados para as nossas necessidades";
+            post.appendChild(p);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B0CGHJ169Q");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button";
+            a.innerHTML = "Obtenha a apostila";
+            post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+            //
+            // AJUSTES FINAIS
+            //
+            Renderer.SwitchMenu(document.getElementById("menu-learn"));
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            { img = null; h1 = null; p = null; a = null; post = null; btns = null; }
+        });
+    },
+    Contacts: () => {
+        Renderer.ClearPage().then(() => {
+            let icons, post, img, h1, p, a, iconsStyle;
+
+            icons = document.createElement("div");
+            icons.classList = "js-post banner";
+            icons.id = "icons";
+            //
+            iconsStyle = document.createElement("style");
+            iconsStyle.innerHTML = `
+                .js-post.banner#icons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    text-align: center;
+                    justify-content: center;
+                }
+
+                .banner img.social {
+                    height: 100px;
+                    width: 100px;
+                    padding: 10px;
+                    opacity: 0.5;
+                    border: none;
+                    transition: all 250ms;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                }
+
+                .banner img.social:hover {
+                    opacity: 1;
+                    padding: 0;
+                }
+            `;
+            icons.appendChild(iconsStyle);
+            //
+            let img1 = document.createElement("img");
+            img1.src = "files/gmail.png";
+            img1.classList = "social";
+            img1.onclick = () => window.open("mailto:jorge.sos777@outlook.com");
+            icons.appendChild(img1);
+            //
+            let img2 = document.createElement("img");
+            img2.src = "files/whatsapp.png";
+            img2.classList = "social";
+            img2.onclick = () => window.open("https://wa.me/5577991161892");
+            icons.appendChild(img2);
+            //
+            let img3 = document.createElement("img");
+            img3.src = "files/instagram.png";
+            img3.classList = "social";
+            img3.onclick = () => window.open("https://www.instagram.com/jorgesouzoficial/");
+            icons.appendChild(img3);
+            //
+            let img4 = document.createElement("img");
+            img4.src = "files/Workana.png";
+            img4.classList = "social";
+            img4.onclick = () => window.open("https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5");
+            icons.appendChild(img4);
+            document.getElementById("js-page").appendChild(icons);
+            //
+            img1 = null; img2 = null; img3 = null; img4 = null;
+
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.id = "post";
+            post.style.marginTop = "50px";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Contato";
+            post.appendChild(h1);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "Entre em contato por um meio de sua preferência ou conheça minhas redes digitais.";
+            post.appendChild(p);
+            //
+            document.getElementById("js-page").appendChild(post);
+            //
+            // AJUSTES FINAIS
+            //
+            Renderer.SwitchMenu(document.getElementById("menu-contacts"));
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            { icons = null; post = null; iconsStyle = null; img = null; h1 = null; p = null; a = null; }
+        });
+    },
+    Game: () => {
+        console.log("Game");
+    },
+    IA: () => {
+        console.log("IA");
+    },
+    SwitchMenu: (el) => {
+        for (const menu of document.querySelectorAll(".menu-item")) {
+            menu.classList.remove("active");
+        }
+        el.classList.add("active");
+    },
+    ClearPage: () => {
+        return new Promise(resolve => {
+            Array.from(document.getElementById("js-page").childNodes).forEach(el => {
+                if (el.id != "js-footer") document.getElementById("js-page").removeChild(el);
+            });
+            resolve();
+        });
+    }
+}
+
+const LOOP = {
+    Start: () => {
+        MainPage = document.getElementById("js-page").innerHTML;
+        return new Promise(resolve => {
+            // Navegação pela URL
+            if (!urlId) Renderer.Home();
+            else if (urlId.toLowerCase() == "aprendizado") Renderer.Learn();
+            else if (urlId.toLowerCase() == "blog") Renderer.Blog();
+            else if (urlId.toLowerCase() == "contato") Renderer.Contacts();
+            else if (urlId.toLowerCase() == "cursos") Renderer.Learn();
+            else if (urlId.toLowerCase() == "downloads") Renderer.Learn();
+            else if (urlId.toLowerCase() == "game") Renderer.Game();
+            else if (urlId.toLowerCase() == "ia") Renderer.IA();
+
+            // Efeitos de rolagem:
+            window.onscroll = e => {
+                if (window.scrollY > 100) {
+                    document.getElementById("top-button").style.display = "block";
+                } else {
+                    document.getElementById("top-button").style.display = "none";
+                }
+                let posts = document.querySelectorAll('.banner');
+                if (posts.length > 0) {
+                    for (let i = 0; i < posts.length; i++) {
+                        let Y = posts[i].getBoundingClientRect().top;
+                        let percent = ((posts[i].getBoundingClientRect().bottom - 75) / window.innerHeight);
+                        if (posts[i].getBoundingClientRect().top < window.innerHeight - 100) {
+                            try { posts[i].querySelectorAll("h1")[0].style.display = "block" } catch { }
+                        } else {
+                            try { posts[i].querySelectorAll("h1")[0].style.display = "none" } catch { }
+                        }
+                        if (posts[i].getBoundingClientRect().top <= 0) {
+                            posts[i].style.opacity = percent;
+                        } else {
+                            posts[i].style.opacity = 1;
+                        }
+                    }
+                }
+                posts = null;
+            }
+            window.oncontextmenu = e => { e.preventDefault() }
+            resolve();
+        });
+    },
+    Update: () => {
+        portrait = window.innerWidth < window.innerHeight;
+        // Update code here
+        if (portrait) { document.styleSheets[1].disabled = false }
+        else { document.styleSheets[1].disabled = true }
+        setTimeout(() => { LOOP.Update() }, 300);
+    }
+}

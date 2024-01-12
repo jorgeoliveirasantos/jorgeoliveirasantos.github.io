@@ -275,7 +275,26 @@ body {
     height: fit-content;
 }
 
-.js-button:hover {
+.js-button-full {
+    color: var(--white);
+    background-color: var(--background-dark);
+    border: 1px solid;
+    border-image: var(--gradiente45);
+    text-align: center;
+    padding: 10px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: large;
+    font-family: Share, Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition-duration: 600ms;
+    height: fit-content;
+    width: 100%;
+    display: block;
+}
+
+.js-button:hover, .js-button-full:hover {
     color: var(--background-dark);
     background-color: var(--foreground-yellow);
 }
@@ -457,6 +476,7 @@ body {
     display: block;
     color: var(--foreground-white);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .js-footer .footer-item:hover,

@@ -14,6 +14,7 @@ const Renderer = {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             document.getElementById("js-video-present1").playbackRate = 0.5;
             document.getElementById("js-video-present2").playbackRate = 0.5;
+            window.location.hash = "";
         });
         //
     },
@@ -92,7 +93,7 @@ const Renderer = {
                         <iframe src="${video}" title="${title}" frameborder="0" allow="accelerometer; encrypted-media; picture-in-picture;" allowfullscreen loading="lazy"></iframe>
                     </div>
                     <p>${obs}</p>
-                    <a class="js-button" target="_blank" href="${link[1]}">${link[0]}</a>
+                    <a class="js-button-full" target="_blank" href="${link[1]}">${link[0]}</a>
                 `
                 document.getElementById("js-page").appendChild(post);
             };
@@ -151,16 +152,16 @@ const Renderer = {
             Renderer.SwitchMenu(document.getElementById("menu-blog"));
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             { a = null; post = null; btns = null; }
+            window.location.hash = "";
         });
     },
     Learn: () => {
         Renderer.ClearPage().then(() => {
             let post, btns, img, h1, p, a;
             //
-            //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.id = "post";
+            post.id = "ia";
             h1 = document.createElement("h1");
             h1.innerHTML = "Inteligência Artificial e Aprendizagem de Máquina";
             post.appendChild(h1);
@@ -177,15 +178,22 @@ const Renderer = {
             a = document.createElement("a");
             a.setAttribute("href", "https://www.amazon.com.br/dp/B0CGHJ169Q");
             a.setAttribute("target", "_blank");
-            a.classList = "js-button";
+            a.classList = "js-button-full";
             a.innerHTML = "Obtenha a apostila";
+            post.appendChild(a);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1co5Ye6vIsAVIUMgWw3wdlI4RTpmHLg_j");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button-full";
+            a.innerHTML = "Downloads do Curso";
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.id = "post";
+            post.id = "app";
             h1 = document.createElement("h1");
             h1.innerHTML = "Desenvolvimento de Aplicações Web";
             post.appendChild(h1);
@@ -201,16 +209,23 @@ const Renderer = {
             //
             a = document.createElement("a");
             a.removeAttribute("href");
-            a.classList = "js-button";
+            a.classList = "js-button-full";
             a.style.opacity = "0.5";
             a.innerHTML = "Em breve";
+            post.appendChild(a);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1sjTUvdPB5gxgCQBoah9yeXAggevSDOgl");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button-full";
+            a.innerHTML = "Downloads do Curso";
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.id = "post";
+            post.id = "js";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso Completo de Javascript";
             post.appendChild(h1);
@@ -226,16 +241,23 @@ const Renderer = {
             //
             a = document.createElement("a");
             a.removeAttribute("href");
-            a.classList = "js-button";
+            a.classList = "js-button-full";
             a.style.opacity = "0.5";
             a.innerHTML = "Em breve";
+            post.appendChild(a);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/14wSufoQj0-dIW7taS6adiV9qBDmh59ea");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button-full";
+            a.innerHTML = "Downloads do Curso";
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.id = "post";
+            post.id = "web";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso de Web Design";
             post.appendChild(h1);
@@ -251,16 +273,23 @@ const Renderer = {
             //
             a = document.createElement("a");
             a.removeAttribute("href");
-            a.classList = "js-button";
+            a.classList = "js-button-full";
             a.style.opacity = "0.5";
             a.innerHTML = "Em breve";
+            post.appendChild(a);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1eCiMVTwoZE93wsB57dURkXkHCAl_MENE");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button-full";
+            a.innerHTML = "Downloads do Curso";
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.id = "post";
+            post.id = "design";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso Completo de Design Gráfico";
             post.appendChild(h1);
@@ -277,8 +306,15 @@ const Renderer = {
             a = document.createElement("a");
             a.setAttribute("href", "https://www.amazon.com.br/dp/B0CGJS1LMX");
             a.setAttribute("target", "_blank");
-            a.classList = "js-button";
+            a.classList = "js-button-full";
             a.innerHTML = "Obtenha a apostila";
+            post.appendChild(a);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1T14FNxgtS6zDU5he6A74MhUIRTLAlP5i");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button-full";
+            a.innerHTML = "Downloads do Curso";
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //
@@ -286,7 +322,7 @@ const Renderer = {
             post = document.createElement("div");
             post.classList = "js-post banner";
             post.style.marginTop = "50px";
-            post.id = "post";
+            post.id = "info";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso de Informática Básica e Avançada";
             post.appendChild(h1);
@@ -303,16 +339,33 @@ const Renderer = {
             a = document.createElement("a");
             a.setAttribute("href", "https://www.amazon.com.br/dp/B09V99W1FL");
             a.setAttribute("target", "_blank");
-            a.classList = "js-button";
+            a.classList = "js-button-full";
             a.innerHTML = "Obtenha a apostila";
+            post.appendChild(a);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1BdqsqsVZpEdk01gpMA608pbDoqemAUzD");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button-full";
+            a.innerHTML = "Downloads do Curso";
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //
             // AJUSTES FINAIS
             //
             Renderer.SwitchMenu(document.getElementById("menu-learn"));
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             { img = null; h1 = null; p = null; a = null; post = null; btns = null; }
+            //
+            // NAVEGAR ATÉ O ELEMENTO SELECIONADO
+            //
+            if (window.location.hash == "") {
+                window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+            } else {
+                let gfd9g0 = document.createElement("a");
+                gfd9g0.href = window.location.hash;
+                gfd9g0.click();
+                gfd9g0 = null;
+            }
         });
     },
     Contacts: () => {
@@ -398,13 +451,16 @@ const Renderer = {
             Renderer.SwitchMenu(document.getElementById("menu-contacts"));
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             { icons = null; post = null; iconsStyle = null; img = null; h1 = null; p = null; a = null; }
+            window.location.hash = "";
         });
     },
     Game: () => {
         console.log("Game");
+        Renderer.Home();
     },
     IA: () => {
         console.log("IA");
+        Renderer.Home();
     },
     SwitchMenu: (el) => {
         for (const menu of document.querySelectorAll(".menu-item")) {

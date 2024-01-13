@@ -417,9 +417,9 @@ const Renderer = {
             icons.appendChild(img2);
             //
             let img3 = document.createElement("img");
-            img3.src = "files/instagram.png";
+            img3.src = "files/amazon.png";
             img3.classList = "social";
-            img3.onclick = () => window.open("https://www.instagram.com/jorgesouzoficial/");
+            img3.onclick = () => window.open("https://www.amazon.com.br/stores/author/B0CM13195T");
             icons.appendChild(img3);
             //
             let img4 = document.createElement("img");

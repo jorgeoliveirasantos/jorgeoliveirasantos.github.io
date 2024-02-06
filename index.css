@@ -158,11 +158,20 @@ body {
     display: grid;
     place-items: center;
     grid-template-columns: 1fr 50px 50px 50px 50px 1fr;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.landscape-menu-transparent {
     border-bottom: var(--background-light) 1px solid;
     background-color: #0009;
     backdrop-filter: blur(15px);
-    overflow: hidden;
-    z-index: 999;
+}
+
+.landscape-menu-opaque {
+    border-bottom: none;
+    background-color: var(--background-dark);
+    backdrop-filter: none;
 }
 
 .menu-item {

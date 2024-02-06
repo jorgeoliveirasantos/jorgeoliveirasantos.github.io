@@ -495,10 +495,10 @@ const LOOP = {
             // Efeitos de rolagem:
             window.onscroll = e => {
                 if (window.scrollY > 100) {
-                    document.getElementById("menu-container").classList = "landscape-menu-container landscape-menu-opaque";
+                    document.getElementById("menu-container").classList = "landscape-menu-container landscape-menu-transparent";
                     document.getElementById("top-button").style.display = "block";
                 } else {
-                    document.getElementById("menu-container").classList = "landscape-menu-container landscape-menu-transparent";
+                    document.getElementById("menu-container").classList = "landscape-menu-container landscape-menu-opaque";
                     document.getElementById("top-button").style.display = "none";
                 }
                 let posts = document.querySelectorAll('.banner');

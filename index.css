@@ -139,7 +139,7 @@ body {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    background-image: url('./files/me.jpg');
+    background-image: url('./files/logo.svg');
     background-size: cover;
     margin-bottom: 20px;
     overflow: hidden;

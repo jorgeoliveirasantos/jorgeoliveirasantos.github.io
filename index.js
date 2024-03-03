@@ -240,10 +240,10 @@ const Renderer = {
             post.appendChild(p);
             //
             a = document.createElement("a");
-            a.removeAttribute("href");
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B0CWJ16NYM");
+            a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
-            a.style.opacity = "0.5";
-            a.innerHTML = "Em breve";
+            a.innerHTML = "Obtenha a apostila";
             post.appendChild(a);
             //
             a = document.createElement("a");
@@ -272,10 +272,10 @@ const Renderer = {
             post.appendChild(p);
             //
             a = document.createElement("a");
-            a.removeAttribute("href");
             a.classList = "js-button-full";
-            a.style.opacity = "0.5";
-            a.innerHTML = "Em breve";
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B0CQ93CD8C");
+            a.setAttribute("target", "_blank");
+            a.innerHTML = "Obtenha a apostila";
             post.appendChild(a);
             //
             a = document.createElement("a");
@@ -511,11 +511,6 @@ const LOOP = {
                         } else {
                             try { posts[i].querySelectorAll("h1")[0].style.display = "none" } catch { }
                         }
-                        if (posts[i].getBoundingClientRect().top <= 0) {
-                            posts[i].style.opacity = percent;
-                        } else {
-                            posts[i].style.opacity = 1;
-                        }
                     }
                 }
                 posts = null;
@@ -529,6 +524,6 @@ const LOOP = {
         // Update code here
         if (portrait) { document.styleSheets[1].disabled = false }
         else { document.styleSheets[1].disabled = true }
-        setTimeout(() => { LOOP.Update() }, 300);
+        setTimeout(() => { LOOP.Update() }, 999);
     }
 }

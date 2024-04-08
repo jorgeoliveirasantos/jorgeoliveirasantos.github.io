@@ -454,14 +454,6 @@ const Renderer = {
             window.location.hash = "";
         });
     },
-    Game: () => {
-        console.log("Game");
-        Renderer.Home();
-    },
-    IA: () => {
-        console.log("IA");
-        Renderer.Home();
-    },
     SwitchMenu: (el) => {
         for (const menu of document.querySelectorAll(".menu-item")) {
             menu.classList.remove("active");
@@ -489,8 +481,8 @@ const LOOP = {
             else if (urlId.toLowerCase() == "contato") Renderer.Contacts();
             else if (urlId.toLowerCase() == "cursos") Renderer.Learn();
             else if (urlId.toLowerCase() == "downloads") Renderer.Learn();
-            else if (urlId.toLowerCase() == "game") Renderer.Game();
-            else if (urlId.toLowerCase() == "ia") Renderer.IA();
+            //else if (urlId.toLowerCase() == "game") Renderer.Game();
+            //else if (urlId.toLowerCase() == "ia") Renderer.IA();
 
             // Efeitos de rolagem:
             window.onscroll = e => {

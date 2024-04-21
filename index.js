@@ -351,6 +351,32 @@ const Renderer = {
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.style.marginTop = "50px";
+            post.id = "info";
+            h1 = document.createElement("h1");
+            h1.innerHTML = "Curso Prático de Desenho Técnico em AutoCAD";
+            post.appendChild(h1);
+            //
+            img = document.createElement("img");
+            img.src = "./files/info.jpg";
+            img.style.maxWidth = "300px";
+            post.appendChild(img);
+            //
+            p = document.createElement("p");
+            p.innerHTML = "Explore o mundo do design técnico com o nosso curso prático de Desenho Técnico em AutoCAD. Seja você um aspirante a arquiteto, engenheiro, designer de interiores ou profissional de detalhamento técnico em setores diversos, este curso foi meticulosamente projetado para levar suas habilidades de desenho 2D para o próximo nível. Aprenda desde os conceitos básicos até técnicas avançadas do software líder da indústria para desenhos técnicos em 2D e 3D. Ganhe insights valiosos sobre os padrões e práticas profissionais nos setores de arquitetura, engenharia e design de interiores, essenciais para o sucesso em suas futuras empreitadas profissionais. Domine as técnicas de desenho 2D essenciais para expressar ideias complexas de forma clara e precisa, com foco em detalhamento técnico e precisão geométrica. Aprenda fazendo! Este curso é repleto de exercícios práticos e projetos desafiadores que o colocarão no comando, aprimorando suas habilidades de desenho e sua proficiência no AutoCAD\nEste curso é feito em parceria com instituições de ensino e seu material só pode ser adquirido junto com um curso presencial.";
+            post.appendChild(p);
+            //
+            a = document.createElement("a");
+            a.removeAttribute("href");
+            a.removeAttribute("target");
+            a.onclick = Renderer.Contacts;
+            a.classList = "js-button-full";
+            a.innerHTML = "Contato";
+            post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+            //
             // AJUSTES FINAIS
             //
             Renderer.SwitchMenu(document.getElementById("menu-learn"));
@@ -477,7 +503,7 @@ const LOOP = {
             // Navegação pela URL
             if (!urlId) Renderer.Home();
             else if (urlId.toLowerCase() == "aprendizado") Renderer.Learn();
-            else if (urlId.toLowerCase() == "blog") Renderer.Blog();
+            //else if (urlId.toLowerCase() == "blog") Renderer.Blog();
             else if (urlId.toLowerCase() == "contato") Renderer.Contacts();
             else if (urlId.toLowerCase() == "cursos") Renderer.Learn();
             else if (urlId.toLowerCase() == "downloads") Renderer.Learn();

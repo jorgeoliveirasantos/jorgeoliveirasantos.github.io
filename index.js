@@ -354,7 +354,7 @@ const Renderer = {
             post = document.createElement("div");
             post.classList = "js-post banner";
             post.style.marginTop = "50px";
-            post.id = "info";
+            post.id = "3d";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso Prático de Modelagem 3D";
             post.appendChild(h1);
@@ -382,7 +382,7 @@ const Renderer = {
             post = document.createElement("div");
             post.classList = "js-post banner";
             post.style.marginTop = "50px";
-            post.id = "info";
+            post.id = "cad";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso Prático de Desenho Técnico em AutoCAD";
             post.appendChild(h1);

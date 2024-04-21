@@ -21,9 +21,6 @@
 </head>
 
 <body>
-  <!-- #region -->
-  <!-- #endregion -->
-
   <!-- #region MENU -->
   <div id="menu-container" class="landscape-menu-container landscape-menu-transparent">
     <span></span>
@@ -55,6 +52,21 @@
     <div class="js-footer" id="js-footer">
       <div class="footer-conteiner">
         <span class="footer-title">Cursos</span>
+        <a class="footer-item" onclick="{
+          window.location = '#cad';
+          Renderer.Learn();
+          //
+        }">Desenho Técnico em AutoCAD</a>
+        <a class="footer-item" onclick="{
+          window.location = '#3d';
+          Renderer.Learn();
+          //
+        }">Curso Prático de Modelagem 3D</a>
+        <a class="footer-item" onclick="{
+          window.location = '#info';
+          Renderer.Learn();
+          //
+        }">Informática Básica e Avançada</a>
         <a class="footer-item" onclick="{
           window.location = '#info';
           Renderer.Learn();

@@ -372,9 +372,8 @@ const Renderer = {
             post.appendChild(p);
             //
             a = document.createElement("a");
-            a.removeAttribute("href");
-            a.removeAttribute("target");
-            a.onclick = Renderer.Contacts;
+            a.setAttribute("href", "https://www.jorgesouza.com.br/contato");
+            a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Contato";
             post.appendChild(a);
@@ -401,9 +400,8 @@ const Renderer = {
             post.appendChild(p);
             //
             a = document.createElement("a");
-            a.removeAttribute("href");
-            a.removeAttribute("target");
-            a.onclick = Renderer.Contacts;
+            a.setAttribute("href", "https://www.jorgesouza.com.br/contato");
+            a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Contato";
             post.appendChild(a);

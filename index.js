@@ -367,7 +367,7 @@ const Renderer = {
             p = document.createElement("p");
             p.innerHTML = `
                 Descubra o universo envolvente da Modelagem 3D explorando os recursos do 3D Studio Max, o software líder do setor utilizado por grandes estúdios. Com este curso prático você poderá se preparar para sua carreira em diversos setores, da arquitetura e engenharia ao desenvolvimento de jogos e realidade virtual! Pensando na amplitude do setor de Design e Multimídia que o 3D abrange, criamos um curso onde além de pôr a mão na massa com projetos reais, você ainda aprenderá os conceitos básicos com os quais lidará independente de qual ramo seguir futuramente estando apto a desenvolver desde objetos complexos a mundos virtuais inteiros. Crie sua própria realidade agora mesmo com 3D!
-                <br><i>Este curso é feito em parceria com instituições de ensino e seu material só pode ser adquirido junto com um curso presencial</i>.
+                <br><br><i>Este curso é feito em parceria com instituições de ensino e seu material só pode ser adquirido junto com um curso presencial</i>.
             `;
             post.appendChild(p);
             //
@@ -396,7 +396,7 @@ const Renderer = {
             p = document.createElement("p");
             p.innerHTML = `
                 Explore o mundo do design técnico com o nosso curso prático de Desenho Técnico em AutoCAD. Seja você um aspirante a arquiteto, engenheiro, designer de interiores ou profissional de detalhamento técnico em setores diversos, este curso foi meticulosamente projetado para levar suas habilidades de desenho 2D para o próximo nível. Aprenda desde os conceitos básicos até técnicas avançadas do software líder da indústria para desenhos técnicos em 2D e 3D. Ganhe insights valiosos sobre os padrões e práticas profissionais nos setores de arquitetura, engenharia e design de interiores, essenciais para o sucesso em suas futuras empreitadas profissionais. Domine as técnicas de desenho 2D essenciais para expressar ideias complexas de forma clara e precisa, com foco em detalhamento técnico e precisão geométrica. Aprenda fazendo! Este curso é repleto de exercícios práticos e projetos desafiadores que o colocarão no comando, aprimorando suas habilidades de desenho e sua proficiência no AutoCAD.
-                <br><i>Este curso é feito em parceria com instituições de ensino e seu material só pode ser adquirido junto com um curso presencial</i>.
+                <br><br><i>Este curso é feito em parceria com instituições de ensino e seu material só pode ser adquirido junto com um curso presencial</i>.
             `;
             post.appendChild(p);
             //

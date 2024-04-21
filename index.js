@@ -161,38 +161,6 @@ const Renderer = {
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.id = "ia";
-            h1 = document.createElement("h1");
-            h1.innerHTML = "Inteligência Artificial e Aprendizagem de Máquina";
-            post.appendChild(h1);
-            //
-            img = document.createElement("img");
-            img.src = "./files/ia.jpg";
-            img.style.maxWidth = "300px";
-            post.appendChild(img);
-            //
-            p = document.createElement("p");
-            p.innerHTML = "Inteligência Artificial (IA) é o ramo da tecnologia que trabalha com algoritmos que dão a capacidade a sistemas computacionais de realizar atividades semelhantes às humanas como planejamento, criatividade e aprendizado. Já Aprendizagem de Máquina é um dos setores de IA que compreende algoritmos capazes identificar padrões e efetuar previsões e tomadas de decisão. Neste curso aprenderemos os conceitos fundamentais de Inteligência Artificial e Aprendizagem de Máquina e conheceremos as ferramentas e bibliotecas mais modernas para esse fim, tudo tendo como base o Javascript, a linguagem de programação mais utilizada no mundo. Com essa combinação poderosa, aprenderemos a usar IA em aplicações backend como servidores e programas, e em aplicações web como sites, além de utilizar modelos de IA prontos e treinados para as nossas necessidades";
-            post.appendChild(p);
-            //
-            a = document.createElement("a");
-            a.setAttribute("href", "https://www.amazon.com.br/dp/B0CGHJ169Q");
-            a.setAttribute("target", "_blank");
-            a.classList = "js-button-full";
-            a.innerHTML = "Obtenha a apostila";
-            post.appendChild(a);
-            //
-            a = document.createElement("a");
-            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1co5Ye6vIsAVIUMgWw3wdlI4RTpmHLg_j");
-            a.setAttribute("target", "_blank");
-            a.classList = "js-button-full";
-            a.innerHTML = "Downloads do Curso";
-            post.appendChild(a);
-            document.getElementById("js-page").appendChild(post);
-            //
-            //
-            post = document.createElement("div");
-            post.classList = "js-post banner";
             post.id = "app";
             h1 = document.createElement("h1");
             h1.innerHTML = "Desenvolvimento de Aplicações Web";

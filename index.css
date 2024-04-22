@@ -157,7 +157,7 @@ body {
     width: 100vw;
     display: grid;
     place-items: center;
-    grid-template-columns: 1fr 50px 50px 50px 50px 1fr;
+    grid-template-columns: 1fr 50px 50px 50px 1fr;
     overflow: hidden;
     z-index: 999;
 }

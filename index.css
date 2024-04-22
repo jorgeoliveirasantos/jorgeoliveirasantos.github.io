@@ -155,9 +155,9 @@ body {
     left: 0;
     height: 50px;
     width: 100vw;
-    display: grid;
-    place-items: center;
-    grid-template-columns: 1fr 50px 50px 50px 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     overflow: hidden;
     z-index: 999;
 }

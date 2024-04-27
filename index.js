@@ -183,7 +183,7 @@ const Renderer = {
             post.appendChild(a);
             //
             a = document.createElement("a");
-            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1sjTUvdPB5gxgCQBoah9yeXAggevSDOgl");
+            a.setAttribute("href", "https://drive.google.com/drive/u/0/folders/1aG1CAZRhyNwUEjWaJN3XSPYXAZqkrJDS");
             a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Downloads do Curso";
@@ -215,7 +215,7 @@ const Renderer = {
             post.appendChild(a);
             //
             a = document.createElement("a");
-            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/14wSufoQj0-dIW7taS6adiV9qBDmh59ea");
+            a.setAttribute("href", "https://drive.google.com/drive/u/0/folders/1QxV5Md_ahTQwR-hMgRuq93P-_85mncFJ");
             a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Downloads do Curso";
@@ -247,7 +247,7 @@ const Renderer = {
             post.appendChild(a);
             //
             a = document.createElement("a");
-            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1eCiMVTwoZE93wsB57dURkXkHCAl_MENE");
+            a.setAttribute("href", "https://drive.google.com/drive/u/0/folders/17R1SftWIKVbORAynQxFZvV4--3jKz_G2");
             a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Downloads do Curso";
@@ -279,7 +279,7 @@ const Renderer = {
             post.appendChild(a);
             //
             a = document.createElement("a");
-            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1T14FNxgtS6zDU5he6A74MhUIRTLAlP5i");
+            a.setAttribute("href", "https://drive.google.com/drive/u/0/folders/1v_BaD0tgr_JHg0us3j3v4s2yXaG_Yr_z");
             a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Downloads do Curso";
@@ -312,7 +312,7 @@ const Renderer = {
             post.appendChild(a);
             //
             a = document.createElement("a");
-            a.setAttribute("href", "https://drive.google.com/drive/u/1/folders/1BdqsqsVZpEdk01gpMA608pbDoqemAUzD");
+            a.setAttribute("href", "https://drive.google.com/drive/u/0/folders/18PSosYC4CztmDCYTEqJSfsMiLwyFccaP");
             a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Downloads do Curso";

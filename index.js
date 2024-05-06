@@ -532,12 +532,13 @@ const LOOP = {
                 posts = null;
             }
             window.oncontextmenu = e => { e.preventDefault() }
-            setInterval(LOOP.Update, 999);
+            setInterval(LOOP.Update, 2000);
             resolve();
         });
     },
     Update: () => {
         portrait = window.innerWidth < window.innerHeight;
+        console.log("loop");
         // Update code here
         if (portrait) { document.styleSheets[1].disabled = false }
         else { document.styleSheets[1].disabled = true }

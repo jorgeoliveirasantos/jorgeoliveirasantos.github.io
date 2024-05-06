@@ -532,6 +532,7 @@ const LOOP = {
                 posts = null;
             }
             window.oncontextmenu = e => { e.preventDefault() }
+            setInterval(LOOP.Update, 999);
             resolve();
         });
     },
@@ -540,6 +541,5 @@ const LOOP = {
         // Update code here
         if (portrait) { document.styleSheets[1].disabled = false }
         else { document.styleSheets[1].disabled = true }
-        setTimeout(() => { LOOP.Update() }, 999);
     }
 }

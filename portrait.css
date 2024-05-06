@@ -1,5 +1,5 @@
 .js-page {
-    width: calc(100vw - 8px);
+    width: calc(100vw - 8px) !important;
     box-sizing: border-box;
     padding: 7px;
     gap: 7px;

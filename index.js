@@ -537,6 +537,7 @@ const LOOP = {
         });
     },
     Update: () => {
+        console.log("loop")
         if (window.innerWidth > window.innerHeight) {
             document.styleSheets[1].disabled = true;
             portrait = false;

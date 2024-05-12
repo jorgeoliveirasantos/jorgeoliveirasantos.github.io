@@ -1,6 +1,5 @@
 /* #region CONFIGURAÇÕES*/
 :root {
-    --orientation: "v";
     --background-dark: #151015;
     --background-medium: #252020;
     --background-light: #3f3129;
@@ -15,7 +14,6 @@
 }
 
 body {
-    position: relative;
     width: 100vw;
     height: fit-content;
     top: 0;
@@ -87,6 +85,7 @@ body {
     gap: 15px;
     padding: 15px;
     overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .js-page .js-post {

@@ -79,7 +79,7 @@ body {
 
 /* #region PÁGINA */
 .js-page {
-    width: 70vw;
+    width: 70%;
     height: fit-content;
     background-color: transparent;
     display: flex;

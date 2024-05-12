@@ -1,16 +1,16 @@
 .js-page {
-    width: calc(100vw - 8px) !important;
+    width: calc(100% - 8px) !important;
     box-sizing: border-box;
     padding: 7px;
     gap: 7px;
 }
 
 .right-bar {
-    display: none;
+    display: none !important;
 }
 
 .left-bar {
-    display: none;
+    display: none !important;
 }
 
 .js-footer {

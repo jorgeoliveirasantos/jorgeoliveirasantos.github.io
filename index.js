@@ -538,11 +538,11 @@ const LOOP = {
     },
     Update: () => {
         if (window.innerWidth > window.innerHeight) {
-            document.styleSheets[0].disabled = true;
+            document.styleSheets[1].disabled = true;
             portrait = false;
         }
         else {
-            document.styleSheets[0].disabled = false;
+            document.styleSheets[1].disabled = false;
             portrait = true;
         }
     }

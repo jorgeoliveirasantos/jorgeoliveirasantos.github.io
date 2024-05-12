@@ -537,13 +537,12 @@ const LOOP = {
         });
     },
     Update: () => {
-        console.log("loop")
         if (window.innerWidth > window.innerHeight) {
-            document.styleSheets[1].disabled = true;
+            document.styleSheets[0].disabled = true;
             portrait = false;
         }
         else {
-            document.styleSheets[1].disabled = false;
+            document.styleSheets[0].disabled = false;
             portrait = true;
         }
     }

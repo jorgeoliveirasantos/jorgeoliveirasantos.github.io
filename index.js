@@ -537,10 +537,14 @@ const LOOP = {
         });
     },
     Update: () => {
-        portrait = window.innerWidth < window.innerHeight;
-        console.log("loop");
         // Update code here
-        if (portrait) { document.styleSheets[1].disabled = false }
-        else { document.styleSheets[1].disabled = true }
+        if (window.innerWidth > window.innerHeight) {
+            document.styleSheets[1].disabled = true;
+            portrait = false;
+        }
+        else {
+            document.styleSheets[1].disabled = false;
+            portrait = true;
+        }
     }
 }

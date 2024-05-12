@@ -12,10 +12,10 @@
         node js, dev express, html, css">
   <!-- #endregion -->
 
-  <link rel="shortcut icon" href="./files/logo.svg" type="image/x-icon">
-  <link rel="stylesheet" href="./index.css" title="index-style">
-  <link rel="stylesheet" href="./portrait.css" title="portrait-style">
-  <script src="./index.js"></script>
+  <link rel="shortcut icon" href="/files/logo.svg" type="image/x-icon">
+  <link rel="stylesheet" href="/index.css" title="index-style">
+  <link rel="stylesheet" href="/portrait.css" title="portrait-style">
+  <script src="/index.js"></script>
 
   <title>Jorge Souza</title>
 </head>
@@ -25,19 +25,19 @@
   <div id="menu-container" class="landscape-menu-container landscape-menu-transparent">
     <span></span>
     <div id="menu-home" class="menu-item active" onclick="Renderer.Home(this)">
-      <img src="./files/home.svg" alt="">
+      <img src="/files/home.svg" alt="">
       <span>Início</span>
     </div>
     <div id="menu-blog" class="menu-item" onclick="Renderer.Blog(this)" style="display: none;">
-      <img src="./files/blog.svg" alt="">
+      <img src="/files/blog.svg" alt="">
       <span>Blog</span>
     </div>
     <div id="menu-learn" class="menu-item" onclick="Renderer.Learn(this)">
-      <img src="./files/learn.svg" alt="">
+      <img src="/files/learn.svg" alt="">
       <span>Cursos</span>
     </div>
     <div id="menu-contacts" class="menu-item" onclick="Renderer.Contacts(this)">
-      <img src="./files/contacts.svg" alt="">
+      <img src="/files/contacts.svg" alt="">
       <span>Contato</span>
     </div>
     <span></span>
@@ -121,7 +121,7 @@
       </div>
       <div class="credit-container">
         <hr class="js-divider">
-        <img src="./files/logo_amarela.svg" alt="">
+        <img src="/files/logo_amarela.svg" alt="">
         <span class="footer-title" id="credit" style="text-align: center;"></span>
         <script>
           document.getElementById("credit").innerHTML = `Copyright © ${new Date().getFullYear()} | Jorge Souza Oliveira dos Santos`;
@@ -203,7 +203,7 @@
 
     <!-- #region JS-PRESENTATION -->
     <div id="js-video-present-H" class="js-video-present-container">
-      <video id="js-video-present1" class="js-video-present" src="./files/JSPresent/H.mp4" type="video/mp4"
+      <video id="js-video-present1" class="js-video-present" src="/files/JSPresent/H.mp4" type="video/mp4"
         onclick="Renderer.Learn()" muted autoplay loop>
         <script>
           addEventListener("load", e => {
@@ -224,11 +224,11 @@
         function pausarOuRetomarVideoH(el) {
           if (document.getElementById("js-video-present1").paused) {
             document.getElementById("js-video-present1").play();
-            el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
+            el.style.backgroundImage = "url('/files/JSPresent/pause.svg')";
 
           } else {
             document.getElementById("js-video-present1").pause();
-            el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
+            el.style.backgroundImage = "url('/files/JSPresent/play.svg')";
           }
         }
         function avancarVideoH() {
@@ -237,7 +237,7 @@
       </script>
     </div>
     <div id="js-video-present-V" class="js-video-present-container">
-      <video id="js-video-present2" class="js-video-present" src="./files/JSPresent/V.mp4" type="video/mp4"
+      <video id="js-video-present2" class="js-video-present" src="/files/JSPresent/V.mp4" type="video/mp4"
         onclick="Renderer.Learn()" muted autoplay loop>
       </video>
       <div class="js-video-present-controls">
@@ -253,11 +253,11 @@
         function pausarOuRetomarVideoV(el) {
           if (document.getElementById("js-video-present2").paused) {
             document.getElementById("js-video-present2").play();
-            el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
+            el.style.backgroundImage = "url('/files/JSPresent/pause.svg')";
 
           } else {
             document.getElementById("js-video-present2").pause();
-            el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
+            el.style.backgroundImage = "url('/files/JSPresent/play.svg')";
           }
         }
         function avancarVideoV() {

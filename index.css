@@ -137,9 +137,9 @@ body {
 
 .banner .circle-image {
     width: 180px;
-    max-width: 60vw;
+    max-width: 50vw;
     height: 180px;
-    max-height: 60vw;
+    max-height: 50vw;
     border-radius: 50%;
     background-image: url('/files/me.jpg');
     background-size: cover;

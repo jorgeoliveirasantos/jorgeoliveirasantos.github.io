@@ -363,15 +363,21 @@ const Renderer = {
             p = document.createElement("p");
             p.innerHTML = `
                 Explore o mundo do design técnico com o nosso curso prático de Desenho Técnico em AutoCAD. Seja você um aspirante a arquiteto, engenheiro, designer de interiores ou profissional de detalhamento técnico em setores diversos, este curso foi meticulosamente projetado para levar suas habilidades de desenho 2D para o próximo nível. Aprenda desde os conceitos básicos até técnicas avançadas do software líder da indústria para desenhos técnicos em 2D e 3D. Ganhe insights valiosos sobre os padrões e práticas profissionais nos setores de arquitetura, engenharia e design de interiores, essenciais para o sucesso em suas futuras empreitadas profissionais. Domine as técnicas de desenho 2D essenciais para expressar ideias complexas de forma clara e precisa, com foco em detalhamento técnico e precisão geométrica. Aprenda fazendo! Este curso é repleto de exercícios práticos e projetos desafiadores que o colocarão no comando, aprimorando suas habilidades de desenho e sua proficiência no AutoCAD.
-                <br><br><i>Este curso é feito em parceria com instituições de ensino e seu material só pode ser adquirido junto com um curso presencial</i>.
             `;
             post.appendChild(p);
             //
             a = document.createElement("a");
-            a.setAttribute("href", "https://www.jorgesouza.com.br/contato");
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B09V99W1FL");
             a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
-            a.innerHTML = "Contato";
+            a.innerHTML = "Obtenha a apostila";
+            post.appendChild(a);
+            //
+            a = document.createElement("a");
+            a.setAttribute("href", "https://drive.google.com/drive/u/0/folders/18PSosYC4CztmDCYTEqJSfsMiLwyFccaP");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button-full";
+            a.innerHTML = "Downloads do Curso";
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //

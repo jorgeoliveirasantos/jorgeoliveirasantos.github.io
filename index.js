@@ -367,14 +367,14 @@ const Renderer = {
             post.appendChild(p);
             //
             a = document.createElement("a");
-            a.setAttribute("href", "https://www.amazon.com.br/dp/B09V99W1FL");
+            a.setAttribute("href", "");
             a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Obtenha a apostila";
             post.appendChild(a);
             //
             a = document.createElement("a");
-            a.setAttribute("href", "https://drive.google.com/drive/u/0/folders/18PSosYC4CztmDCYTEqJSfsMiLwyFccaP");
+            a.setAttribute("href", "https://drive.google.com/drive/folders/1UyYEQGea367Bni5pCCDliywBX_QsCh-C");
             a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
             a.innerHTML = "Downloads do Curso";

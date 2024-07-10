@@ -172,14 +172,15 @@ const Renderer = {
             post.appendChild(img);
             //
             p = document.createElement("p");
-            p.innerHTML = "O Desenvolvimento de Aplicações Web é a terceira etapa no Desenvolvimento Web, onde você é capaz de criar páginas que salvam dados de usuários e informações de maneira persistente utilizando a tecnologia do NodeJS. É aqui que você aprenderá a criar servidores, manipular bases de dados, usar criptografia, estabelecer comunicações e implantar aplicações em diferentes locais, em seu próprio servidor, em nuvem, num aplicativo móvel, num programa desktop entre outros.";
+            p.innerHTML = "O Desenvolvimento de Aplicações Web em Javascript é uma jornada empolgante e desafiadora. É a última etapa para desenvolvedores Javascript que já concluíram o curso de Web Design, onde aprenderam a estruturar sites elegantemente visuais com as tecnologias mais modernas de HTML e CSS, concluíram ainda um curso completo de Programação e Javascript, mergulhando no mundo da programação com todos os seus conceitos, e agora estão prontos para o backend, onde a mágica acontece! Neste curso aprenderemos o que há de mais recente dentre as tecnologias Javascript dominantes no mercado para criar aplicações com suporte a recursos avançados. Dentre esses recursos, neste curso você aprenderá a gerenciar bases de dados, criptografia, comunicação de rede e muito mais.\nEssa vastidão de possibilidades é o que permite desenvolver praticamente de tudo com Javascript, de servidores de alto desempenho, a aplicativos móveis, desktop e jogos!\nDescobriremos neste curso, todo o poder do Javascript, estudando como implantar nossas aplicações, criando um programa desktop que rode em Windows, Linux e Mac, e ainda implantando nossos servidores localmente e na nuvem. Ainda mergulharemos no misterioso mundo da segurança cibernética conhecendo os principais tipos de ataques e como mitigá-los devidamente.";
+            p.style.fontWeight = "bolder";
             post.appendChild(p);
             //
             a = document.createElement("a");
-            a.removeAttribute("href");
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B0D96Y4LHP");
+            a.setAttribute("target", "_blank");
             a.classList = "js-button-full";
-            a.style.opacity = "0.5";
-            a.innerHTML = "Em breve";
+            a.innerHTML = "Obtenha a apostila";
             post.appendChild(a);
             //
             a = document.createElement("a");

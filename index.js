@@ -173,7 +173,6 @@ const Renderer = {
             //
             p = document.createElement("p");
             p.innerHTML = "O Desenvolvimento de Aplicações Web em Javascript é uma jornada empolgante e desafiadora. É a última etapa para desenvolvedores Javascript que já concluíram o curso de Web Design, onde aprenderam a estruturar sites elegantemente visuais com as tecnologias mais modernas de HTML e CSS, concluíram ainda um curso completo de Programação e Javascript, mergulhando no mundo da programação com todos os seus conceitos, e agora estão prontos para o backend, onde a mágica acontece! Neste curso aprenderemos o que há de mais recente dentre as tecnologias Javascript dominantes no mercado para criar aplicações com suporte a recursos avançados. Dentre esses recursos, neste curso você aprenderá a gerenciar bases de dados, criptografia, comunicação de rede e muito mais.\nEssa vastidão de possibilidades é o que permite desenvolver praticamente de tudo com Javascript, de servidores de alto desempenho, a aplicativos móveis, desktop e jogos!\nDescobriremos neste curso, todo o poder do Javascript, estudando como implantar nossas aplicações, criando um programa desktop que rode em Windows, Linux e Mac, e ainda implantando nossos servidores localmente e na nuvem. Ainda mergulharemos no misterioso mundo da segurança cibernética conhecendo os principais tipos de ataques e como mitigá-los devidamente.";
-            p.style.fontWeight = "bolder";
             post.appendChild(p);
             //
             a = document.createElement("a");

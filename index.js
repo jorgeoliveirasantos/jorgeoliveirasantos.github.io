@@ -236,7 +236,7 @@ const Renderer = {
             post.appendChild(img);
             //
             p = document.createElement("p");
-            p.innerHTML = "O Web Design é o setor voltado para a criação de páginas Web Estáticas destinadas a exibir conteúdo, como sites, blogs entre outras, é um amplo setor e muito requisitado no mercado. Neste curso você aprenderá como criar sites e páginas web diversas utilizando as tecnologias mais modernas com HTML, CSS e Javascript.";
+            p.innerHTML = "O Web Design é um amplo setor e muito requisitado no mercado, ele a arte de escrever páginas web, é o primeiro passo para se criar, desde um site simples, um blog, até uma aplicação web robusta que gerencie usuários, aplicativos e jogos. A base do Web Design é o HTML e o CSS. São duas linguagens utilizadas para descrever tudo aquilo que aparece num navegador ou em qualquer local com suporte a essas linguagens. HTML (HiperText Markup Language), como o nome sugere é uma linguagem de marcação, é ela que diz o quê tem que aparecer na tela. Já o CSS (Cascading StyleSheet), é uma linguagem de estilização, é ela que diz como cada coisa deve aparecer. Juntoas elas criam designs incríveis que se ajustam às telas de diferentes dispositivos, que exibem transições e animações belíssimas, necessitando apenas um designer web habilidoso em utilizá-las, assim como você!";
             post.appendChild(p);
             //
             a = document.createElement("a");

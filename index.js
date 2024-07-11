@@ -241,7 +241,7 @@ const Renderer = {
             //
             a = document.createElement("a");
             a.classList = "js-button-full";
-            a.setAttribute("href", "https://www.amazon.com.br/dp/B0CQ93CD8C");
+            a.setAttribute("href", "https://www.amazon.com.br/dp/B0D8HG4YHW");
             a.setAttribute("target", "_blank");
             a.innerHTML = "Obtenha a apostila";
             post.appendChild(a);

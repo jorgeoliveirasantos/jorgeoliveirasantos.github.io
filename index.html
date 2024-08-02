@@ -246,69 +246,6 @@
         <!-- #endregion -->
 
         <!-- #region JS-PRESENTATION -->
-        <div id="js-video-present-H" class="js-video-present-container" style="display: none;">
-            <video id="js-video-present1" class="js-video-present" src="./files/JSPresent/H.mp4" type="video/mp4"
-                onclick="Renderer.Learn()" muted autoplay loop>
-                <script>
-                    addEventListener("load", e => {
-                        document.getElementById("js-video-present1").playbackRate = 0.5;
-                    })
-                </script>
-            </video>
-            <div class="js-video-present-controls">
-                <button class="js-video-present-button retroceder" onclick="retrocederVideoH()"></button>
-                <button id="play-pause" class="js-video-present-button play-pause"
-                    onclick="pausarOuRetomarVideoH(this)"></button>
-                <button class="js-video-present-button avancar" onclick="avancarVideoH()"></button>
-            </div>
-            <script>
-                function retrocederVideoH() {
-                    document.getElementById("js-video-present1").currentTime -= 5;
-                }
-                function pausarOuRetomarVideoH(el) {
-                    if (document.getElementById("js-video-present1").paused) {
-                        document.getElementById("js-video-present1").play();
-                        el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
-
-                    } else {
-                        document.getElementById("js-video-present1").pause();
-                        el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
-                    }
-                }
-                function avancarVideoH() {
-                    document.getElementById("js-video-present1").currentTime += 5;
-                }
-            </script>
-        </div>
-        <div id="js-video-present-V" class="js-video-present-container" style="display: none;">
-            <video id="js-video-present2" class="js-video-present" src="./files/JSPresent/V.mp4" type="video/mp4"
-                onclick="Renderer.Learn()" muted autoplay loop>
-            </video>
-            <div class="js-video-present-controls">
-                <button class="js-video-present-button retroceder" onclick="retrocederVideoV()"></button>
-                <button id="play-pause" class="js-video-present-button play-pause"
-                    onclick="pausarOuRetomarVideoV(this)"></button>
-                <button class="js-video-present-button avancar" onclick="avancarVideoV()"></button>
-            </div>
-            <script>
-                function retrocederVideoV() {
-                    document.getElementById("js-video-present2").currentTime -= 5;
-                }
-                function pausarOuRetomarVideoV(el) {
-                    if (document.getElementById("js-video-present2").paused) {
-                        document.getElementById("js-video-present2").play();
-                        el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
-
-                    } else {
-                        document.getElementById("js-video-present2").pause();
-                        el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
-                    }
-                }
-                function avancarVideoV() {
-                    document.getElementById("js-video-present2").currentTime += 5;
-                }
-            </script>
-        </div>
         <div id="js-video-present-H" class="js-video-present-container">
             <img src="./files/1.jpg" class="js-video-present">
         </div>

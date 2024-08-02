@@ -12,8 +12,6 @@ const Renderer = {
             document.getElementById("js-page").innerHTML = MainPage;
             Renderer.SwitchMenu(document.getElementById("menu-home"));
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            document.getElementById("js-video-present1").playbackRate = 0.5;
-            document.getElementById("js-video-present2").playbackRate = 0.5;
             window.location.hash = "";
         });
         //

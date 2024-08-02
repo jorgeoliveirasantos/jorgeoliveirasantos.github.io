@@ -20,18 +20,9 @@
 }
 
 .js-video-present-container#js-video-present-V {
-    display: block;
+    display: flex;
 }
 
 .js-video-present-container#js-video-present-H {
     display: none;
-}
-
-.js-post.banner#icons {
-    display: grid !important;
-    place-items: center !important;
-    gap: 15px !important;
-    text-align: center !important;
-    grid-template-columns: 1fr 1fr !important;
-    grid-template-rows: 1fr 1fr !important;
 }

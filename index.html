@@ -2,292 +2,341 @@
 <html lang="pt-BR">
 
 <head>
-  <!-- #region META -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
-  <meta name="author" content="Jorge Souza Oliveira dos Santos" />
-  <meta name="description" content="Jorge Souza Oliveira dos Santos">
-  <meta name="keywords" content="informatica, curso, computador, computacao, programação, tecnologia, info, 
+    <!-- #region META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Jorge Souza Oliveira dos Santos">
+    <meta name="keywords" content="informatica, curso, computador, computacao, programação, tecnologia, info, 
         desenvolvimento, web, design, web design, design grafico, tech, 
         visual studio, visual studio code, vs code, c#, javascript, dotnet,
         node js, dev express, html, css">
-  <!-- #endregion -->
+    <!-- #endregion -->
 
-  <link rel="shortcut icon" href="https://www.jorgesouza.com.br/files/logo.svg" type="image/x-icon">
-  <link rel="stylesheet" href="https://www.jorgesouza.com.br/index.css" title="index-style">
-  <link rel="stylesheet" href="https://www.jorgesouza.com.br/portrait.css" title="index-style">
-  <script src="https://www.jorgesouza.com.br/index.js"></script>
+    <link rel="shortcut icon" href="./files/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./index.css" title="index-style">
+    <link rel="stylesheet" href="./portrait.css" title="index-style">
+    <script src="./index.js"></script>
 
-  <title>Jorge Souza</title>
+    <title>Jorge Souza</title>
 </head>
 
 <body>
-  <!-- #region MENU -->
-  <div id="menu-container" class="landscape-menu-container landscape-menu-transparent">
-    <span></span>
-    <div id="menu-home" class="menu-item active" onclick="Renderer.Home(this)">
-      <img src="./files/home.svg" alt="">
-      <span>Início</span>
+    <!-- #region MENU -->
+    <div id="menu-container" class="landscape-menu-container landscape-menu-transparent">
+        <span></span>
+        <div id="menu-home" class="menu-item active" onclick="Renderer.Home(this)">
+            <img src="./files/home.svg" alt="">
+            <span>Início</span>
+        </div>
+        <div id="menu-blog" class="menu-item" onclick="Renderer.Blog(this)" style="display: none;">
+            <img src="./files/blog.svg" alt="">
+            <span>Blog</span>
+        </div>
+        <div id="menu-port" class="menu-item" onclick="Renderer.Portfolio(this)">
+            <img src="./files/notes.svg" alt="">
+            <span>Portfólio</span>
+        </div>
+        <div id="menu-learn" class="menu-item" onclick="Renderer.Learn(this)">
+            <img src="./files/learn.svg" alt="">
+            <span>Cursos</span>
+        </div>
+        <div id="menu-kaatan" class="menu-item" onclick="window.open('https://www.kaatan.com.br')">
+            <img src="./files/ret_branco.svg" alt="">
+            <span>Kaatan</span>
+        </div>
+        <span></span>
     </div>
-    <div id="menu-blog" class="menu-item" onclick="Renderer.Blog(this)" style="display: none;">
-      <img src="./files/blog.svg" alt="">
-      <span>Blog</span>
-    </div>
-    <div id="menu-learn" class="menu-item" onclick="Renderer.Learn(this)">
-      <img src="./files/learn.svg" alt="">
-      <span>Cursos</span>
-    </div>
-    <div id="menu-contacts" class="menu-item" onclick="Renderer.Contacts(this)">
-      <img src="./files/contacts.svg" alt="">
-      <span>Contato</span>
-    </div>
-    <div id="menu-kaatan" class="menu-item" onclick="window.open('https://www.kaatan.com.br')">
-      <img src="./files/ret_branco.svg" alt="">
-      <span>Kaatan</span>
-    </div>
-    <span></span>
-  </div>
-  <!-- #endregion -->
+    <!-- #endregion -->
 
-  <!-- #region PAGE -->
-  <div class="left-bar"></div>
-  <div class="js-page" id="js-page">
+    <!-- #region PAGE -->
+    <div class="left-bar"></div>
+    <div class="js-page" id="js-page">
 
-    <!-- #region RODAPÉ -->
-    <div class="js-footer" id="js-footer">
-      <div class="footer-conteiner">
-        <span class="footer-title">Cursos</span>
-        <a class="footer-item" onclick="{
+        <!-- #region RODAPÉ -->
+        <div class="js-footer" id="js-footer">
+            <div class="footer-conteiner">
+                <span class="footer-title">Cursos</span>
+                <a class="footer-item" onclick="{
           window.location = '#cad';
           Renderer.Learn();
           //
         }">Desenho Técnico em AutoCAD</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#3d';
           Renderer.Learn();
           //
         }">Curso Prático de Modelagem 3D</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#info';
           Renderer.Learn();
           //
         }">Informática Básica e Avançada</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#design';
           Renderer.Learn();
           //
         }">Design Gráfico</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#web';
           Renderer.Learn();
           //
         }">Web Design (HTML e CSS)</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#js';
           Renderer.Learn();
           //
         }">Javascript</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#app';
           Renderer.Learn();
           //
         }">Aplicações Web</a>
-      </div>
-      <div class="footer-conteiner">
-        <span class="footer-title">Apostilas</span>
-        <a class="footer-item" onclick="{
+            </div>
+            <div class="footer-conteiner">
+                <span class="footer-title">Apostilas</span>
+                <a class="footer-item" onclick="{
           window.location = '#info';
           Renderer.Learn();
           //
         }">Informática Básica e Avançada</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#design';
           Renderer.Learn();
           //
         }">Design Gráfico</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#web';
           Renderer.Learn();
           //
         }">Web Design (HTML e CSS)</a>
-        <a class="footer-item" onclick="{
+                <a class="footer-item" onclick="{
           window.location = '#js';
           Renderer.Learn();
           //
         }">Javascript</a>
-      </div>
-      <div class="footer-conteiner">
-        <span class="footer-title">Contato</span>
-        <a class="footer-item" href="mailto:jorge.sos777@outlook.com" target="_blank">Gmail</a>
-        <a class="footer-item" href="https://wa.me/5577991161892" target="_blank">Whatsapp</a>
-        <a class="footer-item" href="https://www.amazon.com.br/stores/author/B0CM13195T" target="_blank">Amazon</a>
-        <a class="footer-item" href="https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5"
-          target="_blank">Workana</a>
-      </div>
-      <div class="credit-container">
-        <hr class="js-divider">
-        <img src="./files/logo_amarela.svg" alt="">
-        <span class="footer-title" id="credit" style="text-align: center;"></span>
-        <script>
-          document.getElementById("credit").innerHTML = `Copyright © ${new Date().getFullYear()} | Jorge Souza Oliveira dos Santos`;
-        </script>
-      </div>
+            </div>
+            <div class="footer-conteiner">
+                <span class="footer-title">Contato</span>
+                <a class="footer-item" href="mailto:jorge.sos777@outlook.com" target="_blank">Gmail</a>
+                <a class="footer-item" href="https://wa.me/5577999030420" target="_blank">Whatsapp</a>
+                <a class="footer-item" href="https://www.amazon.com.br/stores/author/B0CM13195T"
+                    target="_blank">Amazon</a>
+                <a class="footer-item" href="https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5"
+                    target="_blank">Workana</a>
+            </div>
+            <div class="credit-container">
+                <hr class="js-divider">
+                <img src="./files/logobranca.svg" alt="">
+                <span class="footer-title" id="credit" style="text-align: center;"></span>
+                <script>
+                    document.getElementById("credit").innerHTML = `Copyright © ${new Date().getFullYear()} | Jorge Souza Oliveira dos Santos`;
+                </script>
+            </div>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region POSTs -->
+        <div class="js-post banner" id="icons">
+            <style>
+                .js-post.banner#icons {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 15px;
+                    text-align: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                }
+
+                .banner img.social {
+                    height: 100px;
+                    width: 100px;
+                    padding: 10px;
+                    opacity: 0.5;
+                    border: none;
+                    transition: all 250ms;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                }
+
+                .banner img.social:hover {
+                    opacity: 1;
+                    padding: 0;
+                }
+            </style>
+            <img src="files/gmail.png" class="social">
+            <img src="files/whatsapp.png" class="social">
+            <img src="files/amazon.png" class="social">
+            <img src="files/Workana.png" class="social">
+        </div>
+
+        <div class="js-post banner" id="post">
+            <h1 style="display: block;">Contato</h1>
+            <p>Entre em contato por um meio de sua preferência ou conheça minhas redes digitais.</p>
+        </div>
+
+        <div class="js-post banner">
+            <h1 style="display: none;">Formação</h1>
+            <h2 style="width: 100%;">Escolar</h2>
+            <li>Ensino médio completo</li>
+            <li>Inglês Básico</li>
+            <li>Espanhol Básico</li>
+            <h2 style="width: 100%;">Técnica</h2>
+            <li>Instrutor de cursos profissionalizantes</li>
+            <li>Desenho Técnico (CAD)</li>
+            <li>Design Gráfico</li>
+            <li>Programação e Desenvolvimento Web</li>
+        </div>
+
+        <div class="js-post banner">
+            <h1 style="display: none;">Carreira</h1>
+            <p>
+                Aos 18 anos, enquanto cursava o terceiro ano do ensino médio, e após concluir um curso de Design Gráfico
+                na NIT Cursos, ingressei, por indicação do professor do curso, numa vaga de Designer Gráfico estagiário
+                na
+                Dignart
+                Publicidade Visual, trabalhando também como adesivador e na plotagem de projetos de
+                AutoCAD, enquanto fazia o curso de AutoCAD, também na NIT Cursos, para me aperfeiçoar no trabalho de
+                plotagem.
+            </p>
+            <p>
+                Dois anos depois, decidido a trabalhar como projetista, encontrei uma vaga, também de estagiário, dessa
+                vez
+                cadista, no escritório Zamuner Arquitetura, a passagem foi curta, pois ao final daquele mesmo ano, o
+                arquiteto
+                fechou o
+                escritório para retornar para o Paraná, mas antes, me indicou para trabalhar na cidade vizinha no
+                escritório
+                de
+                decoração que lhe auxiliava no projetos. Mudei para Barreiras, e fui trabalhar no escritório da Light
+                and Design Interiores, como projetista, apesar da difícil adaptação à cidade por causa do transporte,
+                trabalhei na
+                Light and Design por um ano, quando retornei para Luis Eduardo Magalhães, e fui chamado pela NIT Cursos
+                para ministrar o Curso de AutoCAD, o qual fui co-autor desenvolvendo também o material didático e a
+                metodologia de
+                ensino. Devido ao trabalho em horário comercial como cadista na Radoll Arquitetura, ministrei as aulas
+                de
+                AutoCAD
+                no período noturno e aos sábados. Trabalhei ainda em outros escritórios de arquitetura e ministrei aulas
+                de
+                AutoCAD também na Microlins.
+            </p>
+            <p>
+                Atualmente trabalho exclusivamente como freelancer e ministro aulas particulares de cursos
+                profissionalizantes.
+            </p>
+        </div>
+
+        <div class="js-post banner">
+            <h1 style="display: none;">Seja muito bem-vindo!</h1>
+            <p>
+                Seja para contratar um projeto, adquirir uma apostila do seu setor, ou aprender, este é seu lugar.
+            </p>
+        </div>
+
+        <div class="banner js-post">
+            <p>
+                Instrutor de cursos técnicos e profissionalizantes no setor de informática, em especial
+                Desenho Técnico e Modelagem 3D (AutoCAD e 3Ds Max), Informática Básica e Avançada, Design Gráfico,
+                Desenvolvimento Web e Programação de Computadores.
+                Atuante como professor particular e em escolas de cursos profissionalizantes desde o ano de 2011.
+                Projetista Cadista no setor de Arquitetura e Interiores com ênfase em AutoCAD,
+                projetos executivos e detalhamentos 2D, atuante no setor desde o ano de 2008.
+            </p>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region JS-PRESENTATION -->
+        <div id="js-video-present-H" class="js-video-present-container" style="display: none;">
+            <video id="js-video-present1" class="js-video-present" src="./files/JSPresent/H.mp4" type="video/mp4"
+                onclick="Renderer.Learn()" muted autoplay loop>
+                <script>
+                    addEventListener("load", e => {
+                        document.getElementById("js-video-present1").playbackRate = 0.5;
+                    })
+                </script>
+            </video>
+            <div class="js-video-present-controls">
+                <button class="js-video-present-button retroceder" onclick="retrocederVideoH()"></button>
+                <button id="play-pause" class="js-video-present-button play-pause"
+                    onclick="pausarOuRetomarVideoH(this)"></button>
+                <button class="js-video-present-button avancar" onclick="avancarVideoH()"></button>
+            </div>
+            <script>
+                function retrocederVideoH() {
+                    document.getElementById("js-video-present1").currentTime -= 5;
+                }
+                function pausarOuRetomarVideoH(el) {
+                    if (document.getElementById("js-video-present1").paused) {
+                        document.getElementById("js-video-present1").play();
+                        el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
+
+                    } else {
+                        document.getElementById("js-video-present1").pause();
+                        el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
+                    }
+                }
+                function avancarVideoH() {
+                    document.getElementById("js-video-present1").currentTime += 5;
+                }
+            </script>
+        </div>
+        <div id="js-video-present-V" class="js-video-present-container" style="display: none;">
+            <video id="js-video-present2" class="js-video-present" src="./files/JSPresent/V.mp4" type="video/mp4"
+                onclick="Renderer.Learn()" muted autoplay loop>
+            </video>
+            <div class="js-video-present-controls">
+                <button class="js-video-present-button retroceder" onclick="retrocederVideoV()"></button>
+                <button id="play-pause" class="js-video-present-button play-pause"
+                    onclick="pausarOuRetomarVideoV(this)"></button>
+                <button class="js-video-present-button avancar" onclick="avancarVideoV()"></button>
+            </div>
+            <script>
+                function retrocederVideoV() {
+                    document.getElementById("js-video-present2").currentTime -= 5;
+                }
+                function pausarOuRetomarVideoV(el) {
+                    if (document.getElementById("js-video-present2").paused) {
+                        document.getElementById("js-video-present2").play();
+                        el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
+
+                    } else {
+                        document.getElementById("js-video-present2").pause();
+                        el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
+                    }
+                }
+                function avancarVideoV() {
+                    document.getElementById("js-video-present2").currentTime += 5;
+                }
+            </script>
+        </div>
+        <div id="js-video-present-H" class="js-video-present-container">
+            <img src="./files/1.jpg" class="js-video-present">
+        </div>
+        <div id="js-video-present-V" class="js-video-present-container">
+            <img src="./files/2.jpg" class="js-video-present">
+        </div>
+        <!-- #endregion -->
+
     </div>
+    <div class="right-bar"></div>
     <!-- #endregion -->
 
-    <!-- #region POSTs -->
-    <div class="js-post banner">
-      <h1 style="display: none;">Formação</h1>
-      <h2 style="width: 100%;">Escolar</h2>
-      <li>Ensino médio completo</li>
-      <li>Inglês Básico</li>
-      <li>Espanhol Básico</li>
-      <h2 style="width: 100%;">Técnica</h2>
-      <li>Instrutor de cursos profissionalizantes</li>
-      <li>Desenho Técnico (CAD)</li>
-      <li>Design Gráfico</li>
-      <li>Programação e Desenvolvimento Web</li>
-    </div>
-
-    <div class="js-post banner">
-      <h1 style="display: none;">Carreira</h1>
-      <p>
-        Aos 18 anos, enquanto cursava o terceiro ano do ensino médio, e após concluir um curso de Design Gráfico
-        na NIT Cursos, ingressei, por indicação do professor do curso, numa vaga de Designer Gráfico estagiário na
-        Dignart
-        Publicidade Visual, trabalhando também como adesivador e na plotagem de projetos de
-        AutoCAD, enquanto fazia o curso de AutoCAD, também na NIT Cursos, para me aperfeiçoar no trabalho de plotagem.
-      </p>
-      <p>
-        Dois anos depois, decidido a trabalhar como projetista, encontrei uma vaga, também de estagiário, dessa vez
-        cadista, no escritório Zamuner Arquitetura, a passagem foi curta, pois ao final daquele mesmo ano, o arquiteto
-        fechou o
-        escritório para retornar para o Paraná, mas antes, me indicou para trabalhar na cidade vizinha no escritório
-        de
-        decoração que lhe auxiliava no projetos. Mudei para Barreiras, e fui trabalhar no escritório da Light
-        and Design Interiores, como projetista, apesar da difícil adaptação à cidade por causa do transporte,
-        trabalhei na
-        Light and Design por um ano, quando retornei para Luis Eduardo Magalhães, e fui chamado pela NIT Cursos
-        para ministrar o Curso de AutoCAD, o qual fui co-autor desenvolvendo também o material didático e a
-        metodologia de
-        ensino. Devido ao trabalho em horário comercial como cadista na Radoll Arquitetura, ministrei as aulas de
-        AutoCAD
-        no período noturno e aos sábados. Trabalhei ainda em outros escritórios de arquitetura e ministrei aulas de
-        AutoCAD também na Microlins.
-      </p>
-      <p>
-        Atualmente trabalho exclusivamente como freelancer e ministro aulas particulares de cursos
-        profissionalizantes.
-      </p>
-    </div>
-
-    <div class="js-post banner">
-      <h1 style="display: none;">Seja muito bem-vindo!</h1>
-      <p>
-        Seja para contratar um projeto, adquirir uma apostila do seu setor, ou aprender, este é seu lugar.
-      </p>
-    </div>
-
-    <div class="banner js-post">
-      <h3>Projetista, Instrutor de Informática</h3>
-      <p>
-        Instrutor de cursos técnicos e profissionalizantes no setor de informática, em especial
-        Desenho Técnico e Modelagem 3D (AutoCAD e 3Ds Max), Informática Básica e Avançada, Design Gráfico,
-        Desenvolvimento Web e Programação de Computadores.
-        Atuante como professor particular e em escolas de cursos profissionalizantes desde o ano de 2011.
-        Projetista Cadista no setor de Arquitetura e Interiores com ênfase em AutoCAD,
-        projetos executivos e detalhamentos 2D, atuante no setor desde o ano de 2008.
-      </p>
-    </div>
-
-    <div class="banner js-post">
-      <div class="circle-image"></div>
-      <h1>Jorge Souza Oliveira dos Santos</h1>
+    <!-- #region TOP-BUTTON -->
+    <div id="top-button" title="Voltar para o topo"
+        onclick="window.scrollTo( { top: 0, left: 0, behavior: 'smooth' } )">
+        <svg fill="#ffbb00" width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80"
+            xmlns="http://www.w3.org/2000/svg" stroke="#ffbb00" stroke-width="0.00024000000000000003"
+            transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2zm7-14 5 5h-4v5h-2v-5H7l5-5z">
+                </path>
+            </g>
+        </svg>
     </div>
     <!-- #endregion -->
-
-    <!-- #region JS-PRESENTATION -->
-    <div id="js-video-present-H" class="js-video-present-container">
-      <video id="js-video-present1" class="js-video-present" src="./files/JSPresent/H.mp4" type="video/mp4"
-        onclick="Renderer.Learn()" muted autoplay loop>
-        <script>
-          addEventListener("load", e => {
-            document.getElementById("js-video-present1").playbackRate = 0.5;
-          })
-        </script>
-      </video>
-      <div class="js-video-present-controls">
-        <button class="js-video-present-button retroceder" onclick="retrocederVideoH()"></button>
-        <button id="play-pause" class="js-video-present-button play-pause"
-          onclick="pausarOuRetomarVideoH(this)"></button>
-        <button class="js-video-present-button avancar" onclick="avancarVideoH()"></button>
-      </div>
-      <script>
-        function retrocederVideoH() {
-          document.getElementById("js-video-present1").currentTime -= 5;
-        }
-        function pausarOuRetomarVideoH(el) {
-          if (document.getElementById("js-video-present1").paused) {
-            document.getElementById("js-video-present1").play();
-            el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
-
-          } else {
-            document.getElementById("js-video-present1").pause();
-            el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
-          }
-        }
-        function avancarVideoH() {
-          document.getElementById("js-video-present1").currentTime += 5;
-        }
-      </script>
-    </div>
-    <div id="js-video-present-V" class="js-video-present-container">
-      <video id="js-video-present2" class="js-video-present" src="./files/JSPresent/V.mp4" type="video/mp4"
-        onclick="Renderer.Learn()" muted autoplay loop>
-      </video>
-      <div class="js-video-present-controls">
-        <button class="js-video-present-button retroceder" onclick="retrocederVideoV()"></button>
-        <button id="play-pause" class="js-video-present-button play-pause"
-          onclick="pausarOuRetomarVideoV(this)"></button>
-        <button class="js-video-present-button avancar" onclick="avancarVideoV()"></button>
-      </div>
-      <script>
-        function retrocederVideoV() {
-          document.getElementById("js-video-present2").currentTime -= 5;
-        }
-        function pausarOuRetomarVideoV(el) {
-          if (document.getElementById("js-video-present2").paused) {
-            document.getElementById("js-video-present2").play();
-            el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
-
-          } else {
-            document.getElementById("js-video-present2").pause();
-            el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
-          }
-        }
-        function avancarVideoV() {
-          document.getElementById("js-video-present2").currentTime += 5;
-        }
-      </script>
-    </div>
-    <!-- #endregion -->
-
-  </div>
-  <div class="right-bar"></div>
-  <!-- #endregion -->
-
-  <!-- #region TOP-BUTTON -->
-  <div id="top-button" title="Voltar para o topo" onclick="window.scrollTo( { top: 0, left: 0, behavior: 'smooth' } )">
-    <svg fill="#ffbb00" width="64px" height="64px" viewBox="-2.4 -2.4 28.80 28.80" xmlns="http://www.w3.org/2000/svg"
-      stroke="#ffbb00" stroke-width="0.00024000000000000003" transform="matrix(1, 0, 0, 1, 0, 0)rotate(0)">
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-      <g id="SVGRepo_iconCarrier">
-        <path d="M5 21h14a2 2 0 0 0 2-2V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2zm7-14 5 5h-4v5h-2v-5H7l5-5z">
-        </path>
-      </g>
-    </svg>
-  </div>
-  <!-- #endregion -->
 
 </body>
 

@@ -18,6 +18,95 @@ const Renderer = {
         });
         //
     },
+    Portfolio: () => {
+        Renderer.ClearPage().then(() => {
+            let post, a;
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.style.position = "relative";
+            post.id = "port-video";
+            post.style.display = "flex";
+            post.style.overflow = "hidden";
+            post.style.maxHeight = "95vh";
+
+            const video = document.createElement("video");
+            video.id = "js-video-present1";
+            video.src = "https://cdn-kaatan.azurewebsites.net/jorge/jorge-portfolio.mp4";
+            video.style.width = "100%";
+            video.style.height = "auto";
+            const controls = document.createElement("div");
+            controls.classList.add("js-video-present-controls");
+
+            function retrocederVideoH() {
+                document.getElementById("js-video-present1").currentTime -= 5;
+            }
+            function pausarOuRetomarVideoH(el) {
+                if (document.getElementById("js-video-present1").paused) {
+                    document.getElementById("js-video-present1").play();
+                    el.style.backgroundImage = "url('./files/JSPresent/pause.svg')";
+                    document.getElementById("port-video").requestFullscreen();
+                } else {
+                    document.getElementById("js-video-present1").pause();
+                    el.style.backgroundImage = "url('./files/JSPresent/play.svg')";
+                }
+            }
+            function avancarVideoH() {
+                document.getElementById("js-video-present1").currentTime += 5;
+            }
+            const btn1 = document.createElement("button");
+            btn1.onclick = retrocederVideoH;
+            btn1.classList.add("js-video-present-button");
+            btn1.classList.add("retroceder");
+            controls.appendChild(btn1);
+
+            const btn2 = document.createElement("button");
+            btn2.onclick = () => pausarOuRetomarVideoH(btn2);
+            btn2.id = "play-pause";
+            btn2.classList.add("js-video-present-button");
+            btn2.classList.add("play-pause");
+            controls.appendChild(btn2);
+            
+            const btn3 = document.createElement("button");
+            btn3.onclick = avancarVideoH;
+            btn3.classList.add("js-video-present-button");
+            btn3.classList.add("avancar");
+            controls.appendChild(btn3);
+            
+            post.appendChild(video);
+            post.appendChild(controls);
+
+            document.getElementById("js-page").appendChild(post);
+
+            //
+
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.style.marginTop = "50px";
+            a = document.createElement("a");
+            a.setAttribute("href", "./files/PORTCAD 2024_2.pdf");
+            a.setAttribute("target", "_blank");
+            a.classList = "js-button-full";
+            a.innerHTML = "Versão em PDF";
+            post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+
+            //
+            Renderer.SwitchMenu(document.getElementById("menu-port"));
+            { img = null; h1 = null; p = null; a = null; post = null; btns = null; }
+            //
+            // NAVEGAR ATÉ O ELEMENTO SELECIONADO
+            //
+            if (window.location.hash == "") {
+                window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+            } else {
+                let gfd9g0 = document.createElement("a");
+                gfd9g0.href = window.location.hash;
+                gfd9g0.click();
+                gfd9g0 = null;
+            }
+        });
+    },
     Blog: () => {
         Renderer.ClearPage().then(() => {
             let post, btns, a;
@@ -396,92 +485,6 @@ const Renderer = {
                 gfd9g0.click();
                 gfd9g0 = null;
             }
-        });
-    },
-    Contacts: () => {
-        Renderer.ClearPage().then(() => {
-            let icons, post, img, h1, p, a, iconsStyle;
-
-            icons = document.createElement("div");
-            icons.classList = "js-post banner";
-            icons.id = "icons";
-            //
-            iconsStyle = document.createElement("style");
-            iconsStyle.innerHTML = `
-                .js-post.banner#icons {
-                    display: flex;
-                    flex-direction: row;
-                    gap: 15px;
-                    text-align: center;
-                    justify-content: center;
-                }
-
-                .banner img.social {
-                    height: 100px;
-                    width: 100px;
-                    padding: 10px;
-                    opacity: 0.5;
-                    border: none;
-                    transition: all 250ms;
-                    cursor: pointer;
-                    box-sizing: border-box;
-                }
-
-                .banner img.social:hover {
-                    opacity: 1;
-                    padding: 0;
-                }
-            `;
-            icons.appendChild(iconsStyle);
-            //
-            let img1 = document.createElement("img");
-            img1.src = "files/gmail.png";
-            img1.classList = "social";
-            img1.onclick = () => window.open("mailto:jorge.sos777@outlook.com");
-            icons.appendChild(img1);
-            //
-            let img2 = document.createElement("img");
-            img2.src = "files/whatsapp.png";
-            img2.classList = "social";
-            img2.onclick = () => window.open("https://wa.me/5577991161892");
-            icons.appendChild(img2);
-            //
-            let img3 = document.createElement("img");
-            img3.src = "files/amazon.png";
-            img3.classList = "social";
-            img3.onclick = () => window.open("https://www.amazon.com.br/stores/author/B0CM13195T");
-            icons.appendChild(img3);
-            //
-            let img4 = document.createElement("img");
-            img4.src = "files/Workana.png";
-            img4.classList = "social";
-            img4.onclick = () => window.open("https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5");
-            icons.appendChild(img4);
-            document.getElementById("js-page").appendChild(icons);
-            //
-            img1 = null; img2 = null; img3 = null; img4 = null;
-
-            //
-            post = document.createElement("div");
-            post.classList = "js-post banner";
-            post.id = "post";
-            post.style.marginTop = "50px";
-            h1 = document.createElement("h1");
-            h1.innerHTML = "Contato";
-            post.appendChild(h1);
-            //
-            p = document.createElement("p");
-            p.innerHTML = "Entre em contato por um meio de sua preferência ou conheça minhas redes digitais.";
-            post.appendChild(p);
-            //
-            document.getElementById("js-page").appendChild(post);
-            //
-            // AJUSTES FINAIS
-            //
-            Renderer.SwitchMenu(document.getElementById("menu-contacts"));
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            { icons = null; post = null; iconsStyle = null; img = null; h1 = null; p = null; a = null; }
-            window.location.hash = "";
         });
     },
     SwitchMenu: (el) => {

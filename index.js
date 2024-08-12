@@ -485,23 +485,3 @@ const LOOP = {
     }
 }
 
-window.addEventListener("load", () => {
-    let xtimer, ytimer;
-    let xfunc, yfunc;
-    xfunc = () => window.location = "/blog.html";
-    yfunc = () => window.open("https://drive.google.com/drive/folders/1Itm1PXsDd4lXBaHxIHkAkM_rPpB8aZdB?usp=sharing");
-
-    let x = document.querySelector(".x");
-    let y = document.querySelector(".y");
-
-    x.onmousedown = e => {
-        xtimer = setTimeout(xfunc, 9999)
-    };
-    x.onmouseup = e => { clearTimeout(xtimer) };
-
-    y.onmousedown = e => {
-        ytimer = setTimeout(yfunc, 9999)
-    };
-    y.onmouseup = e => { clearTimeout(ytimer) };
-});
-

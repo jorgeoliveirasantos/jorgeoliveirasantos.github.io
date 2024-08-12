@@ -23,6 +23,7 @@
 <body>
     <!-- #region MENU -->
     <div id="menu-container" class="landscape-menu-container landscape-menu-transparent">
+        <span class="x"></span>
         <span></span>
         <div id="menu-home" class="menu-item active" onclick="Renderer.Home(this)">
             <img src="./files/home.svg" alt="">
@@ -45,6 +46,21 @@
             <span>Kaatan</span>
         </div>
         <span></span>
+        <span class="y"></span>
+        <style>
+            .x,
+            .y {
+                width: 30px;
+                height: 50px;
+                padding: 3px;
+                cursor: pointer;
+            }
+
+            .x:hover,
+            .y:hover {
+                background-color: #ffbb0022;
+            }
+        </style>
     </div>
     <!-- #endregion -->
 
@@ -127,7 +143,7 @@
             <div class="credit-container">
                 <hr class="js-divider">
                 <img src="./files/logobranca.svg" alt="">
-                <span class="footer-title" id="credit" style="text-align: center;"></span>
+                <span id="credit" style="text-align: center;"></span>
                 <script>
                     document.getElementById("credit").innerHTML = `Copyright © ${new Date().getFullYear()} | Jorge Souza Oliveira dos Santos`;
                 </script>
@@ -165,8 +181,10 @@
             </style>
             <img src="files/gmail.png" class="social" onclick="window.open('mailto:jorge.sos777@outlook.com')">
             <img src="files/whatsapp.png" class="social" onclick="window.open('https://wa.me/5577999030420')">
-            <img src="files/amazon.png" class="social" onclick="window.open('https://amazon.com.br/kindle-dbs/entity/author?asin=B0CM13195T')">
-            <img src="files/Workana.png" class="social" onclick="window.open('https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5')">
+            <img src="files/amazon.png" class="social"
+                onclick="window.open('https://amazon.com.br/kindle-dbs/entity/author?asin=B0CM13195T')">
+            <img src="files/Workana.png" class="social"
+                onclick="window.open('https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5')">
         </div>
 
         <div class="js-post banner" id="post">

@@ -64,13 +64,13 @@ const Renderer = {
             btn2.classList.add("js-video-present-button");
             btn2.classList.add("play-pause");
             controls.appendChild(btn2);
-            
+
             const btn3 = document.createElement("button");
             btn3.onclick = avancarVideoH;
             btn3.classList.add("js-video-present-button");
             btn3.classList.add("avancar");
             controls.appendChild(btn3);
-            
+
             post.appendChild(video);
             post.appendChild(controls);
 
@@ -106,140 +106,70 @@ const Renderer = {
         });
     },
     Blog: () => {
-        Renderer.ClearPage().then(() => {
-            let post, btns, a;
+        Renderer.ClearPage().then(async () => {
+            let index = 0;
+            //
+            const posts = await fetch("blog/blog.json").then(x => x.json());
 
-            btns = document.createElement("div");
-            btns.classList = "js-post";
-            btns.id = "btns";
-            let btnsStyle = document.createElement("style");
-            btnsStyle.innerHTML = `
-                .js-post#btns {
-                    display: grid;
-                    grid-template-columns: auto 1fr auto;
+            posts.forEach(async post => {
+                let title, content, obs, link;
+                title = post.title;
+                content = await fetch(`blog/${post.content}`).then(x => x.text());
+                obs = post.obs;
+                link = post.link;
+
+                let postElement = document.createElement("div");
+                postElement.classList = "js-post banner";
+                if (post.content == "1.txt") {
+                    postElement.style.marginTop = "50px";
+                } else {
+                    ++index;
                 }
 
-                .js-button.disabled {
-                    opacity: 0.3;
-                    cursor: inherit;
+                const h2 = document.createElement("h1");
+                h2.innerHTML = title;
+                postElement.appendChild(h2);
+
+                content.split("\n").forEach(par => {
+                    const p = document.createElement("p");
+                    p.innerHTML = par;
+                    p.style.width = "100%";
+                    postElement.appendChild(p);
+                });
+
+                if (obs && obs != "") {
+                    const p = document.createElement("p");
+                    p.innerHTML = obs;
+                    p.style.fontStyle = "italic";
+                    postElement.appendChild(p);
                 }
 
-                .js-button.disabled:hover {
-                    color: inherit;
-                    background-color: inherit;
+                if (link && link != "") {
+                    const a = document.createElement("a");
+                    a.classList.add("js-button-full");
+                    a.innerHTML = link[0];
+                    a.href = link[1];
+                    a.target = "_blank";
+                    postElement.appendChild(a);
                 }
-            `;
-            btns.appendChild(btnsStyle);
 
-            a = document.createElement("a");
-            a.removeAttribute("href");
-            a.classList = "js-button  disabled";
-            a.id = "blog-back";
-            a.innerHTML = "Anterior";
-            //a.addEventListener("click", back);
-            btns.appendChild(a);
-            btns.appendChild(document.createElement("span"));
-
-            a = document.createElement("a");
-            a.removeAttribute("href");
-            a.classList = "js-button";
-            a.id = "blog-next";
-            a.innerHTML = "Próximo";
-            a.addEventListener("click", next);
-            btns.appendChild(a);
-            document.getElementById("js-page").appendChild(btns);
-
-            // 1. Busca o arquivo blog.json:
-            fetch("blog.json").then(response => {
-                if (!response.ok) {
-                    throw new Error(`Erro ao buscar o arquivo: ${response.status} ${response.statusText}`);
-                }
-                return response.json();
-            }).then(posts => {
-                Blog = posts;
-                // 2. Adiciona o primeiro post à página:
-                newPost(Blog[0]["title"], Blog[0]["description"], Blog[0]["video"], Blog[0]["obs"], Blog[0]["link"]);
-            }).catch(error => {
-                console.error('Erro ao buscar o arquivo:', error);
+                document.getElementById("js-page").appendChild(postElement);
             });
 
+
+            Renderer.SwitchMenu(document.getElementById("menu-home"));
             //
-            // Código dos botões para avançar, voltar e verificar se é o último ou primeiro post
+            // NAVEGAR ATÉ O ELEMENTO SELECIONADO
             //
-
-            // Função para adicionar posts à página:
-            function newPost(title, description, video, obs, link) {
-                post = document.createElement("div");
-                post.classList = "js-post banner";
-                post.id = "blog-post";
-                post.style.marginTop = "50px";
-                post.innerHTML = `
-                    <h1>${title}</h1>
-                    <p>${description}</p>
-                    <div class="js-video">
-                        <iframe src="${video}" title="${title}" frameborder="0" allow="accelerometer; encrypted-media; picture-in-picture;" allowfullscreen loading="lazy"></iframe>
-                    </div>
-                    <p>${obs}</p>
-                    <a class="js-button-full" target="_blank" href="${link[1]}">${link[0]}</a>
-                `
-                document.getElementById("js-page").appendChild(post);
-            };
-            function next() {
-                // Se é o primeiro post:
-                // Habilitar o botão de voltar (propriedade e evento)
-                if (CurrentPost == 0) {
-                    document.getElementById("blog-back").classList.remove("disabled");
-                    document.getElementById("blog-back").addEventListener("click", back);
-                }
-                // Se é o penúltimo post:
-                // Desabilitar o botão de avançar (propriedade e evento)
-                if (CurrentPost == Blog.length - 2) {
-                    document.getElementById("blog-next").classList.add("disabled");
-                    document.getElementById("blog-next").removeEventListener("click", next);
-                }
-                // Avançar o post
-                ++CurrentPost;
-                document.getElementById("js-page").removeChild(document.getElementById("blog-post"));
-                newPost(
-                    Blog[CurrentPost]["title"],
-                    Blog[CurrentPost]["description"],
-                    Blog[CurrentPost]["video"],
-                    Blog[CurrentPost]["obs"],
-                    Blog[CurrentPost]["link"]
-                );
-            }
-            function back() {
-                // Se é o segundo post:
-                // Desabilitar o botão de voltar (propriedade e evento)
-                if (CurrentPost == 1) {
-                    document.getElementById("blog-back").classList.add("disabled");
-                    document.getElementById("blog-back").removeEventListener("click", back);
-                }
-
-                // Se é o último post:
-                // Habilitar o botão de avançar (propriedade e evento)
-                if (CurrentPost == Blog.length - 1) {
-                    document.getElementById("blog-next").classList.remove("disabled");
-                    document.getElementById("blog-next").addEventListener("click", next);
-                }
-
-                --CurrentPost;
-                document.getElementById("js-page").removeChild(document.getElementById("blog-post"));
-                newPost(
-                    Blog[CurrentPost]["title"],
-                    Blog[CurrentPost]["description"],
-                    Blog[CurrentPost]["video"],
-                    Blog[CurrentPost]["obs"],
-                    Blog[CurrentPost]["link"]
-                );
+            if (window.location.hash == "") {
+                window.scrollTo({ left: 0, top: 0, behavior: "smooth" });
+            } else {
+                let gfd9g0 = document.createElement("a");
+                gfd9g0.href = window.location.hash;
+                gfd9g0.click();
+                gfd9g0 = null;
             }
             //
-            // AJUSTES FINAIS
-            //
-            Renderer.SwitchMenu(document.getElementById("menu-blog"));
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            { a = null; post = null; btns = null; }
-            window.location.hash = "";
         });
     },
     Learn: () => {
@@ -508,7 +438,7 @@ const LOOP = {
             // Navegação pela URL
             if (!urlId) Renderer.Home();
             else if (urlId.toLowerCase() == "aprendizado") Renderer.Learn();
-            //else if (urlId.toLowerCase() == "blog") Renderer.Blog();
+            else if (urlId.toLowerCase() == "blog") Renderer.Blog();
             else if (urlId.toLowerCase() == "contato") Renderer.Contacts();
             else if (urlId.toLowerCase() == "cursos") Renderer.Learn();
             else if (urlId.toLowerCase() == "downloads") Renderer.Learn();
@@ -554,3 +484,24 @@ const LOOP = {
         }
     }
 }
+
+window.addEventListener("load", () => {
+    let xtimer, ytimer;
+    let xfunc, yfunc;
+    xfunc = () => window.location = "/blog.html";
+    yfunc = () => window.open("https://drive.google.com/drive/folders/1Itm1PXsDd4lXBaHxIHkAkM_rPpB8aZdB?usp=sharing");
+
+    let x = document.querySelector(".x");
+    let y = document.querySelector(".y");
+
+    x.onmousedown = e => {
+        xtimer = setTimeout(xfunc, 9999)
+    };
+    x.onmouseup = e => { clearTimeout(xtimer) };
+
+    y.onmousedown = e => {
+        ytimer = setTimeout(yfunc, 9999)
+    };
+    y.onmouseup = e => { clearTimeout(ytimer) };
+});
+

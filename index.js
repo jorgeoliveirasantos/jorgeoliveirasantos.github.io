@@ -110,19 +110,20 @@ const Renderer = {
             const posts = await fetch("blog/blog.json").then(x => x.json());
 
             async function renderPost(postFile) {
+                let title, content, obs, link;
+                let post = posts.find(x => x.content == postFile);
+                content = await fetch(`blog/${post.content}`).then(x => x.text());
+                if (post.draft) return;
+                title = post.title;
+                obs = post.obs;
+                link = post.link;
+
                 await Renderer.ClearPage();
                 const back = document.createElement("a");
                 back.classList.add("js-link");
                 back.href = "#";
                 back.innerHTML = "Voltar para o índice";
                 back.onclick = renderIndex;
-
-                let post = posts.find(x => x.content == postFile);
-                let title, content, obs, link;
-                title = post.title;
-                content = await fetch(`blog/${post.content}`).then(x => x.text());
-                obs = post.obs;
-                link = post.link;
 
                 let postElement = document.createElement("div");
                 postElement.appendChild(back);
@@ -164,22 +165,24 @@ const Renderer = {
                 let postElement = document.createElement("div");
                 postElement.classList = "js-post banner";
                 postElement.style.marginTop = "50px";
-                
+
                 let h1 = document.createElement("h1");
                 h1.innerHTML = "Postagens";
                 postElement.appendChild(h1);
 
                 let index = 1;
                 posts.forEach(async post => {
-                    let a = document.createElement("a");
-                    a.href = "#";
-                    a.classList.add("js-link");
-                    a.innerHTML = "" + index + ". " + post.title;
-                    a.style.textAlign = "left";
-                    a.style.width = "100%";
-                    a.onclick = e => renderPost(post.content);
-                    postElement.appendChild(a);
-                    index++;
+                    if (!post.draft) {
+                        let a = document.createElement("a");
+                        a.href = "#";
+                        a.classList.add("js-link");
+                        a.innerHTML = "" + index + ". " + post.title;
+                        a.style.textAlign = "left";
+                        a.style.width = "100%";
+                        a.onclick = e => renderPost(post.content);
+                        postElement.appendChild(a);
+                        index++;
+                    }
                 });
                 document.getElementById("js-page").appendChild(postElement);
             }

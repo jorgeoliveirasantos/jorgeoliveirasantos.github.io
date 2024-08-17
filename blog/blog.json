@@ -1,43 +1,70 @@
 [
     {
+        "title": "Governo",
+        "content": "10.md",
+        "draft": true,
+        "obs": "",
+        "link": ""
+    },
+    {
+        "title": "Religião",
+        "content": "9.md",
+        "draft": true,
+        "obs": "",
+        "link": ""
+    },
+    {
+        "title": "Temperança",
+        "content": "8.md",
+        "draft": false,
+        "obs": "",
+        "link": ""
+    },
+    {
         "title": "Moral",
-        "content": "7.txt",
+        "content": "7.md",
+        "draft": false,
         "obs": "",
         "link": ""
     },
     {
         "title": "Ideologia e Política",
-        "content": "6.txt",
+        "content": "6.md",
+        "draft": false,
         "obs": "",
         "link": ""
     },
     {
         "title": "Honra e Fé",
-        "content": "5.txt",
+        "content": "5.md",
+        "draft": false,
         "obs": "",
         "link": ""
     },
     {
         "title": "Oração",
-        "content": "4.txt",
+        "content": "4.md",
+        "draft": false,
         "obs": "",
         "link": ""
     },
     {
         "title": "Ser humano",
-        "content": "3.txt",
+        "content": "3.md",
+        "draft": false,
         "obs": "",
         "link": ""
     },
     {
         "title": "Fé",
-        "content": "2.txt",
+        "content": "2.md",
+        "draft": false,
         "obs": "",
         "link": ""
     },
     {
         "title": "O Propósito da Vida",
-        "content": "1.txt",
+        "content": "1.md",
         "obs": "",
         "link": ""
     }

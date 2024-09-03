@@ -30,7 +30,7 @@ const Renderer = {
 
             const video = document.createElement("video");
             video.id = "js-video-present1";
-            video.src = "https://cdn-kaatan.azurewebsites.net/jorge/jorge-portfolio.mp4";
+            video.src = "https://kaatan.azurewebsites.net/jorge/jorge-portfolio.mp4";
             video.style.width = "100%";
             video.style.height = "auto";
             const controls = document.createElement("div");

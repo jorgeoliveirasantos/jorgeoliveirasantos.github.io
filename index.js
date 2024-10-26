@@ -4,7 +4,7 @@ let MainPage;
 let Blog = [{ "title": null, "description": null, "video": null, "obs": null, "link": [null, null] }];
 let CurrentPost = 0;
 
-window.onload = () => LOOP.Start().then(LOOP.Update);
+window.onload = LOOP.Start;
 
 const Renderer = {
     Home: () => {
@@ -446,6 +446,17 @@ const Renderer = {
             }
         });
     },
+    Game: () => {
+        Renderer.ClearPage().then(() => {
+            document.getElementById("js-page").innerHTML = MainPage;
+            Renderer.SwitchMenu(document.getElementById("menu-home"));
+            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            window.location.hash = "";
+            //
+            //
+        });
+        //
+    },
     SwitchMenu: (el) => {
         for (const menu of document.querySelectorAll(".menu-item")) {
             menu.classList.remove("active");
@@ -501,7 +512,7 @@ const LOOP = {
             }
             window.oncontextmenu = e => { e.preventDefault() }
             //setInterval(LOOP.Update, 999);
-            resolve(setInterval(LOOP.Update, 999));
+            resolve(setInterval(LOOP.Update, 333));
         });
     },
     Update: () => {

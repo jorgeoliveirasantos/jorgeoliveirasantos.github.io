@@ -445,17 +445,6 @@ const Renderer = {
             }
         });
     },
-    Game: () => {
-        Renderer.ClearPage().then(() => {
-            document.getElementById("js-page").innerHTML = MainPage;
-            Renderer.SwitchMenu(document.getElementById("menu-home"));
-            window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-            window.location.hash = "";
-            //
-            //
-        });
-        //
-    },
     SwitchMenu: (el) => {
         for (const menu of document.querySelectorAll(".menu-item")) {
             menu.classList.remove("active");

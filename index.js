@@ -4,7 +4,6 @@ let MainPage;
 let Blog = [{ "title": null, "description": null, "video": null, "obs": null, "link": [null, null] }];
 let CurrentPost = 0;
 
-window.onload = LOOP.Start;
 
 const Renderer = {
     Home: () => {
@@ -527,3 +526,4 @@ const LOOP = {
     }
 }
 
+window.onload = LOOP.Start;

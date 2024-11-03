@@ -4,7 +4,6 @@ let MainPage;
 let Blog = [{ "title": null, "description": null, "video": null, "obs": null, "link": [null, null] }];
 let CurrentPost = 0;
 
-window.onload = () => LOOP.Start().then(LOOP.Update);
 
 const Renderer = {
     Home: () => {
@@ -80,7 +79,6 @@ const Renderer = {
 
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.style.marginTop = "50px";
             a = document.createElement("a");
             a.setAttribute("href", "./files/PORTCAD 2024_2.pdf");
             a.setAttribute("target", "_blank");
@@ -203,9 +201,21 @@ const Renderer = {
             renderIndex();
         });
     },
+    LearnSection: 1,
     Learn: () => {
         Renderer.ClearPage().then(() => {
             let post, btns, img, h1, p, a;
+            //
+            if (Renderer.LearnSection == 2) {
+                const commentSecion = document.createElement("div");
+                commentSecion.id = "disqus_thread";
+                document.body.appendChild(commentSecion);
+                var d = document, s = d.createElement('script');
+                s.src = 'https://jorgeoliveirasantos.disqus.com/embed.js';
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+                return;
+            }
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
@@ -337,7 +347,6 @@ const Renderer = {
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.style.marginTop = "50px";
             post.id = "info";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso de Informática Básica e Avançada";
@@ -369,7 +378,6 @@ const Renderer = {
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.style.marginTop = "50px";
             post.id = "3d";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso Prático de Modelagem 3D";
@@ -397,7 +405,6 @@ const Renderer = {
             //
             post = document.createElement("div");
             post.classList = "js-post banner";
-            post.style.marginTop = "50px";
             post.id = "cad";
             h1 = document.createElement("h1");
             h1.innerHTML = "Curso Prático de Desenho Técnico em AutoCAD";
@@ -427,6 +434,42 @@ const Renderer = {
             a.classList = "js-button-full";
             a.innerHTML = "Downloads do Curso";
             post.appendChild(a);
+            document.getElementById("js-page").appendChild(post);
+            //
+            post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.style.marginTop = "50px";
+            post.style.flexDirection = "row";
+            post.style.justifyContent = "space-around";
+
+
+            let a1 = document.createElement("a");
+            a1.id = "tab1";
+            a1.classList.add("active");
+            a1.classList.add("js-button-full");
+            a1.style.width = "45%";
+            a1.textContent = "Cursos";
+            a1.onclick = e => {
+                a1.classList.add("active");
+                document.getElementById("tab2").classList.remove("active");
+                Renderer.LearnSection = 1;
+                Renderer.Learn();
+            }
+            post.append(a1);
+
+            let a2 = document.createElement("a");
+            a2.id = "tab2";
+            a2.classList.add("js-button-full");
+            a2.style.width = "45%";
+            a2.textContent = "Comunidade";
+            a2.onclick = e => {
+                a2.classList.add("active");
+                document.getElementById("tab1").classList.remove("active");
+                Renderer.LearnSection = 2;
+                Renderer.Learn();
+            }
+            post.append(a2);
+
             document.getElementById("js-page").appendChild(post);
             //
             // AJUSTES FINAIS
@@ -501,7 +544,7 @@ const LOOP = {
             }
             window.oncontextmenu = e => { e.preventDefault() }
             //setInterval(LOOP.Update, 999);
-            resolve(setInterval(LOOP.Update, 999));
+            resolve(setInterval(LOOP.Update, 333));
         });
     },
     Update: () => {
@@ -516,3 +559,4 @@ const LOOP = {
     }
 }
 
+window.onload = LOOP.Start;

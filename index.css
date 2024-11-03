@@ -309,6 +309,12 @@ body {
     background-color: var(--foreground-yellow);
 }
 
+
+.js-button.active, .js-button-full.active {
+    background-color: var(--foreground-yellow);
+    color: var(--background-dark);
+}
+
 .js-link {
     color: var(--foreground-yellow);
     text-decoration: none;

@@ -207,13 +207,22 @@ const Renderer = {
             let post, btns, img, h1, p, a;
             //
             if (Renderer.LearnSection == 2) {
+                post = document.createElement("div");
+                post.classList = "js-post banner";
                 const commentSecion = document.createElement("div");
                 commentSecion.id = "disqus_thread";
-                document.body.appendChild(commentSecion);
+                commentSecion.style.width = "100%";
+                post.appendChild(commentSecion);
+                document.getElementById("js-page").appendChild(post);
+
                 var d = document, s = d.createElement('script');
                 s.src = 'https://jorgeoliveirasantos.disqus.com/embed.js';
                 s.setAttribute('data-timestamp', +new Date());
                 (d.head || d.body).appendChild(s);
+
+                generateTabs();
+                document.getElementById("tab2").classList.add("active");
+                document.getElementById("tab1").classList.remove("active");
                 return;
             }
             //
@@ -436,41 +445,11 @@ const Renderer = {
             post.appendChild(a);
             document.getElementById("js-page").appendChild(post);
             //
-            post = document.createElement("div");
-            post.classList = "js-post banner";
-            post.style.marginTop = "50px";
-            post.style.flexDirection = "row";
-            post.style.justifyContent = "space-around";
 
+            generateTabs();
+            document.getElementById("tab1").classList.add("active");
+            document.getElementById("tab2").classList.remove("active");
 
-            let a1 = document.createElement("a");
-            a1.id = "tab1";
-            a1.classList.add("active");
-            a1.classList.add("js-button-full");
-            a1.style.width = "45%";
-            a1.textContent = "Cursos";
-            a1.onclick = e => {
-                a1.classList.add("active");
-                document.getElementById("tab2").classList.remove("active");
-                Renderer.LearnSection = 1;
-                Renderer.Learn();
-            }
-            post.append(a1);
-
-            let a2 = document.createElement("a");
-            a2.id = "tab2";
-            a2.classList.add("js-button-full");
-            a2.style.width = "45%";
-            a2.textContent = "Comunidade";
-            a2.onclick = e => {
-                a2.classList.add("active");
-                document.getElementById("tab1").classList.remove("active");
-                Renderer.LearnSection = 2;
-                Renderer.Learn();
-            }
-            post.append(a2);
-
-            document.getElementById("js-page").appendChild(post);
             //
             // AJUSTES FINAIS
             //
@@ -488,6 +467,39 @@ const Renderer = {
                 gfd9g0 = null;
             }
         });
+
+
+        function generateTabs() {
+            let post = document.createElement("div");
+            post.classList = "js-post banner";
+            post.style.marginTop = "50px";
+            post.style.flexDirection = "row";
+            post.style.justifyContent = "space-around";
+            let a1 = document.createElement("a");
+            a1.id = "tab1";
+            a1.classList.add("js-button-full");
+            a1.classList.add("active");
+            a1.style.width = "45%";
+            a1.textContent = "Cursos";
+            a1.onclick = e => {
+                Renderer.LearnSection = 1;
+                Renderer.Learn();
+            }
+            post.append(a1);
+
+            let a2 = document.createElement("a");
+            a2.id = "tab2";
+            a2.classList.add("js-button-full");
+            a2.style.width = "45%";
+            a2.textContent = "Comunidade";
+            a2.onclick = e => {
+                Renderer.LearnSection = 2;
+                Renderer.Learn();
+            }
+            post.append(a2);
+
+            document.getElementById("js-page").appendChild(post);
+        }
     },
     SwitchMenu: (el) => {
         for (const menu of document.querySelectorAll(".menu-item")) {

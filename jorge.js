@@ -184,6 +184,7 @@ const App = {
         const commentSecion = document.createElement("div");
         commentSecion.id = "disqus_thread";
         commentSecion.style.width = "100%";
+        card.appendChild(commentSecion);
         // 
         APPVIEW.innerHTML = "";
         appContainer.appendChild(card);

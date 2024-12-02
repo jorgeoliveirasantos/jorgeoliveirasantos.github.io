@@ -1,0 +1,9 @@
+<div class="js-post banner" id="cad">
+    <h1 style="display: block;">Curso Prático de Desenho Técnico em AutoCAD</h1>
+    <img src="./files/autocad.jpg" style="max-width: 300px;">
+    <p>
+        Explore o mundo do design técnico com o nosso curso prático de Desenho Técnico em AutoCAD. Seja você um aspirante a arquiteto, engenheiro, designer de interiores ou profissional de detalhamento técnico em setores diversos, este curso foi meticulosamente projetado para levar suas habilidades de desenho 2D para o próximo nível. Aprenda desde os conceitos básicos até técnicas avançadas do software líder da indústria para desenhos técnicos em 2D e 3D. Ganhe insights valiosos sobre os padrões e práticas profissionais nos setores de arquitetura, engenharia e design de interiores, essenciais para o sucesso em suas futuras empreitadas profissionais. Domine as técnicas de desenho 2D essenciais para expressar ideias complexas de forma clara e precisa, com foco em detalhamento técnico e precisão geométrica. Aprenda fazendo! Este curso é repleto de exercícios práticos e projetos desafiadores que o colocarão no comando, aprimorando suas habilidades de desenho e sua proficiência no AutoCAD.
+    </p>
+    <a href="https://www.amazon.com.br/dp/B0D8ZTWT9M" target="_blank" class="js-button-full">Obtenha a apostila</a>
+    <a href="https://drive.google.com/drive/folders/1UyYEQGea367Bni5pCCDliywBX_QsCh-C" target="_blank" class="js-button-full">Downloads do Curso</a>
+</div>

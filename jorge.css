@@ -1,0 +1,15 @@
+.social-icons {
+    gap: 10px;
+    padding: 10px;
+}
+
+.social-icons img {
+    width: 28px;
+    opacity: 0.4;
+    cursor: pointer;
+    transition: all 500ms;
+}
+
+.social-icons img:hover {
+    opacity: 1;
+}

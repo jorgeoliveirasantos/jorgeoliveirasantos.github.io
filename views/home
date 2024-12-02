@@ -1,0 +1,130 @@
+<app-container>
+    <card-big id="js-video-present-V" class="no-elastic">
+        <img src="files/2.jpg" class="js-video-present">
+    </card-big>
+    <card-big id="js-video-present-H" class="no-elastic">
+        <img src="files/1.jpg" class="js-video-present">
+    </card-big>
+
+    <card-big class="profile no-elastic">
+        <div id="profile-pic">
+        </div>
+        <text-paragraph>
+            Instrutor de cursos técnicos e profissionalizantes no setor de informática, em especial Desenho Técnico e Modelagem 3D (AutoCAD e 3Ds Max), Informática Básica e Avançada, Design Gráfico, Desenvolvimento Web e Programação de Computadores. Atuante como professor particular e em escolas de cursos profissionalizantes desde o ano de 2011. Projetista Cadista no setor de Arquitetura e Interiores com ênfase em AutoCAD, projetos executivos e detalhamentos 2D, atuante no setor desde o ano de 2008.
+        </text-paragraph>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-heading>
+            Seja muito bem-vindo!
+        </text-heading>
+        <text-paragraph>
+            Seja para contratar um projeto, adquirir uma apostila do seu setor, ou aprender, este é seu lugar.
+        </text-paragraph>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-heading>
+            Carreira
+        </text-heading>
+        <text-paragraph>
+            Aos 18 anos, enquanto cursava o terceiro ano do ensino médio, e após concluir um curso de Design Gráfico na NIT Cursos, ingressei, por indicação do professor do curso, numa vaga de Designer Gráfico estagiário na Dignart Publicidade Visual, trabalhando também como adesivador e na plotagem de projetos de AutoCAD, enquanto fazia o curso de AutoCAD, também na NIT Cursos, para me aperfeiçoar no trabalho de plotagem.
+        </text-paragraph>
+        <text-paragraph>
+            Dois anos depois, decidido a trabalhar como projetista, encontrei uma vaga, também de estagiário, dessa vez cadista, no escritório Zamuner Arquitetura, a passagem foi curta, pois ao final daquele mesmo ano, o arquiteto fechou o escritório para retornar para o Paraná, mas antes, me indicou para trabalhar na cidade vizinha no escritório de decoração que lhe auxiliava no projetos. Mudei para Barreiras, e fui trabalhar no escritório da Light and Design Interiores, como projetista, apesar da difícil adaptação à cidade por causa do transporte, trabalhei na Light and Design por um ano, quando retornei para Luis Eduardo Magalhães, e fui chamado pela NIT Cursos para ministrar o Curso de AutoCAD, o qual fui co-autor desenvolvendo também o material didático e a metodologia de ensino. Devido ao trabalho em horário comercial como cadista na Radoll Arquitetura, ministrei as aulas de AutoCAD no período noturno e aos sábados. Trabalhei ainda em outros escritórios de arquitetura e ministrei aulas de AutoCAD também na Microlins.
+        </text-paragraph>
+        <text-paragraph>
+            Atualmente trabalho exclusivamente como freelancer e ministro aulas particulares de cursos profissionalizantes.
+        </text-paragraph>
+    </card-big>
+
+    <card-big class="no-elastic">
+        <text-heading>
+            Formação
+        </text-heading>
+        <text-subheading style="justify-items: start;">
+            Escolar
+        </text-subheading>
+        <ul class="list">
+            <li>
+                Ensino médio completo.
+            </li>
+            <li>
+                Inglês básico.
+            </li>
+            <li>
+                Espanhol básico.
+            </li>
+        </ul>
+        <text-subheading style="justify-items: start;">
+            Técnica
+        </text-subheading>
+        <ul class="list">
+            <li>
+                Instrutor de cursos profissionalizantes.
+            </li>
+            <li>
+                Desenho técnico (CAD).
+            </li>
+            <li>
+                Design gráfico.
+            </li>
+            <li>
+                Programação e desenvolvimento web.
+            </li>
+        </ul>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <style>
+        .profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile #profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 100px;
+            border: var(--Dark) 5px solid;
+            background-image: url("files/z2.jpg");
+            background-size: cover;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list li {
+            list-style: "\261B";
+            padding: 5px;
+        }
+
+        .list li::marker {
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+
+        #js-video-present-V {
+            display: none;
+        }
+
+        #js-video-present-H {
+            display: flex;
+        }
+
+        .js-video-present {
+            width: 100%;
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</app-container>

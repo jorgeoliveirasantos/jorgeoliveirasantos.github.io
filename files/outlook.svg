@@ -1,0 +1,12 @@
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+<svg width="64px" height="64px" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" fill="none">
+<g id="SVGRepo_bgCarrier" stroke-width="0"/>
+<g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+<g id="SVGRepo_iconCarrier">
+<rect width="68" height="68" x="22" y="62" stroke="#ffffff" stroke-linejoin="round" stroke-width="12" rx="4"/>
+<path fill="#ffffff" fill-rule="evenodd" d="M50 130v30c0 5.523 4.477 10 10 10h106c5.523 0 10-4.477 10-10v-60a6 6 0 0 0-8.937-5.232L113 125.12l-23-12.912v13.762l20.063 11.263L147.056 158H62v-28H50Zm114 23.751L125.257 132 164 110.249v43.502Z" clip-rule="evenodd"/>
+<path stroke="#ffffff" stroke-linejoin="round" stroke-width="12" d="M158 104V30a4 4 0 0 0-4-4H72a4 4 0 0 0-4 4v32.5"/>
+<circle cx="56" cy="96" r="14" stroke="#ffffff" stroke-width="12"/>
+</g>
+</svg>

@@ -4,7 +4,6 @@ let MainPage;
 let Blog = [{ "title": null, "description": null, "video": null, "obs": null, "link": [null, null] }];
 let CurrentPost = 0;
 
-
 const Renderer = {
     Home: () => {
         Renderer.ClearPage().then(() => {
@@ -205,7 +204,6 @@ const Renderer = {
     Learn: () => {
         Renderer.ClearPage().then(() => {
             let post, btns, img, h1, p, a;
-            //
             if (Renderer.LearnSection == 2) {
                 post = document.createElement("div");
                 post.classList = "js-post banner";
@@ -529,7 +527,7 @@ const LOOP = {
             else if (urlId.toLowerCase() == "cursos") Renderer.Learn();
             else if (urlId.toLowerCase() == "downloads") Renderer.Learn();
             //else if (urlId.toLowerCase() == "game") Renderer.Game();
-            //else if (urlId.toLowerCase() == "ia") Renderer.IA();
+            else if (urlId.toLowerCase() == "ia") Renderer.IA();
 
             // Efeitos de rolagem:
             window.onscroll = e => {

@@ -1,6 +1,7 @@
 
 const App = {
     Cursos: [{ "id": "", "titulo": "", "descrição": "", "downloads": "", "ebook": "", "kindle": "", "a-venda": "", "capa": "", "preview": "" }],
+    Livros: [{ "id": "", "titulo": "", "descrição": "", "downloads": "", "ebook": "", "kindle": "", "a-venda": "", "capa": "", "preview": "" }],
     Main: async () => {
         // Add icons to the TOPBAR:
         const icons = [
@@ -15,6 +16,12 @@ const App = {
                 title: "Cursos",
                 display: "block",
                 action: App.Learn
+            },
+            {
+                icon: "https://kaatan.azurewebsites.net/files/learn.svg",
+                title: "Livros",
+                display: "block",
+                action: App.Books
             },
             {
                 icon: "files/chat.svg",
@@ -62,6 +69,7 @@ const App = {
             }
         }, 2001);
         fetch("cursos.json").then(x => x.json()).then(cursos => App.Cursos = cursos);
+        fetch("livros.json").then(x => x.json()).then(livros => App.Livros = livros);
     },
     Footer: () => {
         const footer = document.createElement("card-big");
@@ -97,9 +105,11 @@ const App = {
         cursoContainer.classList.add("no-elastic");
         cursoContainer.id = id;
 
-        const titleElement = document.createElement("text-subheading");
+        const titleElement = document.createElement("text-heading");
         titleElement.textContent = title;
         cursoContainer.appendChild(titleElement);
+
+        cursoContainer.appendChild(document.createElement("horizontal-divider"));
 
         const coverElement = document.createElement("img");
         coverElement.src = cover;
@@ -118,19 +128,19 @@ const App = {
         if (sale) {
             const listElement = document.createElement("compact-list");
             listElement.innerHTML = `
-                    <list-item onclick="window.open('${preview}')">
+                    <list-item onclick="window.open('${preview}')" style="display: ${preview == null ? 'none' : 'flex'};">
                         <img src="./files/see.svg">
                         <text-label>Ver uma prévia</text-label>
                     </list-item>
-                    <list-item onclick="window.open('${kindle}')">
+                    <list-item onclick="window.open('${kindle}')" style="display: ${kindle == null ? 'none' : 'flex'};">
                         <img src="./files/amazon.svg">
                         <text-label>Obter o Ebook Kindle</text-label>
                     </list-item>
-                    <list-item onclick="window.open('${ebook}')">
+                    <list-item onclick="window.open('${ebook}')" style="display: ${ebook == null ? 'none' : 'flex'};">
                         <img src="./files/${id}.svg">
                         <text-label>Obter o Ebook em PDF</text-label>
                     </list-item>
-                    <list-item onclick="window.open('${downloads}')">
+                    <list-item onclick="window.open('${downloads}')" style="display: ${downloads == null ? 'none' : 'flex'};">
                         <img src="./files/download.svg">
                         <text-label>Downloads do curso</text-label>
                     </list-item>
@@ -155,6 +165,26 @@ const App = {
         cursoContainer.style.placeItems = "none";
         cursoContainer.style.justifyItems = "center";
         return cursoContainer;
+    },
+    Books: () => {
+        const appContainer = document.createElement("app-container");
+        App.Livros.forEach(curso => {
+            appContainer.appendChild(App.Course(
+                curso["id"],
+                curso["titulo"],
+                curso["descrição"],
+                curso["capa"],
+                curso["a-venda"],
+                curso["downloads"],
+                curso["ebook"],
+                curso["kindle"],
+                curso["preview"]
+            ));
+            appContainer.appendChild(document.createElement("horizontal-divider"));
+        });
+        APPVIEW.innerHTML = "";
+        APPVIEW.appendChild(appContainer);
+        App.Footer();
     },
     Learn: () => {
         const appContainer = document.createElement("app-container");

@@ -379,7 +379,7 @@ const App = {
         App.Footer();
     },
     Contact: () => {
-        alert("Contact");
+        window.open('https://wa.me/5577999030420');
     },
     _: () => { },
 }

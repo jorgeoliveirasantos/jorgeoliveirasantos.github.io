@@ -9,5 +9,16 @@
         "a-venda": true,
         "capa": "./files/des.jpg",
         "preview": "https://drive.google.com/file/d/1hjaJGQqQlIewRzDp0Fkq4ocxw8Ej55UD/view?usp=sharing"
+    },
+    {
+        "id": "for",
+        "titulo": "Curso de Formação Social",
+        "descrição": "",
+        "downloads": null,
+        "ebook": "",
+        "kindle": "",
+        "a-venda": false,
+        "capa": "./files/for.jpg",
+        "preview": ""
     }
 ]

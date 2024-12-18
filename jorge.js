@@ -1,7 +1,7 @@
 
 const App = {
-    Cursos: [{ "id": "", "titulo": "", "descrição": "", "downloads": "", "ebook": "", "kindle": "", "a-venda": "", "capa": "", "preview": "" }],
-    Livros: [{ "id": "", "titulo": "", "descrição": "", "downloads": "", "ebook": "", "kindle": "", "a-venda": "", "capa": "", "preview": "" }],
+    Cursos: [],
+    Livros: [],
     Main: async () => {
         // Add icons to the TOPBAR:
         const icons = [
@@ -70,6 +70,7 @@ const App = {
         }, 2001);
         fetch("cursos.json").then(x => x.json()).then(cursos => App.Cursos = cursos);
         fetch("livros.json").then(x => x.json()).then(livros => App.Livros = livros);
+        document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
     Footer: () => {
         const footer = document.createElement("card-big");
@@ -185,6 +186,7 @@ const App = {
         APPVIEW.innerHTML = "";
         APPVIEW.appendChild(appContainer);
         App.Footer();
+        document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
     Learn: () => {
         const appContainer = document.createElement("app-container");
@@ -205,6 +207,7 @@ const App = {
         APPVIEW.innerHTML = "";
         APPVIEW.appendChild(appContainer);
         App.Footer();
+        document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
     Community: () => {
         const appContainer = document.createElement("app-container");
@@ -225,6 +228,7 @@ const App = {
         s.src = 'https://jorgeoliveirasantos.disqus.com/embed.js';
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
+        document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
     Cad: () => {
         const curso = App.Cursos.find(cursos => cursos.id == "cad");

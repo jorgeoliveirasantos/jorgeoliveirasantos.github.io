@@ -2,14 +2,21 @@
 const App = {
     Cursos: [],
     Livros: [],
+    Posts: [],
     Main: async () => {
         // Add icons to the TOPBAR:
         const icons = [
             {
-                icon: "files/logobranca.svg",
+                icon: "files/logo.svg",
                 title: "Início",
                 display: "block",
                 action: () => { window.location = '/' }
+            },
+            {
+                icon: "files/blog.svg",
+                title: "Blog",
+                display: "block",
+                action: App.Blog
             },
             {
                 icon: "files/learn.svg",
@@ -20,7 +27,7 @@ const App = {
             {
                 icon: "https://kaatan.azurewebsites.net/files/learn.svg",
                 title: "Livros",
-                display: "block",
+                display: "none",
                 action: App.Books
             },
             {
@@ -69,6 +76,9 @@ const App = {
             }
         }, 2001);
         fetch("cursos.json").then(x => x.json()).then(cursos => App.Cursos = cursos);
+        fetch("blog.json").then(x => x.json()).then(posts => {
+            App.Posts = posts;
+        });
         fetch("livros.json").then(x => x.json()).then(livros => App.Livros = livros);
         document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
@@ -187,6 +197,43 @@ const App = {
         APPVIEW.appendChild(appContainer);
         App.Footer();
         document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    },
+    Blog: () => {
+        Renderer.Load("blog", APPVIEW).then(() => {
+            let startIndex = 0;
+            let endIndex = 3;
+            App.Posts.forEach(post => {
+                //return;
+                const postContainer = document.createElement("grid-column");
+                postContainer.classList = "post-container";
+                postContainer.innerHTML = `
+                    <card-big class="post-container no-elastic no-hover">
+                        <grid-column class="no-elastic">
+                            <text-heading>${post.titulo}</text-heading>
+                        </grid-column>
+                        <horizontal-divider></horizontal-divider>
+                        <grid-column class="no-elastic">
+                            <text-label style="opacity: 0.7;">Postado em ${post.data}</text-label>
+                            <span class="video-container" style="display: ${post.video == null ? 'none' : 'flex'};">
+                                <iframe src="${post.video}" allowfullscreen></iframe>
+                            </span>
+                        </grid-column>
+                        <grid-column>
+                            <text-paragraph style="text-align: left;">${post.descrição}</text-paragraph>
+                        </grid-column>
+                        <horizontal-divider></horizontal-divider>
+                        <grid-column style="display: ${post.links == null ? 'none' : 'flex'};">
+                            <button-squared onclick="window.open('${post.links ? post.links.link : ''}')">${post.links ? post.links.titulo : ''}</button-squared>
+                        </grid-column>
+                    </card-big>
+                    <horizontal-divider></horizontal-divider>
+                `;
+                //
+                document.getElementById("blog-content").appendChild(postContainer);
+            });
+            //
+            document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        });
     },
     Learn: () => {
         const appContainer = document.createElement("app-container");

@@ -1,0 +1,9 @@
+<grid-column id="blog-container">
+    <grid-column id="blog-content"></grid-column>
+
+    <grid-row class="blog-footer">
+        <text-label>← Anterior</text-label>
+        <span style="color: var(--MediumBlue);">⛛</span>
+        <text-label>Próximo →</text-label>
+    </grid-row>
+</grid-column>

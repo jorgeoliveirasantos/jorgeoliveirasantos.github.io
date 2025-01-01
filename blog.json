@@ -1,0 +1,21 @@
+[
+    {
+        "titulo": "⚐ Formação Javascript Completa",
+        "descrição": "Formação Javascript Completa para quem deseja mergulhar no mundo da Programação e aprender uma nova profissão. Completamente gratuita!<br><br>A formação é dividida em 3 cursos:<br><br>1. Curso de Web Design. (Fundamentos de HTML, CSS e JS)<br><br>2. Curso Completo de Javascript. (Torne-se um programador profissional em Javascript).<br><br>3. Desenvolvimento de Aplicações Web. (Desenvolva aplicações frontend e backend que gerenciam lógica de servidor e bases de dados, além de aplicações multiplataforma para dispositivos móveis e desktop).<br><br>A formação conta ainda com diversos conteúdos adicionais como tutoriais, dicas e cursos em paralelo voltados para desenvolvedores avançados incluindo diversos temas como:<br><br>☛ Desenvolvimento de Jogos.<br><br>☛ Inteligência Artificial e Aprendizado de Máquina.<br><br>☛ Computação em nuvem.<br><br>☛ Criptografia.<br><br>☛ Comunicação em tempo real.<br><br>☛ Desenvolvimento nativo em C++ e interoperabilidade C++/Javascript.<br><br>☛ E muito mais, tudo em Javascript!<br><br>Conheça o canal clicando no link abaixo:",
+        "video": null,
+        "data": "01/01/2025",
+        "downloads": null,
+        "links": {
+            "titulo": "Formação Javascript Completa",
+            "link": "https://www.youtube.com/@jorgesouzaonline"
+        }
+    },
+    {
+        "titulo": "Aula 1 - O HTML",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/watch?v=OFhq_-D7X9g&list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv&index=2&pp=gAQBiAQB",
+        "data": "01/01/2025",
+        "downloads": null,
+        "links": null
+    }
+]

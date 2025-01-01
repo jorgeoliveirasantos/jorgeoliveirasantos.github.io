@@ -7,7 +7,7 @@ const App = {
         // Add icons to the TOPBAR:
         const icons = [
             {
-                icon: "files/logo.svg",
+                icon: "files/home.svg",
                 title: "Início",
                 display: "block",
                 action: () => { window.location = '/' }
@@ -59,6 +59,7 @@ const App = {
             span.appendChild(img);
             TOPBAR.appendChild(span);
         });
+        TOPBAR.style.justifyContent = "center";
 
         App.Footer();
 
@@ -219,6 +220,11 @@ const App = {
             function updatePosts(start, end) {
                 for (let i = start; i <= end; i++) {
                     const post = App.Posts[i];
+                    const coverType = post.video.endsWith(".jpg") ||
+                        post.video.endsWith(".jpeg") ||
+                        post.video.endsWith(".svg") ||
+                        post.video.endsWith(".png") ||
+                        post.video.endsWith(".gif");
                     //
                     const postContainer = document.createElement("grid-column");
                     postContainer.classList = "post-container";
@@ -231,7 +237,8 @@ const App = {
                         <grid-column class="no-elastic">
                             <text-label style="opacity: 0.7;">Postado em ${post.data}</text-label>
                             <span class="video-container" style="display: ${post.video == null ? 'none' : 'flex'};">
-                                <iframe src="${post.video}" allowfullscreen></iframe>
+                                <iframe src="${post.video}" allowfullscreen style="display: ${coverType ? 'none' : 'flex'};"></iframe>
+                                <img src="${post.video}" style="display: ${coverType ? 'flex' : 'none'};"></iframe>
                             </span>
                         </grid-column>
                         <grid-column>

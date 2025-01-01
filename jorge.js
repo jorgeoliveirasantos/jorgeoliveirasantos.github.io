@@ -31,6 +31,12 @@ const App = {
                 action: App.Books
             },
             {
+                icon: "https://kaatan.azurewebsites.net/files/logo128.png",
+                title: "Kaatan",
+                display: "block",
+                action: () => window.open('https://www.kaatan.com.br');
+            },
+            {
                 icon: "files/chat.svg",
                 title: "Comunidade",
                 action: App.Community

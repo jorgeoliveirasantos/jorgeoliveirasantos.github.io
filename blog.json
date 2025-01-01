@@ -1,6 +1,6 @@
 [
     {
-        "titulo": "⚐ Formação Javascript Completa",
+        "titulo": "<span style='color:var(--LightGreen); opacity: 0.7'> ⚐ <small style='font-size: 0.7em;'>[FIXADO]</small></span>Formação Javascript Completa",
         "descrição": "Formação Javascript Completa para quem deseja mergulhar no mundo da Programação e aprender uma nova profissão. Completamente gratuita!<br><br>A formação é dividida em 3 cursos:<br><br>1. Curso de Web Design. (Fundamentos de HTML, CSS e JS)<br><br>2. Curso Completo de Javascript. (Torne-se um programador profissional em Javascript).<br><br>3. Desenvolvimento de Aplicações Web. (Desenvolva aplicações frontend e backend que gerenciam lógica de servidor e bases de dados, além de aplicações multiplataforma para dispositivos móveis e desktop).<br><br>A formação conta ainda com diversos conteúdos adicionais como tutoriais, dicas e cursos em paralelo voltados para desenvolvedores avançados incluindo diversos temas como:<br><br>☛ Desenvolvimento de Jogos.<br><br>☛ Inteligência Artificial e Aprendizado de Máquina.<br><br>☛ Computação em nuvem.<br><br>☛ Criptografia.<br><br>☛ Comunicação em tempo real.<br><br>☛ Desenvolvimento nativo em C++ e interoperabilidade C++/Javascript.<br><br>☛ E muito mais, tudo em Javascript!<br><br>Conheça o canal clicando no link abaixo:",
         "video": null,
         "data": "01/01/2025",
@@ -11,10 +11,306 @@
         }
     },
     {
-        "titulo": "Aula 1 - O HTML",
+        "titulo": "Aula 35 - Posicionamento de elementos | Curso de Web Design",
         "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
-        "video": "https://www.youtube.com/watch?v=OFhq_-D7X9g&list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv&index=2&pp=gAQBiAQB",
-        "data": "01/01/2025",
+        "video": "https://www.youtube.com/embed/mz51DCvC2gQ?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "26 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 34 - Pseudo-classes e Pesudo-elementos | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/ylAiPdgm0L4?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "25 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 33 - Fontes | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/vlVXdRSXgNk?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "24 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 32 - Bordas e Sombras | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/XthV99feLwQ?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "23 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 31 - Funções e Variáveis | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/kqX7TraM9w0?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "22 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 30 - Gradientes | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/0LS9xsexSX4?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "21 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 29 - Cores | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/A0byLehqi2k?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "20 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 28 - Display | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/EDcvJKkglGA?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "19 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 27 - Box-sizing | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/aI_uSsoza2M?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "18 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 26 - Seletores CSS | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/ClJ4t5BBvUE?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "17 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 25 - Introdução ao CSS | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/cZxrD57X_9I?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "16 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 24 - Encerramento Capítulo 3 | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/23BEgVDHwKE?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "15 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 23 - Manipulação de formulários em Javascript | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/Xn-OjQH9wOw?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "14 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Tutorial - Estilização de formulários | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/VW9ncWUUCAw?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "13 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 22 - Controles input em detalhes | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/Eb9cSl-mmQ0?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "12 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 21 - Atributos do Formulário | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/gbwKVxLBEuU?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "11 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 20 - Atributos dos Controles | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/A8d1zIm43X8?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "10 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 19 - Formulários | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/eORnFwRFw_U?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "9 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 18 - Encerramento do Capítulo 2 | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/jKLl8RyFPUM?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "8 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Tutorial - Criando um site completo | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/2JUjCxtJunc?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "7 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 17 - Contêineres | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/XgJWQ7k0rhM?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "6 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Tutorial - Criando um servidor temporário para o site | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/5kTS-pXjNh4?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "5 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 16 - Conteúdo Incorporado | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/S5_a671FDvc?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "4 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 15 - Tabelas | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/bXK6UHhe6us?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "3 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 14 - Elementos de Navegação | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/6QWmmB81zbw?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "2 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 13  -  Listas | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/Htd56mb9P68?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "1 de nov. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 12  -  Elementos HTML | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/26iWaWaM_7s?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "31 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 11  -  Encerramento do Capítulo  1 | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/1YO8n2KYBfU?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "30 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 10  - Ambiente de Desenvolvimento | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/bLMtpzs1uHA?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "29 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 9  - Atributos Globais | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/oYh-znjuFzw?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "28 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 8  - Estilos | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/6AdyodSLPHw?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "27 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 7  -  Bordas e Margens | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/IpSLrdIwYA4?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "26 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 6  - Cores | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/9ObGPQQxXU0?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "25 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 5  - Fontes | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/iDow7ENxltc?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "24 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 4 - Formatação | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/Qg-pSXoY4DQ?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "23 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 3 - Estrutura do documento | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/BboE5q3ppQ8?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "23 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 2 - Editor | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/r1i6kg5QinE?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": "22 de out. de 2024",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Aula 1 - O HTML | Curso de Web Design",
+        "descrição": "Nova aula postada em nosso canal do Youtube! Aprenda a criar páginas web com HTML, CSS e JavaScript no Curso de Web Design, parte da Formação Javascript Completa.",
+        "video": "https://www.youtube.com/embed/OFhq_-D7X9g?list=PLSiKzEffxYv_JZnjcFY7tVyHsVU7NXGJv",
+        "data": " 22 de out. de 2024",
         "downloads": null,
         "links": null
     }

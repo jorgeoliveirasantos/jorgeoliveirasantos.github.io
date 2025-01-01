@@ -28,8 +28,7 @@
     /* 16:9 aspect ratio */
     overflow: hidden;
     border-radius: 10px;
-    border: var(--LightGreen) 1px solid;
-    box-shadow: 0 0 5px 0 var(--LightGreen);
+    border: var(--MediumBlue) 3px solid;
 }
 
 .video-container iframe,

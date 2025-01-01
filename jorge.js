@@ -221,8 +221,8 @@ const App = {
                         <grid-column>
                             <text-paragraph style="text-align: left;">${post.descrição}</text-paragraph>
                         </grid-column>
-                        <horizontal-divider></horizontal-divider>
                         <grid-column style="display: ${post.links == null ? 'none' : 'flex'};">
+                            <horizontal-divider></horizontal-divider>
                             <button-squared onclick="window.open('${post.links ? post.links.link : ''}')">${post.links ? post.links.titulo : ''}</button-squared>
                         </grid-column>
                     </card-big>
@@ -436,3 +436,10 @@ const App = {
 }
 
 window.App = App;
+
+let i = 23;
+for (let index = y.length; index <= 0; index--) {
+    y[index].data = i + " de nov. de 2024";
+    if (i == 31) i = 1;
+    else i++;
+}

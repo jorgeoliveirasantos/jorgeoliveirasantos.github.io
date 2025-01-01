@@ -201,12 +201,28 @@ const App = {
     Blog: () => {
         Renderer.Load("blog", APPVIEW).then(() => {
             let startIndex = 0;
-            let endIndex = 3;
-            App.Posts.forEach(post => {
-                //return;
-                const postContainer = document.createElement("grid-column");
-                postContainer.classList = "post-container";
-                postContainer.innerHTML = `
+            let endIndex = 4;
+            document.getElementById("blog-next-btn").onclick = () => {
+                if (endIndex >= App.Posts.length) return;
+                document.getElementById("blog-content").innerHTML = "";
+                startIndex += 5;
+                endIndex += 5;
+                updatePosts(startIndex, endIndex);
+            };
+            document.getElementById("blog-prev-btn").onclick = () => {
+                if (startIndex <= 0) return;
+                document.getElementById("blog-content").innerHTML = "";
+                startIndex -= 5;
+                endIndex -= 5;
+                updatePosts(startIndex, endIndex);
+            };
+            function updatePosts(start, end) {
+                for (let i = start; i <= end; i++) {
+                    const post = App.Posts[i];
+                    //
+                    const postContainer = document.createElement("grid-column");
+                    postContainer.classList = "post-container";
+                    postContainer.innerHTML = `
                     <card-big class="post-container no-elastic no-hover">
                         <grid-column class="no-elastic">
                             <text-heading>${post.titulo}</text-heading>
@@ -228,11 +244,12 @@ const App = {
                     </card-big>
                     <horizontal-divider></horizontal-divider>
                 `;
-                //
-                document.getElementById("blog-content").appendChild(postContainer);
-            });
-            //
-            document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                    //
+                    document.getElementById("blog-content").appendChild(postContainer);
+                }
+                document.getElementById("blog-content").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            }
+            updatePosts(startIndex, endIndex);
         });
     },
     Learn: () => {
@@ -436,10 +453,3 @@ const App = {
 }
 
 window.App = App;
-
-let i = 23;
-for (let index = y.length; index <= 0; index--) {
-    y[index].data = i + " de nov. de 2024";
-    if (i == 31) i = 1;
-    else i++;
-}

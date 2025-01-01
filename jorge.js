@@ -34,7 +34,7 @@ const App = {
                 icon: "https://kaatan.azurewebsites.net/files/logo128.png",
                 title: "Kaatan",
                 display: "block",
-                action: () => window.open('https://www.kaatan.com.br');
+                action: () => window.open('https://www.kaatan.com.br')
             },
             {
                 icon: "files/chat.svg",

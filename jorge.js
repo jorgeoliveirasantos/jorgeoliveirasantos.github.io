@@ -33,7 +33,7 @@ const App = {
             {
                 icon: "https://kaatan.azurewebsites.net/files/logo128.png",
                 title: "Kaatan",
-                display: "block",
+                display: "none",
                 action: () => window.open('https://www.kaatan.com.br')
             },
             {
@@ -114,6 +114,16 @@ const App = {
             <text-paragraph style="text-align: center;">
             Copyright © <span id="home-credit-ano">1999</span> | Jorge Souza Oliveira dos Santos
             </text-paragraph>
+            <span style="justify-content: space-around; display: flex; flex-direction: row; padding: 10px; gap: 5px; flex-wrap: wrap;">
+                <text-link style="padding: 0; background-color: transparent;" onclick="window.location = '/'">início</text-link>
+                <text-link style="padding: 0; background-color: transparent;" onclick="App.Blog()">blog</text-link>
+                <text-link style="padding: 0; background-color: transparent;" onclick="App.Learn()">cursos</text-link>
+                <text-link style="padding: 0; background-color: transparent;" onclick="App.Books()">livros</text-link>
+                <text-link style="padding: 0; background-color: transparent;" onclick="window.open('https://www.kaatan.com.br')">kaatan</text-link>
+                <text-link style="padding: 0; background-color: transparent;" onclick="Modal.Message('Em breve...', 'Retorne em breve para mais novidades.')">educação digital</text-link>
+                <text-link style="padding: 0; background-color: transparent;" onclick="App.Community()">comunidade</text-link>
+                <text-link style="padding: 0; background-color: transparent;" onclick="App.Contact()">contato</text-link>
+            </span>
         `;
         document.querySelector("app-container").appendChild(footer);
         document.getElementById("home-credit-ano").textContent = new Date().getFullYear();

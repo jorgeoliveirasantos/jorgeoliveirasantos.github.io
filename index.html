@@ -32,61 +32,34 @@
                 LinkAction: () => { window.location = '/' }
             },
             {
+                LinkTile: "Blog",
+                LinkIcon: "files/blog.svg",
+                LinkAction: App.Blog
+            },
+            {
                 LinkTile: "Cursos",
                 LinkIcon: "files/learn.svg",
                 LinkAction: App.Learn
             },
-            /*
             {
                 LinkTile: "Livros",
                 LinkIcon: "https://kaatan.azurewebsites.net/files/learn.svg",
                 LinkAction: App.Books
             },
-            */
+            {
+                LinkTile: "Kaatan",
+                LinkIcon: "https://kaatan.azurewebsites.net/files/logo128.png",
+                LinkAction: () => window.open('https://www.kaatan.com.br')
+            },
             {
                 LinkTile: "Comunidade",
                 LinkIcon: "files/chat.svg",
                 LinkAction: App.Community
             },
             {
-                LinkTile: "Desenho Técnico",
-                LinkIcon: "files/cad.svg",
-                LinkAction: App.Cad
-            },
-            {
-                LinkTile: "Modelagem 3D",
-                LinkIcon: "files/3d.svg",
-                LinkAction: App["3d"]
-            },
-            {
-                LinkTile: "Informática",
-                LinkIcon: "files/info.svg",
-                LinkAction: App.Info
-            },
-            {
-                LinkTile: "Design Gráfico",
-                LinkIcon: "files/design.svg",
-                LinkAction: App.Design
-            },
-            {
-                LinkTile: "Web Design",
-                LinkIcon: "files/web.svg",
-                LinkAction: App.Web
-            },
-            {
-                LinkTile: "Javascript",
-                LinkIcon: "files/js.svg",
-                LinkAction: App.JS
-            },
-            {
-                LinkTile: "Aplicações Web",
-                LinkIcon: "files/app.svg",
-                LinkAction: App.App
-            },
-            {
-                LinkTile: "Inteligência Artificial",
-                LinkIcon: "files/ia.svg",
-                LinkAction: App.IA
+                LinkTile: "Educação Digital",
+                LinkIcon: "files/pc.svg",
+                LinkAction: () => Modal.Message("Em breve...", "Retorne em breve para mais novidades.")
             },
             {
                 LinkTile: "Contato",

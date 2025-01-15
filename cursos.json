@@ -80,11 +80,11 @@
         "id": "ia",
         "titulo": "Inteligência Artificial e Aprendizado de Máquina | para desenvolvedores Javascript",
         "descrição": "A Inteligência Artificial (IA) é um dos campos mais fascinantes da tecnologia, capacitando sistemas computacionais a realizar tarefas que antes eram exclusivas dos seres humanos, como planejamento, criatividade e aprendizado contínuo. Dentro desse universo, a Aprendizagem de Máquina (Machine Learning) se destaca como um setor essencial da IA, permitindo que computadores identifiquem padrões, façam previsões e tomem decisões de forma autônoma.   Neste curso, você será introduzido aos fundamentos teóricos e práticos de Inteligência Artificial e Aprendizagem de Máquina. Exploraremos conceitos-chave e aplicaremos essas tecnologias utilizando as ferramentas e bibliotecas mais modernas do mercado – tudo com base no JavaScript, a linguagem de programação mais popular e versátil do mundo.   Com essa combinação poderosa, você aprenderá a integrar IA em diversos contextos, desde aplicações backend, como servidores e programas, até aplicações web, como sites interativos e dinâmicos. Além disso, veremos como aproveitar modelos de IA pré-treinados para personalizá-los de acordo com as suas necessidades específicas.   Seja para inovar em projetos pessoais, impulsionar sua carreira ou simplesmente expandir seus horizontes tecnológicos, este curso é o ponto de partida ideal para dominar a Inteligência Artificial com JavaScript!",
-        "downloads": "",
-        "ebook": "",
-        "kindle": "",
-        "a-venda": false,
+        "downloads": "https://drive.google.com/drive/folders/1GwZF2qeA0WjsDlPwW-1QO8qL-M6JMZzQ?usp=sharing",
+        "ebook": null,
+        "kindle": "https://www.amazon.com.br/dp/B0DT3QC4MP",
+        "a-venda": true,
         "capa": "./files/ia.jpg",
-        "preview": "https://drive.google.com/file/d/18gCX7DpJcVDAPYvoYW_k_lcQUe0Gl42w/view?usp=drive_link"
+        "preview": "https://drive.google.com/file/d/12ICHBRh8Te46lgFdGoTlGn1OW4p6JRq7/view?usp=sharing"
     }
 ]

@@ -139,14 +139,14 @@ const App = {
             Copyright © <span id="home-credit-ano">1999</span> | Jorge Souza Oliveira dos Santos
             </text-paragraph>
             <span style="justify-content: space-around; display: flex; flex-direction: row; padding: 10px; gap: 5px; flex-wrap: wrap;">
-                <text-link class="footer-link" style="padding: 0; background-color: transparent;" onclick="window.location = '/'">início</text-link>
-                <text-link class="footer-link" style="padding: 0; background-color: transparent;" onclick="App.Blog()">blog</text-link>
-                <text-link class="footer-link" style="padding: 0; background-color: transparent;" onclick="App.Learn()">cursos</text-link>
-                <text-link class="footer-link" style="padding: 0; background-color: transparent;" onclick="App.Books()">livros</text-link>
-                <text-link class="footer-link" style="padding: 0; background-color: transparent;" onclick="window.open('https://www.kaatan.com.br')">kaatan</text-link>
-                <text-link class="footer-link" style="padding: 0; background-color: transparent;" onclick="Modal.Message('Em breve...', 'Retorne em breve para mais novidades.')">educação digital</text-link>
-                <text-link class="footer-link" style="padding: 0; background-color: transparent;" onclick="App.Community()">comunidade</text-link>
-                <text-link class="footer-link" style="padding: 0; background-color: transparent;" onclick="App.Contact()">contato</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="window.location = '/'">início</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Blog()">blog</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Learn()">cursos</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Books()">livros</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="window.open('https://www.kaatan.com.br')">kaatan</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="Modal.Message('Em breve...', 'Retorne em breve para mais novidades.')">educação digital</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Community()">comunidade</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Contact()">contato</text-link>
             </span>
         `;
         document.querySelector("app-container").appendChild(footer);
@@ -196,6 +196,7 @@ const App = {
                         <img src="./files/download.svg">
                         <text-label>Downloads do curso</text-label>
                     </list-item>
+                    <text-link onclick="window.open('https://youtu.be/Kgre-n-Rf3A')" style="font-size: small; text-align: center;" class="footer-link">Como ler e-books Kindle no celular</text-link>
                 `;
             listElement.style.borderRadius = "5px";
             cursoContainer.appendChild(listElement);

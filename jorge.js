@@ -3,7 +3,8 @@ const App = {
     Cursos: [],
     Livros: [],
     Posts: [],
-    Main: async () => {
+    Preload: [false, false, false],
+    Main: async (callback = null) => {
         // Add icons to the TOPBAR:
         const icons = [
             {
@@ -69,6 +70,12 @@ const App = {
 
         App.Footer();
 
+        document.head.querySelectorAll("link").forEach(lnk => {
+            if (lnk.getAttribute("rel") == "shortcut icon") {
+                lnk.setAttribute("href", "https://www.jorgesouza.com.br/files/logo.svg");
+            }
+        });
+
         setInterval(() => {
             if (Renderer.Layout.IsPortraitLayout) {
                 try {
@@ -82,12 +89,29 @@ const App = {
                 } catch { }
             }
         }, 2001);
-        fetch("cursos.json").then(x => x.json()).then(cursos => App.Cursos = cursos);
+        fetch("cursos.json").then(x => x.json()).then(cursos => {
+            App.Cursos = cursos;
+            App.Preload[0] = true;
+        });
         fetch("blog.json").then(x => x.json()).then(posts => {
             App.Posts = posts;
+            App.Preload[1] = true;
         });
-        fetch("livros.json").then(x => x.json()).then(livros => App.Livros = livros);
+
+        fetch("livros.json").then(x => x.json()).then(livros => {
+            App.Livros = livros;
+            App.Preload[2] = true;
+        });
+
         document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        function recall() {
+            if (document.querySelector("app-view") && App.Preload.every(y => y)) {
+                callback();
+            } else {
+                setTimeout(recall, 100);
+            }
+        }
+        if (callback) recall();
     },
     Footer: () => {
         const footer = document.createElement("card-big");

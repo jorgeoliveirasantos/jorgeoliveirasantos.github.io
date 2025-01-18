@@ -2,26 +2,74 @@
 <html lang="pt-BR">
 
 <head>
-    <link rel="shortcut icon" href="./files/logo.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./index.css">
-    <script src="./index.js"></script>
-
+    <!-- #region META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Jorge Souza Oliveira dos Santos">
+    <meta name="keywords" content="informatica, curso, computador, computacao, programação, tecnologia, info,  desenvolvimento, web, design, web design, design grafico, tech,  visual studio, visual studio code, vs code, c#, javascript, dotnet, node js, dev express, html, css">
+    <!-- #endregion -->
+    <link rel="stylesheet" href="jorge.css">
+    <script type="module" src="jorge.js"></script>
+    <link rel="stylesheet" href="https://kaatan.azurewebsites.net/lib/acacia/acacia.css">
+    <script type="module" src="https://kaatan.azurewebsites.net/lib/acacia/acacia.js"></script>
     <title>Jorge Souza</title>
 </head>
 
-
-<body>
-    <div class="app" id="app">
-        <div class="js-page" id="js-page">
-            <!-- Default Elements -->
-            <div class="right-bar"></div>
-            <div class="left-bar"></div>
-            <div class="js-footer"></div>
-        </div>
-    </div>
-    <script>
-        window.location = "/";
-    </script>
-</body>
+<body></body>
 
 </html>
+
+<script type="module">
+    import { Acacia } from "https://kaatan.azurewebsites.net/lib/acacia/acacia.js";
+    Renderer.Layout.IsPortraitLayout = true;
+    const sideMenu = {
+        Links: [
+            // Add more menu-items freely:
+            {
+                LinkTile: "Início",
+                LinkIcon: "files/home.svg",
+                LinkAction: () => { window.location = '/' }
+            },
+            {
+                LinkTile: "Blog",
+                LinkIcon: "files/blog.svg",
+                LinkAction: App.Blog
+            },
+            {
+                LinkTile: "Cursos",
+                LinkIcon: "files/learn.svg",
+                LinkAction: App.Learn
+            },
+            {
+                LinkTile: "Livros",
+                LinkIcon: "https://kaatan.azurewebsites.net/files/learn.svg",
+                LinkAction: App.Books
+            },
+            {
+                LinkTile: "Kaatan",
+                LinkIcon: "https://kaatan.azurewebsites.net/files/logo128.png",
+                LinkAction: () => window.open('https://www.kaatan.com.br')
+            },
+            {
+                LinkTile: "Comunidade",
+                LinkIcon: "files/chat.svg",
+                LinkAction: App.Community
+            },
+            {
+                LinkTile: "Educação Digital",
+                LinkIcon: "files/pc.svg",
+                LinkAction: () => Modal.Message("Em breve...", "Retorne em breve para mais novidades.")
+            },
+            {
+                LinkTile: "Contato",
+                LinkIcon: "files/contacts.svg",
+                LinkAction: App.Contact
+            },
+        ],
+        ShowProfileSection: false,
+        ProfileSection: {}
+    }
+    // new Acacia(appName, hideBottomBar, sideMenuContent, callback)
+    const acacia = new Acacia("BLOG | Jorge Souza", true, sideMenu, () => { App.Main(App.Blog) });
+
+</script>

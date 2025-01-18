@@ -64,6 +64,7 @@
 
 .footer-link:hover {
     text-shadow: 0 0 15px var(--LightGreen);
+    text-decoration: none !important;
 }
 
 /* #endregion */

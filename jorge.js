@@ -342,6 +342,36 @@ const App = {
         (d.head || d.body).appendChild(s);
         document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
+    // Checkout:
+    Checkout: (id) => {
+        const appContainer = document.createElement("app-container");
+
+        const cursoContainer = document.createElement("card-big");
+        cursoContainer.innerHTML = `
+            <text-heading>Finalizar compra</text-heading>
+            <horizontal-divider></horizontal-divider>
+            <text-paragraph>
+                Para finalizar a compra, entre em contato pelo formulário abaixo.
+                O preenchimento do formulário é indispensável, por meio dele você informará qual e-book deseja adquirir e também por ele receberá o arquivo em PDF. Qualquer dúvida ou sugestão, fique à vontade para entrar em contato pelo meios disponíveis neste site.
+            </text-paragraph>
+            <horizontal-divider></horizontal-divider>
+            <!-- <iframe hiddens src="https://docs.google.com/forms/d/e/1FAIpQLSdgI7zlnpYJ-fw3DJZLvzhWTsjXWNbY2i-oGIRNLVevEKGBPQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe> -->
+            <iframe hiddens src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAASV1IhlUN0VNWE5FQVBPODRQVkNNSDlPWjRERU1ROS4u" width="100%" height="1500px" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        `;
+        cursoContainer.classList.add("no-elastic");
+        cursoContainer.id = id;
+        appContainer.appendChild(cursoContainer);
+
+        appContainer.appendChild(document.createElement("horizontal-divider"));
+
+        APPVIEW.innerHTML = "";
+        APPVIEW.appendChild(appContainer);
+        App.Footer();
+        document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    },
+
+    // Cursos:
+    /*
     Cad: () => {
         const curso = App.Cursos.find(cursos => cursos.id == "cad");
         const appContainer = document.createElement("app-container");
@@ -494,6 +524,7 @@ const App = {
         APPVIEW.appendChild(appContainer);
         App.Footer();
     },
+    */
     Contact: () => {
         window.open('https://wa.me/5577999030420');
     },

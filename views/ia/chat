@@ -1,0 +1,43 @@
+<app-container style="padding: 5px; gap: 5px; height: fit-content;">
+    <card-big class="no-elastic no-hover">
+        <text-heading>IA & ML</text-heading>
+    </card-big>
+    <horizontal-divider></horizontal-divider>
+    <card-big class="no-elastic no-hover" style="padding: 0;">
+        <acacia-tabs>
+            <acacia-tabs-item id="learn-tab">Aprender</acacia-tabs-item>
+            <acacia-tabs-item id="train-tab">Treinar</acacia-tabs-item>
+            <acacia-tabs-item id="chat-tab" class="active" style="display: none;">Chat</acacia-tabs-item>
+        </acacia-tabs>
+        <card-big class="no-elastic no-hover">
+            <horizontal-divider></horizontal-divider>
+            <text-subheading style="justify-content: start;">Corpus Generator</text-subheading>
+            <text-link style="text-align: right;">Como usar o Corpus Generator?</text-link>
+            <text-label>Corpus</text-label>
+            <input id="intent" class="acacia-input" value="assistente.oi" type="file">
+            <text-label>Utterance</text-label>
+            <input class="acacia-input" id="utterance" placeholder="Pressione enter para saltar para resposta">
+            <text-label>Answer</text-label>
+            <input class="acacia-input" id="answer" placeholder="Pressione enter para adicionar ao intent atual">
+            <horizontal-divider></horizontal-divider>
+            <button-squared id="addDataToCorpus">Adicionar intent ao Corpus (CTRL+Enter)</button-squared>
+            <grid-row style="padding: 5px; gap: 5px; justify-content: stretch;">
+                <button-squared id="importCorpus" style="width: 100%;">Importar corpus</button-squared>
+                <button-squared id="viewCorpus" style="width: 100%;">Ver corpus</button-squared>
+            </grid-row>
+            <horizontal-divider></horizontal-divider>
+            <text-subheading style="justify-content: start;">Configurações</text-subheading>
+            <text-label>name</text-label>
+            <input id="name" class="acacia-input" value="Corpus">
+            <text-label>locale</text-label>
+            <input id="locale" class="acacia-input" value="pt-BR">
+            <horizontal-divider></horizontal-divider>
+            <button-squared id="applyCorpus">Aplicar</button-squared>
+            <horizontal-divider></horizontal-divider>
+            <grid-row style="padding: 5px; gap: 5px; justify-content: stretch;">
+                <button-squared id="clearCorpus" style="width: 100%;">Limpar corpus</button-squared>
+                <button-squared id="downloadCorpus" style="width: 100%;">Baixar corpus</button-squared>
+            </grid-row>
+        </card-big>
+    </card-big>
+</app-container>

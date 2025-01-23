@@ -8,19 +8,19 @@ const App = {
         // Add icons to the TOPBAR:
         const icons = [
             {
-                icon: "files/home.svg",
+                icon: "https://kaatan.azurewebsites.net/files/home.svg",
                 title: "Início",
                 display: "block",
                 action: () => { window.location = '/' }
             },
             {
-                icon: "files/blog.svg",
+                icon: "https://kaatan.azurewebsites.net/files/news.svg",
                 title: "Blog",
                 display: "block",
                 action: App.Blog
             },
             {
-                icon: "files/learn.svg",
+                icon: "https://kaatan.azurewebsites.net/files/learn.svg",
                 title: "Cursos",
                 display: "block",
                 action: App.Learn
@@ -38,7 +38,7 @@ const App = {
                 action: () => window.open('https://www.kaatan.com.br')
             },
             {
-                icon: "files/chat.svg",
+                icon: "https://www.jorgesouza.com.br/files/chat.svg",
                 title: "Comunidade",
                 action: App.Community
             }
@@ -120,12 +120,12 @@ const App = {
         footer.style.border = "var(--MediumBlue) 1px solid";
         footer.innerHTML = `
             <grid-row class="social-icons" style="justify-content: center;">
-                <img src="../files/outlook.svg" onmouseover="Tooltip.Tooltip('E-mail', this)" onclick="window.open('mailto:jorge.sos777@outlook.com')">
-                <img src="../files/whatsapp.svg" onmouseover="Tooltip.Tooltip('Whatsapp', this)" onclick="window.open('https://wa.me/5577999030420')">
-                <img src="../files/amazon.svg" onmouseover="Tooltip.Tooltip('Amazon', this)" onclick="window.open('https://amazon.com.br/kindle-dbs/entity/author?asin=B0CM13195T')">
-                <img src="../files/instagram.svg" onmouseover="Tooltip.Tooltip('Instagram', this)" onclick="window.open('https://www.instagram.com/jorgesouzaonline/')">
-                <img src="../files/youtube.svg" onmouseover="Tooltip.Tooltip('Youtube', this)" onclick="window.open('https://www.youtube.com/@jorgesouzaonline')">
-                <img src="../files/chat.svg" onmouseover="Tooltip.Tooltip('Enviar mensagem', this)" onclick="App.Community()">
+                <img src="files/outlook.svg" onmouseover="Tooltip.Tooltip('E-mail', this)" onclick="window.open('mailto:jorge.sos777@outlook.com')">
+                <img src="files/whatsapp.svg" onmouseover="Tooltip.Tooltip('Whatsapp', this)" onclick="window.open('https://wa.me/5577999030420')">
+                <img src="files/amazon.svg" onmouseover="Tooltip.Tooltip('Amazon', this)" onclick="window.open('https://amazon.com.br/kindle-dbs/entity/author?asin=B0CM13195T')">
+                <img src="files/instagram.svg" onmouseover="Tooltip.Tooltip('Instagram', this)" onclick="window.open('https://www.instagram.com/jorgeoliveiraonline/')">
+                <img src="files/youtube.svg" onmouseover="Tooltip.Tooltip('Youtube', this)" onclick="window.open('https://www.youtube.com/@jorgesouzaonline')">
+                <img src="files/chat.svg" onmouseover="Tooltip.Tooltip('Enviar mensagem', this)" onclick="App.Community()">
             </grid-row>
 
             <horizontal-divider></horizontal-divider>
@@ -151,6 +151,8 @@ const App = {
         `;
         document.querySelector("app-container").appendChild(footer);
         document.getElementById("home-credit-ano").textContent = new Date().getFullYear();
+        if (document.querySelector("app-container")) {
+        }
     },
     Course: (id, title, description, cover, sale = true, downloads, ebook, kindle, preview) => {
         const cursoContainer = document.createElement("card-big");
@@ -369,7 +371,164 @@ const App = {
         App.Footer();
         document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
+    // IA & ML:
+    IA: {
+        Learn: async () => {
+            await Renderer.Load("ia/learn", APPVIEW);
+            //
+            //App.Footer();
+            document.getElementById("learn-tab").onclick = App.IA.Learn;
+            document.getElementById("train-tab").onclick = App.IA.Train;
+            document.getElementById("chat-tab").onclick = App.IA.Chat;
+            document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        },
+        Train: async () => {
+            await Renderer.Load("ia/train", APPVIEW);
+            const corpus = {
+                name: "Corpus",
+                locale: "pt-BR",
+                data: []
+            }
+            let data = {
+                intent: "assistente.oi",
+                utterances: [],
+                answers: []
+            }
+            const utterance = document.getElementById("utterance");
+            const intent = document.getElementById("intent");
+            const answer = document.getElementById("answer");
+            const addDataToCorpusBtn = document.getElementById("addDataToCorpus");
+            const inputName = document.getElementById("name");
+            const locale = document.getElementById("locale");
 
+            document.getElementById("addDataToCorpus").onclick = addDataToCorpus;
+            document.getElementById("downloadCorpus").onclick = downloadCorpus;
+            document.getElementById("viewCorpus").onclick = viewCorpus;
+            document.getElementById("applyCorpus").onclick = applyCorpus;
+            document.getElementById("importCorpus").onclick = importCorpus;
+            document.getElementById("clearCorpus").onclick = clearCorpus;
+            answer.addEventListener("keydown", addData);
+            utterance.addEventListener("keydown", next);
+            utterance.focus();
+
+            inputName.value = corpus.name;
+            locale.value = corpus.locale
+            intent.value = data.intent;
+            window.addEventListener("keydown", e => {
+                if (e.ctrlKey && e.key == "Enter") {
+                    addDataToCorpus();
+                }
+            });
+
+            function addData(e) {
+                if (e.key == "Enter") {
+                    if (utterance.value == "" && answer.value == "") return;
+                    data.utterances.push(utterance.value);
+                    data.answers.push(answer.value);
+                    console.clear();
+                    console.log(data);
+                    utterance.value = "";
+                    utterance.focus();
+                }
+            }
+
+            function addDataToCorpus() {
+                data.intent = intent.value;
+                if (data.intent == "" || data.answers.length == 0 || data.utterances.length == 0) {
+                    console.log("Empty intent, utterance or answer");
+                    return;
+                }
+                corpus.data.push(data);
+                data = {
+                    intent: intent.value,
+                    utterances: [],
+                    answers: []
+                }
+                console.clear();
+                console.log("Added to corpus");
+            }
+
+            function downloadCorpus(e) {
+                let a = document.createElement("a");
+                a.download = corpus.name;
+                let blob = new Blob([JSON.stringify(corpus, null, 4)], { type: 'application/json' });
+                let url = window.URL.createObjectURL(blob);
+                a.href = url;
+                a.click();
+                window.URL.revokeObjectURL(url);
+                a = null;
+            }
+
+            function next(e) {
+                if (e.key != "Enter") return;
+                answer.focus();
+            }
+
+            function viewCorpus() {
+                var url = "data:text/html;charset=utf-8," + encodeURIComponent();
+                var blob = new Blob([JSON.stringify(corpus, false, 4)], { type: "application/json" });
+                var url = URL.createObjectURL(blob);
+                window.open(url, "_blank");
+            }
+
+            function applyCorpus() {
+                corpus.name = inputName.value;
+                corpus.locale = locale.value;
+                alert("Applied!");
+            }
+
+            function importCorpus() {
+                let ok = confirm("This will replace in-memory corpus!");
+                if (!ok) return;
+                const uploadInput = document.createElement("input");
+                uploadInput.type = "file";
+                uploadInput.oninput = () => {
+                    const file = uploadInput.files[0];
+                    const reader = new FileReader();
+                    reader.onload = (event) => {
+                        try {
+                            const content = JSON.parse(event.target.result);
+                            if (!content.data) throw new Error("Invalid");
+                            if (!content.locale) throw new Error("Invalid");
+                            if (!content.name) throw new Error("Invalid");
+                            corpus.name = content.name;
+                            corpus.locale = content.locale;
+                            corpus.data = content.data;
+                            inputName.value = corpus.name;
+                            locale.value = corpus.locale;
+                            alert("Corpus loaded!");
+                        } catch (error) {
+                            alert(error);
+                        }
+                    };
+                    reader.readAsText(file);
+                }
+                uploadInput.click();
+            }
+
+            function clearCorpus() {
+                let ok = confirm("This will clear all corpus data!");
+                if (!ok) return;
+                corpus.data = [];
+                alert("Corpus data cleared!");
+            }
+
+            //App.Footer();
+            document.getElementById("learn-tab").onclick = App.IA.Learn;
+            document.getElementById("train-tab").onclick = App.IA.Train;
+            document.getElementById("chat-tab").onclick = App.IA.Chat;
+            document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        },
+        Chat: async () => {
+            await Renderer.Load("ia/chat", APPVIEW);
+            //
+            //App.Footer();
+            document.getElementById("learn-tab").onclick = App.IA.Learn;
+            document.getElementById("train-tab").onclick = App.IA.Train;
+            document.getElementById("chat-tab").onclick = App.IA.Chat;
+            document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        },
+    },
     // Cursos:
     /*
     Cad: () => {

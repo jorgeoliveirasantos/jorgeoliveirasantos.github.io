@@ -190,7 +190,7 @@ const App = {
                         <img src="./files/amazon.svg">
                         <text-label>Obter o Ebook Kindle</text-label>
                     </list-item>
-                    <list-item onclick="window.open('${ebook}')" style="display: ${ebook == null ? 'none' : 'flex'};">
+                    <list-item onclick="App.Contact()" style="display: ${ebook == null ? 'none' : 'flex'};">
                         <img src="./files/${id}.svg">
                         <text-label>Obter o Ebook em PDF</text-label>
                     </list-item>
@@ -358,7 +358,7 @@ const App = {
             </text-paragraph>
             <horizontal-divider></horizontal-divider>
             <!-- <iframe hiddens src="https://docs.google.com/forms/d/e/1FAIpQLSdgI7zlnpYJ-fw3DJZLvzhWTsjXWNbY2i-oGIRNLVevEKGBPQ/viewform?embedded=true" width="100%" height="1000px" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe> -->
-            <iframe hiddens src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAASV1IhlUN0VNWE5FQVBPODRQVkNNSDlPWjRERU1ROS4u" width="100%" height="1500px" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+            <iframe id="form" hiddens src="https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAANAASV1IhlUN0VNWE5FQVBPODRQVkNNSDlPWjRERU1ROS4u" width="100%" height="1500px" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
         `;
         cursoContainer.classList.add("no-elastic");
         cursoContainer.id = id;
@@ -370,6 +370,15 @@ const App = {
         APPVIEW.appendChild(appContainer);
         App.Footer();
         document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        setInterval(function () {
+            var currentUrl = document.getElementById("form").contentWindow.location.href;
+            console.log(currentUrl);
+            if (currentUrl !== lastUrl) {
+                console.log('A URL do iframe mudou!');
+                lastUrl = currentUrl;
+                // Aqui você pode verificar se a nova URL indica que o formulário foi enviado
+            }
+        }, 1000);
     },
     // IA & ML:
     IA: {

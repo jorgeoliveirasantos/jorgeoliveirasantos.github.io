@@ -67,6 +67,12 @@
     text-decoration: none !important;
 }
 
+.icon.active {
+    background-color: var(--Crimson);
+    border-radius: 5px;
+    filter: invert(1);
+}
+
 /* #endregion */
 
 /* #region SOCIAL ICONS */

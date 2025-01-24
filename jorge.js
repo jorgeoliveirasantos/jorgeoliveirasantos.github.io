@@ -46,12 +46,17 @@ const App = {
         TOPBAR.innerHTML = "";
         icons.forEach(x => {
             const span = document.createElement("span");
+            span.classList = "icon";
             span.style.height = "30px";
             span.style.padding = "3px 5px";
             span.style.cursor = "pointer";
             span.style.opacity = "0.5";
             span.style.display = x.display;
-            span.onclick = x.action;
+            span.onclick = e => {
+                document.querySelectorAll(".icon").forEach(x => x.classList.remove('active'));
+                span.classList.add('active');
+                x.action();
+            };
             span.onmouseover = () => {
                 Tooltip.Tooltip(x.title, span);
                 span.style.opacity = "1";
@@ -111,6 +116,7 @@ const App = {
                 setTimeout(recall, 100);
             }
         }
+        document.querySelector(".icon").classList.add("active");
         if (callback) recall();
     },
     Footer: () => {

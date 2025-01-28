@@ -70,6 +70,8 @@
         ProfileSection: {}
     }
     // new Acacia(appName, hideBottomBar, sideMenuContent, callback)
-    const acacia = new Acacia("COMUNIDADE | Jorge Souza", true, sideMenu, () => { App.Main(App.Community) });
+    const acacia = new Acacia("COMUNIDADE | Jorge Souza", true, sideMenu, () => {
+        App.Main(() => Modal.Message("Contato", "Redirecionar para o Whatsapp?", App.Contact));
+    });
 
 </script>

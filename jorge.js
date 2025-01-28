@@ -196,7 +196,7 @@ const App = {
                         <img src="./files/amazon.svg">
                         <text-label>Obter o Ebook Kindle</text-label>
                     </list-item>
-                    <list-item onclick="App.Contact()" style="display: ${ebook == null ? 'none' : 'flex'};">
+                    <list-item onclick="window.open('${ebook}')" style="display: ${ebook == null ? 'none' : 'flex'};">
                         <img src="./files/${id}.svg">
                         <text-label>Obter o Ebook em PDF</text-label>
                     </list-item>

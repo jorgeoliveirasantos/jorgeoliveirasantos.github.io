@@ -58,7 +58,7 @@
         "id": "js",
         "titulo": "Curso Completo de Javascript",
         "descrição": "O Javascript é uma linguagem de programação, diferente do HTML e do CSS, neste curso você iniciará sua carreira como programador com a linguagem mais utilizada em todo o mundo! Com o Javascript você aprenderá como fazer seu site se comunicar com outras aplicações, incluirá lógica e dinamicidade à sua página e ainda aprenderá do que o Javascript é capaz, de desenvolvimento de jogos a servidores.",
-        "downloads": "https://drive.google.com/drive/u/0/folders/1QxV5Md_ahTQwR-hMgRuq93P-_85mncFJ",
+        "downloads": null,
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0CWJ16NYM",
         "a-venda": true,

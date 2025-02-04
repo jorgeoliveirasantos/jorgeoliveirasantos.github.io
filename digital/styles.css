@@ -92,7 +92,7 @@ html {
 
 
 .level {
-    position: absolute;
+    position: fixed;
     top: 5px;
     left: 5px;
     height: fit-content;
@@ -120,7 +120,6 @@ html {
 
 .fun-button {
     padding: 15px 30px;
-    font-size: 20px;
     border-radius: 12px;
     background: linear-gradient(45deg, #ff7eb3, #ff758c, #ffa41c, #ffe100);
     color: white;
@@ -131,13 +130,11 @@ html {
     border: transparent 3px solid;
     box-sizing: border-box;
     z-index: 5;
-    font-weight: bold;
 }
 
 button.no {
     border: var(--Crimson) 3px solid;
     color: var(--Crimson);
-    font-weight: bold;
 }
 
 b {
@@ -147,7 +144,6 @@ b {
 button.yes {
     border: var(--DarkGreen) 3px solid;
     color: var(--DarkGreen);
-    font-weight: bold;
 }
 
 @keyframes colorShift {

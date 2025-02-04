@@ -15,6 +15,14 @@ const App = {
             document.body.innerHTML = "";
 
             let div = document.createElement("div");
+
+            div.innerHTML = `
+            <div class="body-effect"></div>
+            `;
+            document.body.appendChild(div.firstElementChild);
+
+            div = document.createElement("div");
+
             div.innerHTML = `
                 <div class="level">
                     <div id="progress">
@@ -28,17 +36,10 @@ const App = {
             div = document.createElement("div");
             div.innerHTML = `
                 <div class="credits">
-                    <span>
-                        Criado por:
-                    </span>
+                    <span>Criado por:</span>
                     <a href="https://www.jorgesouza.com.br/" target="_blank">Jorge Souza Oliveira dos Santos</a>
+                    <span>04/02/2025</span>
                 </div>
-            `;
-            document.body.appendChild(div.firstElementChild);
-
-            div = document.createElement("div");
-            div.innerHTML = `
-                <div class="body-effect"></div>
             `;
             document.body.appendChild(div.firstElementChild);
 
@@ -221,13 +222,13 @@ const App = {
                         nextBtn.textContent = "Avançar";
                         if (count == content.length - 1) nextBtn.textContent = "Concluir";
                         funButton(prevBtn, "no", null);
-                        
+
                         prevBtn.remove();
                         nextBtn.remove();
-                        
+
                         btnContainer.appendChild(prevBtn);
                         btnContainer.appendChild(nextBtn);
-                        
+
                         prevBtn.onclick = e => {
                             if (count == 0) {
                                 funButton(prevBtn, "no", null);
@@ -259,10 +260,10 @@ const App = {
                         nextBtn.textContent = "Avançar";
                         if (count == content.length - 1) nextBtn.textContent = "Concluir";
                         funButton(nextBtn, "ok", null);
-                        
+
                         prevBtn.remove();
                         nextBtn.remove();
-                        
+
                         btnContainer.appendChild(prevBtn);
                         btnContainer.appendChild(nextBtn);
 

@@ -24,9 +24,10 @@
     "23": "Saúde financeira",
     "24": "Cartões de crédito",
     "25": "Controle parental",
-    "26": "Professores e escolas",
+    "26": "Escolas e educadores",
     "27": "Cuidados com a segurança",
     "28": "Reportar e restringir",
     "29": "Melhorar o ambiente",
-    "30": "Próximos passos?"
+    "30": "Próximos passos?",
+    "31": "Esclarecimentos"
 }

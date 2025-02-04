@@ -9,9 +9,9 @@ O uso da internet e das ferramentas virtuais com parcimônia manterá o usuário
 O que devemos levar em conta ao utilizar esses serviços é que a maioria das pessoas não conhece o processo que está por trás de tudo o que usa, e, portanto, reage apenas com a visão empírica que tem num primeiro momento. 
 É fundamental entendermos as tecnologias que utilizamos diariamente e saber que nem tudo deve depender delas, mas que elas são ferramentas extraordinárias para facilitar nossas vidas e, se bem utilizadas, certamente terão esse papel.
 <b>Gentileza gera gentileza</b>
-#image: {"path":"29a.jpg","legend":"Denúncia e Bloqueio de usuários indesejados."}
+#image: {"path":"29a.jpg","legend":"Espalhe o bem!"}
 Além de combater comportamentos negativos, é igualmente importante promover uma cultura de respeito e gentileza online. A tecnologia pode ser uma ferramenta poderosa para conectar pessoas e espalhar mensagens positivas.
-A educação digital também desempenha um papel crucial. Ensinar crianças, adolescentes e adultos a usar a internet de forma consciente e responsável é fundamental para prevenir comportamentos tóxicos.
+A educação digital também desempenha um papel crucial. Ensinar jovens e adultos a usar a internet de forma consciente e responsável é fundamental para prevenir comportamentos tóxicos.
 Cursos e materiais educacionais como este que você está estudando agora oferecem recursos para educadores e pais ajudarem jovens a navegar no mundo digital de forma segura e ética.
 <b>O papel das plataformas</b>
 As plataformas online têm a responsabilidade de criar políticas claras e eficazes para moderar conteúdos e proteger os usuários. No entanto, a sociedade também deve fazer sua parte.
@@ -19,7 +19,9 @@ Organizações não governamentais, governos e instituições de ensino podem co
 Além disso, a legislação precisa evoluir para acompanhar os desafios do mundo digital. Legislações como a <i>Lei Geral de Proteção de Dados</i> (LGPD), são exemplos de como a regulamentação pode proteger os direitos dos usuários e responsabilizar as plataformas por negligência.
 <b>Um ambiente melhor</b>
 A internet é um reflexo da sociedade, e, como tal, está sujeita a comportamentos tanto positivos quanto negativos.
-No entanto, ao utilizar ferramentas de denúncia para desincentivar certos comportamentos, bloqueio para evitar interações pouco saudáveis, e promover a gentileza e a educação digital.
-Além de exigir responsabilidade por parte das plataformas que fornecem estes serviços, ajuda a criar ambientes online mais seguros e confortáveis para todos.
+Por isso devemos utilizar ferramentas de denúncia para desincentivar certos comportamentos, bloqueio para evitar interações pouco saudáveis, e promover a gentileza e a educação digital.
+Devemos exigir responsabilidade por parte das plataformas que fornecem estes serviços, isto ajuda a criar ambientes online mais seguros e confortáveis para todos.
 A tecnologia deve ser usada de forma consciente, não apenas para conectar pessoas, mas também para proteger seu bem-estar físico e mental.
 Como usuários, temos o poder de moldar a internet que queremos: uma que espalha o bem, respeita a diversidade e promove a segurança.
+#quiz: {"question":"As redes digitais são como ambientes privados, onde as interações são restritas e privadas como se estivéssemos na segurança do nosso quarto. Certo ou errado?","option1":{"choice":"Correto","answer":"Não é bem assim. As redes digitais são como meios públicos, comparáveis a praças, onde as pessoas interagem abertamente umas com as outras."},"option2":{"choice":"Errado","answer":"Com certeza! As redes digitais são como praças públicas, nossas interações e ideias estão constantemente sendo expostas, monitoradas e utilizadas."}}
+#quiz: {"question":"A responsabilidade de moderar conteúdos online é exclusivamente das plataformas, como redes sociais e sites. Esta afirmação está correta?","option1":{"choice":"Sim","answer":"Essa afirmação está errada porque a responsabilidade é compartilhada entre plataformas, governos e usuários."},"option2":{"choice":"Não","answer":"Exatamente! A responsabilidade de moderar conteúdos online deve ser compartilhada por diversos atores sociais, além das plataformas e dos próprios usuários."}}

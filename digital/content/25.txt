@@ -44,10 +44,13 @@ c. <i>Permitir apenas sites aprovados</i>: Crie uma lista de sites permitidos ma
 <b>Acompanhar e ajustar configurações</b>
 O Google Family Link permite que os pais acompanhem as atividades dos filhos e ajustem as configurações conforme necessário:
 Relatórios de Atividade:<br>No aplicativo Family Link, veja relatórios semanais sobre o tempo de tela, aplicativos mais usados e localizações frequentes.
-Aprovar ou Bloquear Novos Aplicativos:<br>Sempre que o filho tentar baixar um novo aplicativo da Play Store, você receberá uma notificação para aprovar ou bloquear o download.
-Ajustar Limites em Tempo Real:<br>Se o filho precisar de mais tempo para terminar uma tarefa ou jogo, você pode adicionar tempo extra diretamente no aplicativo.
+Aprovar ou bloquear novos aplicativos:<br>Sempre que o filho tentar baixar um novo aplicativo da Play Store, você receberá uma notificação para aprovar ou bloquear o download.
+Ajustar limites em tempo real:<br>Se o filho precisar de mais tempo para terminar uma tarefa ou jogo, você pode adicionar tempo extra diretamente no aplicativo.
 <b>Dicas adicionais para uso eficaz</b>
+Efetue testes:<br>Tente efetuar algumas atividades no dispositivo do filho que você gostaria que fossem restringidas ou reportadas, para verificar o nível de segurança. Explore as configurações buscando como fazer os ajustes necessários.
 Converse com seu filho:<br>Explique por que você está usando o Family Link e como ele pode ajudar a manter um equilíbrio saudável entre o uso da tecnologia e outras atividades.
 Revise as configurações regularmente:<br>À medida que seu filho cresce, suas necessidades e responsabilidades mudam. Ajuste as configurações conforme necessário.
 Use o Family Link em vários dispositivos:<br>Se você tem mais de um filho, pode adicionar vários perfis no aplicativo e gerenciar cada um individualmente.
 Mantenha o diálogo aberto:<br>O Family Link é uma ferramenta de apoio, mas a comunicação e a confiança entre pais e filhos são fundamentais para um uso saudável da tecnologia.
+Não relegue toda responsabilidade ao aplicativo:<br>É comum que os jovens encontrem brechas, contornos e consigam efetuar determinadas atividades sem que sejam monitorados. É importante que haja um acompanhamento direto e presencial, e que aplicações de controle parental sejam apenas uma ferramenta adicional.
+É importante ainda que ela não seja utilizada como uma forma de controle ditatorial e que os jovens sintam que os pais ainda confiam neles, mas que aspectos de sua segurança devem ser acompanhados de perto.

@@ -1,4 +1,4 @@
-import { Howl, Howler } from "https://kaatan.azurewebsites.net/radio/lib/howler.js";
+import { Howl, Howler } from "./howler.js";
 const _URL = "./content/";
 const _VOLUME = 0.1;
 
@@ -52,8 +52,8 @@ const App = {
                     <span>04/02/2025</span>
                 </small>
             `;
-           tools.appendChild(div.firstElementChild);
-            
+            tools.appendChild(div.firstElementChild);
+
             document.body.appendChild(tools);
 
             if (localStorage.getItem("progress")) {
@@ -184,7 +184,7 @@ const App = {
                     nextBtn.onclick = e => {
                         if (count == content.length - 1) {
                             funButton(nextBtn, "levelup", () => {
-                                App.User.Steps++;
+                                if (App.User.Steps < 31) App.User.Steps++;
                                 App.User.LastChapter = App.Chapters[App.User.Steps];
                                 localStorage.setItem("progress", JSON.stringify(App.User));
                                 callback();
@@ -256,7 +256,7 @@ const App = {
                         nextBtn.onclick = e => {
                             if (count == content.length - 1) {
                                 funButton(nextBtn, "levelup", () => {
-                                    App.User.Steps++;
+                                    if (App.User.Steps < 31) App.User.Steps++;
                                     App.User.LastChapter = App.Chapters[App.User.Steps];
                                     localStorage.setItem("progress", JSON.stringify(App.User));
                                     callback();
@@ -294,7 +294,7 @@ const App = {
                         nextBtn.onclick = e => {
                             if (count == content.length - 1) {
                                 funButton(nextBtn, "levelup", () => {
-                                    App.User.Steps++;
+                                    if (App.User.Steps < 31) App.User.Steps++;
                                     App.User.LastChapter = App.Chapters[App.User.Steps];
                                     localStorage.setItem("progress", JSON.stringify(App.User));
                                     callback();
@@ -347,7 +347,7 @@ const App = {
                     nextBtn.onclick = e => {
                         if (count == content.length - 1) {
                             funButton(nextBtn, "levelup", () => {
-                                App.User.Steps++;
+                                if (App.User.Steps < 31) App.User.Steps++;
                                 App.User.LastChapter = App.Chapters[App.User.Steps];
                                 localStorage.setItem("progress", JSON.stringify(App.User));
                                 callback();
@@ -381,7 +381,7 @@ const App = {
         nextBtn.onclick = e => {
             if (input.value.length > 2) {
                 App.User.Name = input.value;
-                App.User.Steps++;
+                if (App.User.Steps < 31) App.User.Steps++;
                 App.User.LastChapter = App.Chapters[App.User.Steps];
                 localStorage.setItem("progress", JSON.stringify(App.User));
                 funButton(nextBtn, "levelup", App["Introdução"]);
@@ -395,14 +395,14 @@ const App = {
     "Introdução": async (done = false) => {
         const container = await App.Render.Section("Introdução");
         if (done) toast("Você passou de nível!", 5);
-        App.Render.Content(container, "2", () => App["Mundo Virtual"](true));
+        App.Render.Content(container, "2", () => App["Mundo virtual"](true));
     },
-    "Mundo Virtual": async (done = false) => {
-        const container = await App.Render.Section("Mundo Virtual");
+    "Mundo virtual": async (done = false) => {
+        const container = await App.Render.Section("Mundo virtual");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "3", () => App["Primeiro Passo"](true));
     },
-    "Primeiro Passo": async (done = false) => {
+    "Primeiro passo": async (done = false) => {
         const container = await App.Render.Section("Primeiro Passo");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "4", () => App["Identidade no mundo digital"](true));
@@ -510,10 +510,10 @@ const App = {
     "Controle parental": async (done = false) => {
         const container = await App.Render.Section("Controle parental");
         if (done) toast("Você passou de nível!", 5);
-        App.Render.Content(container, "25", () => App["Professores e escolas"](true));
+        App.Render.Content(container, "25", () => App["Escolas e educadores"](true));
     },
-    "Professores e escolas": async (done = false) => {
-        const container = await App.Render.Section("Professores e escolas");
+    "Escolas e educadores": async (done = false) => {
+        const container = await App.Render.Section("Escolas e educadores");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "26", () => App["Cuidados com a segurança"](true));
     },
@@ -535,35 +535,248 @@ const App = {
     "Próximos passos?": async (done = false) => {
         const container = await App.Render.Section("Próximos passos?");
         if (done) toast("Você passou de nível!", 5);
-        App.Render.Content(container, "30", () => App["Certified"]());
+        App.Render.Content(container, "30", () => App["Esclarecimentos"](true));
     },
-    "Certified": async (done = false) => {
+    "Esclarecimentos": async (done = false) => {
+        const container = await App.Render.Section("Esclarecimentos");
         if (done) toast("Você passou de nível!", 5);
+        App.Render.Content(container, "31", () => App["Certificado"](true));
+    },
+    "Certificado": async (done = false) => {
+        App.User = {
+            "Name": "Anônimo",
+            "Steps": 32,
+            "LastChapter": "Certificado"
+        }
+        localStorage.setItem("progress", JSON.stringify(App.User));
+
+        function formatDate() {
+            const diasDaSemana = [
+                "Domingo", "Segunda-feira", "Terça-feira",
+                "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"
+            ];
+
+            const mesesDoAno = [
+                "janeiro", "fevereiro", "março", "abril", "maio",
+                "junho", "julho", "agosto", "setembro", "outubro",
+                "novembro", "dezembro"
+            ];
+
+            const dataAtual = new Date();
+
+            const diaSemana = diasDaSemana[dataAtual.getDay()];
+            const dia = dataAtual.getDate();
+            const mes = mesesDoAno[dataAtual.getMonth()];
+            const ano = dataAtual.getFullYear();
+
+            return `${diaSemana}, ${dia} de ${mes} de ${ano}`;
+        }
+
+        // Renderizar o certificado:
+        async function certificado() {
+            try { document.getElementById("video-background").remove() } catch { }
+            try { App.Music.stop(); } catch { }
+
+            const container = await App.Render.Section("Digite seu nome:");
+
+            const input = document.createElement("input");
+            input.classList.add("fun-input");
+            container.appendChild(input);
+
+            const p = document.createElement("p");
+            p.textContent = "Insira o nome como você gostaria que aparecesse em seu certificado."
+            container.appendChild(p);
+
+            const nextBtn = document.createElement("button");
+            nextBtn.classList.add("fun-button");
+            nextBtn.textContent = "Gerar certificado";
+            nextBtn.style.width = "fit-content";
+            nextBtn.style.margin = "auto";
+            container.appendChild(nextBtn);
+
+            nextBtn.onclick = e => {
+                document.body.innerHTML = "";
+                document.body.style.width = "2245px";
+                document.body.style.height = "1587px";
+
+                const div = document.createElement("div");
+                div.id = "container";
+                div.style.position = "absolute";
+                div.style.width = "2245px";
+                div.style.height = "1587px";
+                div.style.padding = "0";
+                div.style.margin = "0";
+                div.style.textAlign = "center";
+                div.style.backgroundImage = "url('./content/a.jpg')";
+                div.style.backgroundSize = "cover";
+                div.style.backgroundPosition = "center";
+                div.style.display = "grid";
+                div.style.gridTemplateRows = "1.3fr 1fr 1fr 1fr 1fr auto";
+                div.style.alignItems = "center";
+                div.style.justifyContent = "center";
+                div.style.zIndex = "1";
+
+                const nameSpan = document.createElement("span");
+                nameSpan.id = "name";
+                nameSpan.textContent = "Jorge Souza";
+
+                const footerSpan = document.createElement("span");
+                footerSpan.id = "footer";
+                footerSpan.textContent = "Luis Eduardo Magalhães-BA | Quarta feira, 23 de Janeiro de 2025";
+
+                // Adicionar ao div
+                div.appendChild(document.createElement("span"));
+                div.appendChild(document.createElement("span"));
+                div.appendChild(document.createElement("span"));
+                div.appendChild(nameSpan);
+                div.appendChild(document.createElement("span"));
+                div.appendChild(footerSpan);
+                div.appendChild(document.createElement("span"));
+                document.body.appendChild(div);
+
+                const canvas = document.createElement('canvas');
+                canvas.style.display = "none";
+                canvas.width = 2245;
+                canvas.height = 1587;
+                document.body.appendChild(canvas);
+
+                const name = input.value;
+
+                const nameElement = document.getElementById("name"); // Acessando corretamente o elemento #name
+                nameElement.textContent = name || "Jorge Souza Oliveira dos Santos";
+
+                if (name.length > 35) {
+                    document.getElementById("name").style.fontSize = "100px";
+                } else if (name.length < 20) {
+                    document.getElementById("name").style.fontSize = "150px";
+                } else {
+                    document.getElementById("name").style.fontSize = "120px";
+                }
+                document.getElementById("footer").textContent = "Luis Eduardo Magalhães-BA | " + formatDate();
+
+                html2canvas(div, {
+                    useCORS: true, // Permite carregar imagens de fontes externas
+                    allowTaint: false, // Previne a contaminação de imagens de outras origens
+                    logging: true,
+                    scale: 1, // Aumenta a qualidade da imagem
+                }).then(async function (canvas) {
+                    var image = canvas.toDataURL("image/png");
+                    var link = document.createElement('a');
+                    link.href = image;
+                    link.download = 'certificado.png';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    //
+                    document.body.style.width = "100%";
+                    document.body.style.height = "100%";
+                    const container = await App.Render.Section("Pronto!");
+                    const p = document.createElement("p");
+                    p.innerHTML = "Você baixou seu certificado, aproveite. Você sempre poderá baixá-lo novamente retornando a esta página.<br>Dica: <i>Se limpou os dados do navegador ou teve que acessar de outro dispositivo, você pode abrir o console do navegador e digitar o comando:</i> <b>concluir(\"Seu Nome\");</b> e pressionar enter.<br>Se quiser reiniciar todo o curso, abra o console do navegador e digite o comando:</i> <b>reiniciar();</b> e pressione enter."
+                    container.appendChild(p);
+                    const nextBtn = document.createElement("button");
+                    nextBtn.classList.add("fun-button");
+                    nextBtn.textContent = "OK";
+                    nextBtn.style.width = "fit-content";
+                    nextBtn.style.margin = "auto";
+                    container.appendChild(nextBtn);
+
+                    nextBtn.onclick = e => window.location.reload();
+                });
+
+            }
+            input.focus();
+        }
+
+        document.body.innerHTML = "";
+
+        const tools = document.createElement("div");
+        tools.id = "tools";
+        tools.style.position = "absolute";
+        tools.style.top = "0";
+        tools.style.left = "0";
+        tools.style.padding = "0";
+        tools.style.margin = "0";
+        tools.style.width = "100%";
+        tools.style.height = "100%";
+        tools.style.zIndex = "0";
+
+        let div = document.createElement("div");
+
+        div.innerHTML = `<div class="body-effect"></div>`;
+        tools.appendChild(div.firstElementChild);
+
+        div = document.createElement("div");
+
+        div.innerHTML = `
+            <div class="level">
+                <div id="progress">
+                    <div id="bar"></div>
+                </div>
+                <span id="chapters-done">0/100</span>
+            </div>
+        `;
+        tools.appendChild(div.firstElementChild);
+
+        div = document.createElement("div");
+        div.innerHTML = `
+            <small class="credits">
+                <span>Criado por:</span>
+                <a href="https://www.jorgesouza.com.br/" target="_blank">Jorge Souza Oliveira dos Santos</a>
+                <span>04/02/2025</span>
+            </small>
+        `;
+        tools.appendChild(div.firstElementChild);
+
+        document.body.appendChild(tools);
+
+        if (localStorage.getItem("progress")) {
+            App.User = JSON.parse(localStorage.getItem("progress"));
+            const totalChapters = Object.keys(App.Chapters).length;
+            const doneChapthers = App.User.Steps;
+            document.getElementById("chapters-done").textContent = doneChapthers + "/" + totalChapters;
+            const percentDone = (doneChapthers / totalChapters) * 100;
+            document.querySelector(".level #bar").style.width = percentDone + "%";
+        } else {
+            localStorage.setItem("progress", JSON.stringify(App.User));
+        }
+
+
+        if (done) {
+            toast("Parabéns! Você acabou de concluir o curso Guia de Segurança Digital para a Família!", 10)
+            try { App.Music.stop(); } catch { }
+            App.Music = new Howl({
+                src: ['fx/victory.mp3'],
+                loop: true,
+                autoplay: true,
+                volume: _VOLUME
+            });
+            App.Music.play();
+
+            const background = document.createElement("div");
+            background.id = "video-background";
+            background.classList.add("video-background");
+            const video = document.createElement("video");
+            video.muted = true;
+            video.loop = true;
+            video.autoplay = true;
+            video.src = "fx/fireworks.mp4";
+            video.setAttribute("type", "video/mp4");
+            background.appendChild(video);
+            const close = document.createElement("span");
+            close.classList.add("close");
+            close.innerHTML = "✖";
+            close.onclick = certificado;
+            background.appendChild(close);
+            document.body.appendChild(background);
+        } else {
+            certificado();
+        }
     },
     _: () => { },
 };
 
 // #region FX
-
-let particles = [];
-const canvas = document.createElement('canvas');
-const ctx = canvas.getContext('2d');
-document.body.appendChild(canvas);
-
-// Função para ajustar o tamanho do canvas
-function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}
-
-// Ajustar o canvas inicialmente e sempre que a janela for redimensionada
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
-
-function random(min, max) {
-    return Math.random() * (max - min) + min;
-}
-
 function createParticles(button) {
     const buttonRect = button.getBoundingClientRect();
     const colors = ['#ff0', '#f0f', '#0ff', '#f00', '#0f0', '#00f'];
@@ -604,13 +817,6 @@ function funButton(button, action, callback) {
     soundEffect.play();
     if (action == "next" || action == "levelup" || action == "ok") {
         createParticles(button);
-        /*
-        const rect = button.getBoundingClientRect()
-        createParticles(
-            rect.left + rect.width / 2,
-            rect.top + rect.height / 2
-        );
-        */
         button.classList.add("yes");
         if (action == "levelup") {
             button.style.opacity = "0.5";
@@ -639,12 +845,26 @@ function toast(content, time = 5) {
 
 // #endregion
 
-
+window.concluir = (name="Anônimo") => {
+    App.User = {
+        "Name": name,
+        "Steps": 32,
+        "LastChapter": "Certificado"
+    }
+    localStorage.setItem("progress", JSON.stringify(App.User));
+}
+window.reiniciar = () => {
+    App.User = {
+        "Name": "Anônimo",
+        "Steps": 1,
+        "LastChapter": "Boas-vindas"
+    }
+    localStorage.setItem("progress", JSON.stringify(App.User));
+}
 
 // #region INIT
 (async () => {
     App.Chapters = (await (await fetch(`${_URL}0.txt`)).json());
-
     if (localStorage.getItem("progress")) {
         App.User = JSON.parse(localStorage.getItem("progress"));
 
@@ -677,6 +897,7 @@ function toast(content, time = 5) {
     } else {
         App[App.User.LastChapter]();
     }
+    //
 
     window.oncontextmenu = e => {
         e.preventDefault();
@@ -685,11 +906,11 @@ function toast(content, time = 5) {
 
     function _back() {
         let btn = document.querySelectorAll(".fun-button")[0];
-        btn.click();
+        if (btn.textContent != "Concluir") btn.click();
     }
     function _forward() {
         let btn = document.querySelectorAll(".fun-button")[1];
-        btn.click();
+        if (btn.textContent != "Concluir") btn.click();
     }
     document.addEventListener('keydown', function (event) {
         if (event.ctrlKey) {

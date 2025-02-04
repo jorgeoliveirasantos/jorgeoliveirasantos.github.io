@@ -1,4 +1,4 @@
-Os ataques cibernéticos são ações criminosas realizadas contra sistemas digitais, ou hackers, como sites, servidores, dispositivos (computadores e smartphones) ou aplicativos (móveis ou desktop).
+Os ataques cibernéticos são ações criminosas realizadas contra sistemas digitais, como sites, servidores, dispositivos (computadores e smartphones) ou aplicativos (móveis ou desktop).
 O objetivo desses ataques pode variar, incluindo roubo de dados, destruição de informações, interrupção de serviços ou extorsão. Eles podem ser classificados em três principais categorias: ataques programados, ataques instaláveis e ataques diretos.
 Ataques programados:<br>Esses ataques são realizados através de malwares (softwares maliciosos), que são programados para causar danos ou roubar dados específicos. 
 Um malware pode ser introduzido no sistema de forma silenciosa e permanecer inativo até que um “gatilho” o ative. O gatilho pode ser uma ação do usuário, uma falha de segurança ou um momento de vulnerabilidade no sistema.
@@ -6,7 +6,7 @@ Um exemplo comum é o ransomware, que criptografa os dados do dispositivo da ví
 Ataques instaláveis:<br>Nesse caso, o usuário é induzido a baixar e instalar aplicativos aparentemente legítimos, mas que contêm códigos maliciosos.
 Esses aplicativos geralmente prometem funcionalidades atraentes, como ferramentas gratuitas ou recursos especiais, enganando o usuário.
 Uma vez instalados, esses aplicativos podem assumir o controle do dispositivo, muitas vezes desativando o antivírus, destruir dados locais ou alterar arquivos importantes, roubar informações sensíveis, como senhas, fotos e mensagens, enviando-as diretamente para os criminosos. 
-Esses ataques são frequentemente propagados por meio de links em sites duvidosos, mensagens de e-mail fraudulentas (phishing), anúncios falsos, ou sites de download ilegal de programas e aplicativos alterados por hackers.
+Esses ataques são frequentemente propagados por meio de links em sites duvidosos, mensagens de e-mail fraudulentas (phishing), anúncios falsos, ou sites de download ilegal de programas e aplicativos alterados por hackers (mod).
 Ataques diretos:<br>Esses ataques são realizados em tempo real pelo próprio criminoso ou através de scripts automatizados. Eles geralmente exploram brechas de segurança em servidores ou sistemas para obter acesso não autorizado.
 Os principais alvos desses ataques são servidores corporativos que armazenam dados sensíveis.
 Os objetivos mais comuns incluem sequestro de dados onde os criminosos criptografam os dados e exigem pagamento (geralmente em criptomoedas) para liberar o acesso, roubo de informações, quando os dados são vendidos no mercado negro ou usados para outras atividades ilegais, como fraudes financeiras. 
@@ -23,7 +23,7 @@ Busque alternativas gratuitas ou open-source, não instale versões modificadas 
 7. Mantenha cópias atualizadas dos seus dados importantes em locais seguros (como serviços de nuvem ou HDs externos). Assim, você pode restaurar suas informações caso seja alvo de um ataque.
 <b>Órgãos responsáveis pela Segurança Digital</b>
 No Brasil existem alguns órgãos oficiais responsáveis pela segurança cibernética e digital com os quais os usuários podem contar no caso de desconfiarem de uma atividade criminosa ou duvidosa ou mesmo se forem vítimas de algum tipo de fraude ou crime digital.
-SaferNet:<br>A SaferNet é uma ONG criada com o objetivo de monitorar e combater crimes digitais, proteger os direitos humanos no ambiente digital, prevenir discurso de ódio golpes e proteger crianças e adolescentes.
+SaferNet:<br>A SaferNet é uma ONG criada com o objetivo de monitorar e combater crimes digitais, proteger os direitos humanos no ambiente digital, prevenir discurso de ódio, golpes e proteger crianças e adolescentes.
 Para entrar em contato com essa instituição acesse:<br>safernet.org.br
 Setores de Crimes Digitais das delegacias civis e especializadas:<br>Muitas unidades da polícia civil nos estados têm delegacias especializadas em crimes cibernéticos ou departamentos que lidam diretamente com crimes digitais.
 Essas delegacias oferecem auxílio especializado no caso de vítimas de golpes online, como phishing, roubo de identidade ou invasão de contas. 

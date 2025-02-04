@@ -318,3 +318,96 @@ hr {
         transform: scaleX(1) scaleY(1);
     }
 }
+
+/* #region FIREWORKS */
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0; /* Certifique-se de que outros elementos fiquem acima */
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto; /* Garante que a proporção seja respeitada */
+    height: auto; /* Garante que a proporção seja respeitada */
+    z-index: 0;
+    opacity: 0.5;
+}
+
+
+.close {
+    position: fixed;
+    z-index: 1;
+    color: var(--LightYellow);
+    background-color: var(--Crimson);
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    width: fit-content;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* #endregion */
+
+
+
+
+@font-face {
+    font-family: sacramento;
+    src: url("./Sacramento-Regular.ttf");
+}
+
+#container {
+    position: absolute;
+    width: 2245px;
+    height: 1587px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-image: url("./content/a.jpg");
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr auto;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+#name {
+    font-family: sacramento;
+    font-size: 100px;
+    color: #fff;
+    z-index: 2;
+}
+
+#footer {
+    width: 100%;
+    height: fit-content;
+    left: 0;
+    padding: 0;
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-size: 30px;
+    color: #FB0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    z-index: 2;
+}
+
+
+/**/

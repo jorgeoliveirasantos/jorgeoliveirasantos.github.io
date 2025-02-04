@@ -12,14 +12,25 @@ const App = {
     Music: false,
     Render: {
         Section: async (title) => {
+            // Generate page tools:
+
             document.body.innerHTML = "";
+
+            const tools = document.createElement("div");
+            tools.id = "tools";
+            tools.style.position = "absolute";
+            tools.style.top = "0";
+            tools.style.left = "0";
+            tools.style.padding = "0";
+            tools.style.margin = "0";
+            tools.style.width = "100%";
+            tools.style.height = "100%";
+            tools.style.zIndex = "0";
 
             let div = document.createElement("div");
 
-            div.innerHTML = `
-            <div class="body-effect"></div>
-            `;
-            document.body.appendChild(div.firstElementChild);
+            div.innerHTML = `<div class="body-effect"></div>`;
+            tools.appendChild(div.firstElementChild);
 
             div = document.createElement("div");
 
@@ -31,17 +42,19 @@ const App = {
                     <span id="chapters-done">0/100</span>
                 </div>
             `;
-            document.body.appendChild(div.firstElementChild);
+            tools.appendChild(div.firstElementChild);
 
             div = document.createElement("div");
             div.innerHTML = `
-                <div class="credits">
+                <small class="credits">
                     <span>Criado por:</span>
                     <a href="https://www.jorgesouza.com.br/" target="_blank">Jorge Souza Oliveira dos Santos</a>
                     <span>04/02/2025</span>
-                </div>
+                </small>
             `;
-            document.body.appendChild(div.firstElementChild);
+           tools.appendChild(div.firstElementChild);
+            
+            document.body.appendChild(tools);
 
             if (localStorage.getItem("progress")) {
                 App.User = JSON.parse(localStorage.getItem("progress"));
@@ -53,6 +66,8 @@ const App = {
             } else {
                 localStorage.setItem("progress", JSON.stringify(App.User));
             }
+
+            // Container
 
             const container = document.createElement("div");
             container.classList.add("fun-container");
@@ -430,10 +445,10 @@ const App = {
     "Termos de uso": async (done = false) => {
         const container = await App.Render.Section("Termos de uso");
         if (done) toast("Você passou de nível!", 5);
-        App.Render.Content(container, "12", () => App["Antivírus"](true));
+        App.Render.Content(container, "12", () => App["Antivirus"](true));
     },
     "Antivirus": async (done = false) => {
-        const container = await App.Render.Section("Antivírus");
+        const container = await App.Render.Section("Antivirus");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "13", () => App["Download"](true));
     },
@@ -667,6 +682,27 @@ function toast(content, time = 5) {
         e.preventDefault();
         return false;
     };
+
+    function _back() {
+        let btn = document.querySelectorAll(".fun-button")[0];
+        btn.click();
+    }
+    function _forward() {
+        let btn = document.querySelectorAll(".fun-button")[1];
+        btn.click();
+    }
+    document.addEventListener('keydown', function (event) {
+        if (event.ctrlKey) {
+            switch (event.key) {
+                case 'ArrowLeft':
+                    _back();
+                    break;
+                case 'ArrowRight':
+                    _forward();
+                    break;
+            }
+        }
+    });
 })()
 // #endregion
 

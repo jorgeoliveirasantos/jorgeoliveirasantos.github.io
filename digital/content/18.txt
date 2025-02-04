@@ -2,7 +2,7 @@ O que é um algoritmo? Na cabeça de muitas pessoas hoje em dia ele é um super-
 De certa forma, cada visão distorcida dessa se baseia em algo da realidade, mas ao final, o resultado torna-se bem distante do que realmente é. 
 Em primeiro lugar, não devemos falar sobre O Algoritmo e sim sobre um tipo de algoritmo, pois existem infinitos, de algoritmos básicos utilizados em brinquedos como o Cubo Mágico, passando por funções matemáticas, até os grandes modelos de aprendizado de máquina.
 Para entender cada um, devemos saber o que é e como funciona um algoritmo.
-<b style="font-family: 'Courier New', Courier, monospace;">Acordar;<br>Escovar os dentes;<br>Se: (pão comprado) fazer café;<br>Senão: comprar pão;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Então: fazer café;<br>Tomar café;<br>Ir para o trabalho;</b>
+<i style="font-family: 'Courier New', Courier, monospace; text-align: justify; width: 100%;">Acordar;<br>Escovar os dentes;<br>Se: (pão comprado) fazer café;<br>Senão: comprar pão;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Então: fazer café;<br>Tomar café;<br>Ir para o trabalho;</i>
 Este é um exemplo bem rude de como funciona um algoritmo, mas se você quiser entender melhor sugiro que estude um pouco sobre o algoritmo de Rubik que é utilizado para a solução do Cubo Magico.
 <b>Conceito básico de algoritmo</b>
 Algoritmos digitais são conjuntos de instruções que orientam o funcionamento de sistemas computacionais. Eles descrevem passo a passo o que dispositivos como computadores, smartphones e até eletrodomésticos conectados devem fazer.
@@ -13,7 +13,7 @@ Esses algoritmos são parte de processos técnicos complexos e não são de inte
 Entretanto se você desejar conhecer, eu ofereço cursos de programação gratuitos que você pode verificar em minhas redes.
 Porém, existe um tipo de algoritmo que tem impacto direto no cotidiano das pessoas e, por isso, desperta mais interesse: os algoritmos de filtragem e classificação.
 O que são algoritmos de filtragem e classificação?
-sses algoritmos têm como objetivo “conhecer” o usuário. Ao longo do tempo, eles armazenam e analisam informações sobre as interações do usuário em uma plataforma, como cliques, curtidas, comentários e tempo de visualização.
+Esses algoritmos têm como objetivo “conhecer” o usuário. Ao longo do tempo, eles armazenam e analisam informações sobre as interações do usuário em uma plataforma, como cliques, curtidas, comentários e tempo de visualização.
 Com base nesses dados, o sistema constrói um “perfil” personalizado, que reflete traços das preferências, interesses e comportamentos daquele usuário.
 Para que servem esses dados?
 Os dados coletados são utilizados de várias maneiras, incluindo:
@@ -61,4 +61,6 @@ Os ajustes contínuos também exploram mecanismos psicológicos para manter os u
 Os algoritmos frequentemente mostram conteúdos que reforçam as crenças do usuário, o que aumenta a probabilidade de engajamento. 
 Embora eficiente, essa abordagem tem algumas implicações negativas, reforça os interesses existentes do usuário, limitando a exposição a ideias novas ou diversas.
 Prioriza conteúdos sensacionalistas ou polarizadores, que podem ser prejudiciais, mas são altamente engajadores criando ou aprofundando divisões na sociedade e mesmo gerando conflitos.
-A otimização para engajamento pode levar a um uso compulsivo da plataforma que evolução para uma condição patológica. As empresas, no entanto, enfrentam pressão crescente para equilibrar o uso desses mecanismos com responsabilidade ética e impactos sociais.
+A otimização para engajamento pode levar a um uso compulsivo da plataforma que evolui para uma condição patológica. As empresas, no entanto, enfrentam pressão crescente para equilibrar o uso desses mecanismos com responsabilidade ética e impactos sociais.
+#quiz: {"question":"Qual o objetivo principal das plataformas ao desenvolverem algoritmos de conteúdo?","option1":{"choice":"Diversão","answer":"As plataformas necessitam que seus usuários sejam engajados e ativos, isso gera cliques em anúncios e vendas de produtos que é o que as mantém."},"option2":{"choice":"Retenção","answer":"Com certeza! Reter os usuários na plataforma e mantê-los engajados é a forma como elas se sustentarão podendo vender seus produtos e anúncios."}}
+#quiz: {"question":"Ao focar em reter usuários e mantê-los engajados, as plataformas costumam filtrar conteúdos de acordo com suas preferências, quais as implicações disso?","option1":{"choice":"Nenhuma","answer":"Usuários retidos e engajados costumam consumir conteúdos com o chamado \"viés de confirmação\", onde eles recebem conteúdos alinhados com suas crenças, isso cria bolhas gerando polarização social e dependência psicológica dessas redes."},"option2":{"choice":"Sérias","answer":"Correto! Usuários são retidos recebendo conteúdos com \"viés de confirmação\" que costumam criar bolhas, agravando as polarizações sociais. Além disso, os usuários mais engajados costumam ser, na realidade, dependentes dessas redes."}}

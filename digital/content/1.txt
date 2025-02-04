@@ -1,0 +1,7 @@
+// Este é um comentário, ignorar essa linha
+#video: ./myVideo.mp4
+#image: {"path":"11b.jpg","legend":"Configurações de aplicativo instalado no Windows 11"}
+#quiz: {"question":"Qual o impacto de uma entrada consciente e planejada no mundo digital?","option1":{"choice":"Nenhum","answer":"Uma entrada não planejada no ambiente digital, além de arrsicada nos carrega por caminhos arbitrários e nos impede de conhecer uma infinidade de ferramentas maravilhosas que estariam esperando por nós."},"option2":{"choice":"Um mundo novo","answer":"Exato! Uma entrada planejada e consciente no mundo digital nos permite conhecer um mundo repleto de recursos que talvez jamais conheceríamos se entrássemos guiados por algoritmos e pessoas interessadas somente em lucro."}}
+
+// Dividir a linha
+split(": ");

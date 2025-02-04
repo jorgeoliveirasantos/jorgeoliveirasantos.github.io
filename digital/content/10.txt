@@ -1,0 +1,28 @@
+Quando falamos de recursos nativos do sistema estamos falando de determinada aplicação ter acesso a serviços como câmera, microfone, contatos, SMS etc.
+Por medida de segurança alguns destes recursos vêm bloqueados por padrão e para utilizá-los uma aplicação precisa solicitar autorização do usuário.
+Versões mais recentes de sistemas operacionais móveis como Android e IOS ainda fornecem a possibilidade de concedermos essa permissão ao aplicativo somente quando ele estiver em execução impedindo que ele continue utilizando esses serviços depois que for fechado.
+O mesmo se aplica para websites:
+#image: {"path":"10a.jpg","legend":"Um site solicita autorização para exibir notificações usando o navegador."}
+Neste exemplo, um site está solicitando permissão para exibir notificações, essa permissão pode ser solicitada para outros recursos nativos do sistema já citados até agora.
+Uma vez a permissão concedida o site poderá continuar utilizando o serviço mesmo depois que fecharmos o navegador por meio de serviços em segundo plano no sistema operacional.
+É possível remover, adicionar ou mesmo desativar completamente essas permissões nas configurações do navegador, veja:
+#image: {"path":"10b.jpg","legend":"Configurações de permissões de um site no navegador"}
+No exemplo anterior, temos as configurações de permissões em navegadores como Chrome e Edge, a permissão está habilitada entretanto os sites precisam solicitá-la.
+A lista vazia mostra que essa permissão ainda não foi concedida a nenhum site. Podemos liberar ou bloquear antecipadamente qualquer endereço apenas adicionando-o à lista.
+Geralmente ao entrarmos nas configurações de um navegador a opção <em>Permissões</em>, está facilmente visível, podendo ainda ser chamada de <em>Cookies</em> e <em>Permissões do Site</em>, ou até mesmo <em>Privacidade</em>.
+O mesmo pode ser feito no sistema operacional de computadores, abaixo temos um exemplo das permissões de uso do serviço de GPS no Windows 11:
+#image: {"path":"10c.jpg","legend":"Configurações de privacidade do Windows 11"}
+Já neste exemplo, a permissão foi desativada, o que indica que nenhum site, nem mesmo de mapas, poderá utilizá-la, o mesmo pode ser feito para uso de microfone, câmera, etc.
+Computadores desktop costumam ser mais permissivos por possuírem menos recursos nativos sensíveis do que smartphones, de maneira que aplicações instaladas podem obter essas permissões mais facilmente.
+Em sistemas móveis também podemos alterar as permissões de aplicativos individualmente ou de todos ao mesmo tempo. Abaixo você pode ver o gerente de permissões do Android:
+#image: {"path":"10d.jpg","legend":"Configurações de permissões do Android"}
+Geralmente essas configurações podem ser acessadas pelo menu de <em>Configurações</em> do aparelho e posteriormente procurando pela opção <em>Permissões</em>, ou <em>Privacidade</em>.
+Ou pode ainda ser alterada acessando as configurações individuais de cada aplicativo no menu <em>Configurações → Aplicativos</em>  e procurando pela opção <em>Permissões</em> dentro das configurações do aplicativo desejado.
+Então devo desativar todas as permissões dos aplicativos para me manter seguro? A resposta obviamente é não, há aplicativos que, sem certas permissões, tornam-se inúteis, como você se guiaria numa estrada usando Google Maps se desativar seu acesso ao GPS?
+Ou como você enviaria fotos pelo Whatsapp se bloquear seu acesso ao sistema de arquivos?
+Estamos apenas mostrando os caminhos necessários para que o controle esteja em suas mãos, mas a reflexão a ser feita sobre cada situação ainda depende de você.
+Algumas situações podem requerer que façamos certas perguntas:<br> – Este aplicativo necessita mesmo acesso a este recurso?<br> – Esta permissão precisa ser mantida mesmo depois que eu fechar o aplicativo?<br>
+Alguns aplicativos podem utilizar permissões para recolher dados para sistemas de bigdata, ou seja, processamento de grandes volumes de dados obtidos de vários usuários, muitas vezes essa coleta pode ser utilizada para melhorar um serviço. 
+Outras vezes pode ser utilizada para criar um histórico de cada usuário para vender anúncios, é o que te dá aquela sensação de ser perseguido pelo mesmo anúncio em todo lugar que vai.
+Cabe a cada um de nós saber o que desativar a fim de estarmos mais seguros, sem que um histórico de nossa vida seja criado, mas sem impedir o avanço das tecnologias ou bloquear recursos dos quais precisamos.
+#quiz: {"question":"Quando devo desativar as permissões de um aplicativo?","option1":{"choice":"Nunca","answer":"Algumas aplicações dependem de certas permissões para fornecer seu serviço principal. Depende de cada caso sabermos se a permissão é necessária ou segura."},"option2":{"choice":"Depende","answer":"Isso mesmo! Devemos verificar em cada caso se aquele aplicativo precisa mesmo daquela permissão ou se nos sentimos seguros fornecendo-a."}}

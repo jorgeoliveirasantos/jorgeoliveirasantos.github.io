@@ -1,0 +1,13 @@
+Vamos começar a explorar os recursos do Google que estão disponíveis tanto nos smartphones quanto nos PCs, como Youtube, Gmail, Contatos e Drive.
+Para utilizar estes recursos precisamos ter uma conta Google. Caso você já possua uma conta Google cadastrada num smartphone pode utilizá-la no computador fazendo seu login em Google.com.
+Caso não possua, acesse o Google e clique em Fazer Login, na tela de login clique em Criar uma conta. Depois disso basta inserir seus dados e prosseguir conforme o site for lhe solicitando. Você pode ainda vincular seu número de celular à conta.
+Com essa conta, você pode utilizar subcontas como do Youtube, do Gmail, do Google Drive, entre outros, você pode acessar cada serviço a partir da página inicial, google.com, indo no menu principal.
+É importante que ao criar a conta, use uma senha forte, guarde num local seguro e memorize-a. Ao acessar pela primeira vez sua conta, vá para a opção de Gerenciamento da Conta em seu perfil.
+Acesse a sessão Segurança e defina uma autenticação multifator (MFA). Após isso, você terá todos os serviços do Google ao seu alcance de forma segura, vejamos alguns a partir de agora.
+No Youtube você pode assistir vídeos, criar listas de reproduções, enviar seus próprios vídeos e até mesmo fazer transmissões ao vivo.
+No Gmail você tem um serviço de e-mail completo.
+No Google Drive você tem um serviço de armazenamento em nuvem onde você pode guardar até 15 gigabytes de arquivos, tudo com uma mesma conta Google.
+Para acessar seus contatos, basta acessar o site principal do Google, clicar no menu, logo ao lado de sua imagem de perfil e selecionar Contatos.
+Lá você poderá ver todos os contatos que salvou em seu telefone, se não os ver, certifique-se que está logado na mesma conta que está logada no aparelho celular.
+Certifique-se ainda de que as configurações da agenda telefônica de seu celular estão definidas para salvar os contatos na conta Google e não no chip ou no aparelho. 
+Pronto, você já tem um backup de sua agenda que pode resgatar sempre que precisar, sem se preocupar se perder o aparelho. Além de tudo pode organizar sua agenda diretamente do computador ou do celular.

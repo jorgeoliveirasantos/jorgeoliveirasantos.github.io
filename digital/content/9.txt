@@ -1,0 +1,36 @@
+Tanto páginas web, como aplicativos móveis e para computador podem ser executados on-line e off-line, isso mesmo, sites podem continuar sendo executados mesmo depois de fecharmos o navegador e mesmo sem internet.
+Da mesma maneira, um aplicativo móvel ou de computador pode estar acessando a internet a qualquer momento em serviços “ocultos”.
+Seja para personalizar a experiência do usuário, seja para enviar dados de diagnóstico para os desenvolvedores melhorarem a aplicação e corrigirem bugs.
+Essas particularidades, muitas vezes desconhecidas podem ser configuradas e controladas pelos usuários a partir do momento em que tem maior conhecimento sobre o funcionamento dos serviços e plataformas que utiliza.
+Os aplicativos móveis e os programas de computador compartilham várias características técnicas, como a capacidade de operar em segundo plano e a necessidade de permissões para acessar recursos do sistema.
+Já as páginas da web possuem especificidades próprias, como a dependência de navegadores e tecnologias de internet para seu funcionamento.
+Apesar das diferenças, há recursos comuns que destacam a importância desses serviços em qualquer plataforma.
+Entre eles, podemos citar:
+Acesso a recursos do sistema:<br>Aplicativos e sites modernos utilizam câmera, microfone, GPS, lista de contatos, arquivos armazenados, entre outros, de maneira integrada. Esse acesso é essencial para a funcionalidade dos serviços, mas também levanta questões de privacidade e segurança.
+Segurança:<br>Medidas como autenticação por senha, verificação multifator, antivírus e firewall são indispensáveis para proteger os usuários de ameaças cibernéticas. No entanto, a eficácia dessas soluções depende de sua implementação correta e do comportamento consciente dos usuários.
+Tratamento de dados pessoais:<br>Informações como nome, fotos, telefone, e-mail, endereço, documentos pessoais, preferências e até dados de rastreamento, como histórico de navegação e localização GPS, são amplamente coletados, armazenados e, em muitos casos, compartilhados.
+Essa prática, enquanto facilita serviços personalizados, também exige maior conscientização sobre privacidade e regulamentação sobre o uso ético dos dados.
+Ao olharmos para o futuro, o desenvolvimento de novas tecnologias continuará a expandir essas categorias, trazendo inovações que prometem mais conveniência, mas também desafios éticos e técnicos.
+Refletir sobre como interagimos com essas plataformas e serviços é essencial para garantir que as vantagens tecnológicas sejam plenamente aproveitadas sem comprometer nossa segurança ou privacidade.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+Alguns aplicativos foram desenvolvidos visando dar aos pais ferramentas eficientes na proteção e supervisão dos filhos no mundo digital, entre eles encontram-se aplicativos de controle parental como Microsoft Family Safety e o Google Family Link.
+Aplicativos de controle parental fornecem aos pais a possibilidade de controlar o tempo de tela, o tempo gasto em jogos e monitorar atividades como navegação na web.
+O Google Family Link é uma ferramenta que permite aos pais gerenciar e monitorar as atividades online dos filhos, o tempo de tela, uso de aplicativos, localização GPS, bloqueio de sites e restrições de interações online.
+<b>Verifique os Requisitos</b>
+Antes de começar, certifique-se de que:
+1. O dispositivo dos pais (Android ou iOS) e o dispositivo dos filhos (Android ou Chromebook) estejam atualizados.
+2. Ambos os dispositivos tenham conexão com a internet.
+3. O filho tenha uma conta do Google (se não tiver, você pode criar uma durante o processo).
+4. O dispositivo do filho seja compatível com o Family Link. Consulte a lista de dispositivos compatíveis em: https://families.google.com/familylink/.
+<b>Baixar e instalar o Google Family Link</b>
+<b>No dispositivo dos pais:</b><br>1. Abra a loja de aplicativos (Google Play Store para Android ou App Store para iOS).<br>2. Pesquise por <i>Google Family Link</i>.<br>3. Baixe e instale o aplicativo.
+<b>No dispositivo do filho:</b><br>1. Abra a Google Play Store.<br>2. Pesquise por <i>Google Family Link para Crianças e Adolescentes</i>.<br>3. Baixe e instale o aplicativo.
+<b>Configurar o Family Link</b>
+<b>No dispositivo dos pais:</b><br>1. Abra o aplicativo Google Family Link.<br>2. Toque em <i>Começar</i>.<br>3. Selecione se você é <i>Pai/Mãe</i>.<br>4. Escolha a conta do Google que deseja usar para gerenciar o Family Link.
+<b>No dispositivo do filho:</b><br>1. Abra o aplicativo Google Family Link para Crianças e Adolescentes.<br>2. Toque em <i>Começar</i>.<br>3. Siga as instruções para vincular a conta do Google do filho à conta dos pais.
+<b>Conectar os dispositivos:</b><br>1. No dispositivo dos pais, o aplicativo vai gerar um código de vinculação.<br>2. Insira esse código no dispositivo do filho.<br>3. Aceite os termos de serviço e permissões necessárias.
+<b>Configurar Controles Parentais</b>
+Agora que os dispositivos estão conectados, você pode começar a configurar os controles parentais:
+<b>Gerenciar tempo de tela:</b>
+1. No aplicativo Family Link no dispositivo dos pais, selecione o perfil do filho.
+2. Toque em <i>Limites Diários</i>.
+3. Defina um limite de tempo diário para o uso do dispositivo. Por exemplo, 2 horas por dia.
+4. Você também pode definir horários de “hora de dormir”, durante os quais o dispositivo ficará bloqueado.
+<b>Controlar o uso de aplicativos:</b>
+1. No perfil do filho, toque em <i>Gerenciar Aplicativos</i>.
+2. Veja uma lista de todos os aplicativos instalados no dispositivo do filho.
+3. Toque em um aplicativo para definir limites de tempo de uso ou bloquear completamente.
+<b>Bloquear e restringir sites:</b>
+1. No perfil do filho, toque em <i>Configurações → Filtros do Google Chrome</i>.
+2. Escolha entre:
+a. <i>Permitir todos os sites</i>: Sem restrições.
+b. <i>Tentar bloquear sites explícitos</i>: O Google bloqueia automaticamente sites inadequados.
+c. <i>Permitir apenas sites aprovados</i>: Crie uma lista de sites permitidos manualmente.
+<b>Monitorar Localização GPS:</b>
+1. No perfil do filho, toque em <i>Localização</i>.
+2. Ative a localização para ver onde o dispositivo do filho está em tempo real.
+3. Você também pode configurar notificações para ser avisado quando o filho chegar ou sair de lugares específicos, como escola ou casa.
+<b>Gerenciar Interações Online:</b>
+1. No perfil do filho, toque em <i>Configurações → Conta do Google</i>.
+2. Aqui, você pode gerenciar permissões para:
+3. Adicionar amigos em jogos e aplicativos.
+4. Compartilhar informações pessoais.
+5. Usar o Google Assistente.
+<b>Acompanhar e ajustar configurações</b>
+O Google Family Link permite que os pais acompanhem as atividades dos filhos e ajustem as configurações conforme necessário:
+Relatórios de Atividade:<br>No aplicativo Family Link, veja relatórios semanais sobre o tempo de tela, aplicativos mais usados e localizações frequentes.
+Aprovar ou Bloquear Novos Aplicativos:<br>Sempre que o filho tentar baixar um novo aplicativo da Play Store, você receberá uma notificação para aprovar ou bloquear o download.
+Ajustar Limites em Tempo Real:<br>Se o filho precisar de mais tempo para terminar uma tarefa ou jogo, você pode adicionar tempo extra diretamente no aplicativo.
+<b>Dicas adicionais para uso eficaz</b>
+Converse com seu filho:<br>Explique por que você está usando o Family Link e como ele pode ajudar a manter um equilíbrio saudável entre o uso da tecnologia e outras atividades.
+Revise as configurações regularmente:<br>À medida que seu filho cresce, suas necessidades e responsabilidades mudam. Ajuste as configurações conforme necessário.
+Use o Family Link em vários dispositivos:<br>Se você tem mais de um filho, pode adicionar vários perfis no aplicativo e gerenciar cada um individualmente.
+Mantenha o diálogo aberto:<br>O Family Link é uma ferramenta de apoio, mas a comunicação e a confiança entre pais e filhos são fundamentais para um uso saudável da tecnologia.

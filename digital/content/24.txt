@@ -1,0 +1,15 @@
+Bancos são, a princípio, serviços seguros, seja pelas normas e protocolo rígidos seguidos, seja pela comunicação entre serviços que é feita sem qualquer conexão com a internet.
+Geralmente os ataques cibernéticos que visam dados bancários ocorrem não diretamente às contas bancárias, mas a dados que circulam por serviços online, como pagamentos em lojas virtuais, uso de cartão de crédito etc. 
+Neste sentido alguns cuidados podem ser tomados para evitar “surpresas”, e os serviços financeiros como bancos e plataformas de pagamentos, costumam oferecer ferramentas para fortalecer a segurança dos usuários, tentarei destacar aqui alguns recursos úteis.
+<b>Bloqueie seu cartão temporariamente</b>
+Alguns aplicativos de banco permitem bloquear o cartão de crédito temporariamente de forma que não possa ser utilizado em nenhum pagamento. Assim você pode desbloqueá-lo no momento de pagar, e bloqueá-lo novamente.
+<b>Desative a função crédito</b>
+Se o objetivo de um cartão é apenas saque e pagamento à vista e não há perspectiva de uso da função de crédito, é possível manter o cartão e desativar somente essa função isso pode ser feito diretamente no banco ou pelo aplicativo.
+<b>Apague o código de segurança</b>
+Caso tema perder o cartão, algo útil é apagar o código de segurança que se encontra no verso, de forma que, somente com o número do cartão, ele não possa ser usado. Entretanto o melhor recurso é realmente manter o cartão bloqueado.
+<b>Use cartões temporários</b>
+Não cadastre seu cartão principal em pagamentos ou serviços online. Por mais que manter seu cartão cadastrado numa plataforma possa parecer uma facilidade, algum dia você pode perder seu acessoa a ela ou mesmo ter seus dados vazados.
+Use o aplicativo do seu banco para gerar virtuais cartões de pagamento único, estes cartões só existem até o momento do pagamento. Verifique com seu banco a disponibilidade desse serviço, ele costuma ser gratuito.
+<b>Mantenha fora do alcance de crianças e adolescentes</b>
+O vício em jogos e serviços online entre crianças e adolescentes, aliado a estratégias de marketing agressivas e à ausência de um controle rigoroso de idade em certas plataformas, somado ao descuido e à falta de supervisão por parte dos pais, pode causar grandes transtornos.
+Muitas vezes, as surpresas na fatura do cartão de crédito têm origem dentro de casa, quando jovens utilizam o cartão dos responsáveis sem autorização para adquirir moedas virtuais ou personalizar personagens online, buscando status ou reconhecimento em jogos e redes sociais.

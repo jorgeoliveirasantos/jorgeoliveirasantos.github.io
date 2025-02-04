@@ -1,0 +1,21 @@
+O vazamento de dados ocorre quando informações pessoais, como nome, telefone, CPF e dados bancários, são expostas na internet devido a falhas de segurança ou ataques hackers. 
+Isso pode resultar em golpes, uso indevido para propagandas abusivas e fraudes financeiras. Se você for vítima, é importante registrar um boletim de ocorrência, limpar seus dados das redes digitais e aplicativos, e, se necessário, buscar reparação financeira na Justiça.
+Dados pessoais vazados podem causar vários transtornos, desde compras indevidas, quando os dados de cartão estavam incluídos no vazamento, até uso indevido de imagem para criar perfis falsos e bots, ou dos dados pessoais para criar cadastros falsos em serviços diversos.
+Enquanto em alguns casos os criminosos de posse dos seus dados podem se passar por você para aplicar golpes. Em outros, é comum também que ele utilize esses dados para tentar aplicar golpes em você mesmo, é comum por exemplo, quando o e-mail de alguém é vazado.
+A pessoa começar a receber spans e phishings, alguns tentando vender produtos ou outros tentando enganá-la ou mesmo ameaçá-la, neste último caso o criminoso pode dizer ter posse de informações sobre a vítima que ele não tem, é bom estar atento aos tipos de golpes mais comuns.
+<b>Como prevenir?</b>
+Como o vazamento de dados é algo fora do controle do usuário, e depende das normas e estratégias de segurança seguidas pelos serviços que ele utiliza, é algo para o qual geralmente não se está preparado.
+Mas podemos tomar algumas atitudes para minimizar a probabilidade de sermos vítimas:
+1. Evite armazenar dados de forma digital quando possível.
+2. Mantenha cartões bloqueados enquanto não os utiliza.
+3. Verifique se o serviço que você usa tem histórico de sofrer ataques cibernéticos e de vazamento de dados e procure sempre serviços mais confiáveis.
+4. Utilize serviços online de checagem de vazamentos para verificar se seus e-mails ou senhas estavam em vazamentos conhecidos usando serviços como Serasa Antiufraude ou Registrato.
+E mesmo o monitoramento do Google que verifica se o e-mail ou a senha do usuário apareceram na dark web e pode ser configurado nas opções de segurança da conta.
+5. Remova dados online e contas que não são mais necessários.
+<b>O que fazer se for vítima</b>
+Alguns cuidados básicos devem ser tomados por alguém cujos dados foram vazados, entre eles incluem:
+1. Antes de tudo, reúna provas, como prints de tela, e-mails, fotos, históricos etc., caso seja necessário tomar medidas mais rigorosas no futuro. Armazene-os off-line, num HD ou pendrive livre de vírus.
+2. Limpe os dados de suas redes digitais imediatamente e, se necessário apague a conta, mas não solicite exclusão da mesma enquanto seus dados ainda estiverem lá.
+3. Altere suas senhas, e se possível, habilite a MFA.
+4. Se os dados bancários ou de cartão foram vazados, bloqueie o cartão e verifique o histórico da sua conta.
+5. Procure os órgãos responsáveis em busca de ajuda, se preciso, ou registre um boletim ocorrência junto, se houver danos morais e financeiros você pode buscar reparação judicial.

@@ -1,0 +1,39 @@
+Os ataques cibernéticos são ações criminosas realizadas contra sistemas digitais, ou hackers, como sites, servidores, dispositivos (computadores e smartphones) ou aplicativos (móveis ou desktop).
+O objetivo desses ataques pode variar, incluindo roubo de dados, destruição de informações, interrupção de serviços ou extorsão. Eles podem ser classificados em três principais categorias: ataques programados, ataques instaláveis e ataques diretos.
+Ataques programados:<br>Esses ataques são realizados através de malwares (softwares maliciosos), que são programados para causar danos ou roubar dados específicos. 
+Um malware pode ser introduzido no sistema de forma silenciosa e permanecer inativo até que um “gatilho” o ative. O gatilho pode ser uma ação do usuário, uma falha de segurança ou um momento de vulnerabilidade no sistema.
+Um exemplo comum é o ransomware, que criptografa os dados do dispositivo da vítima e exige pagamento para liberar o acesso. Outros tipos incluem spyware (que monitora e rouba informações) e worms (que se espalham para outros dispositivos na rede).
+Ataques instaláveis:<br>Nesse caso, o usuário é induzido a baixar e instalar aplicativos aparentemente legítimos, mas que contêm códigos maliciosos.
+Esses aplicativos geralmente prometem funcionalidades atraentes, como ferramentas gratuitas ou recursos especiais, enganando o usuário.
+Uma vez instalados, esses aplicativos podem assumir o controle do dispositivo, muitas vezes desativando o antivírus, destruir dados locais ou alterar arquivos importantes, roubar informações sensíveis, como senhas, fotos e mensagens, enviando-as diretamente para os criminosos. 
+Esses ataques são frequentemente propagados por meio de links em sites duvidosos, mensagens de e-mail fraudulentas (phishing), anúncios falsos, ou sites de download ilegal de programas e aplicativos alterados por hackers.
+Ataques diretos:<br>Esses ataques são realizados em tempo real pelo próprio criminoso ou através de scripts automatizados. Eles geralmente exploram brechas de segurança em servidores ou sistemas para obter acesso não autorizado.
+Os principais alvos desses ataques são servidores corporativos que armazenam dados sensíveis.
+Os objetivos mais comuns incluem sequestro de dados onde os criminosos criptografam os dados e exigem pagamento (geralmente em criptomoedas) para liberar o acesso, roubo de informações, quando os dados são vendidos no mercado negro ou usados para outras atividades ilegais, como fraudes financeiras. 
+<b>Prevenção</b>
+Os ataques cibernéticos continuam a evoluir em complexidade e sofisticação. No entanto, com boas práticas de segurança e a adoção de ferramentas adequadas, é possível reduzir significativamente os riscos e proteger informações valiosas. 
+Entre estas práticas podemos destacar:
+1. Instale atualizações regulares em sistemas operacionais e aplicativos. Essas atualizações corrigem vulnerabilidades que podem ser exploradas por atacantes.
+2. Instale um bom antivírus e firewall, e mantenha-os sempre atualizados.
+3. Evite baixar aplicativos de fontes não confiáveis. Leia avaliações e verifique permissões antes de instalar qualquer programa, não instale programas pagos oferecidos gratuitamente, a baixo preço ou em sites não oficiais.
+Busque alternativas gratuitas ou open-source, não instale versões modificadas de aplicações oficiais.
+4. Proteja contas importantes com autenticação em dois fatores (2FA), que adiciona uma camada extra de segurança além da senha.
+5. Não clique em links recebidos por e-mails ou mensagens de origem desconhecida. 
+6. Certifique-se de que o site visitado é legítimo, verificando o domínio (URL). 
+7. Mantenha cópias atualizadas dos seus dados importantes em locais seguros (como serviços de nuvem ou HDs externos). Assim, você pode restaurar suas informações caso seja alvo de um ataque.
+<b>Órgãos responsáveis pela Segurança Digital</b>
+No Brasil existem alguns órgãos oficiais responsáveis pela segurança cibernética e digital com os quais os usuários podem contar no caso de desconfiarem de uma atividade criminosa ou duvidosa ou mesmo se forem vítimas de algum tipo de fraude ou crime digital.
+SaferNet:<br>A SaferNet é uma ONG criada com o objetivo de monitorar e combater crimes digitais, proteger os direitos humanos no ambiente digital, prevenir discurso de ódio golpes e proteger crianças e adolescentes.
+Para entrar em contato com essa instituição acesse:<br>safernet.org.br
+Setores de Crimes Digitais das delegacias civis e especializadas:<br>Muitas unidades da polícia civil nos estados têm delegacias especializadas em crimes cibernéticos ou departamentos que lidam diretamente com crimes digitais.
+Essas delegacias oferecem auxílio especializado no caso de vítimas de golpes online, como phishing, roubo de identidade ou invasão de contas. 
+Procure pela delegacia especializada na sua região, em estados sem unidades especializadas, qualquer delegacia pode registrar ocorrências relacionadas a crimes cibernéticos.
+Polícia Federal:<br>Em casos extremos, a Polícia Federal é responsável por investigar crimes cibernéticos que envolvam violações à legislação brasileira, como fraudes financeiras, invasão de dispositivos, roubo de dados e sequestro de informações (ransomware).
+A instituição registra boletins de ocorrência e conduz investigações em situações de maior complexidade, como fraudes em larga escala. Para obter auxílio, compareça à unidade da Polícia Federal mais próxima.
+<b>Como buscar ajuda</b>
+Para buscar ajuda de um dos órgãos responsáveis citados neste capítulo, siga algumas etapas para melhor solução do seu caso:
+Reúna provas:<br>Salve capturas de tela, e-mails fraudulentos e mensagens suspeitas.
+Faça um boletim de ocorrência:<br>O registro de um B.O. é essencial para formalizar a denúncia e iniciar a investigação.
+Desconecte e proteja seus dispositivos:<br>Caso desconfie de um ataque, desconecte o dispositivo da internet para limitar o acesso dos criminosos ou desligue-o para evitar que a ação em curso corrompa os dados.
+Altere senhas de contas comprometidas imediatamente.
+Informe a instituição envolvida:<br>Se o golpe envolver um banco, site de e-commerce ou outro serviço, comunique imediatamente à instituição para bloquear transações ou acessos indevidos.

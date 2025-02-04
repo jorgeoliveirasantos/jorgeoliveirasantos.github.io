@@ -1,0 +1,56 @@
+Engenharia social é algo que mesmo você não conhecendo, não sabendo o significado deste nome, ou mesmo que ele existia, você já passou ou passará em algum momento.
+A engenharia social é utilizada no mundo virtual com diversos objetivos, desde fazer você comprar um produto, até roubar sua senha ou cair em um golpe.
+O termo na maioria das vezes se aplica a atividades fraudulentas onde um atacante tenta convencer um usuário a cair em sua armadilha, mas ele vai muito além disso.
+No âmbito das atividades ilegais, a mais comum é chamada de Fishing, ou Phishing que significa Pescaria.
+<b>Conhecendo a engenharia social</b>
+A engenharia social é uma técnica de manipulação psicológica utilizada para enganar pessoas e obter informações confidenciais, acesso não autorizado a sistemas ou realizar ações que beneficiem o atacante.
+Por trás de uma fachada muitas vezes inofensiva, esses ataques exploram a confiança, o descuido ou o desconhecimento da vítima. Em um mundo cada vez mais digital, entender e prevenir-se contra essas práticas é essencial.
+O princípio básico da engenharia social é a manipulação do comportamento humano. Em vez de atacar diretamente sistemas informatizados, os engenheiros sociais procuram explorar o elo mais vulnerável da cadeia de segurança: as pessoas.
+Isso pode envolver convencer alguém a revelar uma senha, clicar em um link malicioso, baixar um arquivo comprometido ou até mesmo permitir acesso físico a instalações.
+<b>Como funciona</b>
+Existem algumas técnicas mais comuns empregadas por engenheiros sociais para capturar ou enganar suas vítimas, embora o mesmo válido para cada uma pode-se observar em outras técnicas por mais refinadas que sejam, a primeira de todas é a Pescaria.
+Phishing:<br>Phishing ou escaria é o envio de mensagens fraudulentas, geralmente por e-mail ou redes digitais (chamadas ainda de redes digitais), que parecem ser de fontes confiáveis, como instituições escolares, bancos ou plataformas de aprendizado.
+Um indivíduo pode receber um e-mail falso pedindo que atualize sua senha em um link malicioso. Ao clicar, ele entrega suas credenciais ao atacante. 
+Ele pode receber uma mensagem de texto ou numa rede social dizendo que tem uma grande quantia de dinheiro a receber o fazendo fornecer dados bancários.
+Pretexting:<br>O pretexting é uma técnica onde um atacante cria uma história plausível para convencer a vítima a fornecer informações ou realizar uma ação. 
+Um atacante pode se passar por um técnico de TI da escola, da empresa ou mesmo do provedor de um serviço e pedir informações de login, alegando que precisa corrigir um problema no sistema. 
+A mensagem famosa sobre a “princesa africana” ou “príncipe nigeriano” pedindo ajuda para transferir dinheiro de uma herança ou escapar de uma zona de guerra é um exemplo clássico de pretexting usado com frequência até bem pouco tempo atrás.
+Baiting:<br>Nesta técnica o atacante utiliza um “isca” para atrair a vítima, como oferecer algo de valor (real ou fictício) em troca de informações. 
+A vítima encontra um pendrive com um rótulo chamativo, como "Notas Finais". Ao conectá-lo, instala malware em seu dispositivo.
+O malware pode estar no link de uma página ou numa aplicação a ser instalada que prometa ganhos financeiros, acesso a conteúdo íntimo de alguém famoso, ou acesso a gratuito a algo pago, por exemplo um mod de um aplicativo pago ou um crack de uma aplicação comercial de valor alto.
+A eficácia da engenharia social reside em sua capacidade de explorar emoções humanas, como medo, curiosidade, ganância ou senso de urgência. Por exemplo:
+1. Medo: “Sua conta será suspensa se você não atualizar suas informações.” 
+2. Curiosidade: “Confira quem visitou seu perfil!” 
+3. Urgência: “A oferta expira em 5 minutos!” 
+<b>Como se prevenir</b>
+Para se prevenir de tais práticas é importante sempre verificar a autenticidade do remetente de uma mensagem, evitar clicar em links, instalar programas ou abrir arquivos sem confirmar sua origem e jamais inserir dados financeiros,
+bancários ou sensíveis em páginas e aplicações que você não tenha certeza de sua idoneidade.
+Adotar soluções de segurança que detectem e-mails suspeitos, manter um ambiente de segurança sempre atualizado como utilizar a última versão do sistema operacional com todas as atualizações em dia, antivírus e firewall sempre atualizados e ativos e efetuar verificações semanais.
+<b>Engenharia social não criminosa</b>
+A engenharia social não se limita apenas às práticas criminosas, muitas de suas técnicas estão presentes em ações legítimas, como marketing, publicidade e até em estratégias de engajamento na internet.
+Enquanto ataques cibernéticos baseados em engenharia social têm uma conotação negativa, práticas similares também são empregadas de forma legítima por empresas, influenciadores digitais e outros setores para atrair a atenção do público, vender produtos ou aumentar o engajamento.
+Embora não sejam criminosas, essas abordagens ainda manipulam comportamentos e emoções humanas e são questionáveis do ponto de vista ético.
+A principal diferença está no objetivo e na transparência: enquanto criminosos buscam explorar vítimas para ganho próprio, ações como marketing ou clickbait geralmente têm fins comerciais ou de entretenimento.
+Vejamos as principais técnicas de engenharia social legalizadas utilizadas atualmente.
+Clickbait:<br>Essa técnica utiliza títulos ou manchetes sensacionalistas criados para atrair cliques, muitas vezes exagerando ou distorcendo o conteúdo real.
+Um artigo pode ter um título como “Você não vai acreditar no que aconteceu com essa celebridade!” para despertar curiosidade, levando o leitor a acessar o link. 
+Embora não seja ilegal, o clickbait pode ser frustrante para o público, pois o conteúdo raramente corresponde às expectativas criadas pelo título.
+Para evitar ser manipulado dessa forma leia criticamente as manchetes, as thumbs dos vídeos, as imagens dos posts, os títulos, e avalie se a fonte é confiável. Priorize conteúdos de veículos jornalísticos ou canais com boa reputação. 
+Marketing Emocional:<br>Técnicas de marketing que exploram emoções humanas, como felicidade, nostalgia, medo ou pertencimento podem ser usadas, para vender produtos ou serviços.
+Um comercial pode mostrar uma família feliz usando determinado produto, associando-o a um momento de união e felicidade. Campanhas de “urgência” como “Promoção válida apenas hoje!” criam um senso de escassez e pressão para comprar.
+Essas estratégias não são ilegais e, muitas vezes, são eficazes e éticas. 
+Porém, podem levar consumidores a decisões impulsivas, portanto, reconheça táticas que apelam para emoções para agir sempre de forma consciente diante delas, reflita antes de fazer compras impulsivas motivadas por campanhas de marketing. 
+Engajamento em Redes Digitais:<br>Práticas de engajamento visam atrair interações, como curtidas, comentários ou compartilhamentos.
+Postagens como “Marque um amigo que precisa ver isso!” incentivam a viralização do conteúdo.
+Vídeos ou publicações estruturados para criar suspense (“Espere até o final para ver o que acontece!”) mantêm a atenção do público por mais tempo.
+Embora inofensivo na maioria dos casos, esse tipo de engenharia social pode gerar dependência de redes digitais e promover desinformação, dependendo do conteúdo veiculado.
+Reconheça tais táticas e seja seletivo com o conteúdo que consome ou compartilha, evite consumir passivamente conteúdos que visam maximizar seu tempo de tela. 
+Gamificação:<br>A aplicação de mecânicas de jogos em contextos não relacionados a jogos, como programas de fidelidade ou sistemas de nível, pontuação e recompensas também são técnicas de engenharia social.
+Sistemas de pontos, medalhas ou níveis incentivam o usuário a continuar utilizando um serviço ou consumindo um produto. Embora muitas vezes positivo, pode ser usado para manipular comportamentos ou prender usuários em ecossistemas fechados.
+Reconheça tais práticas e esteja atento à forma como recompensas influenciam suas decisões e avalie se o uso do serviço ou produto realmente atende às suas necessidades.
+Engenharia social sempre é prejudicial?
+Embora as técnicas mencionadas sejam geralmente inofensivas, algumas práticas podem causar problemas como forçar consumidores a comprar produtos desnecessários ou criar dependência de plataformas, 
+engajamento em conteúdos de redes digitais que podem espalhar informações falsas ou distorcidas e mesmo estímulos constantes que podem levar à exaustão mental. 
+A engenharia social não está limitada ao crime cibernético. Ela permeia ações do nosso dia a dia, muitas vezes de forma sutil, em campanhas de marketing, redes digitais e outros ambientes digitais.
+Reconhecer essas práticas e aprender a lidar com elas de forma equilibrada e consciente é fundamental para uma vida digital saudável.
+Ao integrar esse conhecimento no aprendizado digital, criamos uma geração que não apenas se protege de golpes, mas também compreende os mecanismos que influenciam seu comportamento no mundo digital.

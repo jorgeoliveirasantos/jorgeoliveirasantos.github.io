@@ -1,0 +1,27 @@
+Um antivírus é um software projetado para detectar, prevenir e remover malware (software malicioso) do seu computador ou celular. Ele protege seu sistema contra vírus, worms, trojans, ransomware e outras ameaças conhecidas ou com comportamento suspeito.
+Existem várias opções de antivírus disponíveis, tanto gratuitas quanto pagas para cada plataforma, a escolha entre uma delas dependerá do usuário.
+Entretanto os dispositivos já costumam vir de fábrica com antivírus modernos instalados, cabendo ao usuário apenas mantê-los atualizados.
+Para usuários iniciantes em computadores, o Microsoft Defender é uma ótima opção, pois já vem pré-instalado e é fácil de usar e praticamente todo automatizado.
+Embora o Android seja um sistema seguro e bem menos permissivo que sistemas de computadores, ele não é imune a ameaças. Aplicativos maliciosos, links suspeitos e redes Wi-Fi inseguras podem comprometer seu dispositivo.
+Um antivírus ajuda a proteger seu smartphone ou tablet contra essas ameaças. No Android o antivírus padrão é o Play Protect, que, assim como os antivírus para computador, efetua varreduras frequentes nos arquivos e aplicativos em busca de ameaças.
+<b>Dicas de Segurança Adicionais no Android:</b>
+1. Baixe aplicativos apenas da Play Store ou de lojas oficiais.<br>2. Evite clicar em links suspeitos recebidos por mensagens ou e-mails.<br>3. Mantenha o sistema operacional e os aplicativos atualizados.<br>4. Não se conectar a redes Wi-Fi públicas.
+Sempre instale as atualizações do sistema operacional e dos aplicativos. Elas frequentemente incluem correções de segurança. Phishing é uma técnica usada por criminosos para roubar informações pessoais. 
+Desconfie de e-mails, mensagens ou sites que solicitam dados confidenciais. Regularmente, faça backup de seus arquivos importantes em um disco externo ou na nuvem. Isso protege seus dados em caso de infecção por ransomware.
+<b>Microsoft Defender</b>
+O Microsoft Defender é o antivírus padrão do Windows, é um antivírus confiável e poderoso e que conta com atualizações de segurança frequentes.
+Podemos checar se a segurança do Windows requer alguma atenção especial clicando através da área de notificações, como mostrado na imagem abaixo o sinal vermelho no ícone do antivírus indica que algo está errado.
+#image: {"path":"13a.jpg","legend":"Microsoft Defender no Windows"}
+Quando o antivírus ou algum módulo de segurança do Windows está desativado, desinstalado, desatualizado ou com algum outro problema, um alerta aparece na central de segurança.
+Para acessar a central de segurança do antivírus clique em <i>Configurações</i> no menu Iniciar e selecione <i>Segurança do Windows</i>.
+#image: {"path":"13b.jpg","legend":"Microsoft Defender no Windows"}
+O básico para manter o computador seguro é mantê-lo atualizado e com o antivírus ativado, mas caso encontremos algum problema podemos executar uma verificação. Existem três opções básicas, vejamos cada uma delas.
+<b>Verificação Rápida e Verificação Completa</b>
+Na Central de Segurança, clique em <i>Proteção Contra Vírus e Ameaças</i>.
+Um botão aparecerá com a opção de <i>Verificação Rápida</i>. A verificação rápida costuma demorar alguns minutos apenas e verifica somente as pastas onde os vírus costumam ser encontrados.
+Clicando em <i>Opções de Verificação</i>, encontraremos além da verificação rápida as opções: <i>Verificação Completa, Verificação Personalizada e Verificação Offline</i>.
+A Verificação Completa verifica todos os arquivos e pastas no computador em busca de ameaças e costuma demorar mais tempo a depender da quantidade de arquivos e da capacidade de processamento do computador.
+A verificação personalizada permite definir qual ou quais pastas queremos verificar, e pode ser útil para verificarmos uma unidade externa como um pen-drive.
+É possível verificar uma pasta, arquivo ou dispositivo externo diretamente no Explorador de Arquivos clicando com o botão direito do mouse sobre o item que queremos verificar e escolhendo <i>Verificar com o Microsoft Defender</i>.
+Algumas ameaças conseguem se esconder no Windows, e até mesmo desativar ou impedir o antivírus, para isso podemos utilizar a Verificação Offline. Esse tipo de verificação é comumente utilizado em computadores muito infectados.
+A Verificação Offline reinicia o computador e efetua uma varredura no sistema antes do Windows ser inicializado para que possa reconhecer a ameaça antes que ela se inicie, já que assim como outros programas, os vírus só iniciam junto com o Windows.

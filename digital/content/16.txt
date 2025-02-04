@@ -1,0 +1,17 @@
+Se você comprou um computador novo já com o Windows instalado, certamente ele veio com uma licença digital do Windows. Um grande erro que muita gente comete é formatar o computador e instalar uma cópia pirata, erro e infração ao mesmo tempo.
+Com um endereço de e-mail você pode registrar sua conta da Microsoft e vincular à licença do Windows original à sua conta.
+Dessa forma, mesmo que você formate o computador, basta fazer login com sua conta Microsoft para ativar sua licença.
+Caso queira baixar uma versão mais atualizada do Windows acesse:<br>https://www.microsoft.com/pt-br/software-download
+Neste site você pode baixar até a última versão do Windows. Para criar sua conta da Microsoft para comprar uma licença digital ou vincular sua conta à licença existente no seu computador, acesse:<br>https://account.microsoft.com/
+Ter uma conta logada em seu computador te oferece ainda outros recursos como sincronização de seus dados e configurações, tanto entre o PC e o celular como na migração de um computador para outro.
+Bem como salvar as senhas dos sites que você precisa acessar com frequência.
+Mas uma conta Microsoft não é um recurso útil apenas para usuários de computadores desktop, ela te oferece recursos importantes mesmo em dispositivos móveis, vejamos:
+1. Uma conta centralizada para fazer login em vários serviços online.
+2. Acesso a inteligência artificial do Bing, o Microsoft Copilot.
+3. Acesso ao gerador de imagens por inteligência artificial do Bing, o Image Creator.
+4. Acesso ao Microsoft Authenticator, para centralizar seus logins com MFA num mesmo lugar.
+5. Acesso ao Outlook para gerenciar uma ou mais contas de e-mail.
+<b>Outlook</b>
+Outro serviço de e-mail que você pode utilizar é o Outlook, com o diferencial que você pode usar o aplicativo desktop para sincronizar seus e-mails em plano de fundo e ser alertado sempre que um novo e-mail for recebido.
+O Outlook permite não apenas receber comunicados da Microsoft relativos a sua conta, mas mesmo logar em serviços de e-mail de outras contas, como o seu Gmail e receber seus e-mails de todos esses serviços no mesmo aplicativo.
+O Outlook pode ser baixado tanto da Microsoft Store como da Google Play Store.

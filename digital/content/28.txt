@@ -1,0 +1,19 @@
+Em uma sociedade conectada, os serviços online se tornaram uma parte essencial do nosso dia a dia. Redes sociais, aplicativos de mensagens, plataformas de jogos e ferramentas de trabalho remoto facilitam a comunicação, o entretenimento e o aprendizado.
+No entanto, junto com as inúmeras vantagens, também surgem desafios significativos, como o comportamento tóxico e criminoso de alguns usuários. 
+Para combater esses problemas, é fundamental utilizar os recursos disponíveis em cada serviço utilizado quer permitam reportar comportamentos inapropriados ou restringir interações indesejadas.
+Além de promover uma cultura de respeito e educação digital, essas ações não só ajudam a desincentivar práticas nocivas, mas também contribuem para a criação de ambientes online seguros e saudáveis, tanto física quanto mentalmente.
+<b>Comportamento tóxico</b>
+Comportamentos tóxicos, como bullying, assédio, discurso de ódio e disseminação de desinformação, têm um impacto profundo na saúde mental dos usuários.
+Além disso, ambientes online hostis podem afastar usuários, especialmente aqueles que pertencem a determinados grupos, limitando sua participação.
+A toxicidade online também pode escalar para crimes cibernéticos, como doxxing (exposição de informações pessoais), stalking (perseguição) e fraudes.
+De acordo com o relatório <i>Cybercrime and Cybersecurity Trends</i> da Cybersecurity Ventures (2023), os crimes cibernéticos devem custar ao mundo US$ 10,5 trilhões anualmente até 2025.
+Esses números destacam a necessidade de ações proativas para combater comportamentos prejudiciais tanto por parte dos usuários como principalmente das próprias plataformas.
+<b>Denúncia e bloqueio</b>
+#image: {"path":"28a.jpg","legend":"Denúncia e Bloqueio de usuários indesejados."}
+A maioria das plataformas online oferece recursos para reportar, denunciar e bloquear usuários que violam as regras da comunidade. Essas ferramentas são essenciais para manter a segurança e a integridade dos ambientes digitais.
+Ao denunciar comportamentos inadequados, os usuários ajudam as plataformas a identificar e remover conteúdos ou perfis que promovem violência, discurso de ódio ou outras práticas nocivas.
+Um estudo da Pew Research Center de 2021 mostrou que 41% dos adultos americanos já sofreram assédio online, mas apenas 18% deles relataram o incidente. Muitos usuários não denunciam por medo de retaliação ou por acreditar que nada será feito.
+No entanto, as plataformas estão cada vez mais investindo em inteligência artificial e equipes de moderação para responder a essas denúncias de forma eficiente.
+Por exemplo, a Meta relatou que removeu mais de 25 milhões de postagens de discurso de ódio no segundo trimestre de 2023, graças às denúncias dos usuários e a sistemas automatizados.
+Bloquear usuários tóxicos também é uma medida eficaz para proteger a saúde mental. Ao limitar a exposição a conteúdos negativos, os usuários podem reduzir o estresse e a ansiedade, associados a interações online desagradáveis.
+Um estudo da Universidade de Pittsburgh de 2020 descobriu que pessoas que limitaram o tempo nas redes sociais e bloquearam contatos tóxicos relataram uma melhora significativa no bem-estar emocional.

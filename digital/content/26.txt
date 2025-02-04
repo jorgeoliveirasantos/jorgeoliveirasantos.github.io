@@ -1,0 +1,11 @@
+Os sistemas de ensino ainda enfrentam dificuldades em compreender os desafios impostos pela tecnologia e precisam avançar na identificação dos problemas que ela pode acarretar, além de desenvolver estratégias eficazes para enfrentá-los. 
+Um exemplo claro é o impacto do acesso à internet pelos alunos, tanto dentro quanto fora das escolas, que envolve questões como a exposição intensa às redes sociais, aos jogos eletrônicos e às novas ferramentas de inteligência artificial.
+Entre os desafios, destaca-se a necessidade de entender profundamente os efeitos dos modelos de linguagem avançados (LLMs) e outras formas de IA no processo educacional.
+Além disso, é fundamental que as instituições se preparem não apenas para lidar com as transformações atuais, mas também para antecipar e responder às inovações tecnológicas futuras, garantindo uma educação mais adaptada e resiliente.
+Essa preparação deve levar em conta certos fatores como:
+1. Professores devem receber preparação e treinamento para revisar trabalhos sabendo reconhecer quando foram feitos com o uso de IA.
+Por exemplo verificando fatores como generalidade e superficialidade do texto, falta da personalidade do aluno na “alma do conteúdo” e mesmo textos muito estruturados, com eloquência perfeita e até a falta de erros de ortografia e concordância.
+2. Professores devem ser preparados para solicitar que os alunos descrevam, expliquem ou apresentem seus trabalhos sem acesso aos mesmos, ou mesmo que efetuem outras atividades relacionadas a estes trabalhos para verificar se eles mesmos criaram ou se geraram em IA.
+3. Professores devem criar trabalhos específicos para o uso de IA para incentivar uma introdução responsável e segura aos LLMs como uma ferramenta educacional legítima.
+4. Escolas devem criar atividades tanto para alunos como para familiares para exercitar habilidades cognitivas como imaginação, memória e raciocínio.
+Sempre evidenciando o fato de que deixar de exercitar tais habilidades e relegá-las à facilidade do uso da IA é prejudicial ao desenvolvimento cognitivo.

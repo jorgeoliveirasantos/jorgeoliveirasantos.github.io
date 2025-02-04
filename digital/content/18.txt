@@ -1,0 +1,64 @@
+O que é um algoritmo? Na cabeça de muitas pessoas hoje em dia ele é um super-código sendo executado por aplicativos e mídias sociais que possui inteligência própria, toma decisões e controla o mundo.
+De certa forma, cada visão distorcida dessa se baseia em algo da realidade, mas ao final, o resultado torna-se bem distante do que realmente é. 
+Em primeiro lugar, não devemos falar sobre O Algoritmo e sim sobre um tipo de algoritmo, pois existem infinitos, de algoritmos básicos utilizados em brinquedos como o Cubo Mágico, passando por funções matemáticas, até os grandes modelos de aprendizado de máquina.
+Para entender cada um, devemos saber o que é e como funciona um algoritmo.
+<b style="font-family: 'Courier New', Courier, monospace;">Acordar;<br>Escovar os dentes;<br>Se: (pão comprado) fazer café;<br>Senão: comprar pão;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Então: fazer café;<br>Tomar café;<br>Ir para o trabalho;</b>
+Este é um exemplo bem rude de como funciona um algoritmo, mas se você quiser entender melhor sugiro que estude um pouco sobre o algoritmo de Rubik que é utilizado para a solução do Cubo Magico.
+<b>Conceito básico de algoritmo</b>
+Algoritmos digitais são conjuntos de instruções que orientam o funcionamento de sistemas computacionais. Eles descrevem passo a passo o que dispositivos como computadores, smartphones e até eletrodomésticos conectados devem fazer.
+Praticamente tudo em tecnologia moderna – desde aplicativos e jogos até sites e programas – é baseado em algoritmos.
+Esses sistemas definem desde detalhes simples, como a cor de uma tela inicial, até decisões complexas, como o conteúdo que será exibido em uma rede social.
+Embora muitos algoritmos sejam invisíveis para o usuário comum. Eles são essenciais para o funcionamento dos softwares e são projetados por engenheiros e técnicos especializados em design e arquitetura de sistemas.
+Esses algoritmos são parte de processos técnicos complexos e não são de interesse do público em geral.
+Entretanto se você desejar conhecer, eu ofereço cursos de programação gratuitos que você pode verificar em minhas redes.
+Porém, existe um tipo de algoritmo que tem impacto direto no cotidiano das pessoas e, por isso, desperta mais interesse: os algoritmos de filtragem e classificação.
+O que são algoritmos de filtragem e classificação?
+sses algoritmos têm como objetivo “conhecer” o usuário. Ao longo do tempo, eles armazenam e analisam informações sobre as interações do usuário em uma plataforma, como cliques, curtidas, comentários e tempo de visualização.
+Com base nesses dados, o sistema constrói um “perfil” personalizado, que reflete traços das preferências, interesses e comportamentos daquele usuário.
+Para que servem esses dados?
+Os dados coletados são utilizados de várias maneiras, incluindo:
+1. Publicidade personalizada:<br>As preferências do usuário são analisadas para criar anúncios altamente direcionados. Por exemplo, se alguém busca por produtos esportivos, é provável que comece a ver propagandas de roupas ou equipamentos de academia, aumentando as chances de compra.
+2. Recomendação de conteúdo:<br>Com base nos gostos do usuário, os algoritmos ajustam o que aparece para ele. Em plataformas de streaming, como Netflix ou Spotify, isso significa sugerir filmes, séries ou músicas que combinem com seu histórico de consumo.
+Em redes digitais, significa exibir postagens ou vídeos que provavelmente atrairão sua atenção.
+Questões éticas e preocupações
+Apesar de serem ferramentas poderosas e úteis, nem sempre os algoritmos são usados de maneira ética. Há relatos de plataformas que:
+1. Vendem dados dos usuários para empresas interessadas, sem o consentimento claro do indivíduo. 
+2. Influenciam opiniões ou comportamentos, utilizando as preferências do usuário para moldar o conteúdo que ele consome. Isso pode impactar desde decisões de consumo até opiniões políticas.
+Além disso, existe o risco de as pessoas ficarem presas em “bolhas algorítmicas”, ou seja, consumir apenas conteúdo alinhado às suas crenças, o que pode limitar a visão de mundo e gerar polarização social.
+Os algoritmos digitais são a base do mundo conectado em que vivemos, mas é essencial que os usuários entendam seu funcionamento básico e as implicações éticas envolvidas.
+Conhecer os benefícios e os riscos dos algoritmos, especialmente os que coletam e utilizam dados pessoais, é fundamental para navegar com mais consciência e segurança nas plataformas digitais.
+<b>Algoritmos de inteligência artificial</b>
+Com o tempo algoritmos mais sofisticados foram sendo criados, são as inteligências artificiais, elas são capazes de conhecer a fundo os usuários.
+Algoritmos básicos de filtro e classificação operam por meio de instruções diretas e podem ser ajustados pelos programadores e mantenedores da plataforma.
+Corrigindo vieses e aumentando ou diminuindo a visibilidade de determinados conteúdos ou mesmo impondo restrições e bloqueios a determinados usuários. 
+Já os algoritmos de inteligência artificial são construções altamente complexas e robustas para replicar comportamentos semelhantes ao do ser humano. 
+Eles são capazes de aprender e se adaptar com o tempo, porém ainda estão passivos de serem alterados e controlados por seus mantenedores.
+Esses algoritmos conseguem identificar traços mais profundos da personalidade de um ser humano, bem como direcionar conteúdo de forma mais profunda e impactante, criando inclusive vínculos emocionais entre o usuário e aquilo que a plataforma oferece.
+Por outro lado esses algoritmos também aprendem a discernir a qualidade dos conteúdos, por exemplo, saber se um vídeo contém algo que não é permitido pela plataforma, ou se uma mensagem de texto contem ameaça ou preconceito.
+Enquanto o uso de inteligência artificial pelos serviços com os quais estamos acostumados apenas tende a crescer, devemos entender o quanto este algoritmo pode conhecer de nós e quanto ele pode estar interferindo naquilo que vemos e consumimos.
+Por outro lado devemos aproveitar a capacidade que ele tem de reconhecer toxicidade e conteúdo prejudicial e nos oferecer ambientes cada vez mais seguros e saudáveis.
+<b>Algoritmos de IA nas redes digitais</b>
+Os algoritmos de inteligência artificial (IA) usados nas redes digitais para sugerir conteúdo têm como base sistemas de recomendação, que analisam grandes quantidades de dados para personalizar a experiência do usuário.
+Esses algoritmos combinam diferentes técnicas, como aprendizado de máquina, análise de comportamento do usuário e processamento de linguagem natural.
+Abaixo, explico o funcionamento geral e como podem ser influenciados por usuários e influenciadores digitais.
+Essas redes coletam dados como interações (curtidas, compartilhamentos, comentários), tempo gasto visualizando posts, conteúdo seguido, pesquisas realizadas e informações demográficas. 
+Cada usuário tem um perfil digital construído com base em seu comportamento. Por exemplo, se você interage frequentemente com vídeos de culinária, o algoritmo reconhece esse padrão e categoriza seu perfil como interessado nesse tipo de conteúdo.
+Essa técnica identifica usuários com comportamentos similares e sugere conteúdos populares entre eles. Assim, se pessoas com interesses parecidos curtiram determinado conteúdo, é provável que ele seja recomendado a você.
+O algoritmo analisa as características do conteúdo que você consome, como hashtags, palavras-chave, estilo visual ou formato, e tenta sugerir itens semelhantes. 
+Depois de coletar dados e identificar padrões, os algoritmos ordenam os conteúdos com base em um sistema de pontuação que mede a probabilidade de você interagir com cada item.
+Essa pontuação considera fatores como popularidade, atualidade e similaridade com interações anteriores.
+Os algoritmos estão em constante evolução, ajustando-se com base em novos dados e nos objetivos da plataforma, como maximizar engajamento ou retenção de usuários. 
+Eles são projetados para se adaptar ao comportamento do usuário, o que significa que é possível manipulá-los para receber sugestões mais alinhadas aos seus interesses.
+Curtir, compartilhar e comentar apenas em conteúdos que você realmente deseja receber mais. Isso reforça o "sinal" para o algoritmo.
+Ignorar ou bloquear conteúdos que não são do seu interesse é outra forma, já que o simples fato de visualizar pode ser interpretado como um sinal positivo.
+Pesquisar ou seguir páginas e hashtags relacionadas a temas de interesse faz com que o algoritmo mapeie novos padrões. Muitas redes sociais permitem personalizar as preferências, como ocultar conteúdos ou priorizar amigos e páginas específicas. 
+O ajuste contínuo dos algoritmos em redes sociais para maximizar engajamento e retenção é um processo dinâmico que utiliza aprendizado de máquina (machine learning) para adaptar as recomendações com base em dados em tempo real
+Esses ajustes são fundamentais para que as plataformas mantenham os usuários ativos, consumindo conteúdo e, consequentemente, gerando valor (como tempo de uso, cliques em anúncios ou compras).
+Os resultados das recomendações são analisados para verificar se os objetivos da plataforma (engajamento, retenção, cliques em anúncios) estão sendo atingidos.
+O algoritmo prioriza conteúdos que têm maior probabilidade de gerar uma ação rápida, como uma curtida ou comentário, isso inclui posts sensacionalistas, vídeos curtos e conteúdos que já se mostraram altamente engajadores para o usuário. 
+O foco é criar um ciclo de consumo constante. O algoritmo pode recomendar conteúdos que incentivam o usuário a voltar repetidamente, como séries, tópicos em andamento ou eventos ao vivo. 
+Os ajustes contínuos também exploram mecanismos psicológicos para manter os usuários engajados. A imprevisibilidade no conteúdo sugerido, como encontrar um post altamente interessante entre outros comuns, ativa os circuitos de recompensa do cérebro.
+Os algoritmos frequentemente mostram conteúdos que reforçam as crenças do usuário, o que aumenta a probabilidade de engajamento. 
+Embora eficiente, essa abordagem tem algumas implicações negativas, reforça os interesses existentes do usuário, limitando a exposição a ideias novas ou diversas.
+Prioriza conteúdos sensacionalistas ou polarizadores, que podem ser prejudiciais, mas são altamente engajadores criando ou aprofundando divisões na sociedade e mesmo gerando conflitos.
+A otimização para engajamento pode levar a um uso compulsivo da plataforma que evolução para uma condição patológica. As empresas, no entanto, enfrentam pressão crescente para equilibrar o uso desses mecanismos com responsabilidade ética e impactos sociais.

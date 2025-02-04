@@ -150,7 +150,7 @@ const App = {
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Learn()">cursos</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Books()">livros</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="window.open('https://www.kaatan.com.br')">kaatan</text-link>
-                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="Modal.Message('Em breve...', 'Retorne em breve para mais novidades.')">educação digital</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Digital()">educação digital</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Community()">comunidade</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Contact()">contato</text-link>
             </span>
@@ -700,6 +700,9 @@ const App = {
         App.Footer();
     },
     */
+    Digital: () => {
+        Modal.ConfirmAction("Curso de Segurança Digital para a Família", "Este é um curso interativo, divertido e, com certificado de conclusão! Então o que está esperando? Quer aprender a excitante experiência da tecnologia de forma segura e consciente? Clique no botão abaixo e comece sua jornada!", () => window.open("/digital"));
+    },
     Contact: () => {
         window.open('https://wa.me/5577999030420');
     },

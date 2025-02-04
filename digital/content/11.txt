@@ -1,0 +1,21 @@
+Vários aplicativos ou programas de computador mantém processos e serviços em execução mesmo depois que fechamos a aplicação principal, alguns são essenciais.
+Pois precisam checar se recebemos uma mensagem, ou executar mídia como música ou rádio, exibir notificações etc.
+Entretanto cada serviço em execução em segundo plano consome tanto bateria quanto internet, e dependo das permissões que concedemos podem estar acessando recursos indesejados do nosso aparelho e coletando dados sem que percebamos.
+Este comportamento também pode ser controlado. Em primeiro lugar, na ordem vista anteriormente, vejamos como sites continuam sendo executados em segundo plano:
+#image: {"path":"11a.jpg","legend":"Configurações do navegador"}
+Veja neste exemplo dois botões ligados que indicam que o navegador iniciará assim que você ligar o computador, esse início ocorre em segundo plano e você não percebe.
+Indo até o Gerenciador de Tarefas (Ctrl+Alt+Del) você poderá verificar que o processo do navegador (msedge.exe, chrome.exe, firefox.exe), está entre a lista de programas em execução mesmo que você não o tenha aberto e mesmo que tenha acabado de ligar o computador.
+Isto pode ser muito útil dependendo de que tipos de serviços online você utiliza, ou mesmo se deseja receber notificações de redes digitais ou de portais de notícia.
+O segundo botão ativo indica que os sites podem continuar sendo executados em segundo plano junto com o navegador, novamente, é o exemplo de portais de notícias e rede sociais.
+Mas você pode desativar as duas opções ou pode configurar sites independentemente para que um site invasivo não continue sendo executado, novamente pelas mesmas configurações:
+#image: {"path":"11b.jpg","legend":"Configurações de permissões do site no navegador"}
+Aqui podemos verificar quais sites estão configurados para serem executados em segundo plano e quais tiveram este comportamento bloqueado.
+A título de informação, a execução em segundo plano por parte de sites e aplicações web ocorre por meio de serviços que são instalados no navegador, você pode acessar esta lista e verificar cada serviço instalado e/ou removê-los se desejar.
+No Chrome acesse:<br>chrome://serviceworker-internals/ <br>	No Edge acesse:<br>edge://serviceworker-internals/
+Basta digitar este caminho na barra de endereços para obter a lista, a partir daí você pode verificar a URL do serviço para saber qual site o instalou e cancelar seu registro se necessário.
+Se um serviço estiver desativado não ative, muitos serviços desnecessário ativos no navegador impactam o desempenho da navegação.
+Programas instalados no computador também podem ter esse comportamento e podemos verificar nas configurações:
+#image: {"path":"11c.jpg","legend":"Configurações de aplicativo instalado no Windows 11"}
+Aqui temos um aplicativo no Windows 11 cuja execução em segundo plano foi desativada, ou seja, ao fecharmos a aplicação principal, todos os seus processos serão encerrados. Vale ressaltar que isso pode impedir certas aplicações de verificar o recebimento de mensagens ou de exibir notificações.
+Em dispositivos móveis as configurações de execução em segundo plano podem variar bastante dependendo das versões do sistema operacional ou mesmo estarem confusas, entretanto o local mais fácil de encontrá-las é no gerenciamento de energia ou da bateria.
+Geralmente essas configurações estão identificadas como Economia de Bateria, nas configurações gerais dos aplicativos ou em configurações de cada aplicativo específico.

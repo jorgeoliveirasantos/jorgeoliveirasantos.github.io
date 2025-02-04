@@ -1,0 +1,7 @@
+O download de aplicativos e programas é algo que requer uma atenção especial do usuário iniciante, pois programas podem conter vírus e até mesmo aplicativos espiões com função de roubo de dados pessoais, podem até mesmo danificar o computador.
+Arquivos soltos de programas, principalmente com extensão .exe e .apk podem ser danosos ao dispositivo, principalmente se o usuário não possuir um antivírus atualizado ou o dispositivo tiver configurações muito permissivas.
+As lojas de aplicativo são formas práticas e bem mais seguras de instalação de aplicações, a maioria das aplicações comerciais, de produtividade ou sociais, pagas ou gratuitas possuem uma versão na loja de aplicativos dos aparelhos.
+Em casos raros, aplicações sérias não oferecerão sua versão numa loja. É importante ressaltar que isso não significa que qualquer aplicação nas lojas dos dispositivos sejam confiáveis.
+Para instalar uma aplicação basta ir até o menu do dispositivo e selecionar a loja, nos dispositivos Android ela é representada pelo aplicativo Google Playstore, e nos dispositivos Windows ela é representada pela aplicação Micrsoft Store.
+Ambas terão uma barra de busca onde se é possível pesquisar pelo aplicativo desejado, e ao escolher um da lista, a opção de download e instalação. 
+Um arquivo será baixado, verificado pelo antivírus e instalado automaticamente, é possível fechar a loja enquanto isso. Depois de instalado é só abrir e se divertir!

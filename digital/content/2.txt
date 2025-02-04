@@ -1,0 +1,14 @@
+#image: {"path":"1a.jpg","legend":"Bem-vindo ao mundo da tecnologia..."}
+Seja muito bem-vindo(a)<b id="user-name" style="color: #0fb;"></b>! Essa é uma apostila didática, oferecida física e digitalmente em algumas ocasiões gratuitamente em outras por um preço simbólico ou bem baixo.
+Este conteúdo é voltado para pais, adolescentes, estudantes, e qualquer pessoa iniciando no mundo tecnológico que esteja ansioso por conhecer seus benefícios de maneira segura, seja no computador, no tablet ou no celular.
+A tecnologia tomou nossas vidas de assalto e ficamos maravilhados com ela. Em 1946 uma incrível máquina chamada ENIAC foi criada prometendo mudar o futuro humano.
+E ela realmente mudou tudo, o primeiro computador se tornava um instrumento que em breve estaria em tamanho bem menor em muitos lares, e posteriormente no bolso de cada ser humano.
+Mas a mudança realmente aconteceu na década de 90, quando o britânico Tim Berners-Lee possibilitou que a conexão entre computadores, já utilizada em departamentos governamentais com a rede Arpanet, se tornasse acessível a todos por meio da WWW.
+Essa revolução chamada internet, ou Rede Mundial de Computadores, em breve estaria em todos os lares funcionando em alta velocidade por onde não somente informações, mas <b>nossa vida inteira circularia.</b>
+A tecnologia também é ciência, como todos os avanços e descobertas, eles primeiro são integrados em nossas vidas para somente depois conhecermos seus efeitos colaterais, impactos, os perigos que trazem, os benefícios que oferecem e a profundidade da mudança provocada.
+E esse é um processo constante, quem sabe as inovações e descobertas que essa ciência ainda trará para mudar nossas vidas completamente?
+Muitas vezes os conceitos de Digital, Virtual e Tecnológico se confundem, já que todos os aparelhos hoje estão interligados.
+Mas essas dúvidas podem ser facilmente sanadas, e durante esse esclarecimento é preciso conhecer os perigos existentes nesses caminhos, já que até aparelhos desconectados da internet ainda podem oferecer riscos.
+Os riscos da tecnologia não se comparam com os benefícios que são inúmeros, e é neste sentido que esta apostila é desenvolvida.
+Trazer um pouco de luz a esse mundo ainda meio obscuro, onde estamos tateando e aprendendo o caminho, pois cada um que aprende um pouco do caminho, deve compartilhar com os que vêm atrás para que tropecem menos que nós.
+<i>Cerca de 20% deste material foi criado com o auxílio de inteligência artificial.</i>

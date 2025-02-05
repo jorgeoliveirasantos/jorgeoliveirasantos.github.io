@@ -4,6 +4,7 @@ const _VOLUME = 0.1;
 
 const App = {
     Chapters: {},
+    Reading: 1,
     User: {
         Name: "Anônimo",
         Steps: 1,
@@ -134,7 +135,7 @@ const App = {
                     nextBtn.onclick = e => {
                         if (count == content.length - 1) {
                             funButton(nextBtn, "levelup", () => {
-                                if (App.User.Steps < 31) App.User.Steps++;
+                                if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
                                 App.User.LastChapter = App.Chapters[App.User.Steps];
                                 localStorage.setItem("progress", JSON.stringify(App.User));
                                 callback();
@@ -206,7 +207,7 @@ const App = {
                         nextBtn.onclick = e => {
                             if (count == content.length - 1) {
                                 funButton(nextBtn, "levelup", () => {
-                                    if (App.User.Steps < 31) App.User.Steps++;
+                                    if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
                                     App.User.LastChapter = App.Chapters[App.User.Steps];
                                     localStorage.setItem("progress", JSON.stringify(App.User));
                                     callback();
@@ -244,7 +245,7 @@ const App = {
                         nextBtn.onclick = e => {
                             if (count == content.length - 1) {
                                 funButton(nextBtn, "levelup", () => {
-                                    if (App.User.Steps < 31) App.User.Steps++;
+                                    if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
                                     App.User.LastChapter = App.Chapters[App.User.Steps];
                                     localStorage.setItem("progress", JSON.stringify(App.User));
                                     callback();
@@ -297,7 +298,7 @@ const App = {
                     nextBtn.onclick = e => {
                         if (count == content.length - 1) {
                             funButton(nextBtn, "levelup", () => {
-                                if (App.User.Steps < 31) App.User.Steps++;
+                                if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
                                 App.User.LastChapter = App.Chapters[App.User.Steps];
                                 localStorage.setItem("progress", JSON.stringify(App.User));
                                 callback();
@@ -315,6 +316,7 @@ const App = {
         },
     },
     "Boas-vindas": async () => {
+        App.Reading = 1;
         const container = await App.Render.Section("Digite seu nome:");
 
         const input = document.createElement("input");
@@ -331,7 +333,7 @@ const App = {
         nextBtn.onclick = e => {
             if (input.value.length > 2) {
                 App.User.Name = input.value;
-                if (App.User.Steps < 31) App.User.Steps++;
+                if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
                 App.User.LastChapter = App.Chapters[App.User.Steps];
                 localStorage.setItem("progress", JSON.stringify(App.User));
                 funButton(nextBtn, "levelup", App["Introdução"]);
@@ -343,156 +345,187 @@ const App = {
         input.focus();
     },
     "Introdução": async (done = false) => {
+        App.Reading = 2;
         const container = await App.Render.Section("Introdução");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "2", () => App["Mundo virtual"](true));
     },
     "Mundo virtual": async (done = false) => {
+        App.Reading = 3;
         const container = await App.Render.Section("Mundo virtual");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "3", () => App["Primeiro passo"](true));
     },
     "Primeiro passo": async (done = false) => {
+        App.Reading = 4;
         const container = await App.Render.Section("Primeiro passo");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "4", () => App["Identidade no mundo digital"](true));
     },
     "Identidade no mundo digital": async (done = false) => {
+        App.Reading = 5;
         const container = await App.Render.Section("Identidade no mundo digital");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "5", () => App["Idade de início"](true));
     },
     "Idade de início": async (done = false) => {
+        App.Reading = 6;
         const container = await App.Render.Section("Idade de Início");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "6", () => App["Riscos e benefícios"](true));
     },
     "Riscos e benefícios": async (done = false) => {
+        App.Reading = 7;
         const container = await App.Render.Section("Riscos e benefícios");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "7", () => App["Aplicações e plataformas"](true));
     },
     "Aplicações e plataformas": async (done = false) => {
+        App.Reading = 8;
         const container = await App.Render.Section("Aplicações e plataformas");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "8", () => App["On-line e off-line"](true));
     },
     "On-line e off-line": async (done = false) => {
+        App.Reading = 9;
         const container = await App.Render.Section("On-line e off-line");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "9", () => App["Permissões"](true));
     },
     "Permissões": async (done = false) => {
+        App.Reading = 10;
         const container = await App.Render.Section("Permissões");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "10", () => App["Segundo plano"](true));
     },
     "Segundo plano": async (done = false) => {
+        App.Reading = 11;
         const container = await App.Render.Section("Segundo plano");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "11", () => App["Termos de uso"](true));
     },
     "Termos de uso": async (done = false) => {
+        App.Reading = 12;
         const container = await App.Render.Section("Termos de uso");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "12", () => App["Antivirus"](true));
     },
     "Antivirus": async (done = false) => {
+        App.Reading = 13;
         const container = await App.Render.Section("Antivirus");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "13", () => App["Download"](true));
     },
     "Download": async (done = false) => {
+        App.Reading = 14;
         const container = await App.Render.Section("Download");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "14", () => App["Conta Google"](true));
     },
     "Conta Google": async (done = false) => {
+        App.Reading = 15;
         const container = await App.Render.Section("Conta Google");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "15", () => App["Conta Microsoft"](true));
     },
     "Conta Microsoft": async (done = false) => {
+        App.Reading = 16;
         const container = await App.Render.Section("Conta Microsoft");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "16", () => App["Senhas"](true));
     },
     "Senhas": async (done = false) => {
+        App.Reading = 17;
         const container = await App.Render.Section("Senhas");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "17", () => App["Algoritmo"](true));
     },
     "Algoritmo": async (done = false) => {
+        App.Reading = 18;
         const container = await App.Render.Section("Algoritmo");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "18", () => App["Engenharia social"](true));
     },
     "Engenharia social": async (done = false) => {
+        App.Reading = 19;
         const container = await App.Render.Section("Engenharia social");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "19", () => App["Hackers"](true));
     },
     "Hackers": async (done = false) => {
+        App.Reading = 20;
         const container = await App.Render.Section("Hackers");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "20", () => App["Vazamento de dados"](true));
     },
     "Vazamento de dados": async (done = false) => {
+        App.Reading = 21;
         const container = await App.Render.Section("Vazamento de dados");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "21", () => App["LGPD"](true));
     },
     "LGPD": async (done = false) => {
+        App.Reading = 22;
         const container = await App.Render.Section("LGPD");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "22", () => App["Saúde financeira"](true));
     },
     "Saúde financeira": async (done = false) => {
+        App.Reading = 23;
         const container = await App.Render.Section("Saúde financeira");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "23", () => App["Cartões de crédito"](true));
     },
     "Cartões de crédito": async (done = false) => {
+        App.Reading = 24;
         const container = await App.Render.Section("Cartões de crédito");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "24", () => App["Controle parental"](true));
     },
     "Controle parental": async (done = false) => {
+        App.Reading = 25;
         const container = await App.Render.Section("Controle parental");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "25", () => App["Escolas e educadores"](true));
     },
     "Escolas e educadores": async (done = false) => {
+        App.Reading = 26;
         const container = await App.Render.Section("Escolas e educadores");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "26", () => App["Cuidados com a segurança"](true));
     },
     "Cuidados com a segurança": async (done = false) => {
+        App.Reading = 27;
         const container = await App.Render.Section("Cuidados com a segurança");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "27", () => App["Reportar e restringir"](true));
     },
     "Reportar e restringir": async (done = false) => {
+        App.Reading = 28;
         const container = await App.Render.Section("Reportar e restringir");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "28", () => App["Melhorar o ambiente"](true));
     },
     "Melhorar o ambiente": async (done = false) => {
+        App.Reading = 29;
         const container = await App.Render.Section("Melhorar o ambiente");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "29", () => App["Próximos passos?"](true));
     },
     "Próximos passos?": async (done = false) => {
+        App.Reading = 30;
         const container = await App.Render.Section("Próximos passos?");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "30", () => App["Esclarecimentos"](true));
     },
     "Esclarecimentos": async (done = false) => {
+        App.Reading = 31;
         const container = await App.Render.Section("Esclarecimentos");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "31", () => App["Certificado"](true));
     },
     "Certificado": async (done = false) => {
+        App.Reading = 32;
         App.User = {
             "Name": "Anônimo",
             "Steps": 32,
@@ -759,8 +792,10 @@ function toolsContainer() {
         const a = document.createElement("a");
         if (Number(key) <= App.User.Steps) {
             a.textContent = `✅ ${App.Chapters[key]}`;
+            li.onclick = App[App.Chapters[key]];
         } else {
             a.textContent = App.Chapters[key];
+            li.style.opacity = "0.66";
         }
         li.appendChild(a);
         options.appendChild(li);

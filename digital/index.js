@@ -15,57 +15,7 @@ const App = {
             // Generate page tools:
 
             document.body.innerHTML = "";
-
-            const tools = document.createElement("div");
-            tools.id = "tools";
-            tools.style.position = "absolute";
-            tools.style.top = "0";
-            tools.style.left = "0";
-            tools.style.padding = "0";
-            tools.style.margin = "0";
-            tools.style.width = "100%";
-            tools.style.height = "100%";
-            tools.style.zIndex = "0";
-
-            let div = document.createElement("div");
-
-            div.innerHTML = `<div class="body-effect"></div>`;
-            tools.appendChild(div.firstElementChild);
-
-            div = document.createElement("div");
-
-            div.innerHTML = `
-                <div class="level">
-                    <div id="progress">
-                        <div id="bar"></div>
-                    </div>
-                    <span id="chapters-done">0/100</span>
-                </div>
-            `;
-            tools.appendChild(div.firstElementChild);
-
-            div = document.createElement("div");
-            div.innerHTML = `
-                <small class="credits">
-                    <span>Criado por:</span>
-                    <a href="https://www.jorgesouza.com.br/" target="_blank">Jorge Souza Oliveira dos Santos</a>
-                    <span>04/02/2025</span>
-                </small>
-            `;
-            tools.appendChild(div.firstElementChild);
-
-            document.body.appendChild(tools);
-
-            if (localStorage.getItem("progress")) {
-                App.User = JSON.parse(localStorage.getItem("progress"));
-                const totalChapters = Object.keys(App.Chapters).length;
-                const doneChapthers = App.User.Steps;
-                document.getElementById("chapters-done").textContent = doneChapthers + "/" + totalChapters;
-                const percentDone = (doneChapthers / totalChapters) * 100;
-                document.querySelector(".level #bar").style.width = percentDone + "%";
-            } else {
-                localStorage.setItem("progress", JSON.stringify(App.User));
-            }
+            document.body.appendChild(toolsContainer());
 
             // Container
 
@@ -400,10 +350,10 @@ const App = {
     "Mundo virtual": async (done = false) => {
         const container = await App.Render.Section("Mundo virtual");
         if (done) toast("Você passou de nível!", 5);
-        App.Render.Content(container, "3", () => App["Primeiro Passo"](true));
+        App.Render.Content(container, "3", () => App["Primeiro passo"](true));
     },
     "Primeiro passo": async (done = false) => {
-        const container = await App.Render.Section("Primeiro Passo");
+        const container = await App.Render.Section("Primeiro passo");
         if (done) toast("Você passou de nível!", 5);
         App.Render.Content(container, "4", () => App["Identidade no mundo digital"](true));
     },
@@ -690,57 +640,7 @@ const App = {
 
         document.body.innerHTML = "";
 
-        const tools = document.createElement("div");
-        tools.id = "tools";
-        tools.style.position = "absolute";
-        tools.style.top = "0";
-        tools.style.left = "0";
-        tools.style.padding = "0";
-        tools.style.margin = "0";
-        tools.style.width = "100%";
-        tools.style.height = "100%";
-        tools.style.zIndex = "0";
-
-        let div = document.createElement("div");
-
-        div.innerHTML = `<div class="body-effect"></div>`;
-        tools.appendChild(div.firstElementChild);
-
-        div = document.createElement("div");
-
-        div.innerHTML = `
-            <div class="level">
-                <div id="progress">
-                    <div id="bar"></div>
-                </div>
-                <span id="chapters-done">0/100</span>
-            </div>
-        `;
-        tools.appendChild(div.firstElementChild);
-
-        div = document.createElement("div");
-        div.innerHTML = `
-            <small class="credits">
-                <span>Criado por:</span>
-                <a href="https://www.jorgesouza.com.br/" target="_blank">Jorge Souza Oliveira dos Santos</a>
-                <span>04/02/2025</span>
-            </small>
-        `;
-        tools.appendChild(div.firstElementChild);
-
-        document.body.appendChild(tools);
-
-        if (localStorage.getItem("progress")) {
-            App.User = JSON.parse(localStorage.getItem("progress"));
-            const totalChapters = Object.keys(App.Chapters).length;
-            const doneChapthers = App.User.Steps;
-            document.getElementById("chapters-done").textContent = doneChapthers + "/" + totalChapters;
-            const percentDone = (doneChapthers / totalChapters) * 100;
-            document.querySelector(".level #bar").style.width = percentDone + "%";
-        } else {
-            localStorage.setItem("progress", JSON.stringify(App.User));
-        }
-
+        document.body.appendChild(toolsContainer());
 
         if (done) {
             toast("Parabéns! Você acabou de concluir o curso Guia de Segurança Digital para a Família!", 10)
@@ -843,9 +743,76 @@ function toast(content, time = 5) {
     }, (time * 1000));
 }
 
+function toolsContainer() {
+    const tools = document.createElement("div");
+    tools.id = "tools";
+
+    const menu = document.createElement("div");
+    menu.classList.add("minimenu-container");
+    const icon = document.createElement("div");
+    icon.innerHTML = "☰";
+    icon.classList.add("menu-icon");
+    const options = document.createElement("ul");
+    options.classList.add("menu-options");
+    Object.keys(App.Chapters).forEach(key => {
+        const li = document.createElement("li");
+        const a = document.createElement("a");
+        if (Number(key) <= App.User.Steps) {
+            a.textContent = `✅ ${App.Chapters[key]}`;
+        } else {
+            a.textContent = App.Chapters[key];
+        }
+        li.appendChild(a);
+        options.appendChild(li);
+    });
+    menu.appendChild(icon);
+    menu.appendChild(options);
+    document.body.appendChild(menu);
+
+    const bodyEffect = document.createElement("div");
+    bodyEffect.className = "body-effect";
+    tools.appendChild(bodyEffect);
+    const level = document.createElement("div");
+    level.className = "level";
+
+    const progress = document.createElement("div");
+    progress.id = "progress";
+    const bar = document.createElement("div");
+    bar.id = "bar";
+    progress.appendChild(bar);
+    const chaptersDone = document.createElement("span");
+    chaptersDone.id = "chapters-done";
+    chaptersDone.textContent = "0/100";
+    level.appendChild(progress);
+    level.appendChild(chaptersDone);
+    tools.appendChild(level);
+    const credits = document.createElement("small");
+    credits.className = "credits";
+    const createdBy = document.createElement("span");
+    createdBy.textContent = "Criado por:";
+    const authorLink = document.createElement("a");
+    authorLink.href = "https://www.jorgesouza.com.br/";
+    authorLink.target = "_blank";
+    authorLink.textContent = "Jorge Souza Oliveira dos Santos";
+    credits.appendChild(createdBy);
+    credits.appendChild(authorLink);
+    tools.appendChild(credits);
+    if (localStorage.getItem("progress")) {
+        App.User = JSON.parse(localStorage.getItem("progress"));
+        const totalChapters = Object.keys(App.Chapters).length;
+        const doneChapters = App.User.Steps;
+        chaptersDone.textContent = `${doneChapters}/${totalChapters}`;
+        const percentDone = (doneChapters / totalChapters) * 100;
+        bar.style.width = `${percentDone}%`;
+    } else {
+        localStorage.setItem("progress", JSON.stringify(App.User));
+    }
+    return tools;
+}
+
 // #endregion
 
-window.concluir = (name="Anônimo") => {
+window.concluir = (name = "Anônimo") => {
     App.User = {
         "Name": name,
         "Steps": 32,

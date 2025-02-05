@@ -6,6 +6,17 @@
         <img src="https://www.jorgesouza.com.br/files/1.jpg" class="js-video-present">
     </card-big>
 
+    <horizontal-divider></horizontal-divider>
+    <card-big class="no-elastic" style="justify-items: center;">
+        <text-paragraph> ⚐ Confira o:</text-paragraph>
+        <text-subheading><i>Guia de Segurança Digital para a Família</i></text-subheading>
+        <text-paragraph>
+            <text-link onclick="window.location = '/digital'">faça o curso interativo</text-link>
+            <text-link onclick="window.location = '/cursos.html'">ou leia o guia em PDF</text-link>
+        </text-paragraph>
+    </card-big>
+    <horizontal-divider></horizontal-divider>
+
     <card-big class="profile no-elastic">
         <div id="profile-pic">
         </div>

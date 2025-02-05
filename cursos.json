@@ -1,12 +1,23 @@
 [
     {
+        "id": "pc",
+        "titulo": "Guia de Segurança Digital para a Família [gratuito]",
+        "descrição": "Muitas vezes os conceitos de Digital, Virtual e Tecnológico se confundem, já que todos os aparelhos hoje estão interligados, mas essas dúvidas podem ser facilmente sanadas, e durante esse esclarecimento é preciso conhecer os perigos existentes nesses caminhos, já que até aparelhos desconectados da internet ainda podem oferecer riscos. Os riscos da tecnologia não se comparam com os benefícios que são inúmeros, e é neste sentido que esta apostila é desenvolvida, trazer um pouco de luz a esse mundo ainda meio obscuro, onde estamos tateando e aprendendo o caminho, pois cada um que aprende um pouco do caminho, deve compartilhar com os que vêm atrás para que tropecem menos que nós.<br><br>Faça este curso de forma interativa <text-link onclick=\"window.open('/digital')\" class=\"footer-link\">clicando aqui</text-link>",
+        "downloads": null,
+        "ebook": "https://drive.google.com/file/d/1KHMQb9sJMpuSUpnUNTECHHqLB7E7TfIJ/view",
+        "kindle": null,
+        "a-venda": true,
+        "capa": "/files/seg.jpg",
+        "preview": null
+    },
+    {
         "id": "cad",
         "titulo": "Curso Prático de Desenho Técnico em AutoCAD",
         "descrição": "Explore o mundo do design técnico com o nosso curso prático de Desenho Técnico em AutoCAD. Seja você um aspirante a arquiteto, engenheiro, designer de interiores ou profissional de detalhamento técnico em setores diversos, este curso foi meticulosamente projetado para levar suas habilidades de desenho 2D para o próximo nível. Aprenda desde os conceitos básicos até técnicas avançadas do software líder da indústria para desenhos técnicos em 2D e 3D. Ganhe insights valiosos sobre os padrões e práticas profissionais nos setores de arquitetura, engenharia e design de interiores, essenciais para o sucesso em suas futuras empreitadas profissionais. Domine as técnicas de desenho 2D essenciais para expressar ideias complexas de forma clara e precisa, com foco em detalhamento técnico e precisão geométrica. Aprenda fazendo! Este curso é repleto de exercícios práticos e projetos desafiadores que o colocarão no comando, aprimorando suas habilidades de desenho e sua proficiência no AutoCAD.",
         "downloads": "https://drive.google.com/drive/folders/1UyYEQGea367Bni5pCCDliywBX_QsCh-C",
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0D8ZTWT9M",
-        "a-venda": "true",
+        "a-venda": true,
         "capa": "/files/autocad.jpg",
         "preview": "https://drive.google.com/file/d/129NevADVaOaEbDmDqtPnqEo4WQBoDR_g/view?usp=drive_link"
     },

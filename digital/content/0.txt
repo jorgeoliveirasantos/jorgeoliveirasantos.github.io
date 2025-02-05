@@ -29,5 +29,6 @@
     "28": "Reportar e restringir",
     "29": "Melhorar o ambiente",
     "30": "Próximos passos?",
-    "31": "Esclarecimentos"
+    "31": "Esclarecimentos",
+    "32": "Certificado"
 }

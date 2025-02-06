@@ -204,8 +204,10 @@ const App = {
                         <img src="./files/download.svg">
                         <text-label>Downloads do curso</text-label>
                     </list-item>
-                    <text-link ${kindle == null ? 'style="display: none;' : {}}onclick="window.open('https://youtu.be/Kgre-n-Rf3A')" style="font-size: small; text-align: center;" class="footer-link">Como ler e-books Kindle no celular</text-link>
-                    <text-link ${kindle == null ? 'style="display: none;' : {}}onclick="window.open('https://www.amazon.com.br/b?node=17877530011')" style="font-size: small; text-align: center;" class="footer-link">Baixe o Kindle para PC</text-link>
+                    <span style="width: 100%; text-align: center;">
+                        <text-link ${kindle == null ? 'style="display: none;' : {}}onclick="window.open('https://youtu.be/Kgre-n-Rf3A')" style="font-size: small; text-align: center;">Como ler e-books Kindle no celular</text-link>
+                        <text-link ${kindle == null ? 'style="display: none;' : {}}onclick="window.open('https://www.amazon.com.br/b?node=17877530011')" style="font-size: small; text-align: center;">Baixe o Kindle para PC</text-link>
+                    </span>
                 `;
             listElement.style.borderRadius = "5px";
             cursoContainer.appendChild(listElement);

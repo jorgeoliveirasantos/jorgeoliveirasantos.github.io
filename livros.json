@@ -1,17 +1,6 @@
 [
     {
         "id": "des",
-        "titulo": "Discurso sobre a Cultura da Iniquidade [gratuito]",
-        "descrição": "Este é um discurso introdutório ao curso \"A Construção da Civilização\" e trata de um tema central, algo verdadeiro, verificável, comprovável, que você mesmo pode provar que existe apenas olhando ao seu redor, porque é algo que está em toda parte, mas que para muita gente, passa despercebido. Isso interfere em toda nossa realidade, em como lidamos com as pessoas ao nosso redor, em como aprendemos e como ensinamos, em nosso trabalho, nosso lazer, em nosso entretenimento. Na realidade interfere em como a própria sociedade funciona, em como viemos parar aqui, e para onde caminhamos.",
-        "downloads": null,
-        "ebook": "https://drive.google.com/file/d/1QzxWLqkOCGndYrFyUnjMjk5Q3cwwKdQu/view",
-        "kindle": null,
-        "a-venda": true,
-        "capa": "./files/dis.jpg",
-        "preview": null
-    },
-    {
-        "id": "des",
         "titulo": "A Construção da Civilização",
         "descrição": "Estaria um futuro maravilhoso e brilhante, completamente diferente de tudo o que vivemos hoje, prestes a se concretizar? Qual o rumo da nossa civilização? Talvez as perguntas e dúvidas mais emocionantes que você possui estejam sendo abordadas nesta obra de uma maneira que você jamais imaginaria.\n\nApresento nesta obra o resultado de 15 anos de estudo em diversas áreas sociais, com o objetivo de compreender os processos de organização e evolução dos sistemas sociais e culturais. Nesta investigação podemos encontrar as raízes tanto de progressos como de problemas atuais e ter um vislumbre do caminho que estamos trilhando como entes individuais, como sociedade, humanidade, planeta.\n\nNesta investigação, surge uma questão pertinente a muitos: teríamos dois caminhos como seres humanos, um do individualismo autofágico e suicida que leve a destruição de nossa espécie ou o caminho coletivista que leve a um estado de perfeição? Estaríamos talvez num meio caminho ou meio termo onde ambos podem ser alcançados em maior ou menor grau? Este questionamento é de importância tal, que poderíamos escrever compêndios de milhares de páginas sobre ele, mas podemos adentrar em assuntos específicos que ele suscita e passar a fazer um estudo de nossa sociedade no âmbito individual e coletivo. Neste estudo tento compreender tais assuntos na forma de uma análise crítica e dialética de nossa civilização, com o intuito de passar ao leitor uma compreensão mais clara e mais profunda sobre os sistemas e mecanismos em que ele está imerso e dos quais ele faz parte, qual caminho foi trilhado para que estes sistemas sejam assim hoje, e como podemos imaginar para onde caminham.\n\nO objetivo central é que cada conclusão que tiremos ao longo deste estudo sirva como uma bússola em nossa compreensão do mundo, em nossas decisões diárias, para que encontremos uma visão mais realista do mundo.\n\n",
         "downloads": null,
@@ -31,5 +20,16 @@
         "a-venda": true,
         "capa": "./files/des.jpg",
         "preview": "https://drive.google.com/file/d/12Wsvcsc4tj4w-F5tR9toR-itRdv6XnY2/view"
+    },
+    {
+        "id": "des",
+        "titulo": "Discurso sobre a Cultura da Iniquidade [gratuito]",
+        "descrição": "Este é um discurso introdutório ao curso \"A Construção da Civilização\" e trata de um tema central, algo verdadeiro, verificável, comprovável, que você mesmo pode provar que existe apenas olhando ao seu redor, porque é algo que está em toda parte, mas que para muita gente, passa despercebido. Isso interfere em toda nossa realidade, em como lidamos com as pessoas ao nosso redor, em como aprendemos e como ensinamos, em nosso trabalho, nosso lazer, em nosso entretenimento. Na realidade interfere em como a própria sociedade funciona, em como viemos parar aqui, e para onde caminhamos.",
+        "downloads": null,
+        "ebook": "https://drive.google.com/file/d/1QzxWLqkOCGndYrFyUnjMjk5Q3cwwKdQu/view",
+        "kindle": null,
+        "a-venda": true,
+        "capa": "./files/dis.jpg",
+        "preview": null
     }
 ]

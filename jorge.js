@@ -14,12 +14,6 @@ const App = {
                 action: () => { window.location = '/' }
             },
             {
-                icon: "https://kaatan.azurewebsites.net/files/news.svg",
-                title: "Blog",
-                display: "block",
-                action: App.Blog
-            },
-            {
                 icon: "https://kaatan.azurewebsites.net/files/learn.svg",
                 title: "Cursos",
                 display: "block",
@@ -41,6 +35,12 @@ const App = {
                 icon: "https://www.jorgesouza.com.br/files/chat.svg",
                 title: "Comunidade",
                 action: App.Community
+            },
+            {
+                icon: "https://kaatan.azurewebsites.net/files/news.svg",
+                title: "Blog",
+                display: "block",
+                action: App.Blog
             }
         ];
         TOPBAR.innerHTML = "";

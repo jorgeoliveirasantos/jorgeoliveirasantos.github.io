@@ -41,8 +41,13 @@
     height: 100%;
 }
 
+.video-container img {
+    user-select: none;
+    pointer-events: none;
+}
+
 .blog-footer {
-    display: grid;
+    display: none;
     grid-template-columns: auto 1fr auto;
     gap: 5px;
     padding: 3px;

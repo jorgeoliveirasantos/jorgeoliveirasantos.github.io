@@ -103,6 +103,8 @@
         .profile #profile-pic {
             width: 200px;
             height: 200px;
+            max-width: 30vw;
+            max-height: 30vw;
             border-radius: 100px;
             border: var(--Dark) 5px solid;
             background-image: url("/files/z2.jpg");

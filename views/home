@@ -1,9 +1,9 @@
 <app-container>
     <card-big id="js-video-present-V" class="no-elastic">
-        <img src="https://www.jorgesouza.com.br/files/2.jpg" class="js-video-present">
+        <img src="/files/2.jpg" class="js-video-present">
     </card-big>
     <card-big id="js-video-present-H" class="no-elastic">
-        <img src="https://www.jorgesouza.com.br/files/1.jpg" class="js-video-present">
+        <img src="/files/1.jpg" class="js-video-present">
     </card-big>
 
     <horizontal-divider></horizontal-divider>
@@ -105,7 +105,7 @@
             height: 200px;
             border-radius: 100px;
             border: var(--Dark) 5px solid;
-            background-image: url("https://www.jorgesouza.com.br/files/z2.jpg");
+            background-image: url("/files/z2.jpg");
             background-size: cover;
             display: grid;
             place-items: center;

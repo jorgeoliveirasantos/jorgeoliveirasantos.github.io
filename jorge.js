@@ -32,7 +32,7 @@ const App = {
                 action: () => window.open('https://www.kaatan.com.br')
             },
             {
-                icon: "https://www.jorgesouza.com.br/files/chat.svg",
+                icon: "/files/chat.svg",
                 title: "Comunidade",
                 action: App.Community
             },
@@ -77,7 +77,7 @@ const App = {
 
         document.head.querySelectorAll("link").forEach(lnk => {
             if (lnk.getAttribute("rel") == "shortcut icon") {
-                lnk.setAttribute("href", "https://www.jorgesouza.com.br/files/logo.svg");
+                lnk.setAttribute("href", "/files/logo.svg");
             }
         });
 

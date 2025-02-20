@@ -13,7 +13,7 @@ const CoursesName = {
     "LKK444A100": "Curso de Informática Básica e Avançada",
     "RRF777L0ZZ": "Curso Completo de Design Gráfico",
     "SDD1ABC789": ""
-}
+};
 
 const App = {
     Chapters: {},
@@ -569,7 +569,8 @@ const App = {
         }
 
         // Renderizar o certificado:
-        async function certificado(course) {
+        async function certificado(course = CoursesName[code]) {
+            if(!course) course = CoursesName["RS56F7X000"];
             try { document.getElementById("video-background").remove() } catch { }
             try { App.Music.stop(); } catch { }
 
@@ -692,7 +693,7 @@ const App = {
             const input = document.createElement("input");
             input.classList.add("fun-input");
             container.appendChild(input);
-            input.value = "RS56F7X000";
+            if (!code) input.value = "RS56F7X000";
 
             const nextBtn = document.createElement("button");
             nextBtn.classList.add("fun-button");

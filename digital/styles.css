@@ -288,6 +288,7 @@ button.yes {
     overflow: hidden;
     animation: float 3s infinite ease-in-out;
     opacity: 0.9;
+    z-index: 1;
 }
 
 h1,
@@ -466,42 +467,83 @@ hr {
     src: url("./Sacramento-Regular.ttf");
 }
 
-#container {
+
+
+#cert-container {
     position: absolute;
-    width: 2245px;
-    height: 1587px;
+    width: 3508px;
+    height: 2480px;
     padding: 0;
     margin: 0;
     text-align: center;
-    background-image: url("./content/a.jpg");
+    background-image: url("./a.jpg");
     background-size: cover;
     background-position: center;
     display: grid;
-    grid-template-rows: 1.3fr 1fr 1fr 1fr 1fr auto;
+    grid-template-rows: 1300px 450px 160px 180px 235px 1fr;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
     z-index: 1;
 }
 
-#name {
+#cert-name {
     font-family: sacramento;
-    font-size: 100px;
+    font-size: 200px;
+    width: 100%;
+    text-wrap: nowrap;
+    text-align: center;
     color: #fff;
     z-index: 2;
 }
 
-#footer {
+#cert-course {
+    font-size: 100px;
     width: 100%;
-    height: fit-content;
-    left: 0;
-    padding: 0;
-    margin: 0 0 5px 0;
+    text-wrap: nowrap;
     text-align: center;
-    font-size: 30px;
-    color: #FB0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fff;
     z-index: 2;
 }
 
+#cert-footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    left: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 0 5px 0;
+    text-align: center;
+    font-size: 50px;
+    width: 100%;
+    text-wrap: nowrap;
+    text-align: center;
+    z-index: 2;
+}
+
+#cert-download {
+    width: 15vw;
+    height: 10vh;
+    top: 1vh;
+    left: 1vw;
+    font-size: 3vh;
+    border: none;
+    border-radius: 2vh;
+    box-shadow: 0 0 5vh #0009;
+    padding: 1vw;
+    background-color: #105020;
+    color: #FD9;
+    cursor: pointer;
+    transition: all 500ms;
+    z-index: 2;
+}
+
+#cert-download:hover {
+    background-color: #00DD88;
+    color: #101520;
+}
 
 /**/

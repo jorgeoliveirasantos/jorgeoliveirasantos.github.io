@@ -2,6 +2,19 @@ import { Howl, Howler } from "./howler.js";
 const _URL = "./content/";
 const _VOLUME = 0.1;
 
+const CoursesName = {
+    "RS56F7X000": "Curso de Segurança Digital para a Família",
+    "XP56BNN7F1": "Curso de Web Design",
+    "Z555SPP000": "Curso Completo de Javascript",
+    "TTT63Y00PP": "Curso de Desenvolvimento de Aplicações Web",
+    "WQQ123H777": "Curso de Inteligência Artificial e Aprendizado de Máquina",
+    "LIU987MNN1": "Curso Prático de Desenho Técnico em AutoCAD",
+    "777QQP543A": "Curso Prático de Modelagem 3D",
+    "LKK444A100": "Curso de Informática Básica e Avançada",
+    "RRF777L0ZZ": "Curso Completo de Design Gráfico",
+    "SDD1ABC789": ""
+}
+
 const App = {
     Chapters: {},
     Reading: 1,
@@ -522,9 +535,9 @@ const App = {
         App.Reading = 31;
         const container = await App.Render.Section("Esclarecimentos");
         if (done) toast("Você passou de nível!", 5);
-        App.Render.Content(container, "31", () => App["Certificado"](true));
+        App.Render.Content(container, "31", () => App["Certificado"](true, "RS56F7X000"));
     },
-    "Certificado": async (done = false) => {
+    "Certificado": async (done = false, code = false) => {
         App.Reading = 32;
         App.User = {
             "Name": "Anônimo",
@@ -556,18 +569,20 @@ const App = {
         }
 
         // Renderizar o certificado:
-        async function certificado() {
+        async function certificado(course) {
             try { document.getElementById("video-background").remove() } catch { }
             try { App.Music.stop(); } catch { }
 
             const container = await App.Render.Section("Digite seu nome:");
+            document.getElementById("tools").remove();
+            document.querySelector(".minimenu-container").remove();
 
             const input = document.createElement("input");
             input.classList.add("fun-input");
             container.appendChild(input);
 
             const p = document.createElement("p");
-            p.textContent = "Insira o nome como você gostaria que aparecesse em seu certificado."
+            p.innerHTML = "Insira o nome como você gostaria que aparecesse em seu certificado.<br>Você está obtendo o certificado para o:<br><b>" + course + "</b>.";
             container.appendChild(p);
 
             const nextBtn = document.createElement("button");
@@ -579,63 +594,53 @@ const App = {
 
             nextBtn.onclick = e => {
                 document.body.innerHTML = "";
-                document.body.style.width = "2245px";
-                document.body.style.height = "1587px";
+                document.body.style.color = "#fb0";
+                document.body.style.backgroundColor = "black";
 
                 const div = document.createElement("div");
-                div.id = "container";
-                div.style.position = "absolute";
-                div.style.width = "2245px";
-                div.style.height = "1587px";
-                div.style.padding = "0";
-                div.style.margin = "0";
-                div.style.textAlign = "center";
-                div.style.backgroundImage = "url('./content/a.jpg')";
-                div.style.backgroundSize = "cover";
-                div.style.backgroundPosition = "center";
-                div.style.display = "grid";
-                div.style.gridTemplateRows = "1.3fr 1fr 1fr 1fr 1fr auto";
-                div.style.alignItems = "center";
-                div.style.justifyContent = "center";
-                div.style.zIndex = "1";
+                div.id = "cert-container";
 
                 const nameSpan = document.createElement("span");
-                nameSpan.id = "name";
-                nameSpan.textContent = "Jorge Souza";
-
-                const footerSpan = document.createElement("span");
-                footerSpan.id = "footer";
-                footerSpan.textContent = "Luis Eduardo Magalhães-BA | Quarta feira, 23 de Janeiro de 2025";
-
-                // Adicionar ao div
-                div.appendChild(document.createElement("span"));
-                div.appendChild(document.createElement("span"));
-                div.appendChild(document.createElement("span"));
-                div.appendChild(nameSpan);
-                div.appendChild(document.createElement("span"));
-                div.appendChild(footerSpan);
-                div.appendChild(document.createElement("span"));
-                document.body.appendChild(div);
-
-                const canvas = document.createElement('canvas');
-                canvas.style.display = "none";
-                canvas.width = 2245;
-                canvas.height = 1587;
-                document.body.appendChild(canvas);
+                nameSpan.id = "cert-name";
 
                 const name = input.value;
 
-                const nameElement = document.getElementById("name"); // Acessando corretamente o elemento #name
-                nameElement.textContent = name || "Jorge Souza Oliveira dos Santos";
+                nameSpan.textContent = name || "Jorge Souza Oliveira dos Santos";
 
-                if (name.length > 35) {
-                    document.getElementById("name").style.fontSize = "100px";
-                } else if (name.length < 20) {
-                    document.getElementById("name").style.fontSize = "150px";
-                } else {
-                    document.getElementById("name").style.fontSize = "120px";
-                }
-                document.getElementById("footer").textContent = "Luis Eduardo Magalhães-BA | " + formatDate();
+                const txtSpan = document.createElement("span");
+                txtSpan.style.fontSize = "75px";
+                txtSpan.style.width = "100%";
+                txtSpan.style.textWrap = "nowrap";
+                txtSpan.style.textAlign = "center";
+                txtSpan.textContent = "concluiu com êxito o";
+
+                const courseSpan = document.createElement("span");
+                courseSpan.id = "cert-course";
+                courseSpan.textContent = course;
+
+                const footerSpan = document.createElement("span");
+                footerSpan.id = "cert-footer";
+                footerSpan.textContent = "Luis Eduardo Magalhães-BA | " + formatDate();
+
+                // Adicionar ao div
+                div.appendChild(document.createElement("span"));
+                div.appendChild(nameSpan);
+                div.appendChild(txtSpan);
+                div.appendChild(courseSpan);
+                div.appendChild(document.createElement("span"));
+                div.appendChild(footerSpan);
+                const btn = document.createElement("button");
+                btn.id = "cert-download";
+                btn.style.left = (50 - 7.5) + "vw";
+                btn.innerHTML = '<b>⤵</b> download';
+                document.body.appendChild(div);
+                document.body.appendChild(btn);
+
+                const canvas = document.createElement('canvas');
+                canvas.style.display = "none";
+                canvas.width = 3508;
+                canvas.height = 2480;
+                document.body.appendChild(canvas);
 
                 html2canvas(div, {
                     useCORS: true, // Permite carregar imagens de fontes externas
@@ -643,40 +648,73 @@ const App = {
                     logging: true,
                     scale: 1, // Aumenta a qualidade da imagem
                 }).then(async function (canvas) {
-                    var image = canvas.toDataURL("image/png");
-                    var link = document.createElement('a');
-                    link.href = image;
-                    link.download = 'certificado.png';
-                    document.body.appendChild(link);
-                    link.click();
-                    document.body.removeChild(link);
-                    //
-                    document.body.style.width = "100%";
-                    document.body.style.height = "100%";
-                    const container = await App.Render.Section("Pronto!");
-                    const p = document.createElement("p");
-                    p.innerHTML = "Você baixou seu certificado, aproveite. Você sempre poderá baixá-lo novamente retornando a esta página.<br>Dica: <i>Se limpou os dados do navegador ou teve que acessar de outro dispositivo, você pode abrir o console do navegador e digitar o comando:</i> <b>concluir(\"Seu Nome\");</b> e pressionar enter.<br>Se quiser reiniciar todo o curso, abra o console do navegador e digite o comando:</i> <b>reiniciar();</b> e pressione enter."
-                    container.appendChild(p);
-                    const nextBtn = document.createElement("button");
-                    nextBtn.classList.add("fun-button");
-                    nextBtn.textContent = "OK";
-                    nextBtn.style.width = "fit-content";
-                    nextBtn.style.margin = "auto";
-                    container.appendChild(nextBtn);
+                    btn.onclick = e => {
+                        var image = canvas.toDataURL("image/png");
+                        var link = document.createElement('a');
+                        link.href = image;
+                        link.download = "certificado-" + Date.now() + ".png";
+                        document.body.appendChild(link);
+                        link.click();
+                        document.body.removeChild(link);
+                        //
+                        App.Render.Section("Pronto!").then(container => {
+                            document.getElementById("tools").remove();
+                            document.querySelector(".minimenu-container").remove();
+                            const p = document.createElement("p");
+                            p.innerHTML = "Você baixou seu certificado, aproveite. Você sempre poderá baixá-lo novamente retornando a esta página."
+                            container.appendChild(p);
+                            const nextBtn = document.createElement("button");
+                            nextBtn.classList.add("fun-button");
+                            nextBtn.textContent = "OK";
+                            nextBtn.style.width = "fit-content";
+                            nextBtn.style.margin = "auto";
+                            container.appendChild(nextBtn);
 
-                    nextBtn.onclick = e => window.location.reload();
+                            nextBtn.onclick = e => window.location.href = "/";
+                        });
+                    };
                 });
 
-            }
-            input.focus();
+                input.focus();
+            };
         }
 
         document.body.innerHTML = "";
 
-        document.body.appendChild(toolsContainer());
 
         if (done) {
-            toast("Parabéns! Você acabou de concluir o curso Guia de Segurança Digital para a Família!", 10)
+            try { App.Music.play(); } catch { }
+
+            const container = await App.Render.Section("Digite o código do curso:");
+            document.getElementById("tools").remove();
+            document.querySelector(".minimenu-container").remove();
+
+            const input = document.createElement("input");
+            input.classList.add("fun-input");
+            container.appendChild(input);
+            input.value = "RS56F7X000";
+
+            const nextBtn = document.createElement("button");
+            nextBtn.classList.add("fun-button");
+            nextBtn.textContent = "Avançar";
+            nextBtn.style.width = "fit-content";
+            nextBtn.style.margin = "auto";
+            container.appendChild(nextBtn);
+
+            nextBtn.onclick = e => {
+                const courseCode = input.value.trim().replaceAll(" ", "").toUpperCase();
+                if (CoursesName[courseCode]) {
+                    certificado(CoursesName[courseCode]);
+                } else {
+                    toast("Curso inválido", 5);
+                    input.value = "";
+                }
+            };
+            input.focus();
+
+            //
+
+            toast("Parabéns! Você acabou de concluir o curso!", 10);
             try { App.Music.stop(); } catch { }
             App.Music = new Howl({
                 src: ['fx/victory.mp3'],
@@ -696,11 +734,6 @@ const App = {
             video.src = "fx/fireworks.mp4";
             video.setAttribute("type", "video/mp4");
             background.appendChild(video);
-            const close = document.createElement("span");
-            close.classList.add("close");
-            close.innerHTML = "✖";
-            close.onclick = certificado;
-            background.appendChild(close);
             document.body.appendChild(background);
         } else {
             certificado();
@@ -867,7 +900,9 @@ window.reiniciar = () => {
 // #region INIT
 (async () => {
     App.Chapters = (await (await fetch(`${_URL}0.txt`)).json());
-    if (localStorage.getItem("progress")) {
+    if (window.location.href.includes("certificado")) {
+        App["Certificado"](true);
+    } else if (localStorage.getItem("progress")) {
         App.User = JSON.parse(localStorage.getItem("progress"));
 
         const container = await App.Render.Section("Continuar");

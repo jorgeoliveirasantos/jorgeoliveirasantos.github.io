@@ -29,6 +29,7 @@
     overflow: hidden;
     border-radius: 10px;
     border: var(--MediumBlue) 3px solid;
+    z-index: 0;
 }
 
 .video-container iframe,

@@ -570,7 +570,7 @@ const App = {
 
         // Renderizar o certificado:
         async function certificado(course = CoursesName[code]) {
-            if(!course) course = CoursesName["RS56F7X000"];
+            if (!course) course = CoursesName["RS56F7X000"];
             try { document.getElementById("video-background").remove() } catch { }
             try { App.Music.stop(); } catch { }
 
@@ -580,6 +580,7 @@ const App = {
 
             const input = document.createElement("input");
             input.classList.add("fun-input");
+            if (code) input.value = code;
             container.appendChild(input);
 
             const p = document.createElement("p");

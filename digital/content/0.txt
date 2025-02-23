@@ -30,5 +30,6 @@
     "29": "Melhorar o ambiente",
     "30": "Próximos passos?",
     "31": "Esclarecimentos",
-    "32": "Certificado"
+    "32": "Código do curso",
+    "33": "Certificado"
 }

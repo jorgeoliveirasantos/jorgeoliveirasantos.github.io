@@ -1,0 +1,1 @@
+Copie o código do curso para gerar seu certificado caso precise:<br><b>RS56 F7X 000</b><br><a href="#" id="copy-code-btn">Copiar código</a>

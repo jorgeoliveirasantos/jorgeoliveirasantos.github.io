@@ -148,7 +148,7 @@ const App = {
                     nextBtn.onclick = e => {
                         if (count == content.length - 1) {
                             funButton(nextBtn, "levelup", () => {
-                                if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
+                                if (App.User.Steps < 32 && App.User.Steps == App.Reading) App.User.Steps++;
                                 App.User.LastChapter = App.Chapters[App.User.Steps];
                                 localStorage.setItem("progress", JSON.stringify(App.User));
                                 callback();
@@ -220,7 +220,7 @@ const App = {
                         nextBtn.onclick = e => {
                             if (count == content.length - 1) {
                                 funButton(nextBtn, "levelup", () => {
-                                    if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
+                                    if (App.User.Steps < 32 && App.User.Steps == App.Reading) App.User.Steps++;
                                     App.User.LastChapter = App.Chapters[App.User.Steps];
                                     localStorage.setItem("progress", JSON.stringify(App.User));
                                     callback();
@@ -258,7 +258,7 @@ const App = {
                         nextBtn.onclick = e => {
                             if (count == content.length - 1) {
                                 funButton(nextBtn, "levelup", () => {
-                                    if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
+                                    if (App.User.Steps < 32 && App.User.Steps == App.Reading) App.User.Steps++;
                                     App.User.LastChapter = App.Chapters[App.User.Steps];
                                     localStorage.setItem("progress", JSON.stringify(App.User));
                                     callback();
@@ -311,7 +311,7 @@ const App = {
                     nextBtn.onclick = e => {
                         if (count == content.length - 1) {
                             funButton(nextBtn, "levelup", () => {
-                                if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
+                                if (App.User.Steps < 32 && App.User.Steps == App.Reading) App.User.Steps++;
                                 App.User.LastChapter = App.Chapters[App.User.Steps];
                                 localStorage.setItem("progress", JSON.stringify(App.User));
                                 callback();
@@ -346,7 +346,7 @@ const App = {
         nextBtn.onclick = e => {
             if (input.value.length > 2) {
                 App.User.Name = input.value;
-                if (App.User.Steps < 31 && App.User.Steps == App.Reading) App.User.Steps++;
+                if (App.User.Steps < 32 && App.User.Steps == App.Reading) App.User.Steps++;
                 App.User.LastChapter = App.Chapters[App.User.Steps];
                 localStorage.setItem("progress", JSON.stringify(App.User));
                 funButton(nextBtn, "levelup", App["Introdução"]);
@@ -535,13 +535,27 @@ const App = {
         App.Reading = 31;
         const container = await App.Render.Section("Esclarecimentos");
         if (done) toast("Você passou de nível!", 5);
-        App.Render.Content(container, "31", () => App["Certificado"](true, "RS56F7X000"));
+        App.Render.Content(container, "31", () => App["Código do curso"](true));
+    },
+    "Código do curso": async (done = false) => {
+        App.Reading = 32;
+        const container = await App.Render.Section("Código do curso");
+        if (done) toast("Você passou de nível!", 5);
+        App.Render.Content(container, "32", () => App["Certificado"](true));
+        setTimeout(() => {
+            document.getElementById("copy-code-btn").onclick = e => {
+                navigator.clipboard.writeText("RS56 F7X 000");
+                toast("Código copiado para a área de transferência.")
+            };
+            document.getElementById("copy-code-btn").style.color = "white";
+        }, 999);
+        //
     },
     "Certificado": async (done = false, code = false) => {
-        App.Reading = 32;
+        App.Reading = 33;
         App.User = {
             "Name": "Anônimo",
-            "Steps": 32,
+            "Steps": 33,
             "LastChapter": "Certificado"
         }
         localStorage.setItem("progress", JSON.stringify(App.User));
@@ -885,7 +899,7 @@ function toolsContainer() {
 window.concluir = (name = "Anônimo") => {
     App.User = {
         "Name": name,
-        "Steps": 32,
+        "Steps": 33,
         "LastChapter": "Certificado"
     }
     localStorage.setItem("progress", JSON.stringify(App.User));

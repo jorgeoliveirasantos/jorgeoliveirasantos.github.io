@@ -332,25 +332,33 @@ const App = {
         document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
     },
     Community: () => {
-        const appContainer = document.createElement("app-container");
-        // 
-        const card = document.createElement("card-big");
-        card.classList = "no-elastic no-hover";
-        const commentSecion = document.createElement("div");
-        commentSecion.id = "disqus_thread";
-        commentSecion.style.width = "100%";
-        card.appendChild(commentSecion);
-        // 
-        APPVIEW.innerHTML = "";
-        appContainer.appendChild(card);
-        APPVIEW.appendChild(appContainer);
-        App.Footer();
+        // Load comments from Disqus:
+        function disqus() {
+            const appContainer = document.createElement("app-container");
+            // 
+            const card = document.createElement("card-big");
+            card.classList = "no-elastic no-hover";
+            const commentSecion = document.createElement("div");
+            commentSecion.id = "disqus_thread";
+            commentSecion.style.width = "100%";
+            card.appendChild(commentSecion);
+            // 
+            APPVIEW.innerHTML = "";
+            appContainer.appendChild(card);
+            APPVIEW.appendChild(appContainer);
+            App.Footer();
 
-        var d = document, s = d.createElement('script');
-        s.src = 'https://jorgeoliveirasantos.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+            var d = document, s = d.createElement('script');
+            s.src = 'https://jorgeoliveirasantos.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            document.getElementById("app-view").scrollTo({ top: 0, left: 0, behavior: "smooth" });
+        }
+        // Load a Kaatan Chat Room:
+        function community() {
+        }
+        community();
+        //disqus();
     },
     // Checkout:
     Checkout: (id) => {

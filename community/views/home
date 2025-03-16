@@ -1,0 +1,19 @@
+<app-container>
+    <card-big class="profile no-elastic">
+        <text-paragraph>
+            Instrutor de cursos técnicos e profissionalizantes no setor de informática, em especial Desenho Técnico e
+            Modelagem 3D (AutoCAD e 3Ds Max), Informática Básica e Avançada, Design Gráfico, Desenvolvimento Web e
+            Programação de Computadores. Atuante como professor particular e em escolas de cursos profissionalizantes
+            desde o ano de 2011. Projetista Cadista no setor de Arquitetura e Interiores com ênfase em AutoCAD, projetos
+            executivos e detalhamentos 2D, atuante no setor desde o ano de 2008.
+        </text-paragraph>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-paragraph>
+            Seja para contratar um projeto, adquirir uma apostila do seu setor, ou aprender, este é seu lugar.
+        </text-paragraph>
+    </card-big>
+</app-container>

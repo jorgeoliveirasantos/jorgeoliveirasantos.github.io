@@ -356,9 +356,10 @@ const App = {
         }
         // Load a Kaatan Chat Room:
         function community() {
+            window.location.href = "/community";
         }
-        community();
-        //disqus();
+        //community();
+        disqus();
     },
     // Checkout:
     Checkout: (id) => {

@@ -1,0 +1,160 @@
+<grid-column style="display: flex; padding: 5px;" class="posts-view">
+    <card-big class="no-elastic no-hover" style="background-color: transparent;">
+        <div class="profile-pic">
+            <span id="profile-pic-img">
+                <img src="https://kaatan.azurewebsites.net/avatars/f/1.jpg" alt="" srcset="">
+            </span>
+            <span id="profile-pic-edit">&#x270E;</span>
+        </div>
+    </card-big>
+    <card-big class="no-elastic no-hover" id="status-data">
+        <span id="status-data-img" class="elastic">
+            <img src="/files/insignia.jpg">
+        </span>
+        <div
+            style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 5px; overflow: hidden; text-wrap: nowrap;">
+            <text-heading id="profile-name" style="font-size: 16pt; cursor: pointer;">Jorge Souza Oliveira dos
+                Santos</text-heading>
+            <text-subheading id="profile-username"
+                style="font-size: 11pt; cursor: pointer;">@jorgesouza</text-subheading>
+        </div>
+        <span class="elastic" id="share-profile-btn"
+            style="height: 70px; cursor: pointer; display: grid; place-items: center;">
+            <img src="/files/share.svg" style="height: 24px; margin: auto 10px auto 10px; opacity: 0.5;">
+        </span>
+    </card-big>
+    <horizontal-divider></horizontal-divider>
+    <card-big class="no-elastic no-hover">
+        <text-label>&#x270E; Descrição</text-label>
+        <text-paragraph id="profile-description" style="cursor: pointer;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Amet nisl purus
+            in mollis nunc. Amet cursus sit amet dictum sit amet justo donec. Feugiat in ante metus dictum at tempor
+            commodo. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Nullam vehicula ipsum a arcu. Nisl
+            purus in mollis nunc sed id semper risus. In hac habitasse platea dictumst quisque sagittis. Volutpat sed
+            cras ornare arcu dui vivamus arcu. Nullam ac tortor vitae purus faucibus ornare suspendisse. Tincidunt
+            ornare massa eget egestas purus viverra accumsan. Bibendum neque egestas congue quisque egestas. Ac tortor
+            dignissim convallis aenean et. Sit amet mauris commodo quis imperdiet massa tincidunt. Tempus imperdiet
+            nulla malesuada pellentesque elit eget. Quis risus sed vulputate odio ut enim blandit volutpat. Nec
+            tincidunt praesent semper feugiat nibh sed pulvinar proin. Amet justo donec enim diam vulputate ut pharetra.
+        </text-paragraph>
+    </card-big>
+    <card-big id="profile-data" class="no-elastic no-hover">
+        <grid-row>
+            <text-label>&#x270E; Email</text-label>
+            <text-paragraph id="mail-txt" style="cursor: pointer;">meu@mail.com</text-paragraph>
+        </grid-row>
+        <grid-row>
+            <text-label>Genre</text-label>
+            <select class="acacia-input-select" id="gnr-sel">
+                <option value="female">Feminino</option>
+                <option value="male">Masculino</option>
+            </select>
+        </grid-row>
+        <grid-row>
+            <text-label>Dias consecutivos:</text-label>
+            <text-paragraph id="day-strk">DaysStreak</text-paragraph>
+        </grid-row>
+        <grid-row>
+            <text-label>Entrou:</text-label>
+            <text-paragraph id="rgst-time">RegisterTime</text-paragraph>
+        </grid-row>
+        <grid-row>
+            <text-label>Ultimo acesso:</text-label>
+            <text-paragraph id="lst-acss-time">LastAccessTime</text-paragraph>
+        </grid-row>
+        <grid-row>
+            <text-label>Email verificado:</text-label>
+            <text-link id="mail-verified">Verificar</text-link>
+        </grid-row>
+        <grid-row>
+            <text-label>Usuário verificado:</text-label>
+            <text-link id="usr-verified">Verificar</text-link>
+        </grid-row>
+    </card-big>
+    <card-big class="no-elastic no-hover">
+        <text-label>Senha</text-label>
+        <input type="password" minlength="3" maxlength="50" id="passwd" class="acacia-input"
+            placeholder="Insira a senha">
+        <input type="password" minlength="3" maxlength="50" id="npasswd" class="acacia-input" style="display: none;"
+            placeholder="Insira a nova senha">
+        <input type="password" minlength="3" maxlength="50" id="npasswd2" class="acacia-input" style="display: none;"
+            placeholder="Repita a nova senha">
+        <grid-row style="width: 90%; font-size: 13pt; display: grid; grid-template-columns: 1fr 1fr;">
+            <text-link id="alt-passwd">+ Alterar senha</text-link>
+            <text-link id="sh-passwd">Exibir senha</text-link>
+        </grid-row>
+    </card-big>
+    <horizontal-divider></horizontal-divider>
+    <card-big class="no-elastic no-hover">
+        <button-squared id="save-btn">Salvar</button-squared>
+    </card-big>
+    <style>
+        .profile-stats {
+            padding: 5px;
+            gap: 5px;
+            display: grid;
+            place-items: center;
+            grid-template-columns: auto auto auto auto 1fr auto;
+        }
+
+
+        .profile-pic {
+            color: white;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+        }
+
+        .profile-pic img {
+            width: 150px !important;
+            height: 150px !important;
+            margin: 0 !important;
+            border: black 5px solid !important;
+            border-radius: 75px;
+            box-sizing: border-box;
+        }
+
+        .profile-pic:hover img {
+            opacity: 0.3;
+        }
+
+        .profile-pic:hover #profile-pic-edit {
+            display: block;
+        }
+
+        #profile-pic-edit {
+            display: none;
+            position: absolute;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            font-weight: bold;
+            font-size: xx-large;
+            padding: 0 20px 0 20px !important;
+        }
+
+        #status-data {
+            height: 80px;
+            display: grid;
+            place-items: center;
+            grid-template-columns: auto 1fr auto;
+            border-radius: 40px !important;
+        }
+
+        #status-data-img {
+            height: 70px;
+            display: grid;
+            place-items: center;
+            border-radius: 35px;
+            overflow: hidden;
+        }
+
+        #status-data-img img {
+            height: 70px;
+        }
+    </style>
+</grid-column>

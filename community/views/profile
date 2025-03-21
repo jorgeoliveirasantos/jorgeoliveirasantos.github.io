@@ -1,0 +1,122 @@
+<grid-column style="display: flex; padding: 5px;" class="posts-view">
+    <card-big class="no-elastic no-hover" style="background-color: transparent;">
+        <div class="profile-pic">
+            <span id="profile-pic-img">
+                <img src="https://kaatan.azurewebsites.net/avatars/m/1.jpg" alt="" srcset="">
+            </span>
+        </div>
+    </card-big>
+
+    <card-big class="no-elastic no-hover" id="status-data">
+        <span id="status-data-img" class="elastic">
+            <img src="https://kaatan.azurewebsites.net/files/insignia.jpg">
+        </span>
+        <div
+            style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 5px; overflow: hidden; text-wrap: nowrap;">
+            <text-heading id="profile-name" style="font-size: 16pt; cursor: pointer;">Jorge Souza Oliveira dos
+                Santos</text-heading>
+            <text-subheading id="profile-username"
+                style="font-size: 11pt; cursor: pointer;">@jorgesouza</text-subheading>
+        </div>
+        <span class="elastic" id="share-profile-btn"
+            style="height: 70px; cursor: pointer; display: grid; place-items: center;"
+            onmouseover="Tooltip.Tooltip('Compartilhar cartão de visitas', this)">
+            <img src="https://kaatan.azurewebsites.net/files/share.svg"
+                style="height: 24px; margin: auto 10px auto 10px; opacity: 0.5;">
+        </span>
+    </card-big>
+
+    <card-big class="no-elastic no-hover">
+        <text-label>Descrição</text-label>
+        <text-paragraph id="profile-description" style="cursor: pointer;">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Facilisis leo vel fringilla est ullamcorper eget nulla facilisi etiam. Amet nisl purus
+            in mollis nunc. Amet cursus sit amet dictum sit amet justo donec. Feugiat in ante metus dictum at tempor
+            commodo. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Nullam vehicula ipsum a arcu. Nisl
+            purus in mollis nunc sed id semper risus. In hac habitasse platea dictumst quisque sagittis. Volutpat sed
+            cras ornare arcu dui vivamus arcu. Nullam ac tortor vitae purus faucibus ornare suspendisse. Tincidunt
+            ornare massa eget egestas purus viverra accumsan. Bibendum neque egestas congue quisque egestas. Ac tortor
+            dignissim convallis aenean et. Sit amet mauris commodo quis imperdiet massa tincidunt. Tempus imperdiet
+            nulla malesuada pellentesque elit eget. Quis risus sed vulputate odio ut enim blandit volutpat. Nec
+            tincidunt praesent semper feugiat nibh sed pulvinar proin. Amet justo donec enim diam vulputate ut pharetra.
+        </text-paragraph>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic no-hover">
+        <grid-row style="gap: 5px; display: flex; flex-wrap: wrap; justify-content: center; flex-direction: row;">
+            <button-squared id="add-contact-btn">
+                <img src="https://kaatan.azurewebsites.net/files/contact_add.svg">
+                <text-paragraph>Adicionar</text-paragraph>
+            </button-squared>
+            <button-squared id="cancel-contact-request-btn" style="display: none;">
+                <img src="https://kaatan.azurewebsites.net/files/contact_pending.svg">
+                <text-paragraph>Cancelar</text-paragraph>
+            </button-squared>
+            <button-squared id="remove-contact-btn" style="display: none;">
+                <img src="https://kaatan.azurewebsites.net/files/contact_remove.svg">
+                <text-paragraph>Remover</text-paragraph>
+            </button-squared>
+
+            <button-squared id="call-contact-btn" style="display: none;">
+                <img src="https://kaatan.azurewebsites.net/files/call.svg">
+                <text-paragraph>Chamada</text-paragraph>
+            </button-squared>
+            <button-squared id="msg-contact-btn" style="display: none;">
+                <img src="https://kaatan.azurewebsites.net/files/send.svg">
+                <text-paragraph>Mensagem</text-paragraph>
+            </button-squared>
+        </grid-row>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big id="profile-data" class="no-elastic no-hover">
+        <grid-row>
+            <text-label>Dias consecutivos:</text-label>
+            <text-paragraph id="day-strk">DaysStreak</text-paragraph>
+        </grid-row>
+    </card-big>
+    <style>
+        .profile-pic {
+            color: white;
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            display: grid;
+            place-items: center;
+            cursor: pointer;
+        }
+
+        .profile-pic img {
+            width: 150px !important;
+            height: 150px !important;
+            margin: 0 !important;
+            border: black 5px solid !important;
+            border-radius: 75px;
+            box-sizing: border-box;
+            pointer-events: none;
+        }
+
+        #status-data {
+            height: 80px;
+            display: grid;
+            place-items: center;
+            grid-template-columns: auto 1fr auto;
+            border-radius: 40px !important;
+        }
+
+        #status-data-img {
+            height: 70px;
+            display: grid;
+            place-items: center;
+            border-radius: 35px;
+            overflow: hidden;
+        }
+
+        #status-data-img img {
+            height: 70px;
+        }
+    </style>
+</grid-column>

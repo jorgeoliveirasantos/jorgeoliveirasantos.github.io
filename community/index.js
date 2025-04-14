@@ -1,6 +1,9 @@
 const Community = {
     Posts: [],
     User: {},
+    Preload: async () => {
+        //
+    },
     Main: async () => {
         TOPBAR.innerHTML = "";
 

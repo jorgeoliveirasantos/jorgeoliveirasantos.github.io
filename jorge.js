@@ -130,6 +130,7 @@ const App = {
                 <img src="files/whatsapp.svg" onmouseover="Tooltip.Tooltip('Whatsapp', this)" onclick="window.open('https://wa.me/5577999030420')">
                 <img src="files/amazon.svg" onmouseover="Tooltip.Tooltip('Amazon', this)" onclick="window.open('https://amazon.com.br/kindle-dbs/entity/author?asin=B0CM13195T')">
                 <img src="files/instagram.svg" onmouseover="Tooltip.Tooltip('Instagram', this)" onclick="window.open('https://www.instagram.com/jorgesouzaonline/')">
+                <img src="files/youtube.svg" onmouseover="Tooltip.Tooltip('Youtube', this)" onclick="window.open('https://www.youtube.com/@jorgesouzaonline')">
                 <img src="https://kaatan.azurewebsites.net/files/comunity.svg" onmouseover="Tooltip.Tooltip('Comunidade', this)" onclick="App.Community()">
             </grid-row>
 

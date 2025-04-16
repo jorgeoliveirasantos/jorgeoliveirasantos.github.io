@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<grid-column id="posts-view">
+<grid-column id="posts-view" style="height: fit-content;">
     <style>
         #edit-box {
             box-sizing: border-box;

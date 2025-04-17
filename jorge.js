@@ -135,10 +135,10 @@ const App = {
             </grid-row>
 
             <horizontal-divider></horizontal-divider>
-
+            
             <text-paragraph style="text-align: center;">
-            "'Ame o Senhor, o seu Deus, de todo o seu coração, de toda a sua alma e de todo o seu entendimento'. Este é o primeiro e maior mandamento. E o segundo é semelhante a ele: 'Ame o seu próximo como a si mesmo'. Destes dois mandamentos dependem toda a Lei e os Profetas"<br>
-            <i>Mateus 22:36-40</i>
+                "Se um homem não descobriu nada pelo qual morreria, não está pronto para viver."<br>
+                <i>Martin Luther King</i>
             </text-paragraph>
             <horizontal-divider></horizontal-divider>
             <text-paragraph style="text-align: center;">
@@ -358,8 +358,8 @@ const App = {
         function community() {
             window.location.href = "/community";
         }
-        //community();
-        disqus();
+        community();
+        //disqus();
     },
     // IA & ML:
     IA: {

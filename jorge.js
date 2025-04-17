@@ -358,8 +358,8 @@ const App = {
         function community() {
             window.location.href = "/community";
         }
-        community();
-        //disqus();
+        //community();
+        disqus();
     },
     // IA & ML:
     IA: {

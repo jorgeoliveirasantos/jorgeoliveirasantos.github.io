@@ -30,12 +30,12 @@ const App = {
                 title: "Kaatan",
                 display: "none",
                 action: () => window.open('https://www.kaatan.com.br')
-            },
+            },/*
             {
                 icon: "https://kaatan.azurewebsites.net/files/comunity.svg",
                 title: "Comunidade",
                 action: App.Community
-            },
+            },*/
             {
                 icon: "https://kaatan.azurewebsites.net/files/news.svg",
                 title: "Blog",
@@ -528,4 +528,5 @@ const App = {
 }
 
 window.App = App;
+
 

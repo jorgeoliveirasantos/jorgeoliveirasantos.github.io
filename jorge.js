@@ -131,7 +131,6 @@ const App = {
                 <img src="files/amazon.svg" onmouseover="Tooltip.Tooltip('Amazon', this)" onclick="window.open('https://amazon.com.br/kindle-dbs/entity/author?asin=B0CM13195T')">
                 <img src="files/instagram.svg" onmouseover="Tooltip.Tooltip('Instagram', this)" onclick="window.open('https://www.instagram.com/jorgesouzaonline/')">
                 <img src="files/youtube.svg" onmouseover="Tooltip.Tooltip('Youtube', this)" onclick="window.open('https://www.youtube.com/@jorgesouzaonline')">
-                <img src="https://kaatan.azurewebsites.net/files/comunity.svg" onmouseover="Tooltip.Tooltip('Comunidade', this)" onclick="App.Community()">
             </grid-row>
 
             <horizontal-divider></horizontal-divider>
@@ -150,7 +149,6 @@ const App = {
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Learn()">cursos</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="window.open('https://www.kaatan.com.br')">kaatan</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Digital()">educação digital</text-link>
-                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Community()">comunidade</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Contact()">contato</text-link>
             </span>
         `;
@@ -530,3 +528,4 @@ const App = {
 }
 
 window.App = App;
+

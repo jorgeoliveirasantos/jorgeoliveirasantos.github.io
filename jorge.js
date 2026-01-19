@@ -190,7 +190,7 @@ const App = {
                         <text-label>Ver uma prévia</text-label>
                     </list-item>
                     <list-item onclick="window.open('${ebook}')" style="display: ${print == null ? 'none' : 'flex'};">
-                        <img src="./files/${id}.svg">
+                        <img src="./files/book.svg">
                         <text-label>Obter o livro impresso</text-label>
                     </list-item>
                     <list-item onclick="window.open('${kindle}')" style="display: ${kindle == null ? 'none' : 'flex'};">

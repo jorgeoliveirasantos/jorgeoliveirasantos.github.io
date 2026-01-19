@@ -193,7 +193,7 @@ const App = {
                         <img src="./files/book.svg">
                         <text-label>Obter o livro impresso</text-label>
                     </list-item>
-                    <list-item onclick="window.open('${ebook}')" style="display: ${kindle == null ? 'none' : 'flex'};">
+                    <list-item onclick="window.open('${kindle}')" style="display: ${kindle == null ? 'none' : 'flex'};">
                         <img src="./files/amazon.svg">
                         <text-label>Obter o Ebook Kindle</text-label>
                     </list-item>

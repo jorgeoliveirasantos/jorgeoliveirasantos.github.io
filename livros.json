@@ -6,6 +6,7 @@
         "downloads": null,
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0DTTSFF7N",
+        "print": null,
         "a-venda": true,
         "capa": "./files/soc.jpg",
         "preview": "https://drive.google.com/file/d/1fKY058d-KUlLsooMFKDV_w2oFi9lizkl/view"
@@ -17,6 +18,7 @@
         "downloads": null,
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0DV9TTY85",
+        "print": null,
         "a-venda": true,
         "capa": "./files/des.jpg",
         "preview": "https://drive.google.com/file/d/12Wsvcsc4tj4w-F5tR9toR-itRdv6XnY2/view"

@@ -157,7 +157,7 @@ const App = {
         if (document.querySelector("app-container")) {
         }
     },
-    Course: (id, title, description, cover, sale = true, downloads, ebook, kindle, preview) => {
+    Course: (id, title, description, cover, sale = true, downloads, ebook, kindle, print, preview) => {
         const cursoContainer = document.createElement("card-big");
         cursoContainer.classList.add("no-elastic");
         cursoContainer.id = id;
@@ -188,6 +188,10 @@ const App = {
                     <list-item onclick="window.open('${preview}')" style="display: ${preview == null ? 'none' : 'flex'};">
                         <img src="./files/see.svg">
                         <text-label>Ver uma prévia</text-label>
+                    </list-item>
+                    <list-item onclick="window.open('${ebook}')" style="display: ${print == null ? 'none' : 'flex'};">
+                        <img src="./files/${id}.svg">
+                        <text-label>Obter o livro impresso</text-label>
                     </list-item>
                     <list-item onclick="window.open('${kindle}')" style="display: ${kindle == null ? 'none' : 'flex'};">
                         <img src="./files/amazon.svg">
@@ -239,6 +243,7 @@ const App = {
                 curso["downloads"],
                 curso["ebook"],
                 curso["kindle"],
+                curso["print"],
                 curso["preview"]
             ));
             appContainer.appendChild(document.createElement("horizontal-divider"));
@@ -320,6 +325,7 @@ const App = {
                 curso["downloads"],
                 curso["ebook"],
                 curso["kindle"],
+                curso["print"],
                 curso["preview"]
             ));
             appContainer.appendChild(document.createElement("horizontal-divider"));

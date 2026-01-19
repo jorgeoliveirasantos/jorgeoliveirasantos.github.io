@@ -189,11 +189,11 @@ const App = {
                         <img src="./files/see.svg">
                         <text-label>Ver uma prévia</text-label>
                     </list-item>
-                    <list-item onclick="window.open('${ebook}')" style="display: ${print == null ? 'none' : 'flex'};">
+                    <list-item onclick="window.open('${print}')" style="display: ${print == null ? 'none' : 'flex'};">
                         <img src="./files/book.svg">
                         <text-label>Obter o livro impresso</text-label>
                     </list-item>
-                    <list-item onclick="window.open('${print}')" style="display: ${kindle == null ? 'none' : 'flex'};">
+                    <list-item onclick="window.open('${ebook}')" style="display: ${kindle == null ? 'none' : 'flex'};">
                         <img src="./files/amazon.svg">
                         <text-label>Obter o Ebook Kindle</text-label>
                     </list-item>

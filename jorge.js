@@ -548,6 +548,11 @@ const App = {
         headerContainer.appendChild(title);
         headerContainer.appendChild(description);
 
+        // Adicionar elementos:
+        appContainer.appendChild(headerContainer);
+        appContainer.appendChild(galleryContainer);
+        APPVIEW.appendChild(appContainer);
+
         const sources = [
             "https://www.jorgesouza.com.br/projects files/1.jpg",
             "https://www.jorgesouza.com.br/projects files/2.jpg",
@@ -575,11 +580,6 @@ const App = {
             "https://www.jorgesouza.com.br/projects files/24.jpg"
         ];
         const gallery = new Gallery("myGallery", sources, galleryContainer);
-
-        // Adicionar elementos:
-        appContainer.appendChild(headerContainer);
-        appContainer.appendChild(galleryContainer);
-        APPVIEW.appendChild(appContainer);
     },
     Contact: () => {
         window.open('https://wa.me/5577999030420');

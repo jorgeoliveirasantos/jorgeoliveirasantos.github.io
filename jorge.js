@@ -533,8 +533,6 @@ const App = {
         galleryContainer.classList.add("no-hover");
         galleryContainer.classList.add("no-elastic");
         const appContainer = document.createElement("app-container");
-        appContainer.appendChild(galleryContainer);
-        APPVIEW.innerHTML = "";
         
         // Título:
         const title = document.createElement("h2");
@@ -577,7 +575,9 @@ const App = {
         const gallery = new Gallery("myGallery", sources, galleryContainer);
 
         // Adicionar elementos:
-        APPVIEW.appendChild(headerContainer);
+        appContainer.appendChild(headerContainer);
+        appContainer.appendChild(galleryContainer);
+        APPVIEW.innerHTML = "";
         APPVIEW.appendChild(appContainer);
     },
     Contact: () => {

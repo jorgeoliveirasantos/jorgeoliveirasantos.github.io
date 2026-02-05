@@ -528,15 +528,17 @@ const App = {
         Modal.ConfirmAction("Curso de Segurança Digital para a Família", "Este é um curso interativo, divertido e, com certificado de conclusão! Então o que está esperando? Quer aprender a excitante experiência da tecnologia de forma segura e consciente? Clique no botão abaixo e comece sua jornada!", () => window.open("/digital"));
     },
     Projects: () => {
+        APPVIEW.innerHTML = "";
+
         // Galeria
         const galleryContainer = document.createElement("card-big");
         galleryContainer.classList.add("no-hover");
         galleryContainer.classList.add("no-elastic");
         const appContainer = document.createElement("app-container");
-        
+
         // Título:
         const title = document.createElement("h2");
-        
+
         // Descrição:
         const description = document.createElement("text-paragraph");
 
@@ -577,7 +579,6 @@ const App = {
         // Adicionar elementos:
         appContainer.appendChild(headerContainer);
         appContainer.appendChild(galleryContainer);
-        APPVIEW.innerHTML = "";
         APPVIEW.appendChild(appContainer);
     },
     Contact: () => {

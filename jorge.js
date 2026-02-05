@@ -561,7 +561,6 @@ const App = {
             "https://www.jorgesouza.com.br/projects files/22.jpg",
             "https://www.jorgesouza.com.br/projects files/23.jpg",
             "https://www.jorgesouza.com.br/projects files/24.jpg"
-            //
         ];
         const gallery = new Gallery("myGallery", sources, galleryContainer);
     },

@@ -556,10 +556,7 @@ const App = {
         const sources = [
             "https://www.jorgesouza.com.br/projects files/1.jpg",
             "https://www.jorgesouza.com.br/projects files/2.jpg",
-            "https://www.jorgesouza.com.br/projects files/3.png",
-            "https://www.jorgesouza.com.br/projects files/4.png",
             "https://www.jorgesouza.com.br/projects files/5.jpg",
-            "https://www.jorgesouza.com.br/projects files/6.png",
             "https://www.jorgesouza.com.br/projects files/7.jpg",
             "https://www.jorgesouza.com.br/projects files/8.jpg",
             "https://www.jorgesouza.com.br/projects files/9.png",

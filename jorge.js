@@ -542,18 +542,19 @@ const App = {
 
         // Descrição:
         const description = document.createElement("text-paragraph");
-        description.textContent = "Aqui apresento alguns dos projetos de Arquitetura e Interiores, bem como Design Gráfico, que desenvolvi ao longo de 18 anos de experiência, atuando como freelancer para clientes em todo o Brasil, com resultados reconhecidos pela alta satisfação.<br> Você pode ainda verificar meus projetos como freelancer na Workana no link abaixo";
+        description.textContent = "Aqui apresento alguns dos projetos de Arquitetura e Interiores, bem como Design Gráfico, que desenvolvi ao longo de 18 anos de experiência, atuando como freelancer para clientes em todo o Brasil, com resultados reconhecidos pela alta satisfação.\nVocê pode ainda verificar meus projetos como freelancer na Workana no link abaixo";
 
         // Descrição:
         const link = document.createElement("text-link");
         link.textContent = "Meu perfil na Workana";
-        link.onclick = window.open("https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5");
+        link.onclick = e => window.open("https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5");
 
         const headerContainer = document.createElement("card-big");
         headerContainer.classList.add("no-hover");
         headerContainer.classList.add("no-elastic");
         headerContainer.appendChild(title);
         headerContainer.appendChild(description);
+        headerContainer.appendChild(link);
 
         // Adicionar elementos:
         appContainer.appendChild(headerContainer);

@@ -527,6 +527,44 @@ const App = {
     Digital: () => {
         Modal.ConfirmAction("Curso de Segurança Digital para a Família", "Este é um curso interativo, divertido e, com certificado de conclusão! Então o que está esperando? Quer aprender a excitante experiência da tecnologia de forma segura e consciente? Clique no botão abaixo e comece sua jornada!", () => window.open("/digital"));
     },
+    Projects: () => {
+        const galleryContainer = document.createElement("card-big");
+        galleryContainer.classList.add("no-hover");
+        galleryContainer.classList.add("no-elastic");
+        const appContainer = document.createElement("app-container");
+        appContainer.appendChild(galleryContainer);
+        APPVIEW.innerHTML = "";
+        APPVIEW.appendChild(appContainer);
+
+        const sources = [
+            "https://www.jorgesouza.com.br/projects files/1.jpg",
+            "https://www.jorgesouza.com.br/projects files/2.jpg",
+            "https://www.jorgesouza.com.br/projects files/3.jpg",
+            "https://www.jorgesouza.com.br/projects files/4.jpg",
+            "https://www.jorgesouza.com.br/projects files/5.jpg",
+            "https://www.jorgesouza.com.br/projects files/6.jpg",
+            "https://www.jorgesouza.com.br/projects files/7.jpg",
+            "https://www.jorgesouza.com.br/projects files/8.jpg",
+            "https://www.jorgesouza.com.br/projects files/9.jpg",
+            "https://www.jorgesouza.com.br/projects files/10.jpg",
+            "https://www.jorgesouza.com.br/projects files/11.jpg",
+            "https://www.jorgesouza.com.br/projects files/12.jpg",
+            "https://www.jorgesouza.com.br/projects files/13.jpg",
+            "https://www.jorgesouza.com.br/projects files/14.jpg",
+            "https://www.jorgesouza.com.br/projects files/15.jpg",
+            "https://www.jorgesouza.com.br/projects files/16.jpg",
+            "https://www.jorgesouza.com.br/projects files/17.jpg",
+            "https://www.jorgesouza.com.br/projects files/18.jpg",
+            "https://www.jorgesouza.com.br/projects files/19.jpg",
+            "https://www.jorgesouza.com.br/projects files/20.jpg",
+            "https://www.jorgesouza.com.br/projects files/21.jpg",
+            "https://www.jorgesouza.com.br/projects files/22.jpg",
+            "https://www.jorgesouza.com.br/projects files/23.jpg",
+            "https://www.jorgesouza.com.br/projects files/24.jpg"
+            //
+        ];
+        const gallery = new Gallery("myGallery", sources, galleryContainer);
+    },
     Contact: () => {
         window.open('https://wa.me/5577999030420');
     },

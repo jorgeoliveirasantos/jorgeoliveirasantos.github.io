@@ -1,6 +1,6 @@
 import { Howl, Howler } from "./howler.js";
 const _URL = "./content/";
-const _VOLUME = 0.1;
+const _VOLUME = 0.5;
 
 const CoursesName = {
     "RS56F7X000": "Curso de Segurança Digital para a Família",

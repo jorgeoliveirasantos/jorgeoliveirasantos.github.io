@@ -11,7 +11,7 @@
         <text-paragraph> ⚐ Confira o:</text-paragraph>
         <text-subheading><i>Guia de Segurança Digital para a Família</i></text-subheading>
         <text-paragraph>
-            <text-link onclick="window.location = '/digital'">faça o curso interativo</text-link>
+            <text-link onclick="window.location = '/jorge/digital'">faça o curso interativo</text-link>
             <text-link onclick="window.location = '/cursos.html'">ou leia o guia em PDF</text-link>
         </text-paragraph>
     </card-big>

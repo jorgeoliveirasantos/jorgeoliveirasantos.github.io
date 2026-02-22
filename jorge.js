@@ -8,36 +8,36 @@ const App = {
         // Add icons to the TOPBAR:
         const icons = [
             {
-                icon: "https://kaatan.azurewebsites.net/files/home.svg",
+                icon: "/files/home.svg",
                 title: "Início",
                 display: "block",
-                action: () => { window.location = '/' }
+                action: () => { window.location = "/" }
             },
             {
-                icon: "https://kaatan.azurewebsites.net/files/learn.svg",
+                icon: "/files/learn.svg",
                 title: "Cursos",
                 display: "block",
                 action: App.Learn
             },
             {
-                icon: "https://kaatan.azurewebsites.net/files/learn.svg",
+                icon: "/files/learn.svg",
                 title: "Livros",
                 display: "none",
                 action: App.Books
             },
             {
-                icon: "https://kaatan.azurewebsites.net/files/logo128.png",
+                icon: "/files/ret_branco.svg",
                 title: "Kaatan",
                 display: "none",
                 action: () => window.open('https://www.kaatan.com.br')
-            },
+            },/*
             {
-                icon: "https://kaatan.azurewebsites.net/files/comunity.svg",
+                icon: "/files/comunity.svg",
                 title: "Comunidade",
                 action: App.Community
-            },
+            },*/
             {
-                icon: "https://kaatan.azurewebsites.net/files/news.svg",
+                icon: "/files/blog.svg",
                 title: "Blog",
                 display: "block",
                 action: App.Blog
@@ -77,7 +77,7 @@ const App = {
 
         document.head.querySelectorAll("link").forEach(lnk => {
             if (lnk.getAttribute("rel") == "shortcut icon") {
-                lnk.setAttribute("href", "/files/logo.svg");
+                lnk.setAttribute("href", "/files/ret_branco.svg");
             }
         });
 
@@ -131,7 +131,8 @@ const App = {
                 <img src="files/amazon.svg" onmouseover="Tooltip.Tooltip('Amazon', this)" onclick="window.open('https://amazon.com.br/kindle-dbs/entity/author?asin=B0CM13195T')">
                 <img src="files/instagram.svg" onmouseover="Tooltip.Tooltip('Instagram', this)" onclick="window.open('https://www.instagram.com/jorgesouzaonline/')">
                 <img src="files/youtube.svg" onmouseover="Tooltip.Tooltip('Youtube', this)" onclick="window.open('https://www.youtube.com/@jorgesouzaonline')">
-                <img src="https://kaatan.azurewebsites.net/files/comunity.svg" onmouseover="Tooltip.Tooltip('Comunidade', this)" onclick="App.Community()">
+                <img src="files/linkedin.svg" onmouseover="Tooltip.Tooltip('LinkedIn', this)" onclick="window.open('https://www.linkedin.com/in/jorge-souza-oliveira-dos-santos-2191923a9/')">
+                <img src="files/github.svg" onmouseover="Tooltip.Tooltip('GitHub', this)" onclick="window.open('https://github.com/jorgeoliveirasantos')">
             </grid-row>
 
             <horizontal-divider></horizontal-divider>
@@ -145,12 +146,11 @@ const App = {
             Copyright © <span id="home-credit-ano">1999</span> | Jorge Souza Oliveira dos Santos
             </text-paragraph>
             <span style="justify-content: space-around; display: flex; flex-direction: row; padding: 10px; gap: 5px; flex-wrap: wrap;">
-                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="window.location = '/'">início</text-link>
+                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="window.location = "/"">início</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Blog()">blog</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Learn()">cursos</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="window.open('https://www.kaatan.com.br')">kaatan</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Digital()">educação digital</text-link>
-                <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Community()">comunidade</text-link>
                 <text-link class="footer-link" style="padding: 0; font-size: small; background-color: transparent;" onclick="App.Contact()">contato</text-link>
             </span>
         `;
@@ -159,7 +159,7 @@ const App = {
         if (document.querySelector("app-container")) {
         }
     },
-    Course: (id, title, description, cover, sale = true, downloads, ebook, kindle, preview) => {
+    Course: (id, title, description, cover, sale = true, downloads, ebook, kindle, print, preview) => {
         const cursoContainer = document.createElement("card-big");
         cursoContainer.classList.add("no-elastic");
         cursoContainer.id = id;
@@ -188,19 +188,23 @@ const App = {
             const listElement = document.createElement("compact-list");
             listElement.innerHTML = `
                     <list-item onclick="window.open('${preview}')" style="display: ${preview == null ? 'none' : 'flex'};">
-                        <img src="./files/see.svg">
+                        <img src="/files/see.svg">
                         <text-label>Ver uma prévia</text-label>
                     </list-item>
+                    <list-item onclick="window.open('${print}')" style="display: ${print == null ? 'none' : 'flex'};">
+                        <img src="/files/book.svg">
+                        <text-label>Obter o livro impresso</text-label>
+                    </list-item>
                     <list-item onclick="window.open('${kindle}')" style="display: ${kindle == null ? 'none' : 'flex'};">
-                        <img src="./files/amazon.svg">
+                        <img src="/files/amazon.svg">
                         <text-label>Obter o Ebook Kindle</text-label>
                     </list-item>
                     <list-item onclick="window.open('${ebook}')" style="display: ${ebook == null ? 'none' : 'flex'};">
-                        <img src="./files/${id}.svg">
+                        <img src="/files/${id}.svg">
                         <text-label>Obter o Ebook em PDF</text-label>
                     </list-item>
                     <list-item onclick="window.open('${downloads}')" style="display: ${downloads == null ? 'none' : 'flex'};">
-                        <img src="./files/download.svg">
+                        <img src="/files/download.svg">
                         <text-label>Downloads do curso</text-label>
                     </list-item>
                     <span style="width: 100%; text-align: center;">
@@ -241,6 +245,7 @@ const App = {
                 curso["downloads"],
                 curso["ebook"],
                 curso["kindle"],
+                curso["print"],
                 curso["preview"]
             ));
             appContainer.appendChild(document.createElement("horizontal-divider"));
@@ -322,6 +327,7 @@ const App = {
                 curso["downloads"],
                 curso["ebook"],
                 curso["kindle"],
+                curso["print"],
                 curso["preview"]
             ));
             appContainer.appendChild(document.createElement("horizontal-divider"));
@@ -356,7 +362,7 @@ const App = {
         }
         // Load a Kaatan Chat Room:
         function community() {
-            window.location.href = "/community";
+            window.location.href = "/jorge/community";
         }
         //community();
         disqus();
@@ -521,7 +527,66 @@ const App = {
     },
     // Cursos:
     Digital: () => {
-        Modal.ConfirmAction("Curso de Segurança Digital para a Família", "Este é um curso interativo, divertido e, com certificado de conclusão! Então o que está esperando? Quer aprender a excitante experiência da tecnologia de forma segura e consciente? Clique no botão abaixo e comece sua jornada!", () => window.open("/digital"));
+        Modal.ConfirmAction("Curso de Segurança Digital para a Família", "Este é um curso interativo, divertido e, com certificado de conclusão! Então o que está esperando? Quer aprender a excitante experiência da tecnologia de forma segura e consciente? Clique no botão abaixo e comece sua jornada!", () => window.open("/jorge/digital"));
+    },
+    Projects: () => {
+        APPVIEW.innerHTML = "";
+
+        // Galeria
+        const galleryContainer = document.createElement("card-big");
+        galleryContainer.classList.add("no-hover");
+        galleryContainer.classList.add("no-elastic");
+        const appContainer = document.createElement("app-container");
+
+        // Título:
+        const title = document.createElement("h2");
+        title.textContent = "Projetos";
+
+        // Descrição:
+        const description = document.createElement("text-paragraph");
+        description.textContent = "Aqui apresento alguns dos projetos de Arquitetura e Interiores, bem como Design Gráfico, que desenvolvi ao longo de 18 anos de experiência, atuando como freelancer para clientes em todo o Brasil, com resultados reconhecidos pela alta satisfação.\nVocê pode ainda verificar meus projetos como freelancer na Workana no link abaixo";
+
+        // Descrição:
+        const link = document.createElement("text-link");
+        link.textContent = "Meu perfil na Workana";
+        link.onclick = e => window.open("https://www.workana.com/freelancer/175498bc00eeda4731ad4044f609f5a5");
+
+        const headerContainer = document.createElement("card-big");
+        headerContainer.classList.add("no-hover");
+        headerContainer.classList.add("no-elastic");
+        headerContainer.appendChild(title);
+        headerContainer.appendChild(description);
+        headerContainer.appendChild(link);
+
+        // Adicionar elementos:
+        appContainer.appendChild(headerContainer);
+        appContainer.appendChild(galleryContainer);
+        APPVIEW.appendChild(appContainer);
+
+        const sources = [
+            "/projects files/1.jpg",
+            "/projects files/2.jpg",
+            "/projects files/5.jpg",
+            "/projects files/7.jpg",
+            "/projects files/8.jpg",
+            "/projects files/9.png",
+            "/projects files/10.png",
+            "/projects files/11.png",
+            "/projects files/12.png",
+            "/projects files/13.jpg",
+            "/projects files/14.jpg",
+            "/projects files/15.jpg",
+            "/projects files/16.jpg",
+            "/projects files/17.jpg",
+            "/projects files/18.jpg",
+            "/projects files/19.png",
+            "/projects files/20.jpg",
+            "/projects files/21.png",
+            "/projects files/22.png",
+            "/projects files/23.jpg",
+            "/projects files/24.jpg"
+        ];
+        const gallery = new Gallery("myGallery", sources, galleryContainer);
     },
     Contact: () => {
         window.open('https://wa.me/5577999030420');
@@ -530,3 +595,5 @@ const App = {
 }
 
 window.App = App;
+
+

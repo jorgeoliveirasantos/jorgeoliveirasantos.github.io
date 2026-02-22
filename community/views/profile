@@ -9,7 +9,7 @@
 
     <card-big class="no-elastic no-hover" id="status-data">
         <span id="status-data-img" class="elastic">
-            <img src="https://kaatan.azurewebsites.net/files/insignia.jpg">
+            <img src="/files/insignia.jpg">
         </span>
         <div
             style="width: 100%; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 5px; overflow: hidden; text-wrap: nowrap;">
@@ -21,7 +21,7 @@
         <span class="elastic" id="share-profile-btn"
             style="height: 70px; cursor: pointer; display: grid; place-items: center;"
             onmouseover="Tooltip.Tooltip('Compartilhar cartão de visitas', this)">
-            <img src="https://kaatan.azurewebsites.net/files/share.svg"
+            <img src="/files/share.svg"
                 style="height: 24px; margin: auto 10px auto 10px; opacity: 0.5;">
         </span>
     </card-big>
@@ -47,24 +47,24 @@
     <card-big class="no-elastic no-hover">
         <grid-row style="gap: 5px; display: flex; flex-wrap: wrap; justify-content: center; flex-direction: row;">
             <button-squared id="add-contact-btn">
-                <img src="https://kaatan.azurewebsites.net/files/contact_add.svg">
+                <img src="/files/contact_add.svg">
                 <text-paragraph>Adicionar</text-paragraph>
             </button-squared>
             <button-squared id="cancel-contact-request-btn" style="display: none;">
-                <img src="https://kaatan.azurewebsites.net/files/contact_pending.svg">
+                <img src="/files/contact_pending.svg">
                 <text-paragraph>Cancelar</text-paragraph>
             </button-squared>
             <button-squared id="remove-contact-btn" style="display: none;">
-                <img src="https://kaatan.azurewebsites.net/files/contact_remove.svg">
+                <img src="/files/contact_remove.svg">
                 <text-paragraph>Remover</text-paragraph>
             </button-squared>
 
             <button-squared id="call-contact-btn" style="display: none;">
-                <img src="https://kaatan.azurewebsites.net/files/call.svg">
+                <img src="/files/call.svg">
                 <text-paragraph>Chamada</text-paragraph>
             </button-squared>
             <button-squared id="msg-contact-btn" style="display: none;">
-                <img src="https://kaatan.azurewebsites.net/files/send.svg">
+                <img src="/files/send.svg">
                 <text-paragraph>Mensagem</text-paragraph>
             </button-squared>
         </grid-row>

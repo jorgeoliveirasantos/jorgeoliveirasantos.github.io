@@ -8,8 +8,8 @@
     <meta name="description" content="Jorge Souza Oliveira dos Santos">
     <meta name="keywords" content="informatica, curso, computador, computacao, programação, tecnologia, info,  desenvolvimento, web, design, web design, design grafico, tech,  visual studio, visual studio code, vs code, c#, javascript, dotnet, node js, dev express, html, css">
     <!-- #endregion -->
-    <script type="module" src="../jorge.js"></script>
-    <link rel="shortcut icon" href="/files/logo.svg" type="image/x-icon">
+    <script type="module" src="./jorge.js"></script>
+    <link rel="shortcut icon" href="/files/ret_branco.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://kaatan.azurewebsites.net/lib/acacia/acacia.css">
     <script type="module" src="https://kaatan.azurewebsites.net/lib/acacia/acacia.js"></script>
     <title></title>
@@ -36,7 +36,7 @@
             {
                 LinkTile: "Início",
                 LinkIcon: "/files/home.svg",
-                LinkAction: () => { window.location = '/' }
+                LinkAction: () => { window.location = "/" }
             },
             {
                 LinkTile: "Blog",
@@ -49,13 +49,18 @@
                 LinkAction: App.Learn
             },
             {
+                LinkTile: "Projetos",
+                LinkIcon: "/files/motion.svg",
+                LinkAction: App.Projects
+            },
+            {
                 LinkTile: "Kaatan",
-                LinkIcon: "https://kaatan.azurewebsites.net/files/logo128.png",
+                LinkIcon: "/files/ret_branco.svg",
                 LinkAction: () => window.open('https://www.kaatan.com.br')
             },
             {
                 LinkTile: "Comunidade",
-                LinkIcon: "https://kaatan.azurewebsites.net/files/comunity.svg",
+                LinkIcon: "/files/comunity.svg",
                 LinkAction: App.Community
             },
             {

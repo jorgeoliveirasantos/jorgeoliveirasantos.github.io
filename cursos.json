@@ -2,10 +2,11 @@
     {
         "id": "pc",
         "titulo": "Guia de Segurança Digital para a Família [gratuito]",
-        "descrição": "Quer manter sua família segura online e offline? Quer adentrar o mundo da tecnologia conhecendo cada risco e cada benefício? Acaba de sair do forno um curso completo em modalidade interativa virtual e em livro no formato PDF, ambos completamente gratuitos para te preparar para o mundo digital de forma segura e eficiente. Tenha a preparação que os muitos não tiveram e saiba tirar o máximo proveito da tecnologia ao mesmo tempo que mantém a você mesmo, seus filhos, e toda sua família seguros e conscientes. Aproveite, não custa nada!<br>Faça este curso de forma interativa <text-link onclick=\"window.open('/digital')\">clicando aqui</text-link>",
+        "descrição": "Quer manter sua família segura online e offline? Quer adentrar o mundo da tecnologia conhecendo cada risco e cada benefício? Acaba de sair do forno um curso completo em modalidade interativa virtual e em livro no formato PDF, ambos completamente gratuitos para te preparar para o mundo digital de forma segura e eficiente. Tenha a preparação que os muitos não tiveram e saiba tirar o máximo proveito da tecnologia ao mesmo tempo que mantém a você mesmo, seus filhos, e toda sua família seguros e conscientes. Aproveite, não custa nada!<br>Faça este curso de forma interativa <text-link onclick=\"window.open('/jorge/digital')\">clicando aqui</text-link>",
         "downloads": null,
         "ebook": "https://drive.google.com/file/d/1KHMQb9sJMpuSUpnUNTECHHqLB7E7TfIJ/view",
         "kindle": null,
+        "print": null,
         "a-venda": true,
         "capa": "/files/seg.jpg",
         "preview": null
@@ -17,6 +18,7 @@
         "downloads": "https://drive.google.com/drive/folders/1UyYEQGea367Bni5pCCDliywBX_QsCh-C",
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0D8ZTWT9M",
+        "print": null,
         "a-venda": true,
         "capa": "/files/autocad.jpg",
         "preview": "https://drive.google.com/file/d/129NevADVaOaEbDmDqtPnqEo4WQBoDR_g/view?usp=drive_link"
@@ -28,8 +30,9 @@
         "downloads": "",
         "ebook": "",
         "kindle": "",
+        "print": null,
         "a-venda": false,
-        "capa": "./files/3d.jpg",
+        "capa": "/files/3d.jpg",
         "preview": "https://drive.google.com/file/d/1txQ27U1kk3JvK0dSprlROBBaNvUl08rD/view?usp=drive_link"
     },
     {
@@ -38,10 +41,11 @@
         "descrição": "Aprenda os conceitos iniciais de informática como navegar na internet, editar textos, criar elementos gráficos, configurar o computador e muito mais. Inicie ainda os conhecimentos de informática avançada como download e instalação de programas, antivírus, restauração, backup e formatação, segurança digital entre outros. Um curso voltado para quem está começando e para quem quer se aprofundar e decidir sua carreira profissional no setor de informática.",
         "downloads": "https://drive.google.com/drive/u/0/folders/18PSosYC4CztmDCYTEqJSfsMiLwyFccaP",
         "ebook": "/contato.html",
-        "kindle": "https://www.amazon.com.br/dp/B09V99W1FL",
+        "kindle": "https://www.amazon.com.br/dp/B0GFCSDCKR",
+        "print": "https://clubedeautores.com.br/livro/curso-de-informatica-basica-e-avancada-2",
         "a-venda": true,
-        "capa": "./files/info.jpg",
-        "preview": "https://drive.google.com/file/d/1DiH7vY5C6_8VcE0dktQyekLILBXbTos3/view?usp=drive_link"
+        "capa": "/files/info.jpg",
+        "preview": "https://drive.google.com/file/d/1qHMWXqVwyS9P1nX7HAAfDURhKH-CVxP-/view"
     },
     {
         "id": "design",
@@ -50,8 +54,9 @@
         "downloads": "https://drive.google.com/drive/u/0/folders/1v_BaD0tgr_JHg0us3j3v4s2yXaG_Yr_z",
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0CGJS1LMX",
+        "print": null,
         "a-venda": true,
-        "capa": "./files/design.jpg",
+        "capa": "/files/design.jpg",
         "preview": "https://drive.google.com/file/d/1opXOdlTdVLyet8jK4mdwTppWa1Lx5a_t/view?usp=drive_link"
     },
     {
@@ -61,8 +66,9 @@
         "downloads": "https://drive.google.com/drive/u/0/folders/17R1SftWIKVbORAynQxFZvV4--3jKz_G2",
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0D8HG4YHW",
+        "print": null,
         "a-venda": true,
-        "capa": "./files/webdesign.jpg",
+        "capa": "/files/webdesign.jpg",
         "preview": "https://drive.google.com/file/d/1DInnUDoylnuI8OLisTG0ayRlzvxyYghV/view?usp=drive_link"
     },
     {
@@ -72,8 +78,9 @@
         "downloads": null,
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0CWJ16NYM",
+        "print": null,
         "a-venda": true,
-        "capa": "./files/javascriptCapa.jpg",
+        "capa": "/files/javascriptCapa.jpg",
         "preview": "https://drive.google.com/file/d/15nosJpyQbakVTAf9WDajckPDnBjkC7GE/view?usp=drive_link"
     },
     {
@@ -83,8 +90,9 @@
         "downloads": "https://drive.google.com/drive/u/0/folders/1aG1CAZRhyNwUEjWaJN3XSPYXAZqkrJDS",
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0D96Y4LHP",
+        "print": null,
         "a-venda": true,
-        "capa": "./files/appweb.jpg",
+        "capa": "/files/appweb.jpg",
         "preview": "https://drive.google.com/file/d/1kUVDNpStVgSo_J7f3naZXXkqBiIQrge5/view?usp=drive_link"
     },
     {
@@ -94,8 +102,9 @@
         "downloads": "https://drive.google.com/drive/folders/1GwZF2qeA0WjsDlPwW-1QO8qL-M6JMZzQ?usp=sharing",
         "ebook": "/contato.html",
         "kindle": "https://www.amazon.com.br/dp/B0DT3QC4MP",
+        "print": null,
         "a-venda": true,
-        "capa": "./files/ia.jpg",
+        "capa": "/files/ia.jpg",
         "preview": "https://drive.google.com/file/d/12ICHBRh8Te46lgFdGoTlGn1OW4p6JRq7/view?usp=sharing"
     }
 ]

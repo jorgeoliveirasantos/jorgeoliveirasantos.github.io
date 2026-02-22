@@ -10,7 +10,7 @@
     <!-- #endregion -->
     <link rel="stylesheet" href="jorge.css">
     <script type="module" src="jorge.js"></script>
-    <link rel="shortcut icon" href="/files/logo.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="/files/ret_branco.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://kaatan.azurewebsites.net/lib/acacia/acacia.css">
     <script type="module" src="https://kaatan.azurewebsites.net/lib/acacia/acacia.js"></script>
     <title>Jorge Souza</title>
@@ -36,27 +36,32 @@
             // Add more menu-items freely:
             {
                 LinkTile: "Início",
-                LinkIcon: "https://kaatan.azurewebsites.net/files/home.svg",
-                LinkAction: () => { window.location = '/' }
+                LinkIcon: "/files/home.svg",
+                LinkAction: () => { window.location = "/" }
             },
             {
                 LinkTile: "Blog",
-                LinkIcon: "https://kaatan.azurewebsites.net/files/news.svg",
+                LinkIcon: "/files/blog.svg",
                 LinkAction: App.Blog
             },
             {
                 LinkTile: "Cursos",
-                LinkIcon: "https://kaatan.azurewebsites.net/files/learn.svg",
+                LinkIcon: "/files/learn.svg",
                 LinkAction: App.Learn
             },
             {
+                LinkTile: "Projetos",
+                LinkIcon: "/files/motion.svg",
+                LinkAction: App.Projects
+            },
+            {
                 LinkTile: "Kaatan",
-                LinkIcon: "https://kaatan.azurewebsites.net/files/logo128.png",
+                LinkIcon: "/files/ret_branco.svg",
                 LinkAction: () => window.open('https://www.kaatan.com.br')
             },
             {
                 LinkTile: "Comunidade",
-                LinkIcon: "https://kaatan.azurewebsites.net/files/comunity.svg",
+                LinkIcon: "/files/comunity.svg",
                 LinkAction: App.Community
             },
             {
@@ -66,7 +71,7 @@
             },
             {
                 LinkTile: "Contato",
-                LinkIcon: "https://kaatan.azurewebsites.net/files/contacts.svg",
+                LinkIcon: "/files/contacts.svg",
                 LinkAction: App.Contact
             },
         ],

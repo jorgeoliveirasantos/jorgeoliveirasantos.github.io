@@ -19,12 +19,12 @@ const Community = {
         span.onclick = e => {
             document.querySelectorAll(".icon").forEach(x => x.classList.remove('active'));
             span.classList.add('active');
-            window.location = '/';
+            window.location = "/";
         };
         span.onmouseover = () => Tooltip.Tooltip("Sair da sala", span);
 
         const img = document.createElement("img");
-        img.src = "https://kaatan.azurewebsites.net/files/exit.svg";
+        img.src = "/files/exit.svg";
         img.style.height = "24px";
         span.appendChild(img);
         TOPBAR.appendChild(span);
@@ -54,7 +54,7 @@ const Community = {
             u.Username = "DF8-EF95";
             u.Name = "Anonimous";
             u.Description = "New Kaatan User";
-            u.Thumbnail = "https://kaatan.azurewebsites.net/files/default.svg";
+            u.Thumbnail = "/files/default.svg";
             u.Token = "f90sd8f908sd09f0sd0f980s9d8f09";
             
 
@@ -64,7 +64,7 @@ const Community = {
             u.Description = "New Kaatan User";
             u.Email = "meu@mail.com";
             u.Genre = "male";
-            u.Thumbnail = "https://kaatan.azurewebsites.net/files/default.svg";
+            u.Thumbnail = "/files/default.svg";
             u.Token = "f90sd8f908sd09f0sd0f980s9d8f09";
             u.State = {};
             SideMenuContent.ProfileSection = {
@@ -347,7 +347,7 @@ function resetPosts() {
             "female",
             "meu@mail.com",
         {
-            "Insignia": "https://kaatan.azurewebsites.net/files/insignia.jpg",
+            "Insignia": "/files/insignia.jpg",
             "DaysStreak": 0,
             "RegisterTime": null,
             "LastAccessTime": 1718308735837,

@@ -12,7 +12,7 @@
     },
     {
         "titulo": "Guia de Segurança Digital para a Família",
-        "descrição": "Quer manter sua família segura online e offline? Quer adentrar o mundo da tecnologia conhecendo cada risco e cada benefício? Acaba de sair do forno um curso completo em modalidade interativa virtual e em livro no formato PDF, ambos completamente gratuitos para te preparar para o mundo digital de forma segura e eficiente. Tenha a preparação que os muitos não tiveram e saiba tirar o máximo proveito da tecnologia ao mesmo tempo que mantém a você mesmo, seus filhos, e toda sua família seguros e conscientes. Aproveite, não custa nada!<br><br><text-paragraph><text-link onclick=\"window.location = '/digital'\">faça o curso interativo</text-link><text-link onclick=\"window.location = '/cursos.html'\">ou leia o guia em PDF</text-link></text-paragraph>",
+        "descrição": "Quer manter sua família segura online e offline? Quer adentrar o mundo da tecnologia conhecendo cada risco e cada benefício? Acaba de sair do forno um curso completo em modalidade interativa virtual e em livro no formato PDF, ambos completamente gratuitos para te preparar para o mundo digital de forma segura e eficiente. Tenha a preparação que os muitos não tiveram e saiba tirar o máximo proveito da tecnologia ao mesmo tempo que mantém a você mesmo, seus filhos, e toda sua família seguros e conscientes. Aproveite, não custa nada!<br><br><text-paragraph><text-link onclick=\"window.location = '/jorge/digital'\">faça o curso interativo</text-link><text-link onclick=\"window.location = '/cursos.html'\">ou leia o guia em PDF</text-link></text-paragraph>",
         "video": "digital/back.jpg",
         "data": "31 de jan. de 2025",
         "downloads": null,

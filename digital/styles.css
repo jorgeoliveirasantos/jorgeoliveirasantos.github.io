@@ -10,7 +10,7 @@
     --MediumBlue: #303540;
     --Crimson: #DD2080;
     --Gradiente45: linear-gradient(45deg, #DD2080, #00DD88)1;
-    cursor: url("https://kaatan.azurewebsites.net/lib/acacia/pointer.cur") 0 0, auto;
+    cursor: url("/lib/acacia/pointer.cur") 0 0, auto;
 }
 
 body * {

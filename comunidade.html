@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- #region META -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta name="author" content="Jorge Souza Oliveira dos Santos" />
+    <meta name="description" content="Jorge Souza Oliveira dos Santos">
+    <meta name="keywords" content="informatica, curso, computador, computacao, programação, tecnologia, info,  desenvolvimento, web, design, web design, design grafico, tech,  visual studio, visual studio code, vs code, c#, javascript, dotnet, node js, dev express, html, css">
+    <!-- #endregion -->
+    <link rel="stylesheet" href="/jorge.css">
+    <link rel="shortcut icon" href="/files/logo.svg" type="image/x-icon">
+    <script type="module" src="/jorge.js"></script>
+    <link rel="stylesheet" href="/lib/acacia/acacia.css">
+    <script type="module" src="/lib/acacia/acacia.js"></script>
+    <title>Jorge Souza</title>
+</head>
+<body></body>
+
+</html>
+
+<script type="module">
+    import { Acacia } from "/lib/acacia/acacia.js";
+    Renderer.Layout.IsPortraitLayout = true;
+    const sideMenu = {
+        Links: [
+            // Add more menu-items freely:
+            {
+                LinkTile: "Início",
+                LinkIcon: "/files/home.svg",
+                LinkAction: () => { window.location = "/" }
+            },
+            {
+                LinkTile: "Blog",
+                LinkIcon: "/files/blog.svg",
+                LinkAction: App.Blog
+            },
+            {
+                LinkTile: "Cursos",
+                LinkIcon: "/files/learn.svg",
+                LinkAction: App.Learn
+            },
+            {
+                LinkTile: "Projetos",
+                LinkIcon: "/files/cad.svg",
+                LinkAction: App.Projects
+            },
+            {
+                LinkTile: "Comunidade",
+                LinkIcon: "/files/comunity.svg",
+                LinkAction: App.Community
+            },
+            {
+                LinkTile: "Educação Digital",
+                LinkIcon: "/files/pc.svg",
+                LinkAction: App.Digital
+            },
+            {
+                LinkTile: "Contato",
+                LinkIcon: "/files/contacts.svg",
+                LinkAction: App.Contact
+            },
+        ],
+        ShowProfileSection: false,
+        ProfileSection: {}
+    }
+    // new Acacia(appName, hideBottomBar, sideMenuContent, callback)
+    const acacia = new Acacia("COMUNIDADE | Jorge Souza", true, null);
+    window.location = "/community/index.html";
+</script>

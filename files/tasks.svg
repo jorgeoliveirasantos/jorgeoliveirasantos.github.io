@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="6.3499999mm"
+   height="5.6444521mm"
+   viewBox="0 0 6.3499998 5.6444521"
+   version="1.1"
+   id="svg1"
+   xml:space="preserve"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="top bar.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#ffffff"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     inkscape:export-bgcolor="#ffffff00"
+     inkscape:zoom="7.7359955"
+     inkscape:cx="795.82518"
+     inkscape:cy="24.625144"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" /><defs
+     id="defs1" /><g
+     inkscape:label="Camada 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-209.81458,-1.1465238)"><path
+       fill="#000000"
+       fill-rule="evenodd"
+       d="m 210.75533,2.0872663 h 2.35186 c 0.25977,0 0.47037,-0.210594 0.47037,-0.470371 0,-0.259776 -0.2106,-0.470371 -0.47037,-0.470371 h -2.35186 c -0.51956,0 -0.94074,0.421185 -0.94074,0.940742 v 3.7629689 c 0,0.519571 0.42118,0.940741 0.94074,0.940741 h 3.76297 c 0.51957,0 0.94074,-0.42117 0.94074,-0.940741 v -0.940742 c 0,-0.259782 -0.21058,-0.470372 -0.47037,-0.470372 -0.25979,0 -0.47037,0.21059 -0.47037,0.470372 v 0.940742 h -3.76297 z m 5.2715,-0.802975 c -0.18368,-0.18369 -0.48152,-0.18369 -0.6652,0 l -2.48963,2.489627 -0.37295,-0.372957 c -0.18369,-0.183689 -0.48151,-0.183689 -0.66521,0 -0.18369,0.183693 -0.18369,0.481513 0,0.665208 l 0.70555,0.705556 c 0.0882,0.08821 0.20786,0.137768 0.33261,0.137768 0.12475,0 0.24439,-0.04956 0.3326,-0.137768 l 2.82223,-2.822226 c 0.18368,-0.183694 0.18368,-0.481514 0,-0.665208 z"
+       id="path1-4"
+       style="fill:#00DD88;stroke-width:0.470372"
+       inkscape:export-filename="task.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" /></g></svg>

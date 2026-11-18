@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Transformed by: SVG Repo Mixer Tools -->
+
+<svg
+   width="64px"
+   height="64px"
+   viewBox="0 -0.5 21 21"
+   version="1.1"
+   fill="#ffffff"
+   id="svg15"
+   sodipodi:docname="dislike.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs19" />
+  <sodipodi:namedview
+     id="namedview17"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="4.171875"
+     inkscape:cx="29.363296"
+     inkscape:cy="37.153558"
+     inkscape:window-width="1366"
+     inkscape:window-height="707"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg15" />
+  <g
+     id="SVGRepo_bgCarrier"
+     stroke-width="0" />
+  <g
+     id="SVGRepo_tracerCarrier"
+     stroke-linecap="round"
+     stroke-linejoin="round" />
+  <g
+     id="SVGRepo_iconCarrier"
+     transform="matrix(0.77010279,0,0,0.77010279,2.4139308,2.2989721)">
+    <title
+       id="title4">dislike [#ffffff]</title>
+    <desc
+       id="desc6">Created with Sketch.</desc>
+    <defs
+       id="defs8" />
+    <g
+       id="Page-1"
+       stroke="none"
+       stroke-width="1"
+       fill="none"
+       fill-rule="evenodd">
+      <g
+         id="Dribbble-Light-Preview"
+         transform="translate(-139,-760)"
+         fill="#ffffff">
+        <g
+           id="icons"
+           transform="translate(56,160)">
+          <path
+             d="m 101.90009,600 h -2.100001 v 11.98762 h 2.100001 c 1.16025,0 2.1,-0.89408 2.1,-1.99794 v -7.99174 c 0,-1.10386 -0.93975,-1.99794 -2.1,-1.99794 m -14.202298,0 H 97.70009 v 11.98762 l -1.80495,6.18861 c -0.21315,1.31564 -1.64955,2.19873 -3.104849,1.66628 -0.87045,-0.31767 -1.3902,-1.17978 -1.3902,-2.06786 v -4.78806 c 0,-0.55143 -0.4704,-0.99897 -1.05,-0.99897 h -4.477199 c -1.84695,0 -3.212999,-1.63431 -2.798249,-3.34654 l 1.824899,-6.52327 C 85.199842,600.87809 86.360092,600 87.697792,600"
+             id="dislike-[#ffffff]" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

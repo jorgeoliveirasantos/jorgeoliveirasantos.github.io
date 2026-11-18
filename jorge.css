@@ -32,20 +32,33 @@
     z-index: 0;
 }
 
-.video-container iframe,
-.video-container img {
+.video-container iframe {
     position: absolute;
     border: none;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: auto;
+}
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    border: var(--MediumBlue) 3px solid;
+    z-index: 0;
 }
 
-.video-container img {
+.image-container img {
+    width: 100%;
+    height: auto;
     user-select: none;
     pointer-events: none;
 }
+
 
 .blog-footer {
     display: none;
@@ -75,8 +88,9 @@
 
 .icon.active {
     background-color: var(--Crimson);
-    border-radius: 5px;
+    border-bottom: var(--LightGreen) 3px solid;
     filter: invert(1);
+    opacity: 1 !important;
 }
 
 /* #endregion */

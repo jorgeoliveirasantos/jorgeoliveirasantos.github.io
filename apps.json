@@ -1,0 +1,86 @@
+[
+    {
+        "id": "0",
+        "titulo": "Desenvolvimento de Software",
+        "descrição": "<span  style=\"font-size: large; font-weight: bold;\">Nesta sessão apresento alguns trabalhos desenvolvidos publicamente utilizando principalmente Javascript e Node.js, mas também C# e plataforma .NET. Você pode conferir todos os meus trabalhos públicos em andamento em: → <text-link href=\"https://github.com/jorgeoliveirasantos\" target=\"_blank\">minha conta no GitHub</text-link> ←</span>",
+        "downloads": null,
+        "github": null,
+        "android": null,
+        "print": null,
+        "a-venda": true,
+        "capa": "/files/dev.jpg",
+        "preview": null
+    },
+    {
+        "id": "90",
+        "titulo": "PDV Básico",
+        "descrição": "O PDV Básico é uma aplicação que utiliza a linguagem C#, o runtime e SDK do .NET. É uma aplicação didática desenvolvida para uso em sala de aula como atividade complementar do curso de programação. É um modelo básico de um PDV, inicialmente sem recursos e que serve como ponto de partida para estudo de conceitos como POO, bases de dados SQL, Autenticação e Autorização, Redes, Criptografia, Segurança, etc.",
+        "downloads": "https://www.jorgesouza.com.br/downloads/pdvbasico_win64.zip",
+        "github": "https://github.com/jorgeoliveirasantos/pdvbasico",
+        "android": null,
+        "print": null,
+        "a-venda": true,
+        "capa": "/files/pdv.jpg",
+        "preview": null
+    },
+    {
+        "id": "91",
+        "titulo": "SlideMaster",
+        "descrição": "Uma aplicação criada pensando nos palestrantes que não tem tempo para PowerPoint! Chega de horas criando apresentações complexas para no fim de todo, ter um design que não te atraia. SlideMaster é uma aplicação simples e prática que te entrega apresentações modernas, elegantes, mais práticas de se usar que slides do PowerPoint, e que podem ser criadas em minutos simplesmente preenchendo formulários!",
+        "downloads": "https://www.jorgesouza.com.br/downloads/slidemaster_win64.zip",
+        "github": "https://github.com/jorgeoliveirasantos/slidemaster/",
+        "android": null,
+        "print": null,
+        "a-venda": true,
+        "capa": "/files/slidemaster.jpg",
+        "preview": "https://www.jorgesouza.com.br/slidemaster/"
+    },
+    {
+        "id": "92",
+        "titulo": "Cronômetro Fitness",
+        "descrição": "O Cronômetro Fitness é um aplicativo projetado para quem busca uma forma de contar as séries de treino de forma simples, visual e motivadora. Com uma interface limpa, moderna e totalmente responsiva, ele funciona como um relógio de treinamento que permite configurar ciclos personalizados de esforço e descanso, ou simplesmente marcar o tempo de cada série. Você pode definir a quantidade de ciclos e a duração de cada um deles em segundos, adaptando o treino às suas necessidades: seja para treinos funcionais, HIIT, musculação ou qualquer modalidade que exija controle de tempo. Você pode criar perfis com nomes como \"Cardio\", \"Flexões\" ou \"HIIT Rápido\", cada um com sua própria configuração, permitindo alternar rapidamente entre diferentes treinos sem precisar reajustar tudo. Ele registra automaticamente cada vez que você completa todos os ciclos, contabilizando dias consecutivos, maior sequência já alcançada, total de dias treinados e uma estimativa de meses em atividade.",
+        "downloads": "https://www.jorgesouza.com.br/downloads/cronometrofitness_win64.zip",
+        "github": "https://github.com/jorgeoliveirasantos/fitnesscountdown",
+        "android": null,
+        "print": null,
+        "a-venda": true,
+        "capa": "/files/fitness.jpg",
+        "preview": "https://www.jorgesouza.com.br/fitness/"
+    },
+    {
+        "id": "93",
+        "titulo": "Acácia.js",
+        "descrição": "A biblioteca Acacia é um conjunto de componentes e utilitários web personalizáveis ​​para a construção rápida de interfaces de aplicações web. Ela oferece elementos HTML personalizados, um sistema de temas via variáveis ​​CSS, gerenciamento de layout responsivo, modais, dicas de ferramentas, grades de dados, galerias, reprodutores de áudio e muito mais.",
+        "downloads": "https://www.jorgesouza.com.br/downloads/acacia-main.zip",
+        "github": "https://github.com/jorgeoliveirasantos/acacia",
+        "android": null,
+        "print": null,
+        "a-venda": true,
+        "capa": "/files/acacia.jpg",
+        "preview": null
+    },
+    {
+        "id": "94",
+        "titulo": "Jorge2D (em construção)",
+        "descrição": "A biblioteca Jorge2D fornece uma camada de abstração sobre a API Canvas do HTML5, facilitando a criação de formas geométricas, imagens, texto e estruturação de cenas para jogos ou animações 2D. Ela inclui classes para gerenciar o canvas, desenhar objetos estáticos, carregar recursos e criar um loop de atualização (loop do jogo).",
+        "downloads": "https://www.jorgesouza.com.br/downloads/Jorge2D-main.zip",
+        "github": "https://github.com/jorgeoliveirasantos/Jorge2D",
+        "android": null,
+        "print": null,
+        "a-venda": true,
+        "capa": "/files/jorge2d.jpg",
+        "preview": null
+    },
+    {
+        "id": "95",
+        "titulo": "Simple SQLite Database System",
+        "descrição": "Biblioteca Node.js para operações com SQLite, com registro de logs integrado, pool de conexões, gerenciamento de timeouts e repetição automática. Oferece uma abstração simples para operações CRUD e gerenciamento de banco de dados.",
+        "downloads": "https://www.jorgesouza.com.br/downloads/ssdl-main.zip",
+        "github": "https://github.com/jorgeoliveirasantos/ssdl",
+        "android": null,
+        "print": null,
+        "a-venda": true,
+        "capa": "/files/ssdl.jpg",
+        "preview": null
+    }
+]

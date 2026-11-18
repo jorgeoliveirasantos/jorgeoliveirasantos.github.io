@@ -1,19 +1,27 @@
 [
     {
-        "titulo": "Formação Javascript Completa",
-        "descrição": "Formação Javascript Completa para quem deseja mergulhar no mundo da Programação e aprender uma nova profissão. Completamente gratuita!",
-        "video": "files/formacao.jpg",
-        "data": "30 de jan. de 2025",
+        "titulo": "<i style='display: none'>Formação Javascript Completa</i>",
+        "descrição": "Formação Javascript Completa para quem deseja mergulhar no mundo da Programação e aprender uma nova profissão. Completamente gratuita! \n <text-link href='https://www.youtube.com/@jorgesouzaonline' target='_blank'>Clique aqui e acesse!",
+        "video": "/files/formacao.jpg",
+        "data": "30 de jan. de 2025 | 📌 [FIXADO]",
+        "downloads": null,
+        "links": null
+    },
+    {
+        "titulo": "Curso de Informática Básica e Avançada | 2ª Edição",
+        "descrição": "2026 vem com gostinho de curso novo! A 2ª edição do Curso de Informática Básica e Avançada já saiu do forno quentinha, com o mesmo conteúdo da apostila já consolidada e best-seller da Amazon, agora adaptada ao Windows 11.",
+        "video": "/files/info2.jpg",
+        "data": "24 de fev. de 2026",
         "downloads": null,
         "links": {
-            "titulo": "Formação Javascript Completa",
-            "link": "https://www.youtube.com/@jorgesouzaonline"
+            "titulo": "Ver na Amazon",
+            "link": "https://www.amazon.com.br/Curso-Inform%C3%A1tica-B%C3%A1sica-Avan%C3%A7ada-pr%C3%B3ximos/dp/B0GGV7LJ5Z/ref=tmm_pap_swatch_0"
         }
     },
     {
         "titulo": "Guia de Segurança Digital para a Família",
-        "descrição": "Quer manter sua família segura online e offline? Quer adentrar o mundo da tecnologia conhecendo cada risco e cada benefício? Acaba de sair do forno um curso completo em modalidade interativa virtual e em livro no formato PDF, ambos completamente gratuitos para te preparar para o mundo digital de forma segura e eficiente. Tenha a preparação que os muitos não tiveram e saiba tirar o máximo proveito da tecnologia ao mesmo tempo que mantém a você mesmo, seus filhos, e toda sua família seguros e conscientes. Aproveite, não custa nada!<br><br><text-paragraph><text-link onclick=\"window.location = '/jorge/digital'\">faça o curso interativo</text-link><text-link onclick=\"window.location = '/cursos.html'\">ou leia o guia em PDF</text-link></text-paragraph>",
-        "video": "digital/back.jpg",
+        "descrição": "Quer manter sua família segura online e offline? Quer adentrar o mundo da tecnologia conhecendo cada risco e cada benefício? Acaba de sair do forno um curso completo em modalidade interativa virtual e em livro no formato PDF, ambos completamente gratuitos para te preparar para o mundo digital de forma segura e eficiente. Tenha a preparação que os muitos não tiveram e saiba tirar o máximo proveito da tecnologia ao mesmo tempo que mantém a você mesmo, seus filhos, e toda sua família seguros e conscientes. Aproveite, não custa nada!<br><br><text-paragraph><text-link onclick=\"window.location = '/digital/'\">faça o curso interativo</text-link><text-link onclick=\"window.location = '/cursos.html'\">ou leia o guia em PDF</text-link></text-paragraph>",
+        "video": "/digital/back.jpg",
         "data": "31 de jan. de 2025",
         "downloads": null,
         "links": null
@@ -21,12 +29,12 @@
     {
         "titulo": "Rádio Kaatan",
         "descrição": "Já ouviu nossa rádio? Não?! O que está esperando? Separamos as trilhas nacionais de maior sucesso atuais e antigas para todo tipo de gosto musical num compilado em reprodução 24/7 para você navegar em nossas aplicações com um toque de diversão ou simplesmente ouvir algo bacana enquanto caminha, trabalha ou cuida de suas tarefas pessoais. Ficaremos honrados com sua audiência. Aproveite, acesse:",
-        "video": "files/radio.jpg",
+        "video": "/files/radio.jpg",
         "data": " 22 de out. de 2024",
         "downloads": null,
         "links": {
             "titulo": "Rádio Kaatan",
-            "link": "https://www.kaatan.com.br/radio"
+            "link": "https://www.kaatan.com.br/radio.html"
         }
     }
 ]

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDV Minimalista</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <h1><b>PDV (Ponto de Venda) Básico</b></h1>
+            <span id="fullscreen-btn" onclick="document.documentElement.requestFullscreen()">⛶</span>
+            <style>
+            </style>
+        </header>
+
+        <div class="main-layout">
+            <!-- Seção de Produtos -->
+            <section class="products-section" aria-labelledby="products-heading">
+                <h2 id="products-heading" class="section-title">Produtos</h2>
+                <div class="search-container">
+                    <label for="barcode-search" class="visually-hidden">Pesquisar por código de barras</label>
+                    <input type="text" id="barcode-search" class="search-input" placeholder="🔍 Código de barras"
+                        aria-label="Pesquisar produtos pelo código de barras">
+                </div>
+                <div id="products-container" class="products-grid" role="list"
+                    aria-label="Lista de produtos disponíveis"></div>
+            </section>
+
+            <!-- Seção da Cesta -->
+            <section class="cart-section" aria-labelledby="cart-heading">
+                <h2 id="cart-heading" class="section-title">Cesta</h2>
+                <div id="cart-items" class="cart-items" role="list" aria-label="Itens na cesta"></div>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="total" class="total-value">R$ 0,00</span>
+                </div>
+                <button id="buy-button" class="buy-button">Comprar</button>
+            </section>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

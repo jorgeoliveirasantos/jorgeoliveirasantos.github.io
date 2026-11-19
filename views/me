@@ -1,0 +1,392 @@
+<app-container>
+
+    <card-big class="no-elastic">
+        <text-heading>
+            Jorge Souza Oliveira dos Santos
+        </text-heading>
+    </card-big>
+
+    <card-big class="no-elastic profile">
+        <div id="profile-pic"></div>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-subheading>
+            Carreira
+        </text-subheading>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        </text-paragraph><text-paragraph>
+            Em 2007, com 18 anos, enquanto cursava o terceiro ano do ensino médio, e após concluir um curso de Design
+            Gráfico na NIT Cursos, ingressei, por indicação do professor do curso, numa vaga de Designer Gráfico
+            estagiário na Dignart Publicidade Visual, onde permaneci até 2009, trabalhando também como adesivador e na
+            plotagem de projetos de AutoCAD, enquanto fazia o curso de AutoCAD, também na NIT Cursos, para me
+            aperfeiçoar no trabalho de plotagem.
+        </text-paragraph><text-paragraph>
+            Em 2009, decidido a trabalhar como projetista, encontrei uma vaga, também de estagiário, dessa vez cadista,
+            no escritório Zamuner Arquitetura, a passagem foi curta, pois ao final daquele mesmo ano, o arquiteto fechou
+            o escritório para retornar para o Paraná, mas antes, me indicou para trabalhar na cidade vizinha no
+            escritório de decoração que lhe auxiliava no projetos. Em 2010 me mudei para Barreiras, e fui trabalhar no
+            escritório da Light and Design Interiores, como projetista, apesar da difícil adaptação à cidade por causa
+            do transporte, trabalhei na Light and Design até o início de 2011, quando retornei para Luis Eduardo
+            Magalhães, e fui chamado pela NIT Cursos para ministrar o Curso de AutoCAD, o qual fui co-autor
+            desenvolvendo também o material didático e a metodologia de ensino. Devido ao trabalho em horário comercial
+            como cadista na Radoll Arquitetura, ministrei as aulas de AutoCAD no período noturno e aos sábados, isso do
+            começo de 2011 ao final de 2016.
+        </text-paragraph><text-paragraph>
+            Até 2018 trabalhei ainda como cadista em escritórios de arquitetura, e duas vezes por contrato temporário em
+            marcenarias, desenvolvendo móveis em SketchUp. Gosto de ser franco, tenho domínio avançado em detalhamentos
+            técnicos 2D, sobretudo no setor de Arquitetura, Interiores e Paisagismo, mas nunca tive uma máquina capaz de
+            me tornar um bom profissional em maquetes e renders 3D. Portando, meu foco é 2D.
+        </text-paragraph><text-paragraph>
+            Veja meu portfólio em jorgesouza.com.br/projetos
+        </text-paragraph><text-paragraph>
+            Ministrei aulas de AutoCAD também na Microlins.
+        </text-paragraph><text-paragraph>
+            A partir de 2019 passei a ministrar aulas particulares de programação web (Javascript fullstack) e a
+            trabalhar em pequenos projetos freelancer, dominando atualmente nesses 7 anos: HTML, CSS, Javascript,
+            Node/Express, SQL, APIs, Sockets, Programação Orientada a Objetos, e com uma boa base de C# e plataforma
+            .NET. Veja meu GitHub.
+        </text-paragraph><text-paragraph>
+            Contatos e perfis em:
+        </text-paragraph><text-paragraph>
+            www.jorgesouza.com.br
+        </text-paragraph>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-subheading>
+            Competências
+        </text-subheading>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <grid-row class="no-elastic" style="flex-wrap: wrap;">
+            <acacia-badge-item>Autodesk AutoCAD</acacia-badge-item>
+            <acacia-badge-item>Autodesk 3DS Max</acacia-badge-item>
+            <acacia-badge-item>Trimble SketchUp</acacia-badge-item>
+            <acacia-badge-item>Inkscape</acacia-badge-item>
+            <acacia-badge-item>GIMP</acacia-badge-item>
+            <acacia-badge-item>CorelDraw</acacia-badge-item>
+            <acacia-badge-item>Adobe Illustrator</acacia-badge-item>
+            <acacia-badge-item>Adobe Photoshop</acacia-badge-item>
+            <acacia-badge-item>HTML</acacia-badge-item>
+            <acacia-badge-item>CSS</acacia-badge-item>
+            <acacia-badge-item>Javascript</acacia-badge-item>
+            <acacia-badge-item>Node/Express</acacia-badge-item>
+            <acacia-badge-item>.NET</acacia-badge-item>
+            <acacia-badge-item>.C#</acacia-badge-item>
+            <acacia-badge-item>Visual Studio</acacia-badge-item>
+            <acacia-badge-item>Visual Studio Code</acacia-badge-item>
+            <acacia-badge-item>GitHub</acacia-badge-item>
+            <acacia-badge-item>SQL</acacia-badge-item>
+            <acacia-badge-item>APIs</acacia-badge-item>
+            <acacia-badge-item>Sockets</acacia-badge-item>
+            <acacia-badge-item>POO</acacia-badge-item>
+            <acacia-badge-item>Linux (Debian/Terminal)</acacia-badge-item>
+            <acacia-badge-item>Windows</acacia-badge-item>
+            <acacia-badge-item>Microsoft 365 (Office)</acacia-badge-item>
+            <acacia-badge-item>LibreOffice</acacia-badge-item>
+        </grid-row>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-subheading>
+            Formação Acadêmica
+        </text-subheading>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Idiomas
+        </text-paragraph>
+        <text-paragraph>
+            <ul>
+                <li>Inglês Intermediário</li>
+                <li>Espanhol Básico</li>
+            </ul>
+        </text-paragraph>
+    </card-big>
+
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Design Gráfico - 2011
+        </text-paragraph>
+        <text-paragraph>
+            NIT Cursos Profissionalizantes
+        </text-paragraph>
+    </card-big>
+
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Inglês Iniciante - 2014
+        </text-paragraph>
+        <text-paragraph>
+            CCAA
+        </text-paragraph>
+    </card-big>
+
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Modelagem 3D - 2009
+        </text-paragraph>
+        <text-paragraph>
+            Zamuner Arquitetura
+        </text-paragraph>
+    </card-big>
+
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            AutoCAD - 2008
+        </text-paragraph>
+        <text-paragraph>
+            NIT Cursos Profissionalizantes
+        </text-paragraph>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-subheading>
+            Experiência Profissional
+        </text-subheading>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Dignart Publicidade Visual
+        </text-paragraph>
+        <text-paragraph>
+            01/2007 - 01/2008
+        </text-paragraph>
+        <text-paragraph>
+            Designer Gráfico
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Caloman Comunicação Visual
+        </text-paragraph>
+        <text-paragraph>
+            01/2008 - 01/2009
+        </text-paragraph>
+        <text-paragraph>
+            Designer Gráfico
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Zamuner Arquitetura
+        </text-paragraph>
+        <text-paragraph>
+            01/2009 - 01/2010
+        </text-paragraph>
+        <text-paragraph>
+            Cadista e modelador 3D
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Light and Design Interiores
+        </text-paragraph>
+        <text-paragraph>
+            01/2010 - 01/2011
+        </text-paragraph>
+        <text-paragraph>
+            Modelador 3D
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Light and Design Interiores
+        </text-paragraph>
+        <text-paragraph>
+            01/2010 - 01/2011
+        </text-paragraph>
+        <text-paragraph>
+            Cadista projetista em período integral na área de design de interiores e paisagismo.
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            NIT Cursos Profissionalizantes
+        </text-paragraph>
+        <text-paragraph>
+            01/2011 - 01/2016
+        </text-paragraph>
+        <text-paragraph>
+            Instrutor de AutoCAD, 3D Studio Max
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            NIT Cursos Profissionalizantes
+        </text-paragraph>
+        <text-paragraph>
+            01/2011 - 01/2016
+        </text-paragraph>
+        <text-paragraph>
+            Instrutor freelancer de AutoCAD, CorelDraw e Photoshop
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Microlins Cursos Profissionalizantes
+        </text-paragraph>
+        <text-paragraph>
+            01/2018 - 01/2019
+        </text-paragraph>
+        <text-paragraph>
+            Instrutor freelancer de AutoCAD
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            M3E Engenharia Civil
+        </text-paragraph>
+        <text-paragraph>
+            01/2024 - 12/2024
+        </text-paragraph>
+        <text-paragraph>
+            Cadista civil remoto
+        </text-paragraph>
+    </card-big>
+    <card-big class="no-elastic">
+        <text-paragraph style="font-weight: bolder; font-size: large;">
+            Prepara Cursos Profissionalizantes
+        </text-paragraph>
+        <text-paragraph>
+            03/2025 - Atual
+        </text-paragraph>
+        <text-paragraph>
+            Educador de cursos técnicos, profissionalizantes e de formação pessoal/empresarial. Facilitador em diversas
+            atividades em sala de aula e ministrante de laboratórios e palestras.
+        </text-paragraph>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-subheading>
+            Redes e Contatos
+        </text-subheading>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <compact-list>
+            <list-item onclick="window.open('https://www.youtube.com/@jorgesouzaonline')">
+                <img src="/files/youtube.svg">
+                <text-label>Youtube</text-label>
+            </list-item>
+            <list-item onclick="window.open('https://www.instagram.com/jorgesouzaonline/')">
+                <img src="/files/instagram.svg">
+                <text-label>Instagram</text-label>
+            </list-item>
+            <list-item onclick="window.open('https://github.com/jorgeoliveirasantos')">
+                <img src="/files/github.svg">
+                <text-label>GitHub</text-label>
+            </list-item>
+            <list-item onclick="window.open('https://amazon.com.br/kindle-dbs/entity/author?asin=B0CM13195T')">
+                <img src="/files/linkedin.svg">
+                <text-label>Amazon</text-label>
+            </list-item>
+            <list-item onclick="window.open('https://www.linkedin.com/in/jorge-souza-oliveira-dos-santos-2191923a9/')">
+                <img src="/files/amazon.svg">
+                <text-label>LinkedIn</text-label>
+            </list-item>
+            <list-item onclick="window.open('https://wa.me/5577999030420')">
+                <img src="/files/whatsapp.svg">
+                <text-label>Whatsapp</text-label>
+            </list-item>
+            <list-item onclick="window.open('mailto:jorge.sos777@outlook.com')">
+                <img src="/files/outlook.svg">
+                <text-label>Outlook</text-label>
+            </list-item>
+        </compact-list>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <text-subheading>
+            Portfólio
+        </text-subheading>
+    </card-big>
+
+    <horizontal-divider></horizontal-divider>
+
+    <card-big class="no-elastic">
+        <grid-row style="flex-direction: column; align-items: stretch; justify-content: center; gap: 5px;">
+            <button-rounded class="full" onclick="App.Dev()">Desenvolvimento</button-rounded>
+            <button-rounded class="full" onclick="App.Projects()">Projetos</button-rounded>
+        </grid-row>
+    </card-big>
+
+
+
+    <style>
+        .profile {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile #profile-pic {
+            width: 200px;
+            height: 200px;
+            max-width: 30vw;
+            max-height: 30vw;
+            border-radius: 100px;
+            border: var(--Dark) 5px solid;
+            background-image: url("/files/z1.jpg");
+            background-size: cover;
+            display: grid;
+            place-items: center;
+            overflow: hidden;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .list li {
+            list-style: "\261B";
+            padding: 5px;
+        }
+
+        .list li::marker {
+            padding: 5px;
+            font-size: 1.2rem;
+        }
+
+        #js-video-present-V {
+            display: none;
+        }
+
+        #js-video-present-H {
+            display: flex;
+        }
+
+        .js-video-present {
+            width: 100%;
+            pointer-events: none;
+            user-select: none;
+        }
+    </style>
+</app-container>

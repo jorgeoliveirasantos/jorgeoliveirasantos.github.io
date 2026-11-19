@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideMaster · criador de apresentações</title>
+    <link rel="shortcut icon" href="icons/appIcon.png" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/appIcon.png">
+    <!-- Font Awesome (ícones elegantes) -->
+    <link rel="stylesheet" href="fontsawesome/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Cores - Tema Escuro Moderno */
+            --primary: #6c63ff;
+            --primary-dark: #4a44c0;
+            --primary-light: #8a84ff;
+            --secondary: #00bfae;
+            --secondary-dark: #00897b;
+            --accent: #ff6b8b;
+            --accent-dark: #e05573;
+
+            /* Tons de cinza */
+            --bg-primary: #0a0a0f;
+            --bg-secondary: #12121a;
+            --bg-tertiary: #1a1a25;
+            --bg-card: #1e1e2d;
+            --bg-hover: #2a2a3a;
+            --bg-active: #3a3a4a;
+
+            /* Texto */
+            --text-primary: #ffffff;
+            --text-secondary: #b0b0c0;
+            --text-muted: #8a8a9d;
+            --text-placeholder: #5a5a6d;
+
+            /* Bordas */
+            --border-color: #2a2a3a;
+            --border-light: #3a3a4a;
+
+            /* Sombras */
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+            --shadow-primary: 0 4px 20px rgba(108, 99, 255, 0.3);
+            --shadow-secondary: 0 4px 20px rgba(0, 191, 174, 0.3);
+            --shadow-accent: 0 4px 20px rgba(255, 107, 139, 0.3);
+
+            /* Gradientes */
+            --gradient-primary: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            --gradient-secondary: linear-gradient(135deg, var(--secondary), var(--secondary-dark));
+            --gradient-accent: linear-gradient(135deg, var(--accent), var(--accent-dark));
+            --gradient-primary-light: linear-gradient(135deg, var(--primary-light), var(--primary));
+            --gradient-rainbow: linear-gradient(135deg, #6c63ff, #00bfae, #ff6b8b);
+
+            /* Transições */
+            --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            /* Tipografia */
+            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            --font-heading: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'SF Mono', 'Roboto Mono', Consolas, monospace;
+
+            /* Layout */
+            --header-height: 70px;
+            --sidebar-width: 50px;
+            --max-width: 1400px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            height: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-tertiary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 5px;
+            transition: all var(--transition-fast);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--primary-light), var(--secondary-dark));
+        }
+
+        ::-webkit-scrollbar-corner {
+            background: var(--bg-tertiary);
+        }
+
+        /* Scrollbar fina para elementos menores */
+        .slides-thumbnails::-webkit-scrollbar,
+        .presenter-note-content::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::selection {
+            background: var(--primary);
+            color: var(--text-primary);
+        }
+
+        moz::selection {
+            background: var(--primary);
+            color: var(--text-primary);
+        }
+
+
+        .app {
+            max-width: 1400px;
+            width: calc(100% - 2rem);
+            height: calc(100% - 2rem);
+            top: 1rem;
+            left: 1rem;
+            position: fixed;
+            margin: 0 auto;
+            padding: 1.5rem 2rem;
+            background-color: var(--bg-secondary);
+            border-radius: 28px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8);
+            overflow: hidden;
+            border: 1px solid #2a2f38;
+        }
+
+        /* cabeçalho */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 2rem;
+            background-color: var(--bg-secondary);
+            border-bottom: 1px solid #2a2f38;
+        }
+
+        .header h1 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            background: linear-gradient(130deg, #b2f0e5, #a0b5f0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .btn {
+            background-color: var(--primary);
+            border: none;
+            color: #d6deed;
+            padding: 0.6rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.15s ease;
+            border: 1px solid #3a4250;
+        }
+
+        .btn i {
+            font-size: 0.9rem;
+            color: var(--text-primary);
+        }
+
+        .btn:hover {
+            background-color: var(--accent-dark);
+            border-color: #5f6b7f;
+            color: #ffffff;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            border-color: var(--primary-light);
+            color: white;
+        }
+
+        .btn-primary i {
+            color: #bdd3ff;
+        }
+
+        .btn-danger {
+            background-color: var(--accent);
+            border-color: var(--accent-dark);
+            color: #ffc9d3;
+        }
+
+        .btn-danger:hover {
+            background-color: var(--primary-light);
+        }
+
+        /* grid principal */
+        .main-grid {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 0;
+            background-color: var(--bg-secondary);
+        }
+
+        /* painel de apresentações (esquerda) */
+        .presentations-panel {
+            background-color: var(--bg-secondary);
+            border-right: 1px solid #262e3a;
+            padding: 1.5rem 1rem;
+            height: 100%;
+        }
+
+        .panel-title {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #7f8fa3;
+            margin-bottom: 1.2rem;
+            font-weight: 600;
+        }
+
+        .pres-list {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .pres-item {
+            background-color: var(--bg-secondary);
+            border-radius: 16px;
+            padding: 0.8rem 1rem;
+            margin-bottom: 0.6rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #26303f;
+            cursor: pointer;
+            transition: all 0.1s;
+        }
+
+        .pres-item:hover {
+            background-color: #1f2a39;
+            border-color: #4f6382;
+        }
+
+        .pres-item.selected {
+            background-color: #253549;
+            border-left: 5px solid #7aa5f0;
+            box-shadow: 0 0 0 1px #4a6185;
+        }
+
+        .pres-info {
+            overflow: hidden;
+        }
+
+        .pres-title {
+            font-weight: 500;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .pres-meta {
+            font-size: 0.7rem;
+            color: #8896ae;
+        }
+
+        .pres-actions {
+            display: flex;
+            gap: 0.4rem;
+        }
+
+        .icon-btn {
+            background: transparent;
+            border: none;
+            color: #9caecf;
+            font-size: 0.9rem;
+            cursor: pointer;
+            padding: 0.2rem 0.4rem;
+            border-radius: 30px;
+        }
+
+        .icon-btn:hover {
+            background-color: #334053;
+            color: #ffffff;
+        }
+
+        /* workspace (direita) */
+        .workspace {
+            padding: 1.5rem 2rem;
+            background-color: var(--bg-secondary);
+            overflow-y: auto;
+            max-height: 80vh;
+        }
+
+        .section-title {
+            font-size: 1rem;
+            font-weight: 500;
+            margin: 1.2rem 0 0.8rem 0;
+            color: #b7c7e0;
+            border-bottom: 1px dashed #314153;
+            padding-bottom: 0.3rem;
+        }
+
+        .form-row {
+            margin-bottom: 1.2rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-row label {
+            font-size: 0.8rem;
+            color: #9fafc9;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+
+        input,
+        select,
+        textarea,
+        span.value {
+            background-color: #1e2632;
+            border: 1px solid #314159;
+            border-radius: 14px;
+            padding: 0.7rem 1rem;
+            color: #ecf2fc;
+            font-size: 0.9rem;
+            transition: 0.1s;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #6285c3;
+            box-shadow: 0 0 0 2px #2a405d;
+        }
+
+        input:disabled,
+        select:disabled {
+            opacity: 0.5;
+            background-color: #1a212b;
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .inline-row {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .checkbox-row {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            margin: 0.5rem 0;
+        }
+
+        .checkbox-row input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            accent-color: #6285c3;
+        }
+
+        .readonly-id {
+            background-color: #1a1f28;
+            color: #a2b7d6;
+            padding: 0.6rem 1rem;
+            border-radius: 30px;
+            font-family: monospace;
+            border: 1px solid #314963;
+        }
+
+        /* lista de slides */
+        .slides-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.8rem;
+        }
+
+        .slides-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.4rem;
+            margin-bottom: 2rem;
+        }
+
+        .slide-item {
+            background-color: #1b2330;
+            border-radius: 12px;
+            padding: 0.5rem 0.8rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 1px solid #2b364a;
+            cursor: pointer;
+        }
+
+        .slide-item:hover {
+            background-color: #253040;
+        }
+
+        .slide-item.selected {
+            background-color: #253f5a;
+            border-left: 4px solid #7aa5f0;
+        }
+
+        .slide-item .slide-title {
+            font-size: 0.9rem;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 180px;
+        }
+
+        .slide-item .slide-type {
+            font-size: 0.7rem;
+            background-color: #2c384b;
+            padding: 0.2rem 0.5rem;
+            border-radius: 30px;
+            color: #c9dbfa;
+        }
+
+        /* estado vazio */
+        .empty-message {
+            color: #68748f;
+            font-style: italic;
+            padding: 2rem;
+            text-align: center;
+            background: #1a212d;
+            border-radius: 30px;
+        }
+
+        /* responsivo */
+        @media (max-width: 800px) {
+            .main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .presentations-panel {
+                border-right: none;
+                border-bottom: 1px solid #262e3a;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <div class="header">
+            <h1 style="cursor: pointer;" onclick="window.location = 'https://jorgesouza.com.br/slidemaster/'"><i class="fas fa-film"
+                    style="margin-right: 10px; background: none; -webkit-text-fill-color: #a5b9d9;"></i>SlideMaster ·
+                estúdio</h1>
+            <button class="btn" id="downloadAllBtn"><i class="fas fa-download"></i> Salvar apresentações</button>
+        </div>
+        <div class="main-grid">
+            <!-- PAINEL ESQUERDO: Apresentações -->
+            <div class="presentations-panel">
+                <div class="panel-title"><i class="fas fa-presentation"></i> suas apresentações</div>
+                <ul class="pres-list" id="presentationList"></ul>
+                <button class="btn btn-primary" id="addPresentationBtn" style="width:100%;"><i
+                        class="fas fa-plus-circle"></i> nova apresentação</button>
+            </div>
+
+            <!-- ÁREA DE TRABALHO -->
+            <div class="workspace" id="workspace">
+                <!-- detalhes da apresentação (dinâmico) -->
+                <div id="presentationDetailsArea" style="display: none;">
+                    <div class="section-title"><i class="fas fa-tag"></i> dados da apresentação</div>
+                    <div class="form-row">
+                        <label>título</label>
+                        <input type="text" id="presTitleInput" placeholder="título da apresentação">
+                    </div>
+                    <div class="form-row">
+                        <label>descrição</label>
+                        <input type="text" id="presDescInput" placeholder="descrição (opcional)">
+                    </div>
+                    <div class="form-row">
+                        <label>criado em</label>
+                        <span class="readonly-id" id="presCreatedSpan"></span>
+                    </div>
+                </div>
+
+                <!-- slides & editor -->
+                <div id="slidesSection" style="display: none;">
+                    <div class="slides-header">
+                        <span class="section-title"><i class="fas fa-clone"></i> slides</span>
+                        <button class="btn" id="addSlideBtn"><i class="fas fa-plus"></i> slide</button>
+                    </div>
+                    <ul class="slides-list" id="slidesList"></ul>
+                </div>
+
+                <!-- editor do slide (visível quando slide selecionado) -->
+                <div id="slideEditorArea" style="display: none; margin-top: 1.5rem;">
+                    <div class="section-title"><i class="fas fa-edit"></i> editar slide</div>
+                    <form id="slideForm">
+                        <div class="form-row">
+                            <label>título</label>
+                            <input type="text" id="slideTitle" placeholder="título do slide">
+                        </div>
+                        <div class="form-row">
+                            <label>subtítulo</label>
+                            <input type="text" id="slideSubtitle" placeholder="subtítulo">
+                        </div>
+                        <div class="form-row">
+                            <label>comentário</label>
+                            <input type="text" id="slideComment" placeholder="comentário (aparece na tela)">
+                        </div>
+                        <div class="form-row">
+                            <label>tipo de conteúdo</label>
+                            <select id="slideContentType">
+                                <option value="paragraph">parágrafo</option>
+                                <option value="bullet-list">lista com marcadores</option>
+                                <option value="numbered-list">lista numerada</option>
+                            </select>
+                        </div>
+                        <div class="form-row">
+                            <label>tipo de mídia</label>
+                            <select id="slideMediaType">
+                                <option value="none">sem mídia</option>
+                                <option value="audio">áudio</option>
+                                <option value="video">vídeo</option>
+                                <option value="image">imagem</option>
+                            </select>
+                        </div>
+                        <div class="form-row" id="mediaRow">
+                            <label>caminho / URL da mídia</label>
+                            <input type="text" id="slideMedia" placeholder="ex: http://... ou arquivo local" disabled>
+                        </div>
+                        <div class="form-row">
+                            <label>conteúdo</label>
+                            <textarea id="slideContent" rows="4"
+                                placeholder="escreva o conteúdo (se for lista, uma linha por item)"></textarea>
+                        </div>
+
+                        <!-- bloco notas do apresentador com toggle -->
+                        <div class="checkbox-row">
+                            <input type="checkbox" id="slideEnableNotes">
+                            <label for="slideEnableNotes" style="margin:0; cursor:pointer;">incluir nota do
+                                apresentador</label>
+                        </div>
+                        <div class="form-row" id="notesRow" style="display: none;">
+                            <label>notas do apresentador</label>
+                            <textarea id="slidePresenterNote" rows="2" placeholder="observações privadas..."></textarea>
+                        </div>
+
+                        <!-- ids e datas automáticos -->
+                        <div style="display: flex; gap: 2rem; flex-wrap: wrap; margin-top: 1rem;">
+                            <div class="form-row" style="flex:1;">
+                                <label>ID do slide</label>
+                                <span class="readonly-id" id="slideIdDisplay"></span>
+                            </div>
+                            <div class="form-row" style="flex:2;">
+                                <label>criado em</label>
+                                <span class="readonly-id" id="slideCreatedDisplay"></span>
+                            </div>
+                        </div>
+                    </form>
+                    <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+                        <button class="btn btn-danger" id="deleteSlideBtn"><i class="fas fa-trash-alt"></i> excluir
+                            slide</button>
+                    </div>
+                </div>
+
+                <!-- mensagem quando nada selecionado -->
+                <div id="noSelectionMessage" class="empty-message">
+                    <i class="fas fa-arrow-left" style="margin-right: 0.5rem;"></i> selecione ou crie uma apresentação
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            // ----- dados iniciais (exatamente como no arquivo exemplo) -----
+            const initialData = [
+                {
+                    "id": 1,
+                    "title": "SlideMaster",
+                    "description": "Utilitário para criação de apresentações de slides",
+                    "createdAt": "2025-12-30T05:41:58.623Z",
+                    "slides": [
+                        { "id": 1001, "title": "Apresentação", "subtitle": "Apresentando SlideMaster", "comment": "Aperte (F) no seu teclado e vamos começar!", "presenterNote": "", "contentType": "paragraph", "mediaType": "none", "media": "", "content": "SlideMaster é uma aplicação que facilita a vida de palestrantes, com recursos para criação de apresentações de slides com um editor estilo formulário.<br><b>Uma aplicação simples para palestrantes</b>", "createdAt": "2025-12-30T05:42:02.373Z" },
+                        { "id": 1002, "title": "Recursos", "subtitle": "Conhecendo os recursos do SlideMaster", "comment": "Apresentando a interface e suas principais funções", "presenterNote": "Aqui você adiciona notas para o apresentador ler com algum lembrete ou observação sobre o slide e/ou seu conteúdo!", "contentType": "paragraph", "mediaType": "none", "media": "", "content": "Na barra lateral você pode ver a lista de slides da apresentação e o slide atual selecionado.<br>\nNa barra superior encontramos a numeração do slide atual / contagem de de slides e alguns botões com recursos para o apresentador.<br>\nO primeiro botão exibe uma nota ao apresentador. Clique nele e observe!<br>\nO segundo botão, ativa e desativa o modo de apresentação (tela cheia).<br>\nOs dois últimos botões servem para avançar e voltar a apresentação.<br>", "createdAt": "2025-12-30T05:45:30.863Z" },
+                        { "id": 1003, "title": "Teclas de atalho", "subtitle": "", "comment": "Você pode usar teclas de atalho em uma apresentação.", "presenterNote": "Viu como é simples?", "contentType": "bullet-list", "mediaType": "none", "media": "", "content": "( f ): Ativa/desativa o modo de apresentação.\n( i ): Exibe a nota do apresentador.\n( ← ): Volta o slide anterior.\n( → ): Avança para o próximo slide.\n( espaço ): Executa a mídia se houver (áudio ou vídeo).<br>\n( espaço ): Abre a imagem em tela cheia se houver.<br>\n<em>Notou algo? Você pode usar listas em seus slides!</em>", "createdAt": "2025-12-30T05:43:48.268Z" },
+                        { "id": 1004, "title": "Estrutura do conteúdo", "subtitle": "Este é o subtítulo do slide", "comment": "Este é o comentário do slide", "presenterNote": "Esta é a nota do apresentador!", "contentType": "numbered-list", "mediaType": "audio", "media": "http://youtube.com/audio.mp3", "content": "Este slide possui um conteúdo do tipo lista numerada.\nEste slide possui uma mídia de audio, pressione ( espaço ) para executá-la!\nPressione ( i ) para ver a nota do apresentador!", "createdAt": "2025-12-30T05:47:45.872Z" },
+                        { "id": 1005, "title": "Tipos de conteúdo", "subtitle": "Como inserir mídia em seus slides", "comment": "Podemos ter slides com audio, video e imagem!", "presenterNote": "A importância das redes sociais é: nenhuma.", "contentType": "paragraph", "mediaType": "video", "media": "http://youtube.com/video.mp4", "content": "Este slide possui uma mídia do tipo vídeo. <br> Imagem e vídeo serão exibidas lado a lado com o conteúdo em texto.", "createdAt": "2025-12-30T05:47:45.872Z" },
+                        { "id": 1006, "title": "Trabalhando com arquivos .JSON", "subtitle": "", "comment": "Você pode baixar apresentações ou importá-las", "presenterNote": "", "contentType": "bullet-list", "mediaType": "image", "media": "http://placehold.it/350x150", "content": "Você pode baixar suas apresentações em formato .json na tela inicial clicando no link de download no card da apresentação.\nSe você tem uma apresentação .json existente você pode importá-la clicando no botão \"Importar JSON\" na tela inicial.", "createdAt": "2025-12-30T18:18:22.510Z" },
+                        { "id": 1007, "title": "Dicas", "subtitle": "", "comment": "Com essas dicas você fica fera!", "presenterNote": "", "contentType": "bullet-list", "mediaType": "none", "media": "", "content": "Sempre baixe a apresentação como .json ao terminar de criá-la.\nDê preferência a mídias online, elas são mais leve que carregar arquivos locais para o slide.\nSe estiver fazendo apresentações muito longas, baixe o arquivo da apresentação .json a cada 10 slides para não perder conteúdo.\nFaça apresentações de no máximo 50 slides, divida palestras longas em várias apresentações.\nSalve na aplicação apenas as apresentações de cada palestra, dê preferência em armazená-las em arquivos .json.\nDivirta-se!", "createdAt": "2025-12-30T18:33:03.249Z" }
+                    ]
+                }
+            ];
+
+            // ------------------------------------------------
+            // Estado global
+            let presentations = JSON.parse(JSON.stringify(initialData)); // cópia profunda
+            let selectedPresIndex = 0;          // índice da apresentação atual (0 = primeira)
+            let selectedSlideId = null;          // id do slide selecionado (dentro da apresentação atual)
+
+            // ------------------------------------------------
+            // Utilitários: gerar ids e datas
+            function getNextPresentationId() {
+                return Math.max(0, ...presentations.map(p => p.id)) + 1;
+            }
+            function getNextSlideId() {
+                const allSlides = presentations.flatMap(p => p.slides);
+                return Math.max(0, ...allSlides.map(s => s.id)) + 1;
+            }
+
+            // ------------------------------------------------
+            // Renderização principal
+            function renderPresentationList() {
+                const container = document.getElementById('presentationList');
+                container.innerHTML = '';
+                presentations.forEach((pres, idx) => {
+                    const li = document.createElement('li');
+                    li.className = `pres-item ${idx === selectedPresIndex ? 'selected' : ''}`;
+                    li.setAttribute('data-index', idx);
+                    li.innerHTML = `
+                <div class="pres-info">
+                    <div class="pres-title">${pres.title || 'sem título'}</div>
+                    <div class="pres-meta">${pres.slides.length} slides · ID ${pres.id}</div>
+                </div>
+                <div class="pres-actions">
+                    <button class="icon-btn delete-pres" data-index="${idx}" title="excluir apresentação"><i class="fas fa-trash"></i></button>
+                </div>
+            `;
+                    // selecionar apresentação ao clicar na linha (exceto botão delete)
+                    li.addEventListener('click', (e) => {
+                        if (e.target.closest('.delete-pres')) return;
+                        selectedPresIndex = idx;
+                        selectedSlideId = null; // limpa slide selecionado
+                        renderEverything();
+                    });
+                    container.appendChild(li);
+                });
+
+                // botões de delete presentation (evento separado para não propagar)
+                document.querySelectorAll('.delete-pres').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        const idx = btn.getAttribute('data-index');
+                        if (confirm(`Remover apresentação "${presentations[idx].title}"?`)) {
+                            presentations.splice(idx, 1);
+                            if (presentations.length === 0) {
+                                // se não houver mais, cria uma em branco?
+                                // melhor criar uma padrão para não quebrar
+                                const newId = getNextPresentationId();
+                                presentations.push({ id: newId, title: 'Nova apresentação', description: '', createdAt: new Date().toISOString(), slides: [] });
+                                selectedPresIndex = 0;
+                            } else {
+                                selectedPresIndex = Math.min(selectedPresIndex, presentations.length - 1);
+                            }
+                            selectedSlideId = null;
+                            renderEverything();
+                        }
+                    });
+                });
+            }
+
+            function renderSlidesList() {
+                const container = document.getElementById('slidesList');
+                if (!presentations.length) return;
+                const currentPres = presentations[selectedPresIndex];
+                container.innerHTML = '';
+                if (!currentPres.slides.length) {
+                    container.innerHTML = '<li class="empty-message" style="list-style:none;">nenhum slide — adicione um</li>';
+                    return;
+                }
+                currentPres.slides.forEach(slide => {
+                    const li = document.createElement('li');
+                    li.className = `slide-item ${slide.id === selectedSlideId ? 'selected' : ''}`;
+                    li.setAttribute('data-slideid', slide.id);
+                    li.innerHTML = `
+                <span class="slide-title">${slide.title || 'sem título'}</span>
+                <span class="slide-type">${slide.contentType === 'paragraph' ? '¶' : '☷'}</span>
+            `;
+                    li.addEventListener('click', () => {
+                        selectedSlideId = slide.id;
+                        renderSlideEditor();
+                        highlightSelectedSlide();
+                    });
+                    container.appendChild(li);
+                });
+            }
+
+            function highlightSelectedSlide() {
+                document.querySelectorAll('.slide-item').forEach(item => {
+                    const id = item.getAttribute('data-slideid');
+                    if (id && parseInt(id) === selectedSlideId) {
+                        item.classList.add('selected');
+                    } else {
+                        item.classList.remove('selected');
+                    }
+                });
+            }
+
+            function renderPresentationDetails() {
+                if (!presentations.length) return;
+                const pres = presentations[selectedPresIndex];
+                document.getElementById('presentationDetailsArea').style.display = 'block';
+                document.getElementById('presTitleInput').value = pres.title || '';
+                document.getElementById('presDescInput').value = pres.description || '';
+                document.getElementById('presCreatedSpan').textContent = new Date(pres.createdAt).toLocaleString() + ' (UTC)';
+            }
+
+            function renderSlideEditor() {
+                const editorDiv = document.getElementById('slideEditorArea');
+                if (selectedSlideId === null || !presentations.length) {
+                    editorDiv.style.display = 'none';
+                    return;
+                }
+                const pres = presentations[selectedPresIndex];
+                const slide = pres.slides.find(s => s.id === selectedSlideId);
+                if (!slide) {
+                    selectedSlideId = null;
+                    editorDiv.style.display = 'none';
+                    return;
+                }
+                editorDiv.style.display = 'block';
+
+                // popular campos
+                document.getElementById('slideTitle').value = slide.title || '';
+                document.getElementById('slideSubtitle').value = slide.subtitle || '';
+                document.getElementById('slideComment').value = slide.comment || '';
+                document.getElementById('slideContentType').value = slide.contentType || 'paragraph';
+                document.getElementById('slideMediaType').value = slide.mediaType || 'none';
+                document.getElementById('slideMedia').value = slide.media || '';
+                document.getElementById('slideContent').value = slide.content || '';
+                document.getElementById('slideIdDisplay').textContent = slide.id;
+                document.getElementById('slideCreatedDisplay').textContent = new Date(slide.createdAt).toLocaleString();
+
+                // controle de mídia habilitado
+                const mediaInput = document.getElementById('slideMedia');
+                mediaInput.disabled = (slide.mediaType === 'none');
+
+                // notas do apresentador toggle
+                const enableNotes = document.getElementById('slideEnableNotes');
+                const notesRow = document.getElementById('notesRow');
+                const notesTextarea = document.getElementById('slidePresenterNote');
+                notesTextarea.value = slide.presenterNote || '';
+                const hasNotes = !!slide.presenterNote;
+                enableNotes.checked = hasNotes;
+                notesRow.style.display = hasNotes ? 'flex' : 'none';
+
+                // Anexar eventos (de uma vez só, mas garantir que não duplique? Usaremos listeners no form geral, então só bind aqui)
+            }
+
+            // Atualizar tudo
+            function renderEverything() {
+                if (presentations.length === 0) {
+                    // isso não deve ocorrer, mas segurança
+                    const newId = getNextPresentationId();
+                    presentations.push({ id: newId, title: 'Apresentação padrão', description: '', createdAt: new Date().toISOString(), slides: [] });
+                    selectedPresIndex = 0;
+                }
+                renderPresentationList();
+                // Se índice estiver fora do range
+                if (selectedPresIndex >= presentations.length) selectedPresIndex = presentations.length - 1;
+                const presExists = presentations[selectedPresIndex];
+
+                document.getElementById('noSelectionMessage').style.display = 'none';
+                if (!presExists) return;
+
+                // apresentação detalhes
+                renderPresentationDetails();
+                document.getElementById('slidesSection').style.display = 'block';
+                renderSlidesList();
+
+                if (selectedSlideId) {
+                    // verificar se slide ainda existe
+                    const slideStillThere = presExists.slides.find(s => s.id === selectedSlideId);
+                    if (!slideStillThere) selectedSlideId = null;
+                }
+                renderSlideEditor();
+                highlightSelectedSlide();
+
+                // se não há slide selecionado, esconder editor
+                if (!selectedSlideId) document.getElementById('slideEditorArea').style.display = 'none';
+            }
+
+            // ------------------------------------------------
+            // Eventos dos inputs (usando delegação no workspace)
+            function setupInputListeners() {
+                // Apresentação: título e descrição
+                document.getElementById('presTitleInput').addEventListener('input', function (e) {
+                    if (!presentations.length) return;
+                    presentations[selectedPresIndex].title = e.target.value;
+                    renderPresentationList(); // atualiza lista esquerda
+                });
+                document.getElementById('presDescInput').addEventListener('input', function (e) {
+                    if (!presentations.length) return;
+                    presentations[selectedPresIndex].description = e.target.value;
+                });
+
+                // Slide: usar form inteiro com delegação
+                document.getElementById('slideForm').addEventListener('input', function (e) {
+                    if (selectedSlideId === null) return;
+                    const pres = presentations[selectedPresIndex];
+                    const slide = pres.slides.find(s => s.id === selectedSlideId);
+                    if (!slide) return;
+
+                    const target = e.target;
+                    switch (target.id) {
+                        case 'slideTitle': slide.title = target.value; break;
+                        case 'slideSubtitle': slide.subtitle = target.value; break;
+                        case 'slideComment': slide.comment = target.value; break;
+                        case 'slideContent': slide.content = target.value; break;
+                        case 'slideMedia': slide.media = target.value; break;
+                        case 'slidePresenterNote': slide.presenterNote = target.value; break;
+                    }
+                    // atualizar lista de slides (para título)
+                    if (target.id === 'slideTitle') renderSlidesList();
+                });
+
+                document.getElementById('slideForm').addEventListener('change', function (e) {
+                    if (selectedSlideId === null) return;
+                    const pres = presentations[selectedPresIndex];
+                    const slide = pres.slides.find(s => s.id === selectedSlideId);
+                    if (!slide) return;
+
+                    const target = e.target;
+                    if (target.id === 'slideContentType') {
+                        slide.contentType = target.value;
+                    } else if (target.id === 'slideMediaType') {
+                        slide.mediaType = target.value;
+                        // habilitar/desabilitar campo media
+                        document.getElementById('slideMedia').disabled = (target.value === 'none');
+                        if (target.value === 'none') slide.media = ''; // opcional
+                        document.getElementById('slideMedia').value = slide.media || '';
+                    } else if (target.id === 'slideEnableNotes') {
+                        const notesRow = document.getElementById('notesRow');
+                        if (target.checked) {
+                            notesRow.style.display = 'flex';
+                            if (!slide.presenterNote) slide.presenterNote = '';
+                        } else {
+                            notesRow.style.display = 'none';
+                            slide.presenterNote = '';
+                        }
+                        document.getElementById('slidePresenterNote').value = slide.presenterNote || '';
+                    }
+                });
+            }
+
+            // ------------------------------------------------
+            // Ações de botões
+            document.getElementById('addPresentationBtn').addEventListener('click', () => {
+                const newId = getNextPresentationId();
+                const newPres = {
+                    id: newId,
+                    title: 'Nova apresentação',
+                    description: '',
+                    createdAt: new Date().toISOString(),
+                    slides: []
+                };
+                presentations.push(newPres);
+                selectedPresIndex = presentations.length - 1;
+                selectedSlideId = null;
+                renderEverything();
+            });
+
+            document.getElementById('addSlideBtn').addEventListener('click', () => {
+                if (!presentations.length) return;
+                const newId = getNextSlideId();
+                const newSlide = {
+                    id: newId,
+                    title: 'Novo slide',
+                    subtitle: '',
+                    comment: '',
+                    presenterNote: '',
+                    contentType: 'paragraph',
+                    mediaType: 'none',
+                    media: '',
+                    content: '',
+                    createdAt: new Date().toISOString()
+                };
+                presentations[selectedPresIndex].slides.push(newSlide);
+                selectedSlideId = newId;
+                renderEverything();
+            });
+
+            document.getElementById('deleteSlideBtn').addEventListener('click', () => {
+                if (selectedSlideId === null) return;
+                const pres = presentations[selectedPresIndex];
+                const idx = pres.slides.findIndex(s => s.id === selectedSlideId);
+                if (idx !== -1) {
+                    if (confirm(`Excluir slide "${pres.slides[idx].title}"?`)) {
+                        pres.slides.splice(idx, 1);
+                        selectedSlideId = pres.slides.length ? pres.slides[0].id : null;
+                        renderEverything();
+                    }
+                }
+            });
+
+            document.getElementById('downloadAllBtn').addEventListener('click', () => {
+                const dataStr = JSON.stringify(presentations, null, 2);
+                const blob = new Blob([dataStr], { type: 'application/json' });
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement('a');
+                a.href = url;
+                a.download = `SlideMaster_${new Date().toISOString().slice(0, 10)}.json`;
+                a.click();
+                URL.revokeObjectURL(url);
+            });
+
+            // Inicialização
+            window.addEventListener('DOMContentLoaded', () => {
+                renderEverything();
+                setupInputListeners();
+            });
+        })();
+    </script>
+</body>
+
+</html>

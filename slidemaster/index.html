@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SlideMaster - Gerenciador de Apresentações</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="fontsawesome/all.min.css">
+    <link rel="shortcut icon" href="icons/appIcon.png" type="image/x-icon">
+    <!--
+        <script src="presentations.js"></script>
+    -->
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="logo">
+            <i class="fas fa-film" aria-hidden="true"></i>
+            <h1>SlideMaster</h1>
+        </div>
+    </header>
+    <div class="container">
+
+        <!-- Painel Principal -->
+        <main class="main-content">
+            <!-- Lista de Apresentações -->
+            <section class="presentations-list">
+                <h2>Suas Apresentações</h2>
+
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchPresentations" placeholder="Buscar apresentações...">
+                </div>
+
+                <div class="presentations-grid" id="presentationsContainer">
+                    <!-- As apresentações serão carregadas dinamicamente aqui -->
+                    <div class="empty-state" id="emptyState">
+                        <i class="fas fa-file-slides"></i>
+                        <h3>Nenhuma apresentação criada</h3>
+                        <p>Crie sua primeira apresentação ou importe um arquivo JSON</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Sistema de Mensagens -->
+        <div class="message-system" id="messageSystem"></div>
+        <footer>
+            <div>
+                Copyright © 2025 |
+                <span style="cursor: pointer; color: var(--secondary-dark);"
+                    onclick="window.location.href = 'https://www.jorgesouza.com.br/'">
+                    Jorge Souza Oliveira dos Santos
+                </span>
+                Todos os direitos reservados
+            </div>
+            <div>
+                <span style="cursor: pointer; color: var(--secondary-dark);"
+                    onclick="window.location.href = 'editor.html'">
+                    Criar
+                </span>
+                apresentações
+            </div>
+            <div>
+                <span style="cursor: pointer; color: var(--secondary-dark);" id="loadPresentations">
+                    Abrir
+                </span>
+                apresentações do arquivo
+            </div>
+        </footer>
+    </div>
+
+    <script src="index.js"></script>
+    <script src="presenter.js"></script>
+    <script>
+        let presentations = [];
+        // Script específico para a página inicial
+        document.addEventListener('DOMContentLoaded', () => {
+            fetch('presentations.json')
+                .then(response => response.json())
+                .then(data => {
+                    presentations = data;
+                    displayPresentations(presentations);
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar as apresentações:', error);
+                });
+            const pm = new PresentationManager();
+
+            // Elementos DOM
+            const closeModalBtns = document.querySelectorAll('.close-modal');
+            const presentationsContainer = document.getElementById('presentationsContainer');
+            const emptyState = document.getElementById('emptyState');
+            const searchInput = document.getElementById('searchPresentations');
+            const messageSystem = document.getElementById('messageSystem');
+
+            // Função para carregar apresentações de um arquivo JSON
+            document.getElementById("loadPresentations").addEventListener("click", () => {
+                // Carrega apresentações de um arquivo JSON:
+                const fileElement = document.createElement('input');
+                fileElement.type = 'file';
+                fileElement.accept = '.json';
+                fileElement.addEventListener('change', (event) => {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = (e) => {
+                            try {
+                                const data = JSON.parse(e.target.result);
+                                presentations = data;
+                                displayPresentations(presentations);
+                                showMessage('Apresentação carregada com sucesso!', 'success');
+                            } catch (error) {
+                                alert('Erro ao carregar o arquivo JSON.', error);
+                                console.error('Erro ao carregar o arquivo JSON:', error);
+                            }
+                        };
+                        reader.readAsText(file);
+                    }
+                });
+                fileElement.click();
+            });
+
+            // Exibir apresentações
+            function displayPresentations(presentations) {
+                if (presentations.length == 0) {
+                    emptyState.style.display = 'flex';
+                    presentationsContainer.innerHTML = '';
+                    presentationsContainer.appendChild(emptyState);
+                    return;
+                }
+
+                emptyState.style.display = 'none';
+                presentationsContainer.innerHTML = '';
+
+                presentations.forEach(presentation => {
+                    const presentationCard = document.createElement('div');
+                    presentationCard.className = 'presentation-card';
+                    presentationCard.innerHTML = `
+                        <div class="presentation-card-header">
+                            <h3>${presentation.title}</h3>
+                        </div>
+                        <p class="presentation-description">${presentation.description || 'Sem descrição'}</p>
+                        <div class="presentation-meta">
+                            <span><i class="fas fa-slides"></i> ${presentation.slides?.length || 0} slides</span>
+                        </div>
+                        <div class="presentation-card-footer">
+                            <button id="startPresentationBtn" onclick="presenter(${presentation.id})" class="btn-primary open-presentation" data-id="${presentation.id}">
+                                <i class="fas fa-play"></i> Abrir
+                            </button>
+                        </div>
+                    `;
+
+                    presentationsContainer.appendChild(presentationCard);
+                });
+            }
+
+            // Mostrar mensagem
+            function showMessage(text, type = 'info') {
+                const message = document.createElement('div');
+                message.className = `message ${type}`;
+                message.innerHTML = `
+                    <span>${text}</span>
+                    <button class="btn-icon close-message">
+                        <i class="fas fa-times"></i>
+                    </button>
+                `;
+
+                messageSystem.appendChild(message);
+
+                // Auto-remover após 5 segundos
+                setTimeout(() => {
+                    message.classList.add('fade-out');
+                    setTimeout(() => message.remove(), 300);
+                }, 5000);
+
+                // Botão de fechar
+                message.querySelector('.close-message').addEventListener('click', () => {
+                    message.remove();
+                });
+            }
+
+            // Fechar modal
+            closeModalBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    newPresentationModal.classList.remove('active');
+                });
+            });
+
+            // Busca
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filtered = presentations.filter(p =>
+                    p.title.toLowerCase().includes(searchTerm) ||
+                    (p.description && p.description.toLowerCase().includes(searchTerm))
+                );
+                displayPresentations(filtered);
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <link rel="shortcut icon" href="../files/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../lib/acacia/acacia.css">
+    <script type="module" src="../lib/acacia/acacia.js"></script>
+    <title>Pesquisa de Mercado | Jorge Souza</title>
+</head>
+
+<body>
+
+    <div class="blog-master">
+        <!-- Barra de progresso com números (topo) -->
+        <div class="progress-section">
+            <div class="stepper-wrapper">
+                <div class="stepper" id="stepperContainer">
+                    <!-- barra de progresso dinâmica (linha gradiente atrás) -->
+                    <div class="progress-fill-line" id="progressFill"></div>
+                    <!-- Botões circulares serão gerados via JS (1 a 10) -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Área de conteúdo rolável (blog posts) -->
+        <div class="content-scroll-area" id="scrollContentArea">
+            <div class="page-card" id="pag-1" style="display: flex;">
+                <text-paragraph class="page-title">
+                    Vamos nos conhecer melhor
+                    <acacia-badge-form style="margin-left: 10px;">
+                        <small>
+                            leva só 10 minutinhos
+                        </small>
+                    </acacia-badge-form>
+                </text-paragraph>
+                <horizontal-divider></horizontal-divider>
+
+                <text-label>Seu nome completo:</text-label>
+                <input class="acacia-input" type="text" style="width: 100%;">
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Sua empresa é: </legend>
+                    <label class="acacia-radio">
+                        <text-label>MEI</text-label>
+                        <input type="radio" checked="checked" name="radio1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>ME</text-label>
+                        <input type="radio" name="radio1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>EPP</text-label>
+                        <input type="radio" name="radio1">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Outro</text-label>
+                        <input type="radio" name="radio1">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Sua empresa é: </legend>
+                    <label class="acacia-radio">
+                        <text-label>Varejista</text-label>
+                        <input type="radio" checked="checked" name="radio2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Atacadista</text-label>
+                        <input type="radio" name="radio2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Prestadora de Serviços</text-label>
+                        <input type="radio" name="radio2">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Indústria</text-label>
+                        <input type="radio" name="radio2">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>De onde você acredita que vêm a maioria dos seus clientes?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Redes sociais</text-label>
+                        <input type="radio" checked="checked" name="radio3">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Indicação</text-label>
+                        <input type="radio" checked="checked" name="radio3">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Visita presencial</text-label>
+                        <input type="radio" checked="checked" name="radio3">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Anúncios em veículos de comunicação</text-label>
+                        <input type="radio" checked="checked" name="radio3">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Outros.</text-label>
+                        <input type="radio" checked="checked" name="radio3">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você acredita ter potencial para mais clientes?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio4">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" checked="checked" name="radio4">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Sua empresa tem marketing ou social media?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Posts e reels</text-label>
+                        <input type="radio" checked="checked" name="radio5">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Promoção</text-label>
+                        <input type="radio" checked="checked" name="radio5">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Anúncios na internet</text-label>
+                        <input type="radio" checked="checked" name="radio5">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Anúncios em veículos de comunicação</text-label>
+                        <input type="radio" checked="checked" name="radio5">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Gráfica e papelaria</text-label>
+                        <input type="radio" checked="checked" name="radio5">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Outros</text-label>
+                        <input type="radio" checked="checked" name="radio5">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Nenhum</text-label>
+                        <input type="radio" checked="checked" name="radio5">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Usa alguma estratégia de marketing?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Posts e reels</text-label>
+                        <input type="radio" checked="checked" name="radio6">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Promoção</text-label>
+                        <input type="radio" checked="checked" name="radio6">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Anúncios na internet</text-label>
+                        <input type="radio" checked="checked" name="radio6">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Anúncios em rádio e TV</text-label>
+                        <input type="radio" checked="checked" name="radio6">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Gráfica</text-label>
+                        <input type="radio" checked="checked" name="radio6">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Outros</text-label>
+                        <input type="radio" checked="checked" name="radio6">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Qual sua MAIOR dificuldade hoje:</legend>
+                    <label class="acacia-radio">
+                        <text-label>Tempo</text-label>
+                        <input type="radio" checked="checked" name="radio7">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Concorrência</text-label>
+                        <input type="radio" checked="checked" name="radio7">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Lucro</text-label>
+                        <input type="radio" checked="checked" name="radio7">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Clientes/Vendas</text-label>
+                        <input type="radio" checked="checked" name="radio7">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Espaço de mercado</text-label>
+                        <input type="radio" checked="checked" name="radio7">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Qual sua SEGUNDA maior dificuldade hoje?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Tempo</text-label>
+                        <input type="radio" checked="checked" name="radio8">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Concorrência</text-label>
+                        <input type="radio" checked="checked" name="radio8">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Lucro</text-label>
+                        <input type="radio" checked="checked" name="radio8">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Clientes/Vendas</text-label>
+                        <input type="radio" checked="checked" name="radio8">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Espaço de mercado</text-label>
+                        <input type="radio" checked="checked" name="radio8">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Qual sua TERCEIRA maior dificuldade hoje?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Tempo</text-label>
+                        <input type="radio" checked="checked" name="radio9">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Concorrência</text-label>
+                        <input type="radio" checked="checked" name="radio9">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Lucro</text-label>
+                        <input type="radio" checked="checked" name="radio9">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Clientes/Vendas</text-label>
+                        <input type="radio" checked="checked" name="radio9">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Espaço de mercado</text-label>
+                        <input type="radio" checked="checked" name="radio9">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>De 1 a 5 qual sua familiaridade com ferramentas tecnológicas?</legend>
+                    <acacia-slider min="1" max="5" value="3" step="0.5"></acacia-slider>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>De 1 a 5 qual sua familiaridade com ferramentas NÃO tecnológicas?</legend>
+                    <acacia-slider min="1" max="5" value="3" step="0.5"></acacia-slider>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset style="height: fit-content;">
+                    <legend>Uma ferramenta, para você, deve ser:</legend>
+                    <span class="sliders-container">
+                        <text-label> ✅ Simples:</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 🌟 Barata ou gratuita:</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> ✨ Fácil de usar:</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 💪 Organizar meu tempo e minha vida:</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 🛡️ Me dar segurança e tranquilidade:</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 💎 Ter um plano de assinatura acordo com as minhas necessidades:</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 📈 Organizar minhas finanças:</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 💰 Me dar lucro:</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                </fieldset>
+            </div>
+            <div class="page-card" id="pag-2">
+                <text-paragraph class="page-title">
+                    Vamos nos conhecer melhor
+                    <acacia-badge-form style="margin-left: 10px;">
+                        <small>
+                            leva só 10 minutinhos
+                        </small>
+                    </acacia-badge-form>
+                </text-paragraph>
+                <horizontal-divider></horizontal-divider>
+
+                <fieldset>
+                    <legend>Quanto tempo, em média, você demora para responder aos clientes?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Menos de 5 minutos</text-label>
+                        <input type="radio" checked="checked" name="radio10">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>De 5 a 30 minutos</text-label>
+                        <input type="radio" name="radio10">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>30 minutos a 2 horas</text-label>
+                        <input type="radio" name="radio10">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Mais de 2 horas</text-label>
+                        <input type="radio" name="radio10">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você já perdeu cliente por demora no atendimento?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio11">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio11">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não sei dizer</text-label>
+                        <input type="radio" name="radio11">
+                        <span class="checkmark"></span>
+                    </label>
+                    <horizontal-divider></horizontal-divider>
+                </fieldset>
+                <fieldset>
+                    <legend>Onde ficam registrados seus clientes?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Não registro</text-label>
+                        <input type="radio" checked="checked" name="radio12">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Caderno</text-label>
+                        <input type="radio" name="radio12">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Planilha (Excel, Google Sheets, etc)</text-label>
+                        <input type="radio" name="radio12">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Whatsapp</text-label>
+                        <input type="radio" name="radio12">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Sistema Virtual.</text-label>
+                        <input type="radio" name="radio12">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você consegue saber quantos atendimentos viraram venda no último mês?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim, com precisão</text-label>
+                        <input type="radio" checked="checked" name="radio13">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Mais ou menos</text-label>
+                        <input type="radio" name="radio13">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio13">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você sabe qual é o seu ticket médio?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio14">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio14">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você sabe de onde veio cada cliente que comprou com você?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio15">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio15">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você faz acompanhamento com clientes que não fecharam?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sempre</text-label>
+                        <input type="radio" checked="checked" name="radio16">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Às vezes</text-label>
+                        <input type="radio" name="radio16">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Nunca</text-label>
+                        <input type="radio" name="radio16">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>O que acontece quando um cliente pede orçamento e não responde depois?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Nada</text-label>
+                        <input type="radio" checked="checked" name="radio17">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Tento contato manual</text-label>
+                        <input type="radio" name="radio17">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Tenho processo definido</text-label>
+                        <input type="radio" name="radio17">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Outro. Especifique:</text-label>
+                        <input type="radio" name="radio17">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+            </div>
+            <div class="page-card" id="pag-3">
+                <text-paragraph class="page-title">
+                    Vamos nos conhecer melhor
+                    <acacia-badge-form style="margin-left: 10px;">
+                        <small>
+                            leva só 10 minutinhos
+                        </small>
+                    </acacia-badge-form>
+                </text-paragraph>
+                <horizontal-divider></horizontal-divider>
+
+                <fieldset>
+                    <legend>Você já perdeu informações importantes de clientes?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio18">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio18">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Quantas pessoas atendem clientes no seu negócio?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Só eu</text-label>
+                        <input type="radio" checked="checked" name="radio19">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>2 a 3 pessoas</text-label>
+                        <input type="radio" name="radio19">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>4 a 5 pessoas</text-label>
+                        <input type="radio" name="radio19">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Mais de 5 pessoas</text-label>
+                        <input type="radio" name="radio19">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>O atendimento depende de uma pessoa específica para funcionar bem?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio20">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio20">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você sente que sua empresa é organizada hoje?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio21">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio21">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Se você tivesse 50% mais clientes amanhã, conseguiria atender bem?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio22">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio22">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Talvez</text-label>
+                        <input type="radio" name="radio22">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>O que mais toma seu tempo hoje no trabalho?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Financeiro/contabilidade</text-label>
+                        <input type="radio" checked="checked" name="radio23">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Liderança de equipe</text-label>
+                        <input type="radio" checked="checked" name="radio23">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Logística e estoque</text-label>
+                        <input type="radio" checked="checked" name="radio23">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Operação</text-label>
+                        <input type="radio" checked="checked" name="radio23">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Atendimento ao cliente</text-label>
+                        <input type="radio" checked="checked" name="radio23">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Qual dessas situações acontece com frequência?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Cliente demora de dar resposta</text-label>
+                        <input type="radio" name="radio24">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Cliente pede orçamento e não responde depois</text-label>
+                        <input type="radio" name="radio24">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Equipe esquece de responder</text-label>
+                        <input type="radio" name="radio24">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Perda de pedidos por falta de organização</text-label>
+                        <input type="radio" name="radio24">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Alta demanda de trabalho</text-label>
+                        <input type="radio" name="radio24">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Falta de recursos</text-label>
+                        <input type="radio" name="radio24">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Quais problemas acima mensionados você já tentou resolver?</legend>
+                    <label class="acacia-checkbox">
+                        <text-label>Resposta do cliente</text-label>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-checkbox">
+                        <text-label>Desistência do cliente</text-label>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-checkbox">
+                        <text-label>Resposta da equipe</text-label>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-checkbox">
+                        <text-label>Perda de pedidos</text-label>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-checkbox">
+                        <text-label>Alta demanda</text-label>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-checkbox">
+                        <text-label>Falta de recursos</text-label>
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+            </div>
+            <div class="page-card" id="pag-4">
+                <text-paragraph class="page-title">
+                    Vamos nos conhecer melhor
+                    <acacia-badge-form style="margin-left: 10px;">
+                        <small>
+                            leva só 10 minutinhos
+                        </small>
+                    </acacia-badge-form>
+                </text-paragraph>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Qual a principal fonte de desperdício causa perdas financeiras em sua empresa?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Desconto/promoção errados</text-label>
+                        <input type="radio" checked="checked" name="radio25">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Erros operacionais</text-label>
+                        <input type="radio" name="radio25">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Perda de tempo</text-label>
+                        <input type="radio" name="radio25">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Planejamento tributário (impostos mal calculados)</text-label>
+                        <input type="radio" name="radio25">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Se pudesse eliminar UM desperdício no seu negócio hoje, qual seria?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Desconto/promoção errados</text-label>
+                        <input type="radio" checked="checked" name="radio252">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Erros operacionais</text-label>
+                        <input type="radio" name="radio252">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Perda de tempo</text-label>
+                        <input type="radio" name="radio252">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Planejamento tributário (impostos mal calculados)</text-label>
+                        <input type="radio" name="radio252">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Qual a faixa de perda por desperdícios em sua empresa?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Até R$ 1.000,00 (Baixo)</text-label>
+                        <input type="radio" checked="checked" name="radio26">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>De R$ 1.000,00 a R$ 5.000,00 (Leve)</text-label>
+                        <input type="radio" name="radio26">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>De R$ 5.000,00 a R$ 10.000,00 (Moderado)</text-label>
+                        <input type="radio" name="radio26">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>De R$ 10.000,00 a R$ 30.000,00 (Alto)</text-label>
+                        <input type="radio" name="radio26">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Acima de R$ 30.000,00 (Crítico)</text-label>
+                        <input type="radio" name="radio26">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>O que te faria confiar em uma solução nova?</legend>
+                    <span class="sliders-container">
+                        <text-label> 👥 Indicação</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 🌟 Teste gratuito</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 👀 Ver funcionando</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 📈 Garantia de resultado</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                    <span class="sliders-container">
+                        <text-label> 💬 Atendimento humano</text-label>
+                        <acacia-slider min="1" max="5" max="3" step="0.5"></acacia-slider>
+                    </span>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você prefere uma solução que:</legend>
+                    <label class="acacia-radio">
+                        <text-label>Funcione sozinha (automática)</text-label>
+                        <input type="radio" checked="checked" name="radio27">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Tenha um aplicativo de celular</text-label>
+                        <input type="radio" name="radio27">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Precise de configuração, mas seja completa</text-label>
+                        <input type="radio" name="radio27">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Se você pudesse resolver UMA coisa no seu negócio hoje, qual seria?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Poucas vendas</text-label>
+                        <input type="radio" checked="checked" name="radio28">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Poucos clientes</text-label>
+                        <input type="radio" checked="checked" name="radio28">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Margem de lucro baixa</text-label>
+                        <input type="radio" checked="checked" name="radio28">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Fluxo de caixa insuficiente mesmo com lucro alto</text-label>
+                        <input type="radio" checked="checked" name="radio28">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Posicionamento ruim no mercado</text-label>
+                        <input type="radio" checked="checked" name="radio28">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Alta concorrência</text-label>
+                        <input type="radio" checked="checked" name="radio28">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>O que mais te dá satisfação hoje no seu negócio:</legend>
+                    <label class="acacia-radio">
+                        <text-label>Faturamento</text-label>
+                        <input type="radio" checked="checked" name="radio29">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Autonomia e tempo livre</text-label>
+                        <input type="radio" checked="checked" name="radio29">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Time da empresa evoluindo</text-label>
+                        <input type="radio" checked="checked" name="radio29">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Metas alcançadas</text-label>
+                        <input type="radio" checked="checked" name="radio29">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você sente que controla o negócio ou o negócio te controla?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio30">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" checked="checked" name="radio30">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você confia nos números do seu negócio?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio31">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Parcialmente</text-label>
+                        <input type="radio" name="radio31">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio31">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+            </div>
+            <div class="page-card" id="pag-5">
+                <text-paragraph class="page-title">
+                    Vamos nos conhecer melhor
+                    <acacia-badge-form style="margin-left: 10px;">
+                        <small>leva só 10 minutinhos</small>
+                    </acacia-badge-form>
+                </text-paragraph>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Como você decide preços hoje?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Custo + Margem de lucro</text-label>
+                        <input type="radio" checked="checked" name="radio32">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Baseado nos preços da concorrência</text-label>
+                        <input type="radio" name="radio32">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>De acordo com a demanda</text-label>
+                        <input type="radio" name="radio32">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Baseado na minha experiência</text-label>
+                        <input type="radio" name="radio32">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você tem um caderno cheio de contas matemáticas que é a joia da coroa da sua empresa?
+                    </legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim, é minha unica forma de planejamento financeiro</text-label>
+                        <input type="radio" checked="checked" name="radio33">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não, uso outra forma de planejamento financeiro</text-label>
+                        <input type="radio" name="radio33">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Sim, mas uso mais formas de planejamento financeiro</text-label>
+                        <input type="radio" name="radio33">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Trocar esse caderno por uma ferramenta automatizada seria importante?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Com certeza</text-label>
+                        <input type="radio" checked="checked" name="radio34">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Seria interessante</text-label>
+                        <input type="radio" name="radio34">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não</text-label>
+                        <input type="radio" name="radio34">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não uso caderno</text-label>
+                        <input type="radio" name="radio34">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Seus funcionários sabem exatamente o que fazer sem você?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Com certeza</text-label>
+                        <input type="radio" checked="checked" name="radio35">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não sei</text-label>
+                        <input type="radio" name="radio35">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não, tudo depende de mim</text-label>
+                        <input type="radio" name="radio35">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Sim, mas nem sempre</text-label>
+                        <input type="radio" name="radio35">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não tenho funcionários</text-label>
+                        <input type="radio" name="radio35">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você tem processos definidos?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Não, planejo cada dia.</text-label>
+                        <input type="radio" checked="checked" name="radio36">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Sim, é tudo padronizado</text-label>
+                        <input type="radio" name="radio36">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>É parcialmente padronizado, flexível</text-label>
+                        <input type="radio" name="radio36">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>O que mais te estressa na operação diária?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Clientes</text-label>
+                        <input type="radio" checked="checked" name="radio37">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Funcionários</text-label>
+                        <input type="radio" name="radio37">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Pagamentos/despesas</text-label>
+                        <input type="radio" name="radio37">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Estoque</text-label>
+                        <input type="radio" name="radio37">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Problemas generalizados (operação caótica)</text-label>
+                        <input type="radio" name="radio37">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Nenhuma das opções anteriores</text-label>
+                        <input type="radio" name="radio37">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+
+
+            </div>
+            <div class="page-card" id="pag-6">
+                <text-paragraph class="page-title">
+                    Vamos nos conhecer melhor
+                    <acacia-badge-form style="margin-left: 10px;">
+                        <small>
+                            leva só 10 minutinhos
+                        </small>
+                    </acacia-badge-form>
+                </text-paragraph>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Com que frequência acontecem erros (pedido errado, atraso, retrabalho)?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Nunca</text-label>
+                        <input type="radio" checked="checked" name="radio38">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Raramente</text-label>
+                        <input type="radio" name="radio38">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Às vezes</text-label>
+                        <input type="radio" name="radio38">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Frequentemente</text-label>
+                        <input type="radio" name="radio38">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Muito frequentemente</text-label>
+                        <input type="radio" name="radio38">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Existe alguma tarefa que depende só de você e ninguém mais consegue fazer?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" checked="checked" name="radio39">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Sim</text-label>
+                        <input type="radio" name="radio39">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Não tenho funcionários</text-label>
+                        <input type="radio" name="radio39">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+                <fieldset>
+                    <legend>Você já tomou alguma decisão que depois percebeu que deu prejuízo? Qual?</legend>
+                    <label class="acacia-radio">
+                        <text-label>Contratação</text-label>
+                        <input type="radio" checked="checked" name="radio40">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Compra errada/exagerada</text-label>
+                        <input type="radio" name="radio40">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Preço/desconto</text-label>
+                        <input type="radio" name="radio40">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Parceria/sociedade</text-label>
+                        <input type="radio" name="radio40">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Investimento</text-label>
+                        <input type="radio" name="radio40">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="acacia-radio">
+                        <text-label>Crédito</text-label>
+                        <input type="radio" name="radio40">
+                        <span class="checkmark"></span>
+                    </label>
+                </fieldset>
+                <horizontal-divider></horizontal-divider>
+
+            </div>
+            <div class="page-card" id="pag-7">
+                <text-paragraph class="page-title">
+                    Muito obrigado!
+                </text-paragraph>
+                <horizontal-divider></horizontal-divider>
+                <text-paragraph>
+                    😊 Obrigado por chegar até aqui! Sua contribuição é muito bem-vinda e ajuda a construir uma solução
+                    que
+                    vai se encaixar perfeitamente em suas necessidades. 💪
+                </text-paragraph>
+                <text-paragraph>
+                    Se quiser deixar um comentário ou sugestão, sinta-se à vontade:
+                </text-paragraph>
+                <textarea class="acacia-input" style="resize: vertical"></textarea>
+            </div>
+            <div class="page-card" id="pag-8">
+                <text-paragraph class="page-title">
+                    Quase lá!
+                </text-paragraph>
+                <horizontal-divider></horizontal-divider>
+                <text-paragraph>
+                    Espere! Não vá embora ainda, como retribuição por sua ajuda queremos te dar um presente especial,
+                    que tal experimentar uma nova ferramenta por um período limitado sem gastar nada e ainda receber um
+                    mega desconto de forma vitalícia por ter ajudado em sua construção?
+                </text-paragraph>
+                <text-paragraph>
+                    Deixe seus dados aqui para entrar para a lista de espera* e ser um dos primeiros a experimentar essa
+                    ferramenta incrível que estamos construindo com muito carinho para você:
+                </text-paragraph>
+                <fieldset>
+                    <legend>Dados:</legend>
+                    <text-label>Endereço (para visita, comercial ou particular)</text-label>
+                    <input class="acacia-input" style="width: 100%;">
+                    <text-label>E-mail</text-label>
+                    <input class="acacia-input" style="width: 100%;">
+                    <text-label>Telefone fixo</text-label>
+                    <input class="acacia-input" style="width: 100%;">
+                    <text-label>Whatsapp</text-label>
+                    <input class="acacia-input" style="width: 100%;">
+                    <text-label>Nome da sua empresa</text-label>
+                    <input class="acacia-input" style="width: 100%;">
+                    <text-label>Ramo de atuação</text-label>
+                    <input class="acacia-input" style="width: 100%;">
+                </fieldset>
+
+                <text-paragraph>
+                    <small>
+                        * A lista de espera é apenas para organizar o lançamento, não tem custo nenhum e não tem
+                        compromisso
+                        de compra. Você pode sair da lista a qualquer momento, sem burocracia.
+                    </small>
+                    <small>
+                        * não dispararemos lista de e-mail nem campanhas de marketing. Você pode excluir essas
+                        informações,
+                        com um único clique. Elas não serão compartilhadas com ninguém.
+                    </small>
+                </text-paragraph>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botões fixos na base (anterior/próximo) -->
+    <div class="nav-footer">
+        <button class="nav-btn" id="prevBtn" aria-label="Página anterior">← ANTERIOR</button>
+        <div class="page-indicator" aria-live="polite">
+            <span id="currentPageNum">1</span> / <span id="totalPagesNum">10</span>
+        </div>
+        <button class="nav-btn" id="nextBtn" aria-label="Próxima página">PRÓXIMA →</button>
+    </div>
+</body>
+
+<script src="index.js"></script>
+<script src="form.js"></script>
+
+</html>

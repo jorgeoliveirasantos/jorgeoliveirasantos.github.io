@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "SlideMaster",
+    "description": "Utilitário para criação de apresentações de slides",
+    "createdAt": "2025-12-30T05:41:58.623Z",
+    "slides": [
+      {
+        "id": 1001,
+        "title": "Apresentação",
+        "subtitle": "Apresentando SlideMaster",
+        "comment": "Aperte (F) se quiser sair do modo apresentador agora...",
+        "presenterNote": "",
+        "contentType": "paragraph",
+        "mediaType": "none",
+        "media": "",
+        "content": "SlideMaster é uma aplicação que facilita a vida de palestrantes, com recursos para criação de apresentações de slides com um editor estilo formulário.<br><b>Uma aplicação simples para palestrantes</b>",
+        "createdAt": "2025-12-30T05:42:02.373Z"
+      },
+      {
+        "id": 1002,
+        "title": "Recursos",
+        "subtitle": "Conhecendo os recursos do SlideMaster",
+        "comment": "Apresentando a interface e suas principais funções",
+        "presenterNote": "Aqui você adiciona notas para o apresentador ler com algum lembrete ou observação sobre o slide e/ou seu conteúdo!",
+        "contentType": "paragraph",
+        "mediaType": "none",
+        "media": "",
+        "content": "Na barra lateral você pode ver a lista de slides da apresentação e o slide atual selecionado.<br>\nNa barra superior encontramos a numeração do slide atual / contagem de de slides e alguns botões com recursos para o apresentador.<br>\nO primeiro botão exibe uma nota ao apresentador. Clique nele e observe!<br>\nO segundo botão, ativa e desativa o modo de apresentação (tela cheia).<br>\nOs dois últimos botões servem para avançar e voltar a apresentação.<br>",
+        "createdAt": "2025-12-30T05:45:30.863Z"
+      },
+      {
+        "id": 1003,
+        "title": "Teclas de atalho",
+        "subtitle": "",
+        "comment": "Você pode usar teclas de atalho em uma apresentação.",
+        "presenterNote": "Viu como é simples?",
+        "contentType": "bullet-list",
+        "mediaType": "none",
+        "media": "",
+        "content": "( f ): Ativa/desativa o modo de apresentação.\n( i ): Exibe a nota do apresentador.\n( ← ): Volta o slide anterior.\n( → ): Avança para o próximo slide.\n( espaço ): Executa a mídia se houver (áudio ou vídeo).<br>\n( espaço ): Abre a imagem em tela cheia se houver.<br>\n<em>Notou algo? Você pode usar listas em seus slides!</em>",
+        "createdAt": "2025-12-30T05:43:48.268Z"
+      },
+      {
+        "id": 1004,
+        "title": "Estrutura do conteúdo",
+        "subtitle": "Este é o subtítulo do slide",
+        "comment": "Este é o comentário do slide",
+        "presenterNote": "Esta é a nota do apresentador!",
+        "contentType": "numbered-list",
+        "mediaType": "audio",
+        "media": "https://placeholder.guru/api/audio?type=tune",
+        "content": "Este slide possui um conteúdo do tipo lista numerada.\nEste slide possui uma mídia de audio, pressione ( espaço ) para executá-la!\nPressione ( i ) para ver a nota do apresentador!",
+        "createdAt": "2025-12-30T05:47:45.872Z"
+      },
+      {
+        "id": 1005,
+        "title": "Tipos de conteúdo",
+        "subtitle": "Como inserir mídia em seus slides",
+        "comment": "Podemos ter slides com audio, video e imagem!",
+        "presenterNote": "A importância das redes sociais é: nenhuma.",
+        "contentType": "paragraph",
+        "mediaType": "video",
+        "media": "https://storage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+        "content": "Este slide possui uma mídia do tipo vídeo. <br> Imagem e vídeo serão exibidas lado a lado com o conteúdo em texto.",
+        "createdAt": "2025-12-30T05:47:45.872Z"
+      },
+      {
+        "id": 1006,
+        "title": "Trabalhando com arquivos .JSON",
+        "subtitle": "",
+        "comment": "Você pode criar suas próprias apresentações em formato .JSON",
+        "presenterNote": "",
+        "contentType": "bullet-list",
+        "mediaType": "image",
+        "media": "data:image/jpeg;base64,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AJ6f+Omj+1YP+en/AI6aLoLFiiq/9qwf89P/AB00f2rB/wA9P/HTRdBYsUVX/tWD/np/46aP7Vg/56f+Omi6CxYoqv8A2rB/z0/8dNH9qwf89P8Ax00XQWLFFV/7Vg/56f8Ajpo/tWD/AJ6f+Omi6CxYoqv/AGrB/wA9P/HTR/asH/PT/wAdNF0FixRVf+1YP+en/jpo/tWD/np/46aLoLFiiq/9qwf89P8Ax00UXQWMeiiisDQKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooA//9k=",
+        "content": "Na tela inicial, clique em \"Criar apresentações\" para abrir o editor.\nClique em \"Abrir apresentações do arquivo\" para abrir suas apresentações criadas.",
+        "createdAt": "2025-12-30T18:18:22.510Z"
+      },
+      {
+        "id": 1007,
+        "title": "Dicas",
+        "subtitle": "",
+        "comment": "Com essas dicas você fica fera!",
+        "presenterNote": "",
+        "contentType": "bullet-list",
+        "mediaType": "none",
+        "media": "",
+        "content": "Sempre baixe a apresentação como .json ao terminar de criá-la.\nDê preferência a mídias online, elas são mais leve que carregar arquivos locais para o slide.\nSe estiver fazendo apresentações muito longas, baixe o arquivo da apresentação .json a cada 10 slides para não perder conteúdo.\nFaça apresentações de no máximo 50 slides, divida palestras longas em várias apresentações.\nSalve na aplicação apenas as apresentações de cada palestra, dê preferência em armazená-las em arquivos .json.\nDivirta-se!",
+        "createdAt": "2025-12-30T18:33:03.249Z"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Template de apresentação",
+    "description": "Este é um exemplo de apresentação",
+    "createdAt": "2026-02-22T03:55:25.872Z",
+    "slides": [
+      {
+        "id": 1008,
+        "title": "Primeiro slide",
+        "subtitle": "Subtítulo do primeiro slide",
+        "comment": "Use essa apresentação como um template para suas próximas apresentações se preferir.",
+        "presenterNote": "Com o SlideMaster você pode criar facilmente apresentações de slides, modernas, elegantes para suas palestras com um design intuitivo estilo aplicação sem ter que lidar com editores estilo PowerPoint economizando tempo e tendo um apresentador prático e fácil de utilizar.",
+        "contentType": "bullet-list",
+        "mediaType": "none",
+        "media": "",
+        "content": "Use essa apresentação como template.\nPressione (i) para ver a nota do apresentador.\nViu como é simples?",
+        "createdAt": "2026-02-22T03:55:51.347Z"
+      }
+    ]
+  }
+]
